@@ -11,7 +11,6 @@ from mock_data_loader import generate_regulatory_docs, generate_mock_alerts
 # --- CONFIGURATION & STYLES ---
 st.set_page_config(
     page_title="Barclays SAR Generator",
-    page_icon="🦅",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -22,7 +21,7 @@ if "theme" not in st.session_state:
 
 with st.sidebar:
     st.markdown("### Settings")
-    theme_toggle = st.checkbox("Dark Mode", value=(st.session_state.theme == "Dark"))
+    theme_toggle = st.checkbox("Toggle Classic Dark Mode", value=(st.session_state.theme == "Dark"))
     if theme_toggle:
         st.session_state.theme = "Dark"
     else:
@@ -106,13 +105,13 @@ light_theme_css = """
     </style>
 """
 
-# Custom CSS for Dark Mode (Inverted Professional)
+# Custom CSS for Dark Mode (True Monochrome Dark)
 dark_theme_css = """
     <style>
     /* Global Reset */
     .main {
-        background-color: #0e1117;
-        color: #e0e0e0;
+        background-color: #000000;
+        color: #ffffff;
         font-family: 'Courier New', monospace; 
     }
     
@@ -123,19 +122,19 @@ dark_theme_css = """
     
     /* Borders for Everything */
     .stApp > header {
-        background-color: #0e1117;
-        border-bottom: 2px solid #e0e0e0;
+        background-color: #000000;
+        border-bottom: 2px solid #ffffff;
     }
     section[data-testid="stSidebar"] {
-        background-color: #1a1c24;
-        border-right: 2px solid #e0e0e0;
+        background-color: #000000;
+        border-right: 2px solid #ffffff;
     }
     
     /* Widget Styling */
     .stButton>button {
-        background-color: #1a1c24;
-        color: #e0e0e0;
-        border: 2px solid #e0e0e0;
+        background-color: #000000;
+        color: #ffffff;
+        border: 2px solid #ffffff;
         border-radius: 0px;
         text-transform: uppercase;
         font-weight: bold;
@@ -143,46 +142,58 @@ dark_theme_css = """
         transition: all 0.2s;
     }
     .stButton>button:hover {
-        background-color: #e0e0e0;
+        background-color: #ffffff;
         color: #000000;
-        border: 2px solid #e0e0e0;
+        border: 2px solid #ffffff;
     }
     
     /* Input Fields */
     .stTextInput>div>div>input, .stSelectbox>div>div>div {
-        border: 2px solid #e0e0e0;
+        border: 2px solid #ffffff;
         border-radius: 0px;
-        color: #e0e0e0;
-        background-color: #1a1c24;
+        color: #ffffff;
+        background-color: #000000;
     }
     
     /* Headers */
     h1, h2, h3, h4, h5, h6 {
-        color: #e0e0e0;
+        color: #ffffff;
         font-family: 'Courier New', monospace;
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 1px solid #ffffff;
         padding-bottom: 0.5rem;
     }
     
     /* Info/Warning/Success Boxes Override */
     .stAlert {
-        background-color: #1a1c24;
-        border: 2px solid #e0e0e0;
-        color: #e0e0e0;
+        background-color: #000000;
+        border: 2px solid #ffffff;
+        color: #ffffff;
         border-radius: 0px;
     }
     
     /* Expanders */
     div[data-testid="stExpander"] {
-        border: 2px solid #e0e0e0;
+        border: 2px solid #ffffff;
         border-radius: 0px;
         box-shadow: none;
-        background-color: #1a1c24;
-        color: #e0e0e0;
+        background-color: #000000;
+        color: #ffffff;
     }
     div[data-testid="stExpander"] div[role="button"] p {
         font-family: 'Courier New', monospace;
-        color: #e0e0e0;
+        color: #ffffff;
+    }
+    
+    /* Tab Styling */
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 2px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        border: 1px solid #ffffff;
+        border-radius: 0px;
+        padding: 10px 20px;
+        background-color: #000000;
+        color: #ffffff;
     }
     </style>
 """
@@ -460,6 +471,7 @@ elif st.session_state.page == 'Generator':
             # Get Data
             selected_idx = options.index(selected_option)
             alert_data = normalized_alerts[selected_idx]
+            st.session_state["alert_data"] = alert_data
         
         except Exception as e:
             st.sidebar.error(f"System Error: {e}")
@@ -531,7 +543,21 @@ elif st.session_state.page == 'SAR Editor':
             if st.button("SAVE DRAFT"):
                 st.success("Draft Saved locally.")
         with c2:
-            st.download_button("EXPORT TO PDF", st.session_state["sar"], "sar_report.txt")
+            # Prepare audit data for PDF
+            audit_list = []
+            if "context" in st.session_state:
+                for doc in st.session_state["context"]:
+                    audit_list.append({
+                        "Source": doc.metadata.get('source', 'Regulatory Handbook'),
+                        "Excerpt": doc.page_content
+                    })
+            
+            # Use real PDF generator if data exists
+            if st.session_state.get("sar"):
+                pdf_bytes = create_pdf(st.session_state["sar"], audit_list, st.session_state.get("alert_data", {}))
+                st.download_button("EXPORT TO PDF", pdf_bytes, "sar_report.pdf", "application/pdf")
+            else:
+                st.button("EXPORT TO PDF", disabled=True)
             
     with col_view:
         st.markdown("### Audit Trail")
@@ -547,8 +573,8 @@ elif st.session_state.page == 'SAR Editor':
             set_page('Generator')
             st.rerun()
 
-# --- PAGE: ARCHITECTURE ---
-elif st.session_state.page == 'Architecture':
+# --- PAGE 2: RAG ARCHITECTURE ---
+elif st.session_state.page == 'RAG Architecture':
     st.title("System Architecture")
     
     # Graphviz Diagram for RAG
