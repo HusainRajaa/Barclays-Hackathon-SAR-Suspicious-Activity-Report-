@@ -126,89 +126,81 @@ if st.session_state.page == 'Generator':
     st.title("Barclays SAR Narrative Generator")
     st.markdown("Automated generation of Suspicious Activity Reports using Llama 3 and Vector Search.")
 
-    # Sidebar for Input Method
-    st.sidebar.header("Input Controls")
-    input_method = st.sidebar.radio("Select Input Method:", ("Upload Transaction File", "Manual Entry"))
+    # Sidebar: Bank Portal Style Controls
+    st.sidebar.markdown("### 🏦 Internal Portal")
+    st.sidebar.markdown("**System Status**: `ONLINE`")
+    st.sidebar.markdown("---")
+    
+    # Simple File Uploader (No Radio Buttons)
+    uploaded_file = st.sidebar.file_uploader("Upload Transaction Batch (CSV)", type=["csv"])
+    
+    # Sample Template access
+    sample_data = pd.DataFrame([{
+        "Customer Name": "John Smith",
+        "Transaction Type": "Cash Deposit", 
+        "Amount": 9500,
+        "Date": "2023-10-25",
+        "Description": "Customer made 3 separate cash deposits of $9,500, $9,000, and $8,500 in consecutive days."
+    }])
+    csv = sample_data.to_csv(index=False)
+    st.sidebar.download_button("⬇️ Download Batch Template", csv, "batch_template.csv", "text/csv")
+    
+    st.sidebar.markdown("---")
+    st.sidebar.caption("Authorized Personnel Only")
 
     alert_data = {}
 
-    if input_method == "Upload Transaction File":
-        uploaded_file = st.sidebar.file_uploader("Upload CSV File", type=["csv"])
-        
-        # Download Sample Template
-        sample_data = pd.DataFrame([{
-            "Customer Name": "John Smith",
-            "Transaction Type": "Cash Deposit", 
-            "Amount": 9500,
-            "Date": "2023-10-25",
-            "Description": "Customer made 3 separate cash deposits of $9,500, $9,000, and $8,500 in consecutive days."
-        }])
-        csv = sample_data.to_csv(index=False)
-        st.sidebar.download_button("⬇️ Download Sample CSV", csv, "sample_sar_data.csv", "text/csv")
-
-        if uploaded_file is not None:
-            try:
-                alerts = pd.read_csv(uploaded_file)
-                st.sidebar.success(f"✅ Loaded {len(alerts)} records")
-                
-                # Validation
-                required_cols = ["Customer Name", "Description", "Amount"]
-                missing_cols = [col for col in required_cols if col not in alerts.columns]
-                
-                if missing_cols:
-                    st.error(f"CSV missing columns: {', '.join(missing_cols)}")
-                else:
-                    # Select Specific Transaction
-                    # Create a standard list for dropdown
-                    options = [f"Row {i+1}: {row['Customer Name']} (${row['Amount']})" for i, row in alerts.iterrows()]
-                    selected_option = st.sidebar.selectbox("Select Transaction to Analyze", options)
-                    
-                    # Get Data
-                    selected_idx = options.index(selected_option)
-                    alert_data = alerts.iloc[selected_idx].to_dict()
-                    
-                    # Fill missing optional fields
-                    if "Date" not in alert_data: alert_data["Date"] = "N/A"
-                    if "Transaction Type" not in alert_data: alert_data["Transaction Type"] = "General Transaction"
+    if uploaded_file is not None:
+        try:
+            alerts = pd.read_csv(uploaded_file)
+            st.sidebar.success(f"✅ Loaded {len(alerts)} records")
             
-            except Exception as e:
-                st.sidebar.error(f"Error reading CSV: {e}")
-        else:
-            st.info("👈 Upload a CSV file to begin.")
-            # Stop execution here if no file to avoid errors in main layout
-            if input_method == "Upload Transaction File":
-                st.warning("Please upload a CSV file or switch to Manual Entry.")
-    else:
-        st.sidebar.subheader("Manual Transaction Details")
-        cust_name = st.sidebar.text_input("Customer Name", "Jane Doe")
-        trans_type = st.sidebar.selectbox("Transaction Type", ["Cash Deposit", "Wire Transfer", "Crypto Purchase"])
-        amount = st.sidebar.number_input("Amount ($)", min_value=0.0, value=9500.0)
-        date = st.sidebar.date_input("Transaction Date")
-        desc = st.sidebar.text_area("Description of Activity", "Customer made multiple cash deposits just under the reporting threshold.")
+            # Validation
+            required_cols = ["Customer Name", "Description", "Amount"]
+            missing_cols = [col for col in required_cols if col not in alerts.columns]
+            
+            if missing_cols:
+                st.error(f"Error: Missing columns {', '.join(missing_cols)}")
+            else:
+                # Select Specific Transaction
+                options = [f"Ref-{i+1001}: {row['Customer Name']} (${row['Amount']})" for i, row in alerts.iterrows()]
+                selected_option = st.sidebar.selectbox("Select Record", options)
+                
+                # Get Data
+                selected_idx = options.index(selected_option)
+                alert_data = alerts.iloc[selected_idx].to_dict()
+                
+                # Fill missing optional fields
+                if "Date" not in alert_data: alert_data["Date"] = "N/A"
+                if "Transaction Type" not in alert_data: alert_data["Transaction Type"] = "Unclassified"
         
-        alert_data = {
-            "Customer Name": cust_name,
-            "Transaction Type": trans_type,
-            "Amount": amount,
-            "Date": str(date),
-            "Description": desc,
-            "Risk Flag": "Manual Entry"
-        }
+        except Exception as e:
+            st.sidebar.error(f"System Error: {e}")
+    else:
+        st.info("⚠️ AWAITING BATCH UPLOAD")
+        st.write("Please upload a transaction CSV file to proceed with investigation.")
+        st.stop() # Halt execution until file is uploaded for a cleaner load state
 
-    # Main Layout
-    col1, col2 = st.columns([1, 1])
+    # Main Layout - Investigation Dashboard
+    st.markdown("### 🕵️ Investigation Dashboard")
+    st.markdown("---")
+    
+    col1, col2 = st.columns([1, 1], gap="large")
 
     with col1:
-        st.subheader("Transaction Context")
-        st.info(f"Customer: {alert_data.get('Customer Name')}")
-        st.write(f"Type: {alert_data.get('Transaction Type')}")
-        st.write(f"Amount: ${alert_data.get('Amount', 0):,.2f}")
-        st.write(f"Date: {alert_data.get('Date')}")
-        st.warning(f" Activity: {alert_data.get('Description')}")
+        st.markdown("#### Case Details")
+        # Strict Record View
+        st.text(f"CUSTOMER: {alert_data.get('Customer Name', 'N/A').upper()}")
+        st.text(f"TYPE    : {alert_data.get('Transaction Type', 'N/A').upper()}")
+        st.text(f"AMOUNT  : ${alert_data.get('Amount', 0):,.2f}")
+        st.text(f"DATE    : {alert_data.get('Date', 'N/A')}")
+        st.markdown("---")
+        st.markdown("**NARRATIVE**")
+        st.write(alert_data.get('Description', ''))
 
         st.markdown("---")
-        if st.button("Generate Narrative", type="primary"):
-            with st.spinner("Analyzing regulations and drafting narrative..."):
+        if st.button("GENERATE REPORT", type="secondary"): # Secondary is usually white/outline in Streamlit for that 'classic' look if customized, but default primary is fine too.
+            with st.spinner("PROCESSING..."):
                 query = alert_data.get("Description")
                 context = engine.retrieve_context(query)
                 sar_narrative = engine.generate_sar_narrative(alert_data, context)
