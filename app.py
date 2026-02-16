@@ -127,7 +127,7 @@ if st.session_state.page == 'Generator':
     st.markdown("Automated generation of Suspicious Activity Reports using Llama 3 and Vector Search.")
 
     # Sidebar: Bank Portal Style Controls
-    st.sidebar.markdown("### 🏦 Internal Portal")
+    st.sidebar.markdown("### Internal Portal")
     st.sidebar.markdown("**System Status**: `ONLINE`")
     st.sidebar.markdown("---")
     
@@ -143,7 +143,7 @@ if st.session_state.page == 'Generator':
         "Description": "Customer made 3 separate cash deposits of $9,500, $9,000, and $8,500 in consecutive days."
     }])
     csv = sample_data.to_csv(index=False)
-    st.sidebar.download_button("⬇️ Download Batch Template", csv, "batch_template.csv", "text/csv")
+    st.sidebar.download_button("Download Batch Template", csv, "batch_template.csv", "text/csv")
     
     st.sidebar.markdown("---")
     st.sidebar.caption("Authorized Personnel Only")
@@ -153,7 +153,7 @@ if st.session_state.page == 'Generator':
     if uploaded_file is not None:
         try:
             alerts = pd.read_csv(uploaded_file)
-            st.sidebar.success(f"✅ Loaded {len(alerts)} records")
+            st.sidebar.success(f"Loaded {len(alerts)} records")
             
             # Validation
             required_cols = ["Customer Name", "Description", "Amount"]
@@ -177,12 +177,12 @@ if st.session_state.page == 'Generator':
         except Exception as e:
             st.sidebar.error(f"System Error: {e}")
     else:
-        st.info("⚠️ AWAITING BATCH UPLOAD")
+        st.info("AWAITING BATCH UPLOAD")
         st.write("Please upload a transaction CSV file to proceed with investigation.")
         st.stop() # Halt execution until file is uploaded for a cleaner load state
 
     # Main Layout - Investigation Dashboard
-    st.markdown("### 🕵️ Investigation Dashboard")
+    st.markdown("### Investigation Dashboard")
     st.markdown("---")
     
     col1, col2 = st.columns([1, 1], gap="large")
