@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "SAR Generation Audit Trail",
+    "description": "Schema for tracking the decision-making process of the AI SAR Generator.",
+    "type": "object",
+    "properties": {
+        "case_id": {
+            "type": "string",
+            "description": "Unique identifier for the investigation case."
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Time of generation."
+        },
+        "model_version": {
+            "type": "string",
+            "description": "Version of the LLM used (e.g., 'Llama-3.1-70b-v2')."
+        },
+        "input_data_snapshot": {
+            "type": "object",
+            "description": "Hash or snapshot of the data used, ensuring reproducibility.",
+            "properties": {
+                "alert_id": {
+                    "type": "string"
+                },
+                "customer_id": {
+                    "type": "string"
+                },
+                "transaction_count": {
+                    "type": "integer"
+                }
+            }
+        },
+        "rag_retrieval_log": {
+            "type": "array",
+            "description": "List of regulatory documents retrieved.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "source_document": {
+                        "type": "string"
+                    },
+                    "relevance_score": {
+                        "type": "number"
+                    },
+                    "snippet_used": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "reasoning_trace": {
+            "type": "array",
+            "description": "Step-by-step logic used by the model (Chain of Thought).",
+            "items": {
+                "type": "string"
+            }
+        },
+        "red_flag_indicators": {
+            "type": "array",
+            "description": "Specific AML typologies identified.",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "Structuring",
+                    "Smurfing",
+                    "Layering",
+                    "High-Risk Jurisdiction",
+                    "Rapid Movement of Funds"
+                ]
+            }
+        }
+    },
+    "required": [
+        "case_id",
+        "timestamp",
+        "rag_retrieval_log",
+        "red_flag_indicators"
+    ]
+}

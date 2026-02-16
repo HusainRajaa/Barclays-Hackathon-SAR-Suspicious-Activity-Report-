@@ -1,0 +1,2002 @@
+[
+  {
+    "customer_id": "CUST-864616F8",
+    "name": "Bryan Martinez",
+    "age": 19,
+    "occupation": "Unemployed",
+    "annual_income": 52240.59,
+    "risk_rating": "High",
+    "country": "Bolivia",
+    "account_created": "2025-01-04"
+  },
+  {
+    "customer_id": "CUST-0A10F015",
+    "name": "Jeremy Williams",
+    "age": 57,
+    "occupation": "Student",
+    "annual_income": 30037.67,
+    "risk_rating": "Medium",
+    "country": "Togo",
+    "account_created": "2024-04-16"
+  },
+  {
+    "customer_id": "CUST-1ACEF044",
+    "name": "Jacob Walker",
+    "age": 39,
+    "occupation": "Unemployed",
+    "annual_income": 59370.23,
+    "risk_rating": "Medium",
+    "country": "Martinique",
+    "account_created": "2021-07-13"
+  },
+  {
+    "customer_id": "CUST-2A8F6B15",
+    "name": "Philip Beard",
+    "age": 48,
+    "occupation": "Engineer",
+    "annual_income": 31731.75,
+    "risk_rating": "High",
+    "country": "Sao Tome and Principe",
+    "account_created": "2024-05-03"
+  },
+  {
+    "customer_id": "CUST-E7F33433",
+    "name": "Mr. Timothy Frost",
+    "age": 42,
+    "occupation": "Engineer",
+    "annual_income": 112163.18,
+    "risk_rating": "Medium",
+    "country": "Tonga",
+    "account_created": "2022-09-05"
+  },
+  {
+    "customer_id": "CUST-AEF85DEB",
+    "name": "Eric Thomas",
+    "age": 40,
+    "occupation": "Student",
+    "annual_income": 60552.3,
+    "risk_rating": "Low",
+    "country": "Anguilla",
+    "account_created": "2022-06-05"
+  },
+  {
+    "customer_id": "CUST-55A37ACD",
+    "name": "Christopher Strickland",
+    "age": 30,
+    "occupation": "Doctor",
+    "annual_income": 139372.52,
+    "risk_rating": "Low",
+    "country": "Luxembourg",
+    "account_created": "2024-10-25"
+  },
+  {
+    "customer_id": "CUST-CB7702B7",
+    "name": "Alice Harris",
+    "age": 78,
+    "occupation": "Unemployed",
+    "annual_income": 97112.79,
+    "risk_rating": "Low",
+    "country": "Liberia",
+    "account_created": "2023-01-08"
+  },
+  {
+    "customer_id": "CUST-D500252D",
+    "name": "Kevin Jordan",
+    "age": 82,
+    "occupation": "Business Owner",
+    "annual_income": 141213.15,
+    "risk_rating": "Medium",
+    "country": "Andorra",
+    "account_created": "2025-02-08"
+  },
+  {
+    "customer_id": "CUST-529C97CC",
+    "name": "Erika Briggs",
+    "age": 47,
+    "occupation": "Doctor",
+    "annual_income": 81336.87,
+    "risk_rating": "Low",
+    "country": "Honduras",
+    "account_created": "2021-03-05"
+  },
+  {
+    "customer_id": "CUST-4F5B6DE5",
+    "name": "Lisa Daniels",
+    "age": 30,
+    "occupation": "Artist",
+    "annual_income": 32433.22,
+    "risk_rating": "Medium",
+    "country": "Latvia",
+    "account_created": "2025-09-16"
+  },
+  {
+    "customer_id": "CUST-9CDA983A",
+    "name": "Bryan Hardy",
+    "age": 79,
+    "occupation": "Doctor",
+    "annual_income": 89174.96,
+    "risk_rating": "Low",
+    "country": "Norfolk Island",
+    "account_created": "2024-04-03"
+  },
+  {
+    "customer_id": "CUST-8B2C57BC",
+    "name": "Jason Johnson",
+    "age": 75,
+    "occupation": "Engineer",
+    "annual_income": 86064.94,
+    "risk_rating": "Medium",
+    "country": "Falkland Islands (Malvinas)",
+    "account_created": "2024-03-09"
+  },
+  {
+    "customer_id": "CUST-9014B41D",
+    "name": "Mary Fuentes",
+    "age": 30,
+    "occupation": "Engineer",
+    "annual_income": 150881.84,
+    "risk_rating": "Medium",
+    "country": "Holy See (Vatican City State)",
+    "account_created": "2025-06-14"
+  },
+  {
+    "customer_id": "CUST-BA1737A3",
+    "name": "Gregory Ayala",
+    "age": 36,
+    "occupation": "Engineer",
+    "annual_income": 130473.4,
+    "risk_rating": "Medium",
+    "country": "Andorra",
+    "account_created": "2022-10-10"
+  },
+  {
+    "customer_id": "CUST-EA5EB4E8",
+    "name": "Jeremiah Lee",
+    "age": 57,
+    "occupation": "Unemployed",
+    "annual_income": 154338.4,
+    "risk_rating": "Low",
+    "country": "Gabon",
+    "account_created": "2024-06-23"
+  },
+  {
+    "customer_id": "CUST-739C9DC8",
+    "name": "Carly Travis",
+    "age": 44,
+    "occupation": "Engineer",
+    "annual_income": 94748.05,
+    "risk_rating": "High",
+    "country": "Tanzania",
+    "account_created": "2023-09-24"
+  },
+  {
+    "customer_id": "CUST-41983CDF",
+    "name": "Dr. James Waters",
+    "age": 79,
+    "occupation": "Unemployed",
+    "annual_income": 131948.84,
+    "risk_rating": "High",
+    "country": "Gibraltar",
+    "account_created": "2025-01-29"
+  },
+  {
+    "customer_id": "CUST-A8B3F185",
+    "name": "Edward Melton",
+    "age": 66,
+    "occupation": "Business Owner",
+    "annual_income": 26774.86,
+    "risk_rating": "Medium",
+    "country": "Reunion",
+    "account_created": "2025-05-22"
+  },
+  {
+    "customer_id": "CUST-1CF4D0B0",
+    "name": "Margaret Potter",
+    "age": 19,
+    "occupation": "Student",
+    "annual_income": 32755.78,
+    "risk_rating": "Medium",
+    "country": "Tokelau",
+    "account_created": "2025-08-29"
+  },
+  {
+    "customer_id": "CUST-63A75D48",
+    "name": "Melissa Adams",
+    "age": 20,
+    "occupation": "Engineer",
+    "annual_income": 68322.91,
+    "risk_rating": "High",
+    "country": "Albania",
+    "account_created": "2023-03-25"
+  },
+  {
+    "customer_id": "CUST-23141E45",
+    "name": "Suzanne Martin",
+    "age": 63,
+    "occupation": "Business Owner",
+    "annual_income": 81426.99,
+    "risk_rating": "Low",
+    "country": "Rwanda",
+    "account_created": "2024-06-30"
+  },
+  {
+    "customer_id": "CUST-737498B5",
+    "name": "Matthew Stevens",
+    "age": 30,
+    "occupation": "Student",
+    "annual_income": 157664.76,
+    "risk_rating": "Medium",
+    "country": "Turks and Caicos Islands",
+    "account_created": "2023-05-23"
+  },
+  {
+    "customer_id": "CUST-0931DB50",
+    "name": "Katelyn Gill",
+    "age": 57,
+    "occupation": "Artist",
+    "annual_income": 93593.96,
+    "risk_rating": "Medium",
+    "country": "Cape Verde",
+    "account_created": "2021-03-17"
+  },
+  {
+    "customer_id": "CUST-6D2A9ADE",
+    "name": "Pamela Harrell",
+    "age": 37,
+    "occupation": "Business Owner",
+    "annual_income": 177702.88,
+    "risk_rating": "Medium",
+    "country": "Croatia",
+    "account_created": "2024-12-25"
+  },
+  {
+    "customer_id": "CUST-772A29A4",
+    "name": "Jonathan Jacobs",
+    "age": 87,
+    "occupation": "Student",
+    "annual_income": 62247.04,
+    "risk_rating": "High",
+    "country": "American Samoa",
+    "account_created": "2024-03-22"
+  },
+  {
+    "customer_id": "CUST-31D76C8C",
+    "name": "Garrett Wright",
+    "age": 79,
+    "occupation": "Engineer",
+    "annual_income": 151246.1,
+    "risk_rating": "Medium",
+    "country": "Nicaragua",
+    "account_created": "2023-05-01"
+  },
+  {
+    "customer_id": "CUST-69ED0C1C",
+    "name": "Judith Gomez",
+    "age": 76,
+    "occupation": "Unemployed",
+    "annual_income": 129266.2,
+    "risk_rating": "Medium",
+    "country": "Greece",
+    "account_created": "2024-04-27"
+  },
+  {
+    "customer_id": "CUST-A2B64561",
+    "name": "Janice Montoya",
+    "age": 58,
+    "occupation": "Student",
+    "annual_income": 35272.26,
+    "risk_rating": "Low",
+    "country": "Solomon Islands",
+    "account_created": "2025-07-14"
+  },
+  {
+    "customer_id": "CUST-58A3800A",
+    "name": "Gloria Morales",
+    "age": 43,
+    "occupation": "Business Owner",
+    "annual_income": 157849.11,
+    "risk_rating": "Low",
+    "country": "French Guiana",
+    "account_created": "2023-07-23"
+  },
+  {
+    "customer_id": "CUST-6B144434",
+    "name": "Jill Camacho",
+    "age": 66,
+    "occupation": "Artist",
+    "annual_income": 16221.41,
+    "risk_rating": "Medium",
+    "country": "Niue",
+    "account_created": "2026-01-26"
+  },
+  {
+    "customer_id": "CUST-A922492E",
+    "name": "Edward Wright",
+    "age": 48,
+    "occupation": "Student",
+    "annual_income": 169336.98,
+    "risk_rating": "Low",
+    "country": "Sierra Leone",
+    "account_created": "2022-10-12"
+  },
+  {
+    "customer_id": "CUST-17E5FC31",
+    "name": "Nicholas Morris",
+    "age": 81,
+    "occupation": "Doctor",
+    "annual_income": 91793.87,
+    "risk_rating": "Low",
+    "country": "Thailand",
+    "account_created": "2023-10-09"
+  },
+  {
+    "customer_id": "CUST-E45C059A",
+    "name": "Taylor Chavez",
+    "age": 45,
+    "occupation": "Engineer",
+    "annual_income": 23006.9,
+    "risk_rating": "Medium",
+    "country": "Thailand",
+    "account_created": "2024-12-01"
+  },
+  {
+    "customer_id": "CUST-A840EDBE",
+    "name": "Andrew Martin",
+    "age": 66,
+    "occupation": "Business Owner",
+    "annual_income": 48256.31,
+    "risk_rating": "Medium",
+    "country": "Cuba",
+    "account_created": "2023-10-24"
+  },
+  {
+    "customer_id": "CUST-9D51AEE8",
+    "name": "Tom Strickland",
+    "age": 39,
+    "occupation": "Artist",
+    "annual_income": 142985.75,
+    "risk_rating": "High",
+    "country": "Azerbaijan",
+    "account_created": "2024-03-13"
+  },
+  {
+    "customer_id": "CUST-E022BA49",
+    "name": "Diana Hunt",
+    "age": 53,
+    "occupation": "Student",
+    "annual_income": 137231.08,
+    "risk_rating": "Low",
+    "country": "Chile",
+    "account_created": "2024-01-04"
+  },
+  {
+    "customer_id": "CUST-9278329D",
+    "name": "Lee Ramirez",
+    "age": 77,
+    "occupation": "Engineer",
+    "annual_income": 100471.43,
+    "risk_rating": "Medium",
+    "country": "Kiribati",
+    "account_created": "2025-03-03"
+  },
+  {
+    "customer_id": "CUST-A03117AB",
+    "name": "Edward Garcia",
+    "age": 42,
+    "occupation": "Doctor",
+    "annual_income": 41106.98,
+    "risk_rating": "Medium",
+    "country": "Turks and Caicos Islands",
+    "account_created": "2022-11-18"
+  },
+  {
+    "customer_id": "CUST-B509B21C",
+    "name": "Sara Porter",
+    "age": 82,
+    "occupation": "Unemployed",
+    "annual_income": 92562.33,
+    "risk_rating": "Low",
+    "country": "Poland",
+    "account_created": "2024-08-12"
+  },
+  {
+    "customer_id": "CUST-99437888",
+    "name": "Dustin Henderson",
+    "age": 73,
+    "occupation": "Business Owner",
+    "annual_income": 163486.04,
+    "risk_rating": "Low",
+    "country": "Bermuda",
+    "account_created": "2022-07-22"
+  },
+  {
+    "customer_id": "CUST-EFB47961",
+    "name": "Edward Thompson",
+    "age": 89,
+    "occupation": "Business Owner",
+    "annual_income": 76528.69,
+    "risk_rating": "High",
+    "country": "Malawi",
+    "account_created": "2021-07-31"
+  },
+  {
+    "customer_id": "CUST-BDE65B9F",
+    "name": "Nathan Jordan",
+    "age": 81,
+    "occupation": "Engineer",
+    "annual_income": 178190.34,
+    "risk_rating": "Low",
+    "country": "Guam",
+    "account_created": "2022-09-21"
+  },
+  {
+    "customer_id": "CUST-A75CDAA2",
+    "name": "Dean Cunningham",
+    "age": 38,
+    "occupation": "Doctor",
+    "annual_income": 129235.87,
+    "risk_rating": "Medium",
+    "country": "Trinidad and Tobago",
+    "account_created": "2025-09-08"
+  },
+  {
+    "customer_id": "CUST-AE242765",
+    "name": "Jacob Moreno",
+    "age": 26,
+    "occupation": "Doctor",
+    "annual_income": 77964.84,
+    "risk_rating": "High",
+    "country": "Lebanon",
+    "account_created": "2022-10-08"
+  },
+  {
+    "customer_id": "CUST-04C5E26C",
+    "name": "Alison Estrada",
+    "age": 34,
+    "occupation": "Artist",
+    "annual_income": 14710.7,
+    "risk_rating": "High",
+    "country": "Netherlands Antilles",
+    "account_created": "2022-05-21"
+  },
+  {
+    "customer_id": "CUST-60A13951",
+    "name": "Shawn Cruz",
+    "age": 60,
+    "occupation": "Student",
+    "annual_income": 42056.64,
+    "risk_rating": "Low",
+    "country": "Dominica",
+    "account_created": "2024-10-04"
+  },
+  {
+    "customer_id": "CUST-F8F96CB0",
+    "name": "Suzanne Brown",
+    "age": 62,
+    "occupation": "Business Owner",
+    "annual_income": 113481.61,
+    "risk_rating": "Low",
+    "country": "Cuba",
+    "account_created": "2021-08-19"
+  },
+  {
+    "customer_id": "CUST-36B2D9A8",
+    "name": "Beth Hill",
+    "age": 54,
+    "occupation": "Engineer",
+    "annual_income": 54609.67,
+    "risk_rating": "Low",
+    "country": "India",
+    "account_created": "2022-03-21"
+  },
+  {
+    "customer_id": "CUST-8B12EB2B",
+    "name": "Tracy Brown",
+    "age": 38,
+    "occupation": "Unemployed",
+    "annual_income": 189796.41,
+    "risk_rating": "Low",
+    "country": "New Caledonia",
+    "account_created": "2024-10-20"
+  },
+  {
+    "customer_id": "CUST-7AEFF45C",
+    "name": "Erika Avila",
+    "age": 42,
+    "occupation": "Business Owner",
+    "annual_income": 199662.83,
+    "risk_rating": "High",
+    "country": "Anguilla",
+    "account_created": "2021-04-18"
+  },
+  {
+    "customer_id": "CUST-3B584801",
+    "name": "Jason Santos",
+    "age": 75,
+    "occupation": "Business Owner",
+    "annual_income": 80718.07,
+    "risk_rating": "High",
+    "country": "Colombia",
+    "account_created": "2023-10-15"
+  },
+  {
+    "customer_id": "CUST-1AA3EC0D",
+    "name": "Robert Lopez",
+    "age": 56,
+    "occupation": "Business Owner",
+    "annual_income": 121736.86,
+    "risk_rating": "Medium",
+    "country": "Serbia",
+    "account_created": "2025-03-18"
+  },
+  {
+    "customer_id": "CUST-1CD8CB62",
+    "name": "Paula Brown",
+    "age": 64,
+    "occupation": "Engineer",
+    "annual_income": 84301.9,
+    "risk_rating": "Low",
+    "country": "Uzbekistan",
+    "account_created": "2023-04-24"
+  },
+  {
+    "customer_id": "CUST-B0F24AAD",
+    "name": "Isabel Snyder",
+    "age": 57,
+    "occupation": "Engineer",
+    "annual_income": 96755.27,
+    "risk_rating": "Low",
+    "country": "Uganda",
+    "account_created": "2024-06-22"
+  },
+  {
+    "customer_id": "CUST-3EEE23CC",
+    "name": "Jason Mcintyre",
+    "age": 30,
+    "occupation": "Artist",
+    "annual_income": 62889.17,
+    "risk_rating": "Medium",
+    "country": "Greenland",
+    "account_created": "2025-07-14"
+  },
+  {
+    "customer_id": "CUST-6CE627B1",
+    "name": "Matthew Church",
+    "age": 71,
+    "occupation": "Student",
+    "annual_income": 45385.63,
+    "risk_rating": "Low",
+    "country": "United States of America",
+    "account_created": "2025-09-24"
+  },
+  {
+    "customer_id": "CUST-29DEFD9E",
+    "name": "Yolanda Carlson",
+    "age": 64,
+    "occupation": "Artist",
+    "annual_income": 120061.1,
+    "risk_rating": "Low",
+    "country": "Korea",
+    "account_created": "2026-01-17"
+  },
+  {
+    "customer_id": "CUST-3CB3D9BA",
+    "name": "Robert Smith",
+    "age": 54,
+    "occupation": "Doctor",
+    "annual_income": 10187.64,
+    "risk_rating": "High",
+    "country": "Saint Helena",
+    "account_created": "2022-02-03"
+  },
+  {
+    "customer_id": "CUST-33CDCD78",
+    "name": "Breanna Lane",
+    "age": 64,
+    "occupation": "Doctor",
+    "annual_income": 52824.5,
+    "risk_rating": "High",
+    "country": "Norfolk Island",
+    "account_created": "2024-08-01"
+  },
+  {
+    "customer_id": "CUST-60880038",
+    "name": "Heather Shepard",
+    "age": 67,
+    "occupation": "Engineer",
+    "annual_income": 191966.74,
+    "risk_rating": "Low",
+    "country": "Korea",
+    "account_created": "2025-05-03"
+  },
+  {
+    "customer_id": "CUST-BB5F8605",
+    "name": "Dustin Benitez",
+    "age": 24,
+    "occupation": "Artist",
+    "annual_income": 164201.35,
+    "risk_rating": "Medium",
+    "country": "Saint Martin",
+    "account_created": "2024-01-11"
+  },
+  {
+    "customer_id": "CUST-18345E55",
+    "name": "Cindy Douglas",
+    "age": 21,
+    "occupation": "Artist",
+    "annual_income": 61599.12,
+    "risk_rating": "High",
+    "country": "Palestinian Territory",
+    "account_created": "2022-04-14"
+  },
+  {
+    "customer_id": "CUST-2E7EB51C",
+    "name": "Latoya Parker",
+    "age": 45,
+    "occupation": "Doctor",
+    "annual_income": 15257.54,
+    "risk_rating": "Medium",
+    "country": "Saudi Arabia",
+    "account_created": "2024-05-17"
+  },
+  {
+    "customer_id": "CUST-40D828E7",
+    "name": "Richard Burgess",
+    "age": 81,
+    "occupation": "Engineer",
+    "annual_income": 172037.88,
+    "risk_rating": "High",
+    "country": "Botswana",
+    "account_created": "2022-06-21"
+  },
+  {
+    "customer_id": "CUST-87AC6E7E",
+    "name": "Matthew Miller",
+    "age": 90,
+    "occupation": "Engineer",
+    "annual_income": 71015.86,
+    "risk_rating": "Medium",
+    "country": "Fiji",
+    "account_created": "2026-02-09"
+  },
+  {
+    "customer_id": "CUST-B87FB9CF",
+    "name": "Jesse Casey",
+    "age": 19,
+    "occupation": "Student",
+    "annual_income": 148198.54,
+    "risk_rating": "Medium",
+    "country": "Mexico",
+    "account_created": "2025-11-13"
+  },
+  {
+    "customer_id": "CUST-FE7EF847",
+    "name": "Melissa Davies",
+    "age": 44,
+    "occupation": "Doctor",
+    "annual_income": 67389.62,
+    "risk_rating": "High",
+    "country": "Belgium",
+    "account_created": "2023-09-26"
+  },
+  {
+    "customer_id": "CUST-75BB9BF2",
+    "name": "Gary Smith",
+    "age": 57,
+    "occupation": "Business Owner",
+    "annual_income": 59765.39,
+    "risk_rating": "High",
+    "country": "Latvia",
+    "account_created": "2022-02-21"
+  },
+  {
+    "customer_id": "CUST-9A04B15B",
+    "name": "Amber Smith",
+    "age": 89,
+    "occupation": "Unemployed",
+    "annual_income": 49696.94,
+    "risk_rating": "High",
+    "country": "Ethiopia",
+    "account_created": "2025-01-27"
+  },
+  {
+    "customer_id": "CUST-7AC74017",
+    "name": "Patrick Jackson",
+    "age": 69,
+    "occupation": "Engineer",
+    "annual_income": 186812.07,
+    "risk_rating": "Medium",
+    "country": "Zimbabwe",
+    "account_created": "2025-07-20"
+  },
+  {
+    "customer_id": "CUST-5FCCCB05",
+    "name": "Debra Spencer",
+    "age": 38,
+    "occupation": "Doctor",
+    "annual_income": 153862.27,
+    "risk_rating": "High",
+    "country": "Vietnam",
+    "account_created": "2022-08-09"
+  },
+  {
+    "customer_id": "CUST-9F90E87A",
+    "name": "Michael Parks",
+    "age": 90,
+    "occupation": "Business Owner",
+    "annual_income": 107176.42,
+    "risk_rating": "Medium",
+    "country": "Sao Tome and Principe",
+    "account_created": "2025-07-19"
+  },
+  {
+    "customer_id": "CUST-05313002",
+    "name": "Angela Sherman",
+    "age": 51,
+    "occupation": "Business Owner",
+    "annual_income": 24775.59,
+    "risk_rating": "Low",
+    "country": "Tokelau",
+    "account_created": "2024-08-11"
+  },
+  {
+    "customer_id": "CUST-5812B969",
+    "name": "Sylvia Bolton",
+    "age": 77,
+    "occupation": "Artist",
+    "annual_income": 61264.23,
+    "risk_rating": "Low",
+    "country": "Andorra",
+    "account_created": "2024-11-03"
+  },
+  {
+    "customer_id": "CUST-0362875F",
+    "name": "Barbara Hodge",
+    "age": 28,
+    "occupation": "Artist",
+    "annual_income": 112144.13,
+    "risk_rating": "High",
+    "country": "Seychelles",
+    "account_created": "2023-01-06"
+  },
+  {
+    "customer_id": "CUST-3E364B32",
+    "name": "Valerie Lee",
+    "age": 18,
+    "occupation": "Student",
+    "annual_income": 114365.71,
+    "risk_rating": "Low",
+    "country": "Saint Kitts and Nevis",
+    "account_created": "2024-11-26"
+  },
+  {
+    "customer_id": "CUST-E3A24E29",
+    "name": "Claudia Copeland",
+    "age": 31,
+    "occupation": "Artist",
+    "annual_income": 171611.37,
+    "risk_rating": "High",
+    "country": "Sierra Leone",
+    "account_created": "2021-10-24"
+  },
+  {
+    "customer_id": "CUST-4809428E",
+    "name": "Rebecca Cox",
+    "age": 25,
+    "occupation": "Artist",
+    "annual_income": 11094.98,
+    "risk_rating": "High",
+    "country": "Mexico",
+    "account_created": "2026-01-25"
+  },
+  {
+    "customer_id": "CUST-8BF1D1BC",
+    "name": "Todd Bryant",
+    "age": 79,
+    "occupation": "Business Owner",
+    "annual_income": 24279.0,
+    "risk_rating": "High",
+    "country": "Saudi Arabia",
+    "account_created": "2025-03-17"
+  },
+  {
+    "customer_id": "CUST-042D08C3",
+    "name": "Marcus Fleming",
+    "age": 38,
+    "occupation": "Student",
+    "annual_income": 186602.32,
+    "risk_rating": "Low",
+    "country": "Burkina Faso",
+    "account_created": "2023-01-31"
+  },
+  {
+    "customer_id": "CUST-F3808E76",
+    "name": "Patrick Hernandez",
+    "age": 56,
+    "occupation": "Engineer",
+    "annual_income": 32439.93,
+    "risk_rating": "Low",
+    "country": "Portugal",
+    "account_created": "2023-06-13"
+  },
+  {
+    "customer_id": "CUST-C1336F64",
+    "name": "Claire Garner",
+    "age": 30,
+    "occupation": "Unemployed",
+    "annual_income": 81552.06,
+    "risk_rating": "Medium",
+    "country": "Hong Kong",
+    "account_created": "2024-02-11"
+  },
+  {
+    "customer_id": "CUST-6EF4B051",
+    "name": "Daniel Davis",
+    "age": 55,
+    "occupation": "Doctor",
+    "annual_income": 17528.79,
+    "risk_rating": "Low",
+    "country": "Western Sahara",
+    "account_created": "2025-08-28"
+  },
+  {
+    "customer_id": "CUST-B2064CA2",
+    "name": "Margaret Rhodes",
+    "age": 47,
+    "occupation": "Engineer",
+    "annual_income": 112623.16,
+    "risk_rating": "Medium",
+    "country": "Liechtenstein",
+    "account_created": "2024-12-26"
+  },
+  {
+    "customer_id": "CUST-89E4C731",
+    "name": "Ruth Stewart",
+    "age": 21,
+    "occupation": "Engineer",
+    "annual_income": 149650.85,
+    "risk_rating": "Medium",
+    "country": "Ireland",
+    "account_created": "2024-07-15"
+  },
+  {
+    "customer_id": "CUST-C960EDB2",
+    "name": "Marc Gordon PhD",
+    "age": 52,
+    "occupation": "Doctor",
+    "annual_income": 24964.29,
+    "risk_rating": "Low",
+    "country": "Saint Vincent and the Grenadines",
+    "account_created": "2023-08-25"
+  },
+  {
+    "customer_id": "CUST-705A779D",
+    "name": "Daniel Pena",
+    "age": 62,
+    "occupation": "Unemployed",
+    "annual_income": 127772.98,
+    "risk_rating": "Low",
+    "country": "Bahrain",
+    "account_created": "2024-01-08"
+  },
+  {
+    "customer_id": "CUST-3D88F7E9",
+    "name": "Kristina Morales",
+    "age": 57,
+    "occupation": "Student",
+    "annual_income": 115801.56,
+    "risk_rating": "Medium",
+    "country": "Rwanda",
+    "account_created": "2021-12-27"
+  },
+  {
+    "customer_id": "CUST-EB1D0EEE",
+    "name": "Mario Brown",
+    "age": 50,
+    "occupation": "Artist",
+    "annual_income": 20675.41,
+    "risk_rating": "High",
+    "country": "Timor-Leste",
+    "account_created": "2024-09-25"
+  },
+  {
+    "customer_id": "CUST-CFE418FA",
+    "name": "Brian Strong",
+    "age": 31,
+    "occupation": "Unemployed",
+    "annual_income": 36738.26,
+    "risk_rating": "High",
+    "country": "Paraguay",
+    "account_created": "2025-11-04"
+  },
+  {
+    "customer_id": "CUST-B4EE4449",
+    "name": "Eugene Moreno",
+    "age": 81,
+    "occupation": "Unemployed",
+    "annual_income": 121372.65,
+    "risk_rating": "High",
+    "country": "Kiribati",
+    "account_created": "2021-10-06"
+  },
+  {
+    "customer_id": "CUST-7DE67EBC",
+    "name": "Kyle Tanner",
+    "age": 37,
+    "occupation": "Unemployed",
+    "annual_income": 59642.6,
+    "risk_rating": "Medium",
+    "country": "Kyrgyz Republic",
+    "account_created": "2022-07-22"
+  },
+  {
+    "customer_id": "CUST-EA72C855",
+    "name": "Sara Petersen",
+    "age": 32,
+    "occupation": "Business Owner",
+    "annual_income": 100341.85,
+    "risk_rating": "Medium",
+    "country": "Pitcairn Islands",
+    "account_created": "2021-03-08"
+  },
+  {
+    "customer_id": "CUST-7175E4F7",
+    "name": "Anthony Crawford",
+    "age": 51,
+    "occupation": "Engineer",
+    "annual_income": 91741.65,
+    "risk_rating": "Low",
+    "country": "Marshall Islands",
+    "account_created": "2021-02-12"
+  },
+  {
+    "customer_id": "CUST-5B47AC50",
+    "name": "Shannon Walker",
+    "age": 72,
+    "occupation": "Artist",
+    "annual_income": 195330.29,
+    "risk_rating": "Low",
+    "country": "United States Minor Outlying Islands",
+    "account_created": "2021-10-03"
+  },
+  {
+    "customer_id": "CUST-DFD1B7A2",
+    "name": "Stephen Miller",
+    "age": 76,
+    "occupation": "Engineer",
+    "annual_income": 88119.77,
+    "risk_rating": "Low",
+    "country": "Ghana",
+    "account_created": "2025-01-25"
+  },
+  {
+    "customer_id": "CUST-16C7DA05",
+    "name": "Andrew Coleman",
+    "age": 41,
+    "occupation": "Engineer",
+    "annual_income": 26462.94,
+    "risk_rating": "Medium",
+    "country": "Cape Verde",
+    "account_created": "2025-12-09"
+  },
+  {
+    "customer_id": "CUST-8612545A",
+    "name": "Danielle Evans",
+    "age": 69,
+    "occupation": "Unemployed",
+    "annual_income": 34493.86,
+    "risk_rating": "Low",
+    "country": "Central African Republic",
+    "account_created": "2025-01-17"
+  },
+  {
+    "customer_id": "CUST-6230BB0F",
+    "name": "Michael Palmer",
+    "age": 71,
+    "occupation": "Unemployed",
+    "annual_income": 171773.15,
+    "risk_rating": "Medium",
+    "country": "Holy See (Vatican City State)",
+    "account_created": "2022-09-17"
+  },
+  {
+    "customer_id": "CUST-3BEF3B02",
+    "name": "Susan Smith",
+    "age": 54,
+    "occupation": "Business Owner",
+    "annual_income": 20888.61,
+    "risk_rating": "Low",
+    "country": "Philippines",
+    "account_created": "2022-01-31"
+  },
+  {
+    "customer_id": "CUST-D0B3687F",
+    "name": "Vicki Peterson",
+    "age": 86,
+    "occupation": "Student",
+    "annual_income": 166903.09,
+    "risk_rating": "Medium",
+    "country": "Hungary",
+    "account_created": "2024-04-23"
+  },
+  {
+    "customer_id": "CUST-4A7D478D",
+    "name": "James Thomas",
+    "age": 59,
+    "occupation": "Artist",
+    "annual_income": 143830.45,
+    "risk_rating": "Medium",
+    "country": "Mauritius",
+    "account_created": "2022-08-08"
+  },
+  {
+    "customer_id": "CUST-7CF41235",
+    "name": "Cathy Jackson",
+    "age": 21,
+    "occupation": "Business Owner",
+    "annual_income": 63775.63,
+    "risk_rating": "Medium",
+    "country": "Palau",
+    "account_created": "2024-02-04"
+  },
+  {
+    "customer_id": "CUST-0E8D167A",
+    "name": "Laura Ferrell",
+    "age": 39,
+    "occupation": "Student",
+    "annual_income": 172086.14,
+    "risk_rating": "Low",
+    "country": "Cocos (Keeling) Islands",
+    "account_created": "2024-12-06"
+  },
+  {
+    "customer_id": "CUST-8AB76D70",
+    "name": "Kristin Jones",
+    "age": 21,
+    "occupation": "Business Owner",
+    "annual_income": 106809.84,
+    "risk_rating": "Low",
+    "country": "Russian Federation",
+    "account_created": "2025-01-17"
+  },
+  {
+    "customer_id": "CUST-7A427FE5",
+    "name": "Jessica Estrada",
+    "age": 30,
+    "occupation": "Engineer",
+    "annual_income": 80316.51,
+    "risk_rating": "High",
+    "country": "Marshall Islands",
+    "account_created": "2021-05-09"
+  },
+  {
+    "customer_id": "CUST-61E36176",
+    "name": "Michelle Benitez",
+    "age": 65,
+    "occupation": "Business Owner",
+    "annual_income": 15415.06,
+    "risk_rating": "Low",
+    "country": "Guinea-Bissau",
+    "account_created": "2021-06-18"
+  },
+  {
+    "customer_id": "CUST-F6D6383E",
+    "name": "Kimberly Ortiz",
+    "age": 90,
+    "occupation": "Doctor",
+    "annual_income": 182730.59,
+    "risk_rating": "Medium",
+    "country": "Mozambique",
+    "account_created": "2022-02-04"
+  },
+  {
+    "customer_id": "CUST-2DCDA754",
+    "name": "Thomas Espinoza",
+    "age": 76,
+    "occupation": "Engineer",
+    "annual_income": 173199.1,
+    "risk_rating": "Medium",
+    "country": "Serbia",
+    "account_created": "2025-04-16"
+  },
+  {
+    "customer_id": "CUST-243D2576",
+    "name": "Denise Hopkins",
+    "age": 46,
+    "occupation": "Unemployed",
+    "annual_income": 22460.93,
+    "risk_rating": "Low",
+    "country": "Bermuda",
+    "account_created": "2024-08-12"
+  },
+  {
+    "customer_id": "CUST-C738327F",
+    "name": "Laura Mcintosh",
+    "age": 39,
+    "occupation": "Artist",
+    "annual_income": 42137.21,
+    "risk_rating": "High",
+    "country": "Korea",
+    "account_created": "2023-03-27"
+  },
+  {
+    "customer_id": "CUST-513F409E",
+    "name": "Robert Hardin",
+    "age": 88,
+    "occupation": "Business Owner",
+    "annual_income": 138421.33,
+    "risk_rating": "Medium",
+    "country": "American Samoa",
+    "account_created": "2024-12-12"
+  },
+  {
+    "customer_id": "CUST-DBDFE4E8",
+    "name": "John Wilson",
+    "age": 40,
+    "occupation": "Student",
+    "annual_income": 191031.94,
+    "risk_rating": "Medium",
+    "country": "Tanzania",
+    "account_created": "2026-01-24"
+  },
+  {
+    "customer_id": "CUST-621A151D",
+    "name": "Leslie Davis",
+    "age": 48,
+    "occupation": "Business Owner",
+    "annual_income": 38458.3,
+    "risk_rating": "Medium",
+    "country": "Monaco",
+    "account_created": "2021-06-09"
+  },
+  {
+    "customer_id": "CUST-4B436F97",
+    "name": "Kimberly Cross",
+    "age": 81,
+    "occupation": "Student",
+    "annual_income": 104410.63,
+    "risk_rating": "Medium",
+    "country": "Niger",
+    "account_created": "2023-05-01"
+  },
+  {
+    "customer_id": "CUST-16E3BCC6",
+    "name": "Jeffery Garcia",
+    "age": 28,
+    "occupation": "Unemployed",
+    "annual_income": 111135.8,
+    "risk_rating": "High",
+    "country": "Estonia",
+    "account_created": "2024-10-12"
+  },
+  {
+    "customer_id": "CUST-B0DFEA95",
+    "name": "Evan Allen",
+    "age": 76,
+    "occupation": "Student",
+    "annual_income": 138307.3,
+    "risk_rating": "High",
+    "country": "Slovakia (Slovak Republic)",
+    "account_created": "2024-06-16"
+  },
+  {
+    "customer_id": "CUST-96C9DE12",
+    "name": "Jesse Smith",
+    "age": 52,
+    "occupation": "Unemployed",
+    "annual_income": 179869.74,
+    "risk_rating": "High",
+    "country": "Oman",
+    "account_created": "2021-12-20"
+  },
+  {
+    "customer_id": "CUST-EBEEBE9D",
+    "name": "Jennifer Hampton",
+    "age": 50,
+    "occupation": "Business Owner",
+    "annual_income": 161804.51,
+    "risk_rating": "Medium",
+    "country": "Guernsey",
+    "account_created": "2023-02-08"
+  },
+  {
+    "customer_id": "CUST-0B49DB63",
+    "name": "Daniel Douglas",
+    "age": 62,
+    "occupation": "Artist",
+    "annual_income": 15921.1,
+    "risk_rating": "High",
+    "country": "French Guiana",
+    "account_created": "2022-04-06"
+  },
+  {
+    "customer_id": "CUST-FF22F107",
+    "name": "Russell Warner",
+    "age": 54,
+    "occupation": "Unemployed",
+    "annual_income": 120516.37,
+    "risk_rating": "Medium",
+    "country": "Israel",
+    "account_created": "2021-05-21"
+  },
+  {
+    "customer_id": "CUST-A7A71CE7",
+    "name": "Dustin Chambers",
+    "age": 37,
+    "occupation": "Unemployed",
+    "annual_income": 25920.06,
+    "risk_rating": "High",
+    "country": "Monaco",
+    "account_created": "2023-04-17"
+  },
+  {
+    "customer_id": "CUST-0FBCD6A6",
+    "name": "Rodney Phillips",
+    "age": 39,
+    "occupation": "Engineer",
+    "annual_income": 121822.76,
+    "risk_rating": "High",
+    "country": "Greenland",
+    "account_created": "2025-10-23"
+  },
+  {
+    "customer_id": "CUST-6BAE8514",
+    "name": "Melissa Soto",
+    "age": 52,
+    "occupation": "Business Owner",
+    "annual_income": 26285.9,
+    "risk_rating": "High",
+    "country": "Papua New Guinea",
+    "account_created": "2025-10-23"
+  },
+  {
+    "customer_id": "CUST-6CF86DFB",
+    "name": "Madison Rogers",
+    "age": 27,
+    "occupation": "Artist",
+    "annual_income": 143141.54,
+    "risk_rating": "Medium",
+    "country": "Bermuda",
+    "account_created": "2025-11-05"
+  },
+  {
+    "customer_id": "CUST-41A60C81",
+    "name": "Leonard Davis",
+    "age": 60,
+    "occupation": "Student",
+    "annual_income": 197354.94,
+    "risk_rating": "High",
+    "country": "Samoa",
+    "account_created": "2024-01-24"
+  },
+  {
+    "customer_id": "CUST-B0C3BB82",
+    "name": "Larry Gutierrez",
+    "age": 23,
+    "occupation": "Doctor",
+    "annual_income": 100955.25,
+    "risk_rating": "Medium",
+    "country": "French Guiana",
+    "account_created": "2024-03-03"
+  },
+  {
+    "customer_id": "CUST-714B29C2",
+    "name": "Joseph Rojas",
+    "age": 46,
+    "occupation": "Student",
+    "annual_income": 198924.59,
+    "risk_rating": "High",
+    "country": "Saint Kitts and Nevis",
+    "account_created": "2023-09-07"
+  },
+  {
+    "customer_id": "CUST-62A8C69B",
+    "name": "Kathryn Mullins",
+    "age": 62,
+    "occupation": "Student",
+    "annual_income": 123273.18,
+    "risk_rating": "Medium",
+    "country": "Hungary",
+    "account_created": "2023-11-23"
+  },
+  {
+    "customer_id": "CUST-7E2DCAD4",
+    "name": "Andrew Rivera",
+    "age": 78,
+    "occupation": "Student",
+    "annual_income": 124689.49,
+    "risk_rating": "Medium",
+    "country": "Comoros",
+    "account_created": "2021-10-26"
+  },
+  {
+    "customer_id": "CUST-C976CE91",
+    "name": "Tyler Mayer",
+    "age": 36,
+    "occupation": "Unemployed",
+    "annual_income": 32973.53,
+    "risk_rating": "Medium",
+    "country": "Panama",
+    "account_created": "2022-11-10"
+  },
+  {
+    "customer_id": "CUST-2AAE2469",
+    "name": "Caleb Carroll",
+    "age": 73,
+    "occupation": "Unemployed",
+    "annual_income": 113748.23,
+    "risk_rating": "Medium",
+    "country": "Sudan",
+    "account_created": "2025-07-19"
+  },
+  {
+    "customer_id": "CUST-94F855E5",
+    "name": "Michael Meyer",
+    "age": 68,
+    "occupation": "Artist",
+    "annual_income": 130140.0,
+    "risk_rating": "Low",
+    "country": "Timor-Leste",
+    "account_created": "2025-03-28"
+  },
+  {
+    "customer_id": "CUST-2C250140",
+    "name": "Jamie Berry",
+    "age": 19,
+    "occupation": "Engineer",
+    "annual_income": 17836.06,
+    "risk_rating": "Low",
+    "country": "Svalbard & Jan Mayen Islands",
+    "account_created": "2025-10-02"
+  },
+  {
+    "customer_id": "CUST-2EDB0104",
+    "name": "Dr. Angela Chambers",
+    "age": 26,
+    "occupation": "Business Owner",
+    "annual_income": 116523.95,
+    "risk_rating": "Medium",
+    "country": "Cameroon",
+    "account_created": "2021-10-25"
+  },
+  {
+    "customer_id": "CUST-5B09CD8A",
+    "name": "Kimberly Steele",
+    "age": 69,
+    "occupation": "Doctor",
+    "annual_income": 199663.59,
+    "risk_rating": "Low",
+    "country": "Saint Pierre and Miquelon",
+    "account_created": "2025-10-10"
+  },
+  {
+    "customer_id": "CUST-EC3F2FF9",
+    "name": "William Thomas",
+    "age": 56,
+    "occupation": "Unemployed",
+    "annual_income": 32927.17,
+    "risk_rating": "High",
+    "country": "Indonesia",
+    "account_created": "2024-12-17"
+  },
+  {
+    "customer_id": "CUST-814B766E",
+    "name": "Leah Little",
+    "age": 77,
+    "occupation": "Doctor",
+    "annual_income": 98364.02,
+    "risk_rating": "Medium",
+    "country": "North Macedonia",
+    "account_created": "2024-07-28"
+  },
+  {
+    "customer_id": "CUST-34880594",
+    "name": "Ashley Ruiz",
+    "age": 26,
+    "occupation": "Business Owner",
+    "annual_income": 60773.08,
+    "risk_rating": "Low",
+    "country": "Northern Mariana Islands",
+    "account_created": "2021-11-02"
+  },
+  {
+    "customer_id": "CUST-1FD1BAB6",
+    "name": "Miguel Espinoza",
+    "age": 87,
+    "occupation": "Artist",
+    "annual_income": 159744.89,
+    "risk_rating": "High",
+    "country": "Uruguay",
+    "account_created": "2022-01-31"
+  },
+  {
+    "customer_id": "CUST-BDB724DA",
+    "name": "Alison Olson",
+    "age": 65,
+    "occupation": "Artist",
+    "annual_income": 47355.04,
+    "risk_rating": "Low",
+    "country": "Central African Republic",
+    "account_created": "2023-04-02"
+  },
+  {
+    "customer_id": "CUST-C66D1922",
+    "name": "Charles Gutierrez",
+    "age": 22,
+    "occupation": "Doctor",
+    "annual_income": 107701.32,
+    "risk_rating": "Low",
+    "country": "Cameroon",
+    "account_created": "2021-08-19"
+  },
+  {
+    "customer_id": "CUST-31F38EC2",
+    "name": "Jennifer Wilson",
+    "age": 64,
+    "occupation": "Student",
+    "annual_income": 56453.07,
+    "risk_rating": "Medium",
+    "country": "Madagascar",
+    "account_created": "2022-04-21"
+  },
+  {
+    "customer_id": "CUST-91DB9298",
+    "name": "Joshua Parsons",
+    "age": 22,
+    "occupation": "Engineer",
+    "annual_income": 164418.89,
+    "risk_rating": "Low",
+    "country": "Anguilla",
+    "account_created": "2025-09-13"
+  },
+  {
+    "customer_id": "CUST-CD870023",
+    "name": "Marie Hernandez",
+    "age": 72,
+    "occupation": "Unemployed",
+    "annual_income": 179002.78,
+    "risk_rating": "Low",
+    "country": "Montserrat",
+    "account_created": "2022-09-02"
+  },
+  {
+    "customer_id": "CUST-F644FA88",
+    "name": "Elizabeth Williams",
+    "age": 51,
+    "occupation": "Business Owner",
+    "annual_income": 11706.17,
+    "risk_rating": "High",
+    "country": "Northern Mariana Islands",
+    "account_created": "2023-04-09"
+  },
+  {
+    "customer_id": "CUST-9E0051C8",
+    "name": "Michael White",
+    "age": 34,
+    "occupation": "Business Owner",
+    "annual_income": 115051.08,
+    "risk_rating": "Medium",
+    "country": "Honduras",
+    "account_created": "2022-04-29"
+  },
+  {
+    "customer_id": "CUST-CF558B4D",
+    "name": "Michael Maynard",
+    "age": 26,
+    "occupation": "Student",
+    "annual_income": 188820.78,
+    "risk_rating": "High",
+    "country": "Martinique",
+    "account_created": "2022-01-24"
+  },
+  {
+    "customer_id": "CUST-65270AD9",
+    "name": "Frank Herrera",
+    "age": 51,
+    "occupation": "Doctor",
+    "annual_income": 94284.67,
+    "risk_rating": "High",
+    "country": "Zimbabwe",
+    "account_created": "2022-08-21"
+  },
+  {
+    "customer_id": "CUST-2FD56DFB",
+    "name": "Kevin Harvey",
+    "age": 22,
+    "occupation": "Student",
+    "annual_income": 51519.16,
+    "risk_rating": "Low",
+    "country": "Saint Barthelemy",
+    "account_created": "2023-01-05"
+  },
+  {
+    "customer_id": "CUST-21AF23B2",
+    "name": "Donna Alvarado",
+    "age": 27,
+    "occupation": "Engineer",
+    "annual_income": 42945.53,
+    "risk_rating": "Low",
+    "country": "France",
+    "account_created": "2023-07-13"
+  },
+  {
+    "customer_id": "CUST-D7AC4A6C",
+    "name": "Brad Adams",
+    "age": 41,
+    "occupation": "Business Owner",
+    "annual_income": 190692.09,
+    "risk_rating": "High",
+    "country": "Burkina Faso",
+    "account_created": "2022-04-22"
+  },
+  {
+    "customer_id": "CUST-D06A87D8",
+    "name": "Jamie Schwartz",
+    "age": 41,
+    "occupation": "Business Owner",
+    "annual_income": 15094.96,
+    "risk_rating": "Medium",
+    "country": "Aruba",
+    "account_created": "2025-05-04"
+  },
+  {
+    "customer_id": "CUST-A534DBC4",
+    "name": "Randall Larsen",
+    "age": 80,
+    "occupation": "Doctor",
+    "annual_income": 154845.35,
+    "risk_rating": "Low",
+    "country": "Kuwait",
+    "account_created": "2021-10-07"
+  },
+  {
+    "customer_id": "CUST-2D09AE3F",
+    "name": "Leslie Cannon",
+    "age": 82,
+    "occupation": "Doctor",
+    "annual_income": 123115.57,
+    "risk_rating": "High",
+    "country": "Bosnia and Herzegovina",
+    "account_created": "2022-04-10"
+  },
+  {
+    "customer_id": "CUST-7A8CFEDD",
+    "name": "Melissa Reeves",
+    "age": 50,
+    "occupation": "Artist",
+    "annual_income": 89837.89,
+    "risk_rating": "High",
+    "country": "Bolivia",
+    "account_created": "2025-05-22"
+  },
+  {
+    "customer_id": "CUST-FFFDCC46",
+    "name": "John Garcia",
+    "age": 30,
+    "occupation": "Engineer",
+    "annual_income": 131554.26,
+    "risk_rating": "High",
+    "country": "Antarctica (the territory South of 60 deg S)",
+    "account_created": "2022-07-22"
+  },
+  {
+    "customer_id": "CUST-6F25C487",
+    "name": "Ronald Rodriguez",
+    "age": 87,
+    "occupation": "Student",
+    "annual_income": 139414.87,
+    "risk_rating": "Medium",
+    "country": "Equatorial Guinea",
+    "account_created": "2024-06-15"
+  },
+  {
+    "customer_id": "CUST-ECD389CE",
+    "name": "Michael Norman",
+    "age": 56,
+    "occupation": "Student",
+    "annual_income": 80647.2,
+    "risk_rating": "Medium",
+    "country": "Congo",
+    "account_created": "2023-10-19"
+  },
+  {
+    "customer_id": "CUST-1A8346CE",
+    "name": "Steven Schaefer",
+    "age": 28,
+    "occupation": "Unemployed",
+    "annual_income": 61449.2,
+    "risk_rating": "High",
+    "country": "Burkina Faso",
+    "account_created": "2025-09-17"
+  },
+  {
+    "customer_id": "CUST-4FD129CF",
+    "name": "Justin Cain",
+    "age": 78,
+    "occupation": "Engineer",
+    "annual_income": 17120.34,
+    "risk_rating": "High",
+    "country": "Liechtenstein",
+    "account_created": "2024-12-28"
+  },
+  {
+    "customer_id": "CUST-85E32BBA",
+    "name": "Erin Brown",
+    "age": 66,
+    "occupation": "Business Owner",
+    "annual_income": 42397.49,
+    "risk_rating": "High",
+    "country": "Luxembourg",
+    "account_created": "2021-07-14"
+  },
+  {
+    "customer_id": "CUST-734F9224",
+    "name": "Sharon Villarreal",
+    "age": 47,
+    "occupation": "Doctor",
+    "annual_income": 41221.1,
+    "risk_rating": "High",
+    "country": "Russian Federation",
+    "account_created": "2022-10-23"
+  },
+  {
+    "customer_id": "CUST-20285E20",
+    "name": "Adam Parker",
+    "age": 39,
+    "occupation": "Unemployed",
+    "annual_income": 73558.32,
+    "risk_rating": "Low",
+    "country": "Peru",
+    "account_created": "2021-12-22"
+  },
+  {
+    "customer_id": "CUST-D00BB033",
+    "name": "Denise Roberts",
+    "age": 37,
+    "occupation": "Artist",
+    "annual_income": 132838.03,
+    "risk_rating": "High",
+    "country": "Korea",
+    "account_created": "2021-05-11"
+  },
+  {
+    "customer_id": "CUST-658DB0DA",
+    "name": "Christopher Wilson",
+    "age": 26,
+    "occupation": "Student",
+    "annual_income": 156137.65,
+    "risk_rating": "High",
+    "country": "Thailand",
+    "account_created": "2022-08-10"
+  },
+  {
+    "customer_id": "CUST-B300B584",
+    "name": "Cindy Burgess",
+    "age": 79,
+    "occupation": "Unemployed",
+    "annual_income": 15436.44,
+    "risk_rating": "Low",
+    "country": "Belarus",
+    "account_created": "2023-11-15"
+  },
+  {
+    "customer_id": "CUST-D92BCBAD",
+    "name": "Paul Kim",
+    "age": 19,
+    "occupation": "Engineer",
+    "annual_income": 166317.38,
+    "risk_rating": "High",
+    "country": "Bangladesh",
+    "account_created": "2024-10-10"
+  },
+  {
+    "customer_id": "CUST-9CF66260",
+    "name": "Michael Jones",
+    "age": 82,
+    "occupation": "Engineer",
+    "annual_income": 30996.53,
+    "risk_rating": "High",
+    "country": "Jordan",
+    "account_created": "2024-06-04"
+  },
+  {
+    "customer_id": "CUST-42D736AD",
+    "name": "Kevin Trevino",
+    "age": 47,
+    "occupation": "Business Owner",
+    "annual_income": 98250.72,
+    "risk_rating": "High",
+    "country": "Iceland",
+    "account_created": "2023-06-15"
+  },
+  {
+    "customer_id": "CUST-2F6481C4",
+    "name": "Dustin Moses",
+    "age": 42,
+    "occupation": "Student",
+    "annual_income": 54988.1,
+    "risk_rating": "Medium",
+    "country": "Gambia",
+    "account_created": "2021-07-25"
+  },
+  {
+    "customer_id": "CUST-497A1079",
+    "name": "Robin Lynch",
+    "age": 49,
+    "occupation": "Engineer",
+    "annual_income": 25062.31,
+    "risk_rating": "High",
+    "country": "Burundi",
+    "account_created": "2022-09-28"
+  },
+  {
+    "customer_id": "CUST-90BA6B09",
+    "name": "Erika Bond",
+    "age": 40,
+    "occupation": "Student",
+    "annual_income": 145907.28,
+    "risk_rating": "Low",
+    "country": "Brazil",
+    "account_created": "2025-11-06"
+  },
+  {
+    "customer_id": "CUST-2645FDA3",
+    "name": "Kristina Moore",
+    "age": 89,
+    "occupation": "Engineer",
+    "annual_income": 23530.33,
+    "risk_rating": "Medium",
+    "country": "Russian Federation",
+    "account_created": "2022-01-17"
+  },
+  {
+    "customer_id": "CUST-B9B4A372",
+    "name": "Edward Goodwin",
+    "age": 19,
+    "occupation": "Engineer",
+    "annual_income": 150563.01,
+    "risk_rating": "High",
+    "country": "Latvia",
+    "account_created": "2024-02-11"
+  },
+  {
+    "customer_id": "CUST-44B01F8B",
+    "name": "Ricky Rodriguez",
+    "age": 31,
+    "occupation": "Student",
+    "annual_income": 70950.9,
+    "risk_rating": "Low",
+    "country": "Bouvet Island (Bouvetoya)",
+    "account_created": "2025-08-08"
+  },
+  {
+    "customer_id": "CUST-E53F6FBD",
+    "name": "Andrew Craig",
+    "age": 52,
+    "occupation": "Engineer",
+    "annual_income": 101336.05,
+    "risk_rating": "Low",
+    "country": "Oman",
+    "account_created": "2023-05-16"
+  },
+  {
+    "customer_id": "CUST-20C0535E",
+    "name": "Sara Price",
+    "age": 81,
+    "occupation": "Business Owner",
+    "annual_income": 81162.82,
+    "risk_rating": "Medium",
+    "country": "Ghana",
+    "account_created": "2025-01-25"
+  },
+  {
+    "customer_id": "CUST-7D469CB0",
+    "name": "Cindy Rogers",
+    "age": 89,
+    "occupation": "Student",
+    "annual_income": 84467.07,
+    "risk_rating": "Medium",
+    "country": "Romania",
+    "account_created": "2024-05-02"
+  },
+  {
+    "customer_id": "CUST-95BE6840",
+    "name": "Christina Ramirez",
+    "age": 62,
+    "occupation": "Student",
+    "annual_income": 143104.96,
+    "risk_rating": "High",
+    "country": "Tonga",
+    "account_created": "2025-02-05"
+  },
+  {
+    "customer_id": "CUST-F74213DE",
+    "name": "Marilyn Jackson",
+    "age": 26,
+    "occupation": "Engineer",
+    "annual_income": 138232.96,
+    "risk_rating": "Low",
+    "country": "Saint Kitts and Nevis",
+    "account_created": "2021-05-05"
+  },
+  {
+    "customer_id": "CUST-F777D3E0",
+    "name": "Crystal Charles",
+    "age": 75,
+    "occupation": "Engineer",
+    "annual_income": 71756.77,
+    "risk_rating": "Low",
+    "country": "Oman",
+    "account_created": "2021-07-17"
+  },
+  {
+    "customer_id": "CUST-C38080C1",
+    "name": "Julie Marshall",
+    "age": 40,
+    "occupation": "Artist",
+    "annual_income": 113321.68,
+    "risk_rating": "Low",
+    "country": "Algeria",
+    "account_created": "2022-04-14"
+  },
+  {
+    "customer_id": "CUST-08CE50A6",
+    "name": "Christopher Marquez",
+    "age": 46,
+    "occupation": "Unemployed",
+    "annual_income": 132323.42,
+    "risk_rating": "High",
+    "country": "Taiwan",
+    "account_created": "2024-03-02"
+  },
+  {
+    "customer_id": "CUST-D2B2749D",
+    "name": "Mr. Calvin Martin Jr.",
+    "age": 53,
+    "occupation": "Student",
+    "annual_income": 100285.08,
+    "risk_rating": "Low",
+    "country": "Bangladesh",
+    "account_created": "2022-03-14"
+  },
+  {
+    "customer_id": "CUST-E811444B",
+    "name": "Alexander Morrison",
+    "age": 20,
+    "occupation": "Unemployed",
+    "annual_income": 137701.27,
+    "risk_rating": "High",
+    "country": "Grenada",
+    "account_created": "2022-09-12"
+  },
+  {
+    "customer_id": "CUST-0410D6BD",
+    "name": "Courtney Cain",
+    "age": 49,
+    "occupation": "Engineer",
+    "annual_income": 91955.12,
+    "risk_rating": "Low",
+    "country": "Anguilla",
+    "account_created": "2023-06-17"
+  },
+  {
+    "customer_id": "CUST-18E98707",
+    "name": "Laura Mendoza",
+    "age": 53,
+    "occupation": "Doctor",
+    "annual_income": 47607.58,
+    "risk_rating": "High",
+    "country": "United Arab Emirates",
+    "account_created": "2022-07-02"
+  },
+  {
+    "customer_id": "CUST-710B11B6",
+    "name": "Shelly Owens",
+    "age": 41,
+    "occupation": "Doctor",
+    "annual_income": 36751.13,
+    "risk_rating": "Medium",
+    "country": "Bhutan",
+    "account_created": "2025-04-19"
+  },
+  {
+    "customer_id": "CUST-FC37BD9E",
+    "name": "Angela Mcguire",
+    "age": 70,
+    "occupation": "Artist",
+    "annual_income": 26349.34,
+    "risk_rating": "High",
+    "country": "Malawi",
+    "account_created": "2022-04-29"
+  },
+  {
+    "customer_id": "CUST-CB9398EC",
+    "name": "Adam Herrera",
+    "age": 87,
+    "occupation": "Student",
+    "annual_income": 141438.58,
+    "risk_rating": "High",
+    "country": "Swaziland",
+    "account_created": "2023-10-02"
+  },
+  {
+    "customer_id": "CUST-6CCF396C",
+    "name": "Jessica Johnson",
+    "age": 75,
+    "occupation": "Doctor",
+    "annual_income": 152859.57,
+    "risk_rating": "Low",
+    "country": "Tunisia",
+    "account_created": "2025-01-10"
+  },
+  {
+    "customer_id": "CUST-9334C535",
+    "name": "Kim Gonzalez",
+    "age": 18,
+    "occupation": "Unemployed",
+    "annual_income": 102911.89,
+    "risk_rating": "Medium",
+    "country": "Seychelles",
+    "account_created": "2021-10-07"
+  },
+  {
+    "customer_id": "CUST-203C5F27",
+    "name": "Shelly Fuller",
+    "age": 58,
+    "occupation": "Unemployed",
+    "annual_income": 142962.82,
+    "risk_rating": "Medium",
+    "country": "Marshall Islands",
+    "account_created": "2022-09-13"
+  },
+  {
+    "customer_id": "CUST-97A0D2C2",
+    "name": "Stephen Boyer",
+    "age": 42,
+    "occupation": "Unemployed",
+    "annual_income": 153233.65,
+    "risk_rating": "High",
+    "country": "Kuwait",
+    "account_created": "2023-05-13"
+  },
+  {
+    "customer_id": "CUST-48154371",
+    "name": "Breanna Edwards",
+    "age": 67,
+    "occupation": "Student",
+    "annual_income": 194371.23,
+    "risk_rating": "Low",
+    "country": "Tunisia",
+    "account_created": "2024-01-29"
+  },
+  {
+    "customer_id": "CUST-CB653242",
+    "name": "Sean Blair",
+    "age": 39,
+    "occupation": "Business Owner",
+    "annual_income": 104692.12,
+    "risk_rating": "Medium",
+    "country": "Liechtenstein",
+    "account_created": "2022-02-03"
+  },
+  {
+    "customer_id": "CUST-3A91E957",
+    "name": "Chad Simon",
+    "age": 49,
+    "occupation": "Doctor",
+    "annual_income": 68673.42,
+    "risk_rating": "High",
+    "country": "Cayman Islands",
+    "account_created": "2025-10-16"
+  },
+  {
+    "customer_id": "CUST-1F240CEB",
+    "name": "Terri Perez",
+    "age": 23,
+    "occupation": "Engineer",
+    "annual_income": 119880.03,
+    "risk_rating": "High",
+    "country": "Mayotte",
+    "account_created": "2023-12-17"
+  }
+]

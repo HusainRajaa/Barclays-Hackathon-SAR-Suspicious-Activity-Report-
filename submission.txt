@@ -1,0 +1,34 @@
+Your Submissions should have the following sections:
+
+Abstract - 100-200 words
+Financial institutions are mandated to file Suspicious Activity Reports (SARs) for potential financial crimes, a process that is currently manual, labor-intensive (taking 5–6 hours per report), and prone to inconsistency. This project proposes an AI-driven SAR Narrative Generator with an integrated Audit Trail. By leveraging Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG), the system automates the drafting of regulator-ready narratives using transaction alerts and customer KYC data. Crucially, it addresses the "black box" problem of AI by providing a transparent audit trail that cites data sources and reasoning for every generated claim, ensuring regulatory defensibility. This solution aims to drastically reduce compliance backlogs, ensure standardized reporting, and free up analysts to focus on complex investigations.
+
+System Architecture – define system components and interactions referred in your architecture diagram (if any)
+The system architecture consists of five core components interacting to produce defensible SAR narratives:
+1. Data Ingestion Layer: Aggregates structured transaction alerts and unstructured customer KYC data from internal banking systems.
+2. Context & Knowledge Engine (RAG): Retrieves relevant regulatory guidelines (e.g., FinCEN/FCA rules) and historical SAR templates from a Vector Database (ChromaDB) to ground the model's generation.
+3. Generative Core: A fine-tuned LLM (Llama 3.1) synthesizes the ingested data and retrieved context to draft the narrative.
+4. Explainability Module: Operates in parallel with the generative core, tracking data lineage to produce a citation-based Audit Trail for every key claim.
+5. Human-in-the-Loop Interface: A Streamlit dashboard where analysts review the generated SAR alongside the audit trail, allowing for edits before final submission.
+
+Methodology/Proposed system - [should cover the scalability, performance and security of the system/solution proposed]
+The solution adopts a Retrieval-Augmented Generation (RAG) approach to ensure high fidelity and regulatory compliance.
+- Scalability: The system is designed as a stateless, containerized microservice. It allows for horizontal scaling (using Kubernetes or AWS ECS) to process high volumes of transaction alerts concurrently without bottlenecks.
+- Performance: We utilize quantized open-source models (Llama 3.1 8B) to achieve low-latency inference on standard hardware, ensuring reports are generated in seconds rather than hours.
+- Security: The architecture prioritizes data sovereignty. All sensitive customer and transaction data is processed within the institution's secure private cloud or on-premise environment. Role-Based Access Control (RBAC) ensures that only authorized compliance officers can access generated reports and source data.
+
+Tech stack
+- LLM: Llama 3.1 (8B) or Mistral 7B via Ollama
+- Orchestration: LangChain for RAG pipelines
+- Vector Database: ChromaDB for regulatory knowledge retrieval
+- Backend API: Python (FastAPI)
+- Frontend: Streamlit for the analyst dashboard
+- Database: PostgreSQL for immutable audit logs and case management
+
+Future scope
+- Adaptive Learning: Implementing a feedback loop where the model learns from analyst corrections to improve future accuracy.
+- Multi-Jurisdictional Support: Expanding the Knowledge Engine to include regulatory frameworks for multiple geographies (e.g., adding EU AML directives).
+- Real-time Narrative Generation: Moving from batch processing to real-time generation as suspicious activity is flagged.
+
+Any other comments on solution
+A key innovation of this solution is the Audit Trail, which ensures "White-box AI" compliance. Unlike standard generative tools, our system bridges the gap between AI efficiency and regulatory trust by explaining *why* a report was written, citing specific data points for every assertion.

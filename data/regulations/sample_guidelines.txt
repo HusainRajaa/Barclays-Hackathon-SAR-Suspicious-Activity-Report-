@@ -1,0 +1,8 @@
+# FinCEN SAR Filing Guidelines (Mock)
+
+1. **Structuring**: Financial institutions must file a SAR for transactions aggregating to $5,000 (or equivalent in local currency) or more if they suspect the transaction is designed to evade reporting requirements (structuring).
+2. **Wire Transfers**: Rapid movement of funds, especially involving high-risk jurisdictions, without a clear economic purpose is a red flag.
+3. **Shell Companies**: Transactions involving entities with no clear business activity or physical presence (shell companies) should be scrutinized.
+4. **Narrative Requirements**: The narrative must answer Who, What, Where, When, and Why. It must clearly explain the nature of the suspicious activity and the source of funds.
+5. **Beneficial Ownership**: Identify the ultimate beneficial owner (UBO) of legal entities involved in suspicious transactions.
+6. **Audit Trail**: All investigative steps and data sources used to determine suspicion must be documented.

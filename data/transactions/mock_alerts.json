@@ -1,0 +1,35 @@
+[
+  {
+    "alert_id": "ALT-2024-001",
+    "customer_id": "CUST-98765",
+    "alert_date": "2024-02-10",
+    "alert_type": "Structuring / Rapid Movement of Funds",
+    "description": "Customer received multiple large transfers totaling ₹50,00,000 from 47 different accounts within 3 days and immediately transferred 90% of funds to an overseas account in UAE.",
+    "transactions": [
+      {
+        "date": "2024-02-08",
+        "amount": 1500000,
+        "type": "CREDIT",
+        "description": "NEFT INW: MULTIPLE REMITTERS"
+      },
+      {
+        "date": "2024-02-09",
+        "amount": 2000000,
+        "type": "CREDIT",
+        "description": "RTGS INW: AXIS BANK"
+      },
+      {
+        "date": "2024-02-10",
+        "amount": 1500000,
+        "type": "CREDIT",
+        "description": "IMPS INW: HDFC BANK"
+      },
+      {
+        "date": "2024-02-10",
+        "amount": 4500000,
+        "type": "DEBIT",
+        "description": "SWIFT OUT: DUBAI TRADING LLC"
+      }
+    ]
+  }
+]

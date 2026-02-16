@@ -1,0 +1,13 @@
+{
+    "CUST-98765": {
+        "name": "Rajesh Kumar Exports",
+        "entity_type": "Proprietorship",
+        "incorporation_date": "2022-05-15",
+        "risk_rating": "HIGH",
+        "business_activity": "Textile Trading",
+        "registered_address": "123, Cloth Market, Surat, Gujarat",
+        "beneficial_owner": "Rajesh Kumar",
+        "kyc_status": "Verified",
+        "expected_turnover": "₹1 Cr - ₹5 Cr per annum"
+    }
+}

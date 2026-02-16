@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: sar_chromadb
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./chroma_data:/chroma/.chroma/index
+    environment:
+      - IS_PERSISTENT=TRUE
+    restart: unless-stopped
