@@ -31,10 +31,10 @@ with st.sidebar:
 light_theme_css = """
     <style>
     /* Global Reset */
-    .main {
-        background-color: #ffffff;
-        color: #000000;
-        font-family: 'Courier New', monospace; 
+    .stApp, .main, [data-testid="stAppViewContainer"], [data-testid="stHeader"], [data-testid="stSidebar"] {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-family: 'Courier New', monospace !important; 
     }
     
     /* Strict Box Model */
@@ -43,64 +43,53 @@ light_theme_css = """
     }
     
     /* Borders for Everything */
-    .stApp > header {
-        background-color: #ffffff;
-        border-bottom: 2px solid #000000;
+    [data-testid="stHeader"] {
+        border-bottom: 2px solid #000000 !important;
     }
-    .stSidebar {
-        background-color: #ffffff;
-        border-right: 2px solid #000000;
+    [data-testid="stSidebar"] {
+        border-right: 2px solid #000000 !important;
     }
     
     /* Widget Styling */
     .stButton>button {
-        background-color: #ffffff;
-        color: #000000;
-        border: 2px solid #000000;
-        border-radius: 0px; /* Square corners */
-        text-transform: uppercase;
-        font-weight: bold;
-        box-shadow: none;
-        transition: all 0.2s;
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 2px solid #000000 !important;
+        border-radius: 0px !important;
+        text-transform: uppercase !important;
+        font-weight: bold !important;
     }
     .stButton>button:hover {
-        background-color: #000000;
-        color: #ffffff;
-        border: 2px solid #000000;
+        background-color: #000000 !important;
+        color: #ffffff !important;
     }
     
     /* Input Fields */
-    .stTextInput>div>div>input, .stSelectbox>div>div>div {
-        border: 2px solid #000000;
-        border-radius: 0px;
-        color: #000000;
-        background-color: #ffffff;
+    input, textarea, select, .stSelectbox>div>div>div {
+        border: 2px solid #000000 !important;
+        border-radius: 0px !important;
+        color: #000000 !important;
+        background-color: #ffffff !important;
     }
     
     /* Headers */
     h1, h2, h3, h4, h5, h6 {
-        color: #000000;
-        font-family: 'Courier New', monospace;
-        border-bottom: 1px solid #000000;
-        padding-bottom: 0.5rem;
+        color: #000000 !important;
+        font-family: 'Courier New', monospace !important;
+        border-bottom: 2px solid #000000 !important;
     }
     
-    /* Info/Warning/Success Boxes Override */
+    /* Text elements */
+    p, span, label, .stMarkdown, .stText, .stCaption {
+        color: #000000 !important;
+    }
+    
+    /* Alert Boxes */
     .stAlert {
-        background-color: #ffffff;
-        border: 2px solid #000000;
-        color: #000000;
-        border-radius: 0px;
-    }
-    
-    /* Expanders */
-    div[data-testid="stExpander"] {
-        border: 2px solid #000000;
-        border-radius: 0px;
-        box-shadow: none;
-    }
-    div[data-testid="stExpander"] div[role="button"] p {
-        font-family: 'Courier New', monospace;
+        background-color: #ffffff !important;
+        border: 2px solid #000000 !important;
+        color: #000000 !important;
+        border-radius: 0px !important;
     }
     </style>
 """
@@ -109,10 +98,10 @@ light_theme_css = """
 dark_theme_css = """
     <style>
     /* Global Reset */
-    .main {
-        background-color: #000000;
-        color: #ffffff;
-        font-family: 'Courier New', monospace; 
+    .stApp, .main, [data-testid="stAppViewContainer"], [data-testid="stHeader"], [data-testid="stSidebar"] {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        font-family: 'Courier New', monospace !important; 
     }
     
     /* Strict Box Model */
@@ -121,67 +110,53 @@ dark_theme_css = """
     }
     
     /* Borders for Everything */
-    .stApp > header {
-        background-color: #000000;
-        border-bottom: 2px solid #ffffff;
+    [data-testid="stHeader"] {
+        border-bottom: 2px solid #ffffff !important;
     }
-    section[data-testid="stSidebar"] {
-        background-color: #000000;
-        border-right: 2px solid #ffffff;
+    [data-testid="stSidebar"] {
+        border-right: 2px solid #ffffff !important;
     }
     
     /* Widget Styling */
     .stButton>button {
-        background-color: #000000;
-        color: #ffffff;
-        border: 2px solid #ffffff;
-        border-radius: 0px;
-        text-transform: uppercase;
-        font-weight: bold;
-        box-shadow: none;
-        transition: all 0.2s;
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border: 2px solid #ffffff !important;
+        border-radius: 0px !important;
+        text-transform: uppercase !important;
+        font-weight: bold !important;
     }
     .stButton>button:hover {
-        background-color: #ffffff;
-        color: #000000;
-        border: 2px solid #ffffff;
+        background-color: #ffffff !important;
+        color: #000000 !important;
     }
     
     /* Input Fields */
-    .stTextInput>div>div>input, .stSelectbox>div>div>div {
-        border: 2px solid #ffffff;
-        border-radius: 0px;
-        color: #ffffff;
-        background-color: #000000;
+    input, textarea, select, .stSelectbox>div>div>div {
+        border: 2px solid #ffffff !important;
+        border-radius: 0px !important;
+        color: #ffffff !important;
+        background-color: #000000 !important;
     }
     
     /* Headers */
     h1, h2, h3, h4, h5, h6 {
-        color: #ffffff;
-        font-family: 'Courier New', monospace;
-        border-bottom: 1px solid #ffffff;
-        padding-bottom: 0.5rem;
+        color: #ffffff !important;
+        font-family: 'Courier New', monospace !important;
+        border-bottom: 2px solid #ffffff !important;
     }
     
-    /* Info/Warning/Success Boxes Override */
+    /* Text elements */
+    p, span, label, .stMarkdown, .stText, .stCaption {
+        color: #ffffff !important;
+    }
+    
+    /* Alert Boxes */
     .stAlert {
-        background-color: #000000;
-        border: 2px solid #ffffff;
-        color: #ffffff;
-        border-radius: 0px;
-    }
-    
-    /* Expanders */
-    div[data-testid="stExpander"] {
-        border: 2px solid #ffffff;
-        border-radius: 0px;
-        box-shadow: none;
-        background-color: #000000;
-        color: #ffffff;
-    }
-    div[data-testid="stExpander"] div[role="button"] p {
-        font-family: 'Courier New', monospace;
-        color: #ffffff;
+        background-color: #000000 !important;
+        border: 2px solid #ffffff !important;
+        color: #ffffff !important;
+        border-radius: 0px !important;
     }
     
     /* Tab Styling */
@@ -189,11 +164,11 @@ dark_theme_css = """
         gap: 2px;
     }
     .stTabs [data-baseweb="tab"] {
-        border: 1px solid #ffffff;
-        border-radius: 0px;
-        padding: 10px 20px;
-        background-color: #000000;
-        color: #ffffff;
+        border: 1px solid #ffffff !important;
+        border-radius: 0px !important;
+        padding: 10px 20px !important;
+        background-color: #000000 !important;
+        color: #ffffff !important;
     }
     </style>
 """
