@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
-import graphviz
+try:
+    import graphviz
+except ImportError:
+    graphviz = None
 from fpdf import FPDF
 from rag_engine import RAGEngine
 from mock_data_loader import generate_regulatory_docs, generate_mock_alerts
@@ -13,9 +16,20 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for Professional Look (Black & White)
-# Custom CSS for Strict "Sober" Monochrome Design
-st.markdown("""
+# --- THEME MANAGEMENT ---
+if "theme" not in st.session_state:
+    st.session_state.theme = "Light"
+
+with st.sidebar:
+    st.markdown("### Settings")
+    theme_toggle = st.checkbox("Dark Mode", value=(st.session_state.theme == "Dark"))
+    if theme_toggle:
+        st.session_state.theme = "Dark"
+    else:
+        st.session_state.theme = "Light"
+
+# Custom CSS for Professional Look (Black & White) - Light Mode
+light_theme_css = """
     <style>
     /* Global Reset */
     .main {
@@ -90,7 +104,94 @@ st.markdown("""
         font-family: 'Courier New', monospace;
     }
     </style>
-    """, unsafe_allow_html=True)
+"""
+
+# Custom CSS for Dark Mode (Inverted Professional)
+dark_theme_css = """
+    <style>
+    /* Global Reset */
+    .main {
+        background-color: #0e1117;
+        color: #e0e0e0;
+        font-family: 'Courier New', monospace; 
+    }
+    
+    /* Strict Box Model */
+    div.block-container {
+        padding-top: 2rem;
+    }
+    
+    /* Borders for Everything */
+    .stApp > header {
+        background-color: #0e1117;
+        border-bottom: 2px solid #e0e0e0;
+    }
+    section[data-testid="stSidebar"] {
+        background-color: #1a1c24;
+        border-right: 2px solid #e0e0e0;
+    }
+    
+    /* Widget Styling */
+    .stButton>button {
+        background-color: #1a1c24;
+        color: #e0e0e0;
+        border: 2px solid #e0e0e0;
+        border-radius: 0px;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: none;
+        transition: all 0.2s;
+    }
+    .stButton>button:hover {
+        background-color: #e0e0e0;
+        color: #000000;
+        border: 2px solid #e0e0e0;
+    }
+    
+    /* Input Fields */
+    .stTextInput>div>div>input, .stSelectbox>div>div>div {
+        border: 2px solid #e0e0e0;
+        border-radius: 0px;
+        color: #e0e0e0;
+        background-color: #1a1c24;
+    }
+    
+    /* Headers */
+    h1, h2, h3, h4, h5, h6 {
+        color: #e0e0e0;
+        font-family: 'Courier New', monospace;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 0.5rem;
+    }
+    
+    /* Info/Warning/Success Boxes Override */
+    .stAlert {
+        background-color: #1a1c24;
+        border: 2px solid #e0e0e0;
+        color: #e0e0e0;
+        border-radius: 0px;
+    }
+    
+    /* Expanders */
+    div[data-testid="stExpander"] {
+        border: 2px solid #e0e0e0;
+        border-radius: 0px;
+        box-shadow: none;
+        background-color: #1a1c24;
+        color: #e0e0e0;
+    }
+    div[data-testid="stExpander"] div[role="button"] p {
+        font-family: 'Courier New', monospace;
+        color: #e0e0e0;
+    }
+    </style>
+"""
+
+# Inject CSS based on Theme
+if st.session_state.theme == "Dark":
+    st.markdown(dark_theme_css, unsafe_allow_html=True)
+else:
+    st.markdown(light_theme_css, unsafe_allow_html=True)
 
 # --- UTILS: PDF GENERATOR ---
 def create_pdf(sar_text, audit_data, alert_data):
