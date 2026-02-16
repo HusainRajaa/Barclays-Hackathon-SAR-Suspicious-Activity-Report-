@@ -84,16 +84,56 @@ if st.session_state.page == 'Generator':
 
     # Sidebar for Input Method
     st.sidebar.header("Input Controls")
-    input_method = st.sidebar.radio("Select Input Method:", ("Choose Pending Alert", "Manual Entry"))
+    input_method = st.sidebar.radio("Select Input Method:", ("Upload Transaction File", "Manual Entry"))
 
     alert_data = {}
 
-    if input_method == "Choose Pending Alert":
-        alerts = generate_mock_alerts()
-        alert_options = alerts["AlertID"] + " - " + alerts["Customer Name"]
-        selected_option = st.sidebar.selectbox("Select Alert", alert_options)
-        selected_alert_idx = alert_options.tolist().index(selected_option)
-        alert_data = alerts.iloc[selected_alert_idx].to_dict()
+    if input_method == "Upload Transaction File":
+        uploaded_file = st.sidebar.file_uploader("Upload CSV File", type=["csv"])
+        
+        # Download Sample Template
+        sample_data = pd.DataFrame([{
+            "Customer Name": "John Smith",
+            "Transaction Type": "Cash Deposit", 
+            "Amount": 9500,
+            "Date": "2023-10-25",
+            "Description": "Customer made 3 separate cash deposits of $9,500, $9,000, and $8,500 in consecutive days."
+        }])
+        csv = sample_data.to_csv(index=False)
+        st.sidebar.download_button("⬇️ Download Sample CSV", csv, "sample_sar_data.csv", "text/csv")
+
+        if uploaded_file is not None:
+            try:
+                alerts = pd.read_csv(uploaded_file)
+                st.sidebar.success(f"✅ Loaded {len(alerts)} records")
+                
+                # Validation
+                required_cols = ["Customer Name", "Description", "Amount"]
+                missing_cols = [col for col in required_cols if col not in alerts.columns]
+                
+                if missing_cols:
+                    st.error(f"CSV missing columns: {', '.join(missing_cols)}")
+                else:
+                    # Select Specific Transaction
+                    # Create a standard list for dropdown
+                    options = [f"Row {i+1}: {row['Customer Name']} (${row['Amount']})" for i, row in alerts.iterrows()]
+                    selected_option = st.sidebar.selectbox("Select Transaction to Analyze", options)
+                    
+                    # Get Data
+                    selected_idx = options.index(selected_option)
+                    alert_data = alerts.iloc[selected_idx].to_dict()
+                    
+                    # Fill missing optional fields
+                    if "Date" not in alert_data: alert_data["Date"] = "N/A"
+                    if "Transaction Type" not in alert_data: alert_data["Transaction Type"] = "General Transaction"
+            
+            except Exception as e:
+                st.sidebar.error(f"Error reading CSV: {e}")
+        else:
+            st.info("👈 Upload a CSV file to begin.")
+            # Stop execution here if no file to avoid errors in main layout
+            if input_method == "Upload Transaction File":
+                st.warning("Please upload a CSV file or switch to Manual Entry.")
     else:
         st.sidebar.subheader("Manual Transaction Details")
         cust_name = st.sidebar.text_input("Customer Name", "Jane Doe")
