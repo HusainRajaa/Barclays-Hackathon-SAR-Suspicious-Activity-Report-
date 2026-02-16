@@ -177,9 +177,14 @@ dark_theme_css = common_css + """
         color: #ffffff !important;
     }
     [data-testid="stFileUploadDropzone"] button {
-        background-color: #000000 !important;
+        background-color: #333333 !important;
         color: #ffffff !important;
         border: 1px solid #ffffff !important;
+    }
+    /* Extra specificity for the button */
+    [data-testid="stFileUploadDropzone"] [data-testid="baseButton-secondary"] {
+        background-color: #333333 !important;
+        color: #ffffff !important;
     }
     
     /* Widgets */
