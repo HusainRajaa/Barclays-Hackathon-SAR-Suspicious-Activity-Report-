@@ -10,7 +10,7 @@ from mock_data_loader import generate_regulatory_docs, generate_mock_alerts
 
 # --- CONFIGURATION & STYLES ---
 st.set_page_config(
-    page_title="Barclays SAR Generator",
+    page_title="Suspicious Activity Report Generator",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -387,14 +387,14 @@ st.markdown("---")
 
 # --- PAGE 0: HOME (LANDING PAGE) ---
 if st.session_state.page == 'Home':
-    st.title("SAR Narrative Generator")
+    st.title("Suspicious Activity Report Generator")
     st.markdown("### AI-Powered Suspicious Activity Reporting System")
     
     st.markdown("---")
     
     # Introduction
     st.markdown("""
-    **Welcome to the Barclays SAR Narrative Generator**, an advanced AI system designed to automate 
+    **Welcome to the Suspicious Activity Report Generator**, an advanced AI system designed to automate 
     the creation of Suspicious Activity Reports (SARs) for financial crime compliance teams.
     
     This system leverages cutting-edge technologies including:
@@ -453,7 +453,7 @@ if st.session_state.page == 'Home':
 
 # --- PAGE 1: SAR GENERATOR ---
 elif st.session_state.page == 'Generator':
-    st.title("Barclays SAR Narrative Generator")
+    st.title("Suspicious Activity Report Generator")
     st.markdown("Automated generation of Suspicious Activity Reports using Llama 3 and Vector Search.")
 
     # Sidebar: Bank Portal Style Controls
