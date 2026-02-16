@@ -1,0 +1,501 @@
+Customer Name,Transaction Type,Amount,Date,Description
+Jessica Soto,POS Purchase,122.68,2025-01-20,Restaurant payment. Normal activity consistent with customer profile.
+Timothy Scott,Direct Debit,329.65,2025-10-04,Gym membership. Normal activity consistent with customer profile.
+Robert Bartlett,Direct Debit,364.11,2025-08-16,Utility bill payment. Normal activity consistent with customer profile.
+Maurice Warner,Salary Credit,3694.24,2025-10-15,Bonus payment. Normal activity consistent with customer profile.
+Andrea Lowe,POS Purchase,147.56,2025-08-03,Gas station. Normal activity consistent with customer profile.
+Harold Clayton,ATM Withdrawal,20.0,2025-07-17,Petty cash withdrawal. Normal activity consistent with customer profile.
+William Ortiz,Direct Debit,199.17,2025-07-01,Utility bill payment. Normal activity consistent with customer profile.
+Jose Hernandez,POS Purchase,56.58,2025-05-22,Gas station. Normal activity consistent with customer profile.
+Samantha Coleman,POS Purchase,108.23,2025-12-24,Grocery store purchase. Normal activity consistent with customer profile.
+Natalie Cruz,ATM Withdrawal,50.0,2025-09-25,Petty cash withdrawal. Normal activity consistent with customer profile.
+Yolanda Ochoa,Online Transfer,29.74,2025-10-30,Transfer to savings. Normal activity consistent with customer profile.
+Frank Atkins,POS Purchase,122.31,2025-11-28,Online subscription. Normal activity consistent with customer profile.
+Jeremy Martinez,ATM Withdrawal,50.0,2025-02-17,Petty cash withdrawal. Normal activity consistent with customer profile.
+Laurie Snow,Bill Payment,233.05,2025-10-24,Credit card bill. Normal activity consistent with customer profile.
+Ann Sutton,Bill Payment,149.38,2025-03-11,Credit card bill. Normal activity consistent with customer profile.
+Cindy Smith,Dividend Credit,129.49,2025-11-04,Quarterly dividend payment. Normal activity consistent with customer profile.
+Stephanie Perez,Salary Credit,7150.83,2025-05-01,Bonus payment. Normal activity consistent with customer profile.
+Rebecca Fuller,POS Purchase,15.42,2025-09-17,Grocery store purchase. Normal activity consistent with customer profile.
+Jason Walters,POS Purchase,98.43,2025-03-27,Gas station. Normal activity consistent with customer profile.
+Brian Chambers,Direct Debit,385.52,2025-05-15,Mortgage payment. Normal activity consistent with customer profile.
+Julie Reyes,Direct Debit,446.27,2025-11-09,Mortgage payment. Normal activity consistent with customer profile.
+Jerry Rivera,Online Transfer,18.63,2025-04-12,Transfer to savings. Normal activity consistent with customer profile.
+Joseph Hayes,ATM Withdrawal,20.0,2025-02-14,Cash withdrawal. Normal activity consistent with customer profile.
+Katie Jordan,Salary Credit,5236.46,2025-10-23,Bonus payment. Normal activity consistent with customer profile.
+Shannon Patterson,Bill Payment,84.54,2025-10-10,Internet bill. Normal activity consistent with customer profile.
+James Burke,ATM Withdrawal,50.0,2025-05-25,Cash withdrawal. Normal activity consistent with customer profile.
+Christopher Gaines,Bill Payment,81.36,2025-07-16,Internet bill. Normal activity consistent with customer profile.
+Jason Howard,Salary Credit,4421.74,2025-06-18,Monthly salary credit. Normal activity consistent with customer profile.
+Emily Pierce,Salary Credit,3405.44,2025-06-25,Bonus payment. Normal activity consistent with customer profile.
+Brandi Johnson,Direct Debit,157.95,2025-02-27,Mortgage payment. Normal activity consistent with customer profile.
+Tonya Barajas,Bill Payment,413.24,2025-01-23,Internet bill. Normal activity consistent with customer profile.
+Anita Barrett,POS Purchase,39.68,2025-04-04,Online subscription. Normal activity consistent with customer profile.
+Christy Brooks,Salary Credit,7530.67,2025-07-02,Monthly salary credit. Normal activity consistent with customer profile.
+Ana Stephens,Salary Credit,6820.84,2025-07-26,Bonus payment. Normal activity consistent with customer profile.
+Joy Vazquez,POS Purchase,34.84,2025-08-01,Restaurant payment. Normal activity consistent with customer profile.
+Jason Fry,Direct Debit,265.82,2025-06-05,Mortgage payment. Normal activity consistent with customer profile.
+Vincent Wagner,Bill Payment,57.17,2025-05-11,Internet bill. Normal activity consistent with customer profile.
+Jill Rodriguez,Dividend Credit,130.64,2025-12-19,Quarterly dividend payment. Normal activity consistent with customer profile.
+Catherine Young,Bill Payment,168.92,2025-07-11,Credit card bill. Normal activity consistent with customer profile.
+Steven Meyers,Online Transfer,37.4,2025-03-23,Transfer to savings. Normal activity consistent with customer profile.
+Richard Gonzalez,Salary Credit,7792.84,2025-12-25,Monthly salary credit. Normal activity consistent with customer profile.
+Monica Sullivan,Direct Debit,302.69,2025-09-15,Utility bill payment. Normal activity consistent with customer profile.
+Julie Ramirez,Direct Debit,399.33,2025-11-07,Mortgage payment. Normal activity consistent with customer profile.
+Paul Jones,Online Transfer,12.45,2025-02-23,Payment to friend. Normal activity consistent with customer profile.
+Emily Kirby,Direct Debit,238.5,2025-10-27,Mortgage payment. Normal activity consistent with customer profile.
+Janet Wolfe,Dividend Credit,124.09,2025-03-10,Quarterly dividend payment. Normal activity consistent with customer profile.
+Marie Collins,Dividend Credit,65.2,2025-11-16,Quarterly dividend payment. Normal activity consistent with customer profile.
+Michael Giles,Direct Debit,141.11,2025-04-29,Utility bill payment. Normal activity consistent with customer profile.
+James Houston,Dividend Credit,104.97,2025-08-18,Quarterly dividend payment. Normal activity consistent with customer profile.
+Samantha Watson,Direct Debit,179.3,2025-03-30,Mortgage payment. Normal activity consistent with customer profile.
+James Thornton,Direct Debit,340.65,2025-11-04,Mortgage payment. Normal activity consistent with customer profile.
+Robert Mann,Bill Payment,366.18,2025-09-15,Internet bill. Normal activity consistent with customer profile.
+Christopher Johnson,POS Purchase,109.94,2025-11-20,Department store. Normal activity consistent with customer profile.
+Sarah Lewis,ATM Withdrawal,200.0,2025-11-28,Cash withdrawal. Normal activity consistent with customer profile.
+Molly Brown,Dividend Credit,21.85,2025-11-09,Quarterly dividend payment. Normal activity consistent with customer profile.
+Ashley Peterson,Bill Payment,226.82,2025-07-01,Internet bill. Normal activity consistent with customer profile.
+Cynthia Taylor,ATM Withdrawal,200.0,2025-02-03,Petty cash withdrawal. Normal activity consistent with customer profile.
+Pamela Jones,Dividend Credit,50.27,2025-12-23,Quarterly dividend payment. Normal activity consistent with customer profile.
+Patrick Carpenter,Salary Credit,6112.52,2025-07-09,Reimbursement. Normal activity consistent with customer profile.
+Kelly Smith,Bill Payment,324.27,2025-07-15,Credit card bill. Normal activity consistent with customer profile.
+Brittany Price,Dividend Credit,11.24,2025-01-06,Quarterly dividend payment. Normal activity consistent with customer profile.
+Michelle Anderson,Bill Payment,293.07,2025-06-06,Internet bill. Normal activity consistent with customer profile.
+Joseph Johnson,Bill Payment,443.49,2025-08-29,Credit card bill. Normal activity consistent with customer profile.
+Nancy Velez,Bill Payment,298.57,2025-01-25,Credit card bill. Normal activity consistent with customer profile.
+Robert Ruiz,POS Purchase,101.28,2025-08-13,Gas station. Normal activity consistent with customer profile.
+Christopher Haley,POS Purchase,61.91,2025-11-28,Restaurant payment. Normal activity consistent with customer profile.
+Leah Lopez DDS,Direct Debit,135.25,2025-02-26,Gym membership. Normal activity consistent with customer profile.
+Mark Chen,ATM Withdrawal,200.0,2025-08-25,Cash withdrawal. Normal activity consistent with customer profile.
+Susan Villegas,Bill Payment,325.25,2025-06-06,Internet bill. Normal activity consistent with customer profile.
+Ashley Vega,ATM Withdrawal,50.0,2025-01-13,Cash withdrawal. Normal activity consistent with customer profile.
+Michael Flores,POS Purchase,114.76,2025-11-08,Online subscription. Normal activity consistent with customer profile.
+Antonio Gordon,Bill Payment,452.91,2025-06-09,Internet bill. Normal activity consistent with customer profile.
+Allison Davis,POS Purchase,78.54,2025-05-06,Restaurant payment. Normal activity consistent with customer profile.
+Ryan Wilson,Bill Payment,138.09,2025-05-02,Credit card bill. Normal activity consistent with customer profile.
+Nathan Butler,ATM Withdrawal,200.0,2025-03-11,Cash withdrawal. Normal activity consistent with customer profile.
+Leslie Espinoza,Direct Debit,164.64,2025-07-15,Insurance premium. Normal activity consistent with customer profile.
+Craig Martin,Bill Payment,276.14,2025-11-13,Credit card bill. Normal activity consistent with customer profile.
+Wayne Williams,ATM Withdrawal,50.0,2025-11-23,Cash withdrawal. Normal activity consistent with customer profile.
+Malik Spencer,Dividend Credit,38.42,2025-05-14,Quarterly dividend payment. Normal activity consistent with customer profile.
+Kimberly Waters,Bill Payment,313.22,2025-04-19,Credit card bill. Normal activity consistent with customer profile.
+Shelley Bennett,Dividend Credit,16.83,2025-09-06,Quarterly dividend payment. Normal activity consistent with customer profile.
+Christopher Bennett MD,POS Purchase,75.97,2025-09-15,Gas station. Normal activity consistent with customer profile.
+Shelby Anderson,Online Transfer,29.26,2025-02-04,Transfer to savings. Normal activity consistent with customer profile.
+Mrs. Sydney Christensen,Salary Credit,3108.03,2025-09-05,Reimbursement. Normal activity consistent with customer profile.
+Deborah Martinez,Salary Credit,3186.97,2025-02-04,Reimbursement. Normal activity consistent with customer profile.
+Marcia Thomas,Bill Payment,63.33,2025-01-22,Internet bill. Normal activity consistent with customer profile.
+Valerie Barnett,Dividend Credit,73.59,2025-12-19,Quarterly dividend payment. Normal activity consistent with customer profile.
+Luis Shepherd,ATM Withdrawal,20.0,2025-04-30,Petty cash withdrawal. Normal activity consistent with customer profile.
+Robert Lee,Direct Debit,464.78,2025-05-14,Insurance premium. Normal activity consistent with customer profile.
+Frank Rodriguez,Direct Debit,81.86,2025-06-07,Insurance premium. Normal activity consistent with customer profile.
+Brenda Esparza,Online Transfer,12.1,2025-12-22,Payment to friend. Normal activity consistent with customer profile.
+Scott Wang,Bill Payment,135.46,2025-04-10,Internet bill. Normal activity consistent with customer profile.
+Lisa Harmon,Direct Debit,133.21,2025-07-24,Mortgage payment. Normal activity consistent with customer profile.
+Michael Roy,Online Transfer,57.9,2025-12-09,Transfer to savings. Normal activity consistent with customer profile.
+Diane Mullins,Direct Debit,469.48,2025-04-28,Insurance premium. Normal activity consistent with customer profile.
+Jessica Williams,Online Transfer,82.38,2025-07-04,Transfer to savings. Normal activity consistent with customer profile.
+Brittany Mitchell,Online Transfer,104.8,2025-10-09,Gift to family. Normal activity consistent with customer profile.
+Jennifer Cox,POS Purchase,137.15,2025-02-07,Gas station. Normal activity consistent with customer profile.
+Andrew Greene,Salary Credit,6704.88,2025-07-25,Bonus payment. Normal activity consistent with customer profile.
+John Torres,POS Purchase,90.86,2025-11-29,Gas station. Normal activity consistent with customer profile.
+Emily Martinez,POS Purchase,81.37,2025-04-01,Gas station. Normal activity consistent with customer profile.
+Kevin Garcia,Bill Payment,410.96,2025-08-09,Internet bill. Normal activity consistent with customer profile.
+Barbara Livingston,Salary Credit,4116.28,2025-04-28,Monthly salary credit. Normal activity consistent with customer profile.
+Joshua Allen,Bill Payment,313.85,2025-09-17,Internet bill. Normal activity consistent with customer profile.
+Sarah Tucker,Online Transfer,133.69,2025-10-15,Gift to family. Normal activity consistent with customer profile.
+Annette Thompson,Online Transfer,110.02,2025-10-31,Payment to friend. Normal activity consistent with customer profile.
+Ruben Young,Online Transfer,104.93,2025-04-09,Payment to friend. Normal activity consistent with customer profile.
+Mike Robinson,Dividend Credit,145.75,2025-05-10,Quarterly dividend payment. Normal activity consistent with customer profile.
+Kimberly Ali,Dividend Credit,111.95,2025-09-02,Quarterly dividend payment. Normal activity consistent with customer profile.
+Amber Walker,ATM Withdrawal,200.0,2025-03-08,Petty cash withdrawal. Normal activity consistent with customer profile.
+Noah Hubbard,Dividend Credit,28.03,2025-07-02,Quarterly dividend payment. Normal activity consistent with customer profile.
+Brady Diaz,Salary Credit,6623.01,2025-08-05,Monthly salary credit. Normal activity consistent with customer profile.
+Tina Green,Direct Debit,70.34,2025-02-18,Insurance premium. Normal activity consistent with customer profile.
+Ashley Mcintosh,Dividend Credit,103.1,2025-04-24,Quarterly dividend payment. Normal activity consistent with customer profile.
+James Perkins,Salary Credit,3789.9,2025-06-30,Bonus payment. Normal activity consistent with customer profile.
+Bailey Harrington,Online Transfer,123.75,2025-02-09,Payment to friend. Normal activity consistent with customer profile.
+Luis Garcia,Dividend Credit,79.44,2025-07-27,Quarterly dividend payment. Normal activity consistent with customer profile.
+Kim Lewis,Bill Payment,178.49,2025-02-03,Internet bill. Normal activity consistent with customer profile.
+Emily Green,Salary Credit,6311.46,2025-12-08,Monthly salary credit. Normal activity consistent with customer profile.
+James Gill,Direct Debit,238.95,2025-04-24,Mortgage payment. Normal activity consistent with customer profile.
+Miss Terri Andrade,Online Transfer,67.45,2025-12-11,Transfer to savings. Normal activity consistent with customer profile.
+Pamela Morgan,Online Transfer,90.38,2025-10-07,Transfer to savings. Normal activity consistent with customer profile.
+Kenneth Moore,POS Purchase,44.48,2025-11-29,Department store. Normal activity consistent with customer profile.
+Ashley Gay,Online Transfer,98.86,2025-12-19,Transfer to savings. Normal activity consistent with customer profile.
+Kevin Richards,Bill Payment,209.92,2025-03-20,Credit card bill. Normal activity consistent with customer profile.
+Jimmy Parker,POS Purchase,128.76,2025-02-12,Online subscription. Normal activity consistent with customer profile.
+David Young,Bill Payment,466.07,2025-01-21,Internet bill. Normal activity consistent with customer profile.
+James Jones,ATM Withdrawal,50.0,2025-10-29,Cash withdrawal. Normal activity consistent with customer profile.
+Amanda Bartlett,Bill Payment,314.86,2025-05-09,Internet bill. Normal activity consistent with customer profile.
+Melissa Franklin,Bill Payment,111.77,2025-03-28,Credit card bill. Normal activity consistent with customer profile.
+Anthony Carter,ATM Withdrawal,100.0,2025-03-02,Cash withdrawal. Normal activity consistent with customer profile.
+Christopher Hall,Online Transfer,40.44,2025-07-27,Payment to friend. Normal activity consistent with customer profile.
+Erin Thomas,Online Transfer,104.55,2025-09-14,Gift to family. Normal activity consistent with customer profile.
+Matthew Morales,Direct Debit,142.14,2025-11-05,Insurance premium. Normal activity consistent with customer profile.
+Tracy Smith,Dividend Credit,52.41,2025-07-23,Quarterly dividend payment. Normal activity consistent with customer profile.
+Jennifer Nguyen,Bill Payment,428.2,2025-11-19,Internet bill. Normal activity consistent with customer profile.
+Christopher Davis,Online Transfer,98.49,2025-01-03,Gift to family. Normal activity consistent with customer profile.
+David Spencer,ATM Withdrawal,50.0,2025-07-30,Petty cash withdrawal. Normal activity consistent with customer profile.
+Olivia Berg,POS Purchase,43.87,2025-11-15,Restaurant payment. Normal activity consistent with customer profile.
+John Taylor,Direct Debit,488.69,2025-07-22,Insurance premium. Normal activity consistent with customer profile.
+Adam Russell,ATM Withdrawal,20.0,2025-06-30,Cash withdrawal. Normal activity consistent with customer profile.
+Joshua Lloyd,Bill Payment,405.26,2025-02-17,Credit card bill. Normal activity consistent with customer profile.
+Margaret Valdez PhD,Salary Credit,7169.13,2025-12-22,Monthly salary credit. Normal activity consistent with customer profile.
+Evan Rivas,ATM Withdrawal,100.0,2025-04-17,Petty cash withdrawal. Normal activity consistent with customer profile.
+Stacy Moss,Salary Credit,6858.59,2025-03-24,Bonus payment. Normal activity consistent with customer profile.
+Madison Rodriguez,Bill Payment,463.5,2025-05-28,Internet bill. Normal activity consistent with customer profile.
+Tammy Booth,Salary Credit,7508.67,2025-09-16,Bonus payment. Normal activity consistent with customer profile.
+Nicole Hall,Direct Debit,496.73,2025-10-28,Mortgage payment. Normal activity consistent with customer profile.
+Catherine Miller,POS Purchase,46.31,2025-08-11,Department store. Normal activity consistent with customer profile.
+Shelly Fisher,POS Purchase,78.23,2025-01-25,Gas station. Normal activity consistent with customer profile.
+Stephanie Garner,Direct Debit,225.04,2025-12-31,Mortgage payment. Normal activity consistent with customer profile.
+Jennifer Blake,Salary Credit,5142.68,2025-01-19,Bonus payment. Normal activity consistent with customer profile.
+Derek Rodriguez,Salary Credit,4175.87,2025-05-02,Monthly salary credit. Normal activity consistent with customer profile.
+Adam Thompson,Bill Payment,146.96,2025-09-12,Internet bill. Normal activity consistent with customer profile.
+Connie Vasquez,ATM Withdrawal,200.0,2025-04-18,Cash withdrawal. Normal activity consistent with customer profile.
+Mrs. Sheila Davis MD,Bill Payment,191.1,2025-11-30,Credit card bill. Normal activity consistent with customer profile.
+Madison Boyd,Salary Credit,6973.04,2025-11-08,Bonus payment. Normal activity consistent with customer profile.
+Brett Campbell,ATM Withdrawal,50.0,2025-01-30,Cash withdrawal. Normal activity consistent with customer profile.
+Mathew Reed,ATM Withdrawal,100.0,2025-07-10,Cash withdrawal. Normal activity consistent with customer profile.
+Katherine Gonzalez,ATM Withdrawal,50.0,2025-05-13,Petty cash withdrawal. Normal activity consistent with customer profile.
+Tonya Baker,POS Purchase,27.4,2025-12-07,Gas station. Normal activity consistent with customer profile.
+Larry Glass,Dividend Credit,107.27,2025-04-28,Quarterly dividend payment. Normal activity consistent with customer profile.
+Joshua Zamora,Online Transfer,121.52,2025-04-05,Payment to friend. Normal activity consistent with customer profile.
+Benjamin Brown,Direct Debit,253.0,2025-09-23,Insurance premium. Normal activity consistent with customer profile.
+Meredith Brewer,ATM Withdrawal,50.0,2025-02-20,Cash withdrawal. Normal activity consistent with customer profile.
+Dr. Jesse Davis,Salary Credit,4093.68,2025-07-23,Monthly salary credit. Normal activity consistent with customer profile.
+Sarah Erickson,Bill Payment,306.31,2025-02-09,Internet bill. Normal activity consistent with customer profile.
+Amanda Harris,Direct Debit,167.8,2025-04-11,Mortgage payment. Normal activity consistent with customer profile.
+Michael Warner,Bill Payment,102.09,2025-04-13,Credit card bill. Normal activity consistent with customer profile.
+Vincent Gentry,POS Purchase,149.98,2025-01-13,Restaurant payment. Normal activity consistent with customer profile.
+Sherri Lee,Online Transfer,114.39,2025-06-08,Gift to family. Normal activity consistent with customer profile.
+Roger Bradford,Dividend Credit,64.41,2025-07-25,Quarterly dividend payment. Normal activity consistent with customer profile.
+Jessica Sullivan,Salary Credit,3219.37,2025-01-18,Monthly salary credit. Normal activity consistent with customer profile.
+Christina Williams,Online Transfer,149.47,2025-04-03,Gift to family. Normal activity consistent with customer profile.
+Brenda Lowe,Dividend Credit,25.11,2025-10-30,Quarterly dividend payment. Normal activity consistent with customer profile.
+Samuel Meza,ATM Withdrawal,200.0,2025-02-28,Cash withdrawal. Normal activity consistent with customer profile.
+Daniel Mccann,Direct Debit,203.83,2025-02-08,Gym membership. Normal activity consistent with customer profile.
+Jonathan Day,ATM Withdrawal,200.0,2025-03-17,Petty cash withdrawal. Normal activity consistent with customer profile.
+Kurt Parks,Dividend Credit,11.61,2025-11-27,Quarterly dividend payment. Normal activity consistent with customer profile.
+Michael Trujillo,Online Transfer,117.37,2025-10-29,Payment to friend. Normal activity consistent with customer profile.
+Victor Harris,Dividend Credit,45.41,2025-11-02,Quarterly dividend payment. Normal activity consistent with customer profile.
+Kristin Washington,Online Transfer,22.81,2025-01-03,Gift to family. Normal activity consistent with customer profile.
+Rebecca Morales,Bill Payment,201.05,2025-04-27,Internet bill. Normal activity consistent with customer profile.
+Priscilla Keller,Salary Credit,4340.39,2025-10-20,Bonus payment. Normal activity consistent with customer profile.
+Veronica Cooper MD,Direct Debit,70.89,2025-02-13,Utility bill payment. Normal activity consistent with customer profile.
+Frederick Santiago,Bill Payment,233.54,2025-08-23,Credit card bill. Normal activity consistent with customer profile.
+Judith Cooper,Online Transfer,52.66,2025-12-01,Transfer to savings. Normal activity consistent with customer profile.
+Elizabeth Ryan,Online Transfer,111.43,2025-05-14,Gift to family. Normal activity consistent with customer profile.
+Catherine Stevens,ATM Withdrawal,200.0,2025-12-08,Cash withdrawal. Normal activity consistent with customer profile.
+David Davis,ATM Withdrawal,200.0,2025-10-11,Cash withdrawal. Normal activity consistent with customer profile.
+Erica Espinoza,ATM Withdrawal,20.0,2025-07-19,Cash withdrawal. Normal activity consistent with customer profile.
+Jim Hansen,POS Purchase,110.75,2025-07-29,Gas station. Normal activity consistent with customer profile.
+Chase Hernandez,POS Purchase,74.28,2025-07-02,Department store. Normal activity consistent with customer profile.
+Denise Fischer,POS Purchase,96.82,2025-09-07,Online subscription. Normal activity consistent with customer profile.
+Carol Olson,POS Purchase,37.23,2025-12-28,Gas station. Normal activity consistent with customer profile.
+Anna Meyers,Direct Debit,326.94,2025-09-30,Gym membership. Normal activity consistent with customer profile.
+Alexander Howell,Bill Payment,258.09,2025-06-04,Internet bill. Normal activity consistent with customer profile.
+Tracy Castillo,ATM Withdrawal,50.0,2025-03-22,Petty cash withdrawal. Normal activity consistent with customer profile.
+Cindy Wilkins,Bill Payment,69.8,2025-05-01,Credit card bill. Normal activity consistent with customer profile.
+Judy Macias,Bill Payment,471.74,2025-10-01,Internet bill. Normal activity consistent with customer profile.
+Kristen Graham,POS Purchase,133.47,2025-12-16,Grocery store purchase. Normal activity consistent with customer profile.
+Trevor Bell,Dividend Credit,114.04,2025-05-14,Quarterly dividend payment. Normal activity consistent with customer profile.
+Sheri Willis,ATM Withdrawal,50.0,2025-03-15,Petty cash withdrawal. Normal activity consistent with customer profile.
+Sierra Lewis,Dividend Credit,138.91,2025-01-01,Quarterly dividend payment. Normal activity consistent with customer profile.
+Vincent Blake,POS Purchase,97.06,2025-03-07,Grocery store purchase. Normal activity consistent with customer profile.
+Maxwell Davis,ATM Withdrawal,200.0,2025-12-16,Cash withdrawal. Normal activity consistent with customer profile.
+Amanda Elliott,Bill Payment,388.75,2025-08-28,Internet bill. Normal activity consistent with customer profile.
+Ryan Watts,Salary Credit,6886.29,2025-09-15,Monthly salary credit. Normal activity consistent with customer profile.
+Jessica Myers,POS Purchase,93.3,2025-11-03,Gas station. Normal activity consistent with customer profile.
+Jade Allen,ATM Withdrawal,200.0,2025-12-13,Cash withdrawal. Normal activity consistent with customer profile.
+Michelle Larsen,Online Transfer,36.0,2025-11-28,Payment to friend. Normal activity consistent with customer profile.
+Melissa Logan,ATM Withdrawal,20.0,2025-09-15,Petty cash withdrawal. Normal activity consistent with customer profile.
+Sandra Young,Salary Credit,3909.26,2025-09-28,Monthly salary credit. Normal activity consistent with customer profile.
+Tara Brown,Direct Debit,447.19,2025-10-28,Insurance premium. Normal activity consistent with customer profile.
+Teresa Wiggins,POS Purchase,118.04,2025-09-08,Grocery store purchase. Normal activity consistent with customer profile.
+Ariana Khan,Dividend Credit,20.0,2025-07-12,Quarterly dividend payment. Normal activity consistent with customer profile.
+Linda Patrick,Salary Credit,7009.48,2025-08-10,Monthly salary credit. Normal activity consistent with customer profile.
+Erica Nelson,Bill Payment,71.07,2025-04-05,Credit card bill. Normal activity consistent with customer profile.
+Stephanie Medina,Online Transfer,20.03,2025-02-10,Payment to friend. Normal activity consistent with customer profile.
+Mary Coleman,Direct Debit,471.67,2025-09-30,Utility bill payment. Normal activity consistent with customer profile.
+Vanessa Morse,ATM Withdrawal,20.0,2025-07-27,Cash withdrawal. Normal activity consistent with customer profile.
+Michael Wheeler,Dividend Credit,73.73,2025-07-14,Quarterly dividend payment. Normal activity consistent with customer profile.
+Crystal Torres,ATM Withdrawal,20.0,2025-04-14,Cash withdrawal. Normal activity consistent with customer profile.
+Roger Schaefer,Salary Credit,7262.53,2026-01-01,Reimbursement. Normal activity consistent with customer profile.
+Jacqueline House,Online Transfer,12.35,2025-01-26,Payment to friend. Normal activity consistent with customer profile.
+Tamara Coffey,POS Purchase,146.5,2025-02-09,Online subscription. Normal activity consistent with customer profile.
+Beth Meyer,POS Purchase,19.91,2025-12-21,Department store. Normal activity consistent with customer profile.
+Tyler Fisher,Online Transfer,108.05,2025-01-14,Transfer to savings. Normal activity consistent with customer profile.
+Jacob Mann,Online Transfer,87.78,2025-12-03,Transfer to savings. Normal activity consistent with customer profile.
+Laura Richardson,Dividend Credit,96.35,2025-02-26,Quarterly dividend payment. Normal activity consistent with customer profile.
+Martin Fernandez,POS Purchase,42.82,2025-02-26,Gas station. Normal activity consistent with customer profile.
+Kathleen Luna,Direct Debit,438.29,2025-06-01,Gym membership. Normal activity consistent with customer profile.
+Colin Ochoa,Online Transfer,88.5,2025-07-06,Payment to friend. Normal activity consistent with customer profile.
+Sara Acosta,Direct Debit,156.67,2025-11-25,Mortgage payment. Normal activity consistent with customer profile.
+Lynn Martin,Online Transfer,125.14,2025-01-05,Payment to friend. Normal activity consistent with customer profile.
+Andrea James,Dividend Credit,138.84,2025-07-20,Quarterly dividend payment. Normal activity consistent with customer profile.
+Stephanie Herrera,Direct Debit,103.34,2025-08-28,Gym membership. Normal activity consistent with customer profile.
+Todd Gardner,Online Transfer,59.29,2025-04-11,Transfer to savings. Normal activity consistent with customer profile.
+Jasmine Marshall,Dividend Credit,24.11,2025-09-08,Quarterly dividend payment. Normal activity consistent with customer profile.
+Steven Odom,Dividend Credit,14.5,2025-08-05,Quarterly dividend payment. Normal activity consistent with customer profile.
+Rebekah Armstrong,Online Transfer,48.01,2025-09-29,Gift to family. Normal activity consistent with customer profile.
+Jose Gibson MD,Salary Credit,7211.56,2025-11-05,Monthly salary credit. Normal activity consistent with customer profile.
+Matthew Thompson,Dividend Credit,91.59,2025-03-29,Quarterly dividend payment. Normal activity consistent with customer profile.
+Catherine Casey,Salary Credit,6799.07,2025-08-01,Bonus payment. Normal activity consistent with customer profile.
+Trevor Murphy,ATM Withdrawal,100.0,2025-09-19,Petty cash withdrawal. Normal activity consistent with customer profile.
+Catherine Pearson,Salary Credit,3526.69,2025-03-24,Bonus payment. Normal activity consistent with customer profile.
+Caitlyn Jackson,ATM Withdrawal,20.0,2025-10-14,Cash withdrawal. Normal activity consistent with customer profile.
+Jennifer Rodriguez,Dividend Credit,56.25,2025-09-18,Quarterly dividend payment. Normal activity consistent with customer profile.
+Warren Munoz,POS Purchase,137.65,2025-06-12,Grocery store purchase. Normal activity consistent with customer profile.
+James Black,Bill Payment,456.46,2025-05-25,Internet bill. Normal activity consistent with customer profile.
+Richard Fisher,Online Transfer,148.25,2025-08-27,Transfer to savings. Normal activity consistent with customer profile.
+Connie Harper,Bill Payment,469.69,2025-02-24,Internet bill. Normal activity consistent with customer profile.
+Kelsey Beasley,Salary Credit,6977.92,2025-10-20,Bonus payment. Normal activity consistent with customer profile.
+Bobby Wilson,POS Purchase,58.64,2025-10-09,Gas station. Normal activity consistent with customer profile.
+Jacqueline Price,ATM Withdrawal,100.0,2025-05-08,Cash withdrawal. Normal activity consistent with customer profile.
+Edwin Smith,Dividend Credit,22.58,2025-01-01,Quarterly dividend payment. Normal activity consistent with customer profile.
+David Crawford,Online Transfer,135.7,2025-05-19,Gift to family. Normal activity consistent with customer profile.
+Laurie Baker,Bill Payment,461.04,2025-03-15,Credit card bill. Normal activity consistent with customer profile.
+Angela Jones,POS Purchase,128.89,2025-10-06,Online subscription. Normal activity consistent with customer profile.
+Patricia Rivas,POS Purchase,145.2,2025-03-18,Online subscription. Normal activity consistent with customer profile.
+Robert Johnson,Salary Credit,3593.79,2025-02-22,Bonus payment. Normal activity consistent with customer profile.
+Travis Buck,Salary Credit,7092.35,2025-10-04,Reimbursement. Normal activity consistent with customer profile.
+Anthony Alvarado,Online Transfer,89.42,2025-04-05,Gift to family. Normal activity consistent with customer profile.
+Dr. David Klein DDS,Salary Credit,5805.98,2025-02-02,Reimbursement. Normal activity consistent with customer profile.
+Sandra Padilla,Salary Credit,3725.72,2025-02-21,Reimbursement. Normal activity consistent with customer profile.
+Chad Wilson,Online Transfer,25.91,2025-04-17,Payment to friend. Normal activity consistent with customer profile.
+Ryan Reyes,Direct Debit,299.36,2025-08-12,Insurance premium. Normal activity consistent with customer profile.
+Mary Pham,Dividend Credit,22.68,2025-05-26,Quarterly dividend payment. Normal activity consistent with customer profile.
+Kaitlin Erickson,Bill Payment,305.95,2025-12-05,Internet bill. Normal activity consistent with customer profile.
+Tanya Shea,Salary Credit,6822.92,2025-07-07,Monthly salary credit. Normal activity consistent with customer profile.
+David Johnson,ATM Withdrawal,50.0,2025-05-31,Cash withdrawal. Normal activity consistent with customer profile.
+Katie Davis,Direct Debit,50.01,2025-09-25,Insurance premium. Normal activity consistent with customer profile.
+Christopher Hogan,Online Transfer,127.82,2025-03-14,Payment to friend. Normal activity consistent with customer profile.
+Dr. Micheal Lewis,POS Purchase,70.83,2025-02-19,Restaurant payment. Normal activity consistent with customer profile.
+Brian Campbell,ATM Withdrawal,20.0,2025-01-12,Petty cash withdrawal. Normal activity consistent with customer profile.
+Megan Brown,POS Purchase,25.81,2025-10-16,Grocery store purchase. Normal activity consistent with customer profile.
+Kenneth Carroll,ATM Withdrawal,100.0,2025-11-27,Cash withdrawal. Normal activity consistent with customer profile.
+Amy Malone,Bill Payment,114.58,2025-09-11,Credit card bill. Normal activity consistent with customer profile.
+Desiree Huang,POS Purchase,59.0,2025-06-23,Restaurant payment. Normal activity consistent with customer profile.
+Brian Wilson,POS Purchase,10.84,2025-10-22,Grocery store purchase. Normal activity consistent with customer profile.
+Shelly Harrington,Salary Credit,5227.77,2025-07-05,Reimbursement. Normal activity consistent with customer profile.
+Eric Holden,Bill Payment,462.9,2025-01-08,Credit card bill. Normal activity consistent with customer profile.
+William Munoz,POS Purchase,146.06,2025-10-13,Restaurant payment. Normal activity consistent with customer profile.
+Hannah Robinson,ATM Withdrawal,200.0,2025-08-24,Cash withdrawal. Normal activity consistent with customer profile.
+Julie Allen,Direct Debit,382.28,2025-08-07,Mortgage payment. Normal activity consistent with customer profile.
+Darlene Walsh,ATM Withdrawal,100.0,2025-01-15,Cash withdrawal. Normal activity consistent with customer profile.
+Justin Maynard,Dividend Credit,112.8,2025-10-29,Quarterly dividend payment. Normal activity consistent with customer profile.
+Ross Colon,POS Purchase,28.36,2025-07-29,Department store. Normal activity consistent with customer profile.
+Christopher Garcia,Bill Payment,226.75,2025-01-05,Internet bill. Normal activity consistent with customer profile.
+Brooke Dominguez,POS Purchase,117.27,2025-06-03,Online subscription. Normal activity consistent with customer profile.
+Juan Young,Dividend Credit,135.15,2025-06-17,Quarterly dividend payment. Normal activity consistent with customer profile.
+Christopher Gomez,Dividend Credit,80.41,2025-03-19,Quarterly dividend payment. Normal activity consistent with customer profile.
+Donna Boyd,ATM Withdrawal,50.0,2025-05-31,Cash withdrawal. Normal activity consistent with customer profile.
+Andrew Reyes,Online Transfer,67.1,2025-10-01,Payment to friend. Normal activity consistent with customer profile.
+Bruce Valdez,Salary Credit,7286.15,2025-12-04,Reimbursement. Normal activity consistent with customer profile.
+Julie Smith,Dividend Credit,42.5,2025-05-04,Quarterly dividend payment. Normal activity consistent with customer profile.
+Scott Franklin,Direct Debit,278.14,2025-03-25,Mortgage payment. Normal activity consistent with customer profile.
+Rachel Wagner,Direct Debit,442.11,2025-04-02,Utility bill payment. Normal activity consistent with customer profile.
+Scott King,POS Purchase,94.05,2025-10-08,Restaurant payment. Normal activity consistent with customer profile.
+Micheal Thomas,Dividend Credit,38.99,2025-03-29,Quarterly dividend payment. Normal activity consistent with customer profile.
+Jennifer Rodriguez,ATM Withdrawal,200.0,2025-09-06,Cash withdrawal. Normal activity consistent with customer profile.
+Stacey Brown,Direct Debit,156.18,2025-11-19,Gym membership. Normal activity consistent with customer profile.
+Joshua Duran,Direct Debit,255.66,2025-12-19,Insurance premium. Normal activity consistent with customer profile.
+Donna Gonzalez,Salary Credit,4440.56,2025-10-11,Monthly salary credit. Normal activity consistent with customer profile.
+John Wagner,ATM Withdrawal,50.0,2025-02-28,Cash withdrawal. Normal activity consistent with customer profile.
+Marcus Fox,Dividend Credit,74.23,2025-12-27,Quarterly dividend payment. Normal activity consistent with customer profile.
+Thomas Moran II,Dividend Credit,33.9,2025-01-12,Quarterly dividend payment. Normal activity consistent with customer profile.
+Thomas Sharp,Salary Credit,4555.49,2025-01-20,Bonus payment. Normal activity consistent with customer profile.
+Samuel Webb,Online Transfer,34.92,2025-04-06,Payment to friend. Normal activity consistent with customer profile.
+Seth Adams,Bill Payment,378.14,2025-07-12,Credit card bill. Normal activity consistent with customer profile.
+Kayla Williams,Salary Credit,5245.54,2025-01-07,Bonus payment. Normal activity consistent with customer profile.
+Cassandra Franco,POS Purchase,131.78,2025-09-09,Restaurant payment. Normal activity consistent with customer profile.
+Scott Jordan,Direct Debit,130.94,2025-04-20,Gym membership. Normal activity consistent with customer profile.
+Megan Mitchell,Online Transfer,11.58,2025-04-28,Transfer to savings. Normal activity consistent with customer profile.
+Kim Powell,Salary Credit,4589.64,2025-07-16,Reimbursement. Normal activity consistent with customer profile.
+Joe Austin,Online Transfer,113.26,2025-01-28,Gift to family. Normal activity consistent with customer profile.
+Mark Johnson,Salary Credit,7104.18,2025-09-02,Bonus payment. Normal activity consistent with customer profile.
+Kenneth Gonzales,ATM Withdrawal,200.0,2025-04-16,Petty cash withdrawal. Normal activity consistent with customer profile.
+Lisa Joseph,Salary Credit,7800.3,2025-03-25,Reimbursement. Normal activity consistent with customer profile.
+Diana Mueller,Online Transfer,65.87,2025-06-15,Payment to friend. Normal activity consistent with customer profile.
+Justin Schneider,Bill Payment,101.79,2025-05-19,Credit card bill. Normal activity consistent with customer profile.
+Kathryn Brown,Salary Credit,6453.34,2025-11-03,Bonus payment. Normal activity consistent with customer profile.
+Brent Drake,Bill Payment,436.73,2025-05-16,Credit card bill. Normal activity consistent with customer profile.
+Sarah Brown,Online Transfer,41.15,2025-06-22,Gift to family. Normal activity consistent with customer profile.
+Barbara Bryan,Bill Payment,454.21,2025-10-12,Internet bill. Normal activity consistent with customer profile.
+Katie Richmond,Dividend Credit,95.45,2025-09-10,Quarterly dividend payment. Normal activity consistent with customer profile.
+Charles Stevens,ATM Withdrawal,50.0,2025-11-05,Cash withdrawal. Normal activity consistent with customer profile.
+Jacqueline Lopez,ATM Withdrawal,100.0,2025-06-09,Cash withdrawal. Normal activity consistent with customer profile.
+Kathryn Mercado,ATM Withdrawal,100.0,2025-07-20,Petty cash withdrawal. Normal activity consistent with customer profile.
+Brenda Howell,POS Purchase,20.96,2025-04-10,Gas station. Normal activity consistent with customer profile.
+Christopher Black,POS Purchase,128.05,2025-10-04,Restaurant payment. Normal activity consistent with customer profile.
+Cheryl Green,Bill Payment,75.61,2025-11-08,Internet bill. Normal activity consistent with customer profile.
+Gina Armstrong,POS Purchase,120.3,2025-06-02,Online subscription. Normal activity consistent with customer profile.
+Sarah Lamb,Dividend Credit,11.11,2025-07-11,Quarterly dividend payment. Normal activity consistent with customer profile.
+Amy Jenkins,Dividend Credit,72.23,2025-02-10,Quarterly dividend payment. Normal activity consistent with customer profile.
+Shannon Price,Online Transfer,111.52,2025-06-20,Gift to family. Normal activity consistent with customer profile.
+Jesse Davis,ATM Withdrawal,100.0,2025-04-05,Cash withdrawal. Normal activity consistent with customer profile.
+Mrs. Erika Mosley,POS Purchase,13.6,2025-01-12,Online subscription. Normal activity consistent with customer profile.
+Dennis Dunn,ATM Withdrawal,50.0,2025-02-08,Petty cash withdrawal. Normal activity consistent with customer profile.
+Craig Dawson,ATM Withdrawal,20.0,2025-10-18,Petty cash withdrawal. Normal activity consistent with customer profile.
+Zachary Hill,Dividend Credit,143.21,2025-03-15,Quarterly dividend payment. Normal activity consistent with customer profile.
+Laura Miller,Salary Credit,4801.4,2025-05-05,Monthly salary credit. Normal activity consistent with customer profile.
+Tara Walter,Dividend Credit,139.5,2025-07-14,Quarterly dividend payment. Normal activity consistent with customer profile.
+Michael Bush,Bill Payment,164.36,2025-05-10,Credit card bill. Normal activity consistent with customer profile.
+Edgar Woods,Salary Credit,4920.92,2025-06-27,Reimbursement. Normal activity consistent with customer profile.
+William Solis,Bill Payment,390.82,2025-06-23,Credit card bill. Normal activity consistent with customer profile.
+Katherine Merritt,POS Purchase,148.2,2025-03-16,Gas station. Normal activity consistent with customer profile.
+Emily Pacheco,Bill Payment,194.79,2025-03-06,Credit card bill. Normal activity consistent with customer profile.
+Todd Martinez,POS Purchase,66.96,2025-09-22,Restaurant payment. Normal activity consistent with customer profile.
+Jennifer Martinez,Direct Debit,82.1,2025-05-19,Utility bill payment. Normal activity consistent with customer profile.
+Jennifer Lopez,Direct Debit,318.08,2025-11-17,Gym membership. Normal activity consistent with customer profile.
+Christina Miller,Dividend Credit,37.14,2025-08-11,Quarterly dividend payment. Normal activity consistent with customer profile.
+Jared Hensley,Direct Debit,430.24,2025-08-21,Gym membership. Normal activity consistent with customer profile.
+Brandon Carlson,Salary Credit,7716.07,2025-04-28,Bonus payment. Normal activity consistent with customer profile.
+Corey Long,ATM Withdrawal,200.0,2025-01-26,Cash withdrawal. Normal activity consistent with customer profile.
+Sarah Fields,ATM Withdrawal,200.0,2025-01-05,Petty cash withdrawal. Normal activity consistent with customer profile.
+Tanner Lucas,Bill Payment,242.91,2025-04-17,Credit card bill. Normal activity consistent with customer profile.
+Dr. Ruben Romero,Bill Payment,285.27,2025-12-25,Internet bill. Normal activity consistent with customer profile.
+Courtney Murphy,Direct Debit,494.21,2025-01-23,Utility bill payment. Normal activity consistent with customer profile.
+Elizabeth Taylor,Direct Debit,175.48,2025-10-30,Utility bill payment. Normal activity consistent with customer profile.
+Alicia Blake,Online Transfer,85.03,2025-05-14,Transfer to savings. Normal activity consistent with customer profile.
+Jonathan Young,ATM Withdrawal,20.0,2025-09-11,Cash withdrawal. Normal activity consistent with customer profile.
+Jessica Miller,ATM Withdrawal,100.0,2025-12-03,Cash withdrawal. Normal activity consistent with customer profile.
+James Nguyen Jr.,POS Purchase,39.74,2025-07-29,Gas station. Normal activity consistent with customer profile.
+Krystal Stevens,Bill Payment,441.42,2025-01-31,Credit card bill. Normal activity consistent with customer profile.
+Susan Hicks,Dividend Credit,91.65,2025-01-02,Quarterly dividend payment. Normal activity consistent with customer profile.
+Rebecca Vaughan,Direct Debit,103.79,2025-07-22,Utility bill payment. Normal activity consistent with customer profile.
+Matthew Stewart,POS Purchase,118.51,2025-04-15,Gas station. Normal activity consistent with customer profile.
+Sara Davis,Online Transfer,45.98,2025-06-17,Payment to friend. Normal activity consistent with customer profile.
+Lisa Johnson,Direct Debit,296.79,2025-05-29,Mortgage payment. Normal activity consistent with customer profile.
+Debbie Hamilton,Bill Payment,353.73,2025-12-13,Credit card bill. Normal activity consistent with customer profile.
+Kathleen Miller,Bill Payment,328.85,2025-07-31,Internet bill. Normal activity consistent with customer profile.
+Natalie Nunez,Online Transfer,142.44,2025-04-15,Gift to family. Normal activity consistent with customer profile.
+Robert Hughes,Online Transfer,89.97,2025-04-06,Payment to friend. Normal activity consistent with customer profile.
+Danielle Garcia,Dividend Credit,72.32,2025-05-14,Quarterly dividend payment. Normal activity consistent with customer profile.
+Sherri Johnson,Bill Payment,89.72,2025-03-15,Credit card bill. Normal activity consistent with customer profile.
+Benjamin Arnold,ATM Withdrawal,200.0,2025-06-15,Cash withdrawal. Normal activity consistent with customer profile.
+Cathy Mcintosh,POS Purchase,145.9,2025-02-16,Department store. Normal activity consistent with customer profile.
+Jesse Perez,Bill Payment,261.02,2025-11-27,Internet bill. Normal activity consistent with customer profile.
+Gregory Benson,Salary Credit,6289.57,2025-04-24,Monthly salary credit. Normal activity consistent with customer profile.
+Louis Parrish,Online Transfer,75.79,2025-12-27,Gift to family. Normal activity consistent with customer profile.
+Chad Hardy,Online Transfer,42.88,2025-09-15,Transfer to savings. Normal activity consistent with customer profile.
+Matthew Ray,Dividend Credit,100.08,2025-10-27,Quarterly dividend payment. Normal activity consistent with customer profile.
+Lori Dixon,POS Purchase,58.43,2025-08-30,Restaurant payment. Normal activity consistent with customer profile.
+Deanna Brown,Bill Payment,363.9,2025-12-07,Internet bill. Normal activity consistent with customer profile.
+Rachel White,Dividend Credit,45.03,2025-05-17,Quarterly dividend payment. Normal activity consistent with customer profile.
+Dr. Devin Castro,ATM Withdrawal,50.0,2025-03-13,Cash withdrawal. Normal activity consistent with customer profile.
+Penny Cunningham,ATM Withdrawal,50.0,2025-07-14,Petty cash withdrawal. Normal activity consistent with customer profile.
+Julie White,Direct Debit,176.31,2025-02-26,Insurance premium. Normal activity consistent with customer profile.
+Eric Chandler,Bill Payment,248.73,2025-11-09,Internet bill. Normal activity consistent with customer profile.
+Angelica Black,Dividend Credit,17.57,2025-04-16,Quarterly dividend payment. Normal activity consistent with customer profile.
+Sonya Mullins,Online Transfer,107.01,2025-05-04,Payment to friend. Normal activity consistent with customer profile.
+James Cross,Salary Credit,4433.61,2025-08-12,Monthly salary credit. Normal activity consistent with customer profile.
+Richard Cline,Direct Debit,423.52,2025-08-24,Gym membership. Normal activity consistent with customer profile.
+Chelsea Moreno,Dividend Credit,19.6,2025-05-23,Quarterly dividend payment. Normal activity consistent with customer profile.
+Spencer Huang,ATM Withdrawal,100.0,2025-06-08,Petty cash withdrawal. Normal activity consistent with customer profile.
+Robert Burnett,Direct Debit,334.61,2025-01-16,Mortgage payment. Normal activity consistent with customer profile.
+Alex Johnson,POS Purchase,137.15,2025-01-18,Gas station. Normal activity consistent with customer profile.
+Adam Lambert,Salary Credit,7566.57,2025-04-17,Monthly salary credit. Normal activity consistent with customer profile.
+Mr. Dennis Schwartz,Bill Payment,355.11,2025-02-23,Credit card bill. Normal activity consistent with customer profile.
+Claudia Cole,Online Transfer,147.23,2025-09-29,Payment to friend. Normal activity consistent with customer profile.
+Donna Martinez,ATM Withdrawal,50.0,2025-11-23,Petty cash withdrawal. Normal activity consistent with customer profile.
+Steven Johnson,Bill Payment,299.9,2025-06-13,Internet bill. Normal activity consistent with customer profile.
+Juan White,Bill Payment,308.63,2025-03-28,Credit card bill. Normal activity consistent with customer profile.
+Nicholas Stein,ATM Withdrawal,20.0,2025-03-21,Cash withdrawal. Normal activity consistent with customer profile.
+Mary Castro,POS Purchase,110.79,2025-09-06,Grocery store purchase. Normal activity consistent with customer profile.
+James Rodriguez,Online Transfer,22.85,2025-07-30,Transfer to savings. Normal activity consistent with customer profile.
+Gabrielle Ford,ATM Withdrawal,20.0,2025-06-29,Petty cash withdrawal. Normal activity consistent with customer profile.
+Adam Smith,ATM Withdrawal,20.0,2025-02-02,Cash withdrawal. Normal activity consistent with customer profile.
+Thomas Mason,Online Transfer,98.74,2025-09-05,Payment to friend. Normal activity consistent with customer profile.
+Elizabeth Hayes,Dividend Credit,16.48,2025-08-18,Quarterly dividend payment. Normal activity consistent with customer profile.
+Rachael Stafford,Dividend Credit,100.44,2025-10-30,Quarterly dividend payment. Normal activity consistent with customer profile.
+Ian Stewart,Bill Payment,346.84,2025-03-03,Credit card bill. Normal activity consistent with customer profile.
+Thomas Jones,Bill Payment,348.98,2025-04-11,Internet bill. Normal activity consistent with customer profile.
+Dylan Peterson,POS Purchase,60.92,2025-08-14,Gas station. Normal activity consistent with customer profile.
+Michael Gilbert,Direct Debit,462.09,2025-09-01,Insurance premium. Normal activity consistent with customer profile.
+Christian Jones,Bill Payment,57.76,2025-04-03,Internet bill. Normal activity consistent with customer profile.
+Christina Hendricks,ATM Withdrawal,200.0,2025-06-06,Petty cash withdrawal. Normal activity consistent with customer profile.
+Morgan Quinn,Bill Payment,69.1,2025-10-22,Internet bill. Normal activity consistent with customer profile.
+Breanna Washington,Salary Credit,4938.53,2025-09-20,Bonus payment. Normal activity consistent with customer profile.
+Stephanie Hunter,Dividend Credit,113.72,2025-11-19,Quarterly dividend payment. Normal activity consistent with customer profile.
+Miranda Moss,Dividend Credit,137.24,2025-09-15,Quarterly dividend payment. Normal activity consistent with customer profile.
+Scott Cook,Online Transfer,34.92,2025-04-09,Gift to family. Normal activity consistent with customer profile.
+Michael Hunter,Direct Debit,443.61,2025-04-14,Utility bill payment. Normal activity consistent with customer profile.
+Samantha Mercer,POS Purchase,95.89,2025-02-03,Grocery store purchase. Normal activity consistent with customer profile.
+Sandra Mata,Bill Payment,275.26,2025-08-06,Internet bill. Normal activity consistent with customer profile.
+Matthew Jackson,Direct Debit,270.66,2025-08-25,Utility bill payment. Normal activity consistent with customer profile.
+Misty Rhodes,Online Transfer,103.52,2025-01-23,Payment to friend. Normal activity consistent with customer profile.
+Jamie Stone,POS Purchase,11.76,2025-03-07,Restaurant payment. Normal activity consistent with customer profile.
+Emily Mckinney,POS Purchase,116.55,2025-06-04,Online subscription. Normal activity consistent with customer profile.
+Scott Ramos,ATM Withdrawal,200.0,2025-08-29,Petty cash withdrawal. Normal activity consistent with customer profile.
+Jordan Middleton,POS Purchase,102.31,2025-02-12,Restaurant payment. Normal activity consistent with customer profile.
+Kathleen Eaton,Bill Payment,230.7,2025-08-31,Credit card bill. Normal activity consistent with customer profile.
+Bradley Bates,ATM Withdrawal,50.0,2025-07-24,Petty cash withdrawal. Normal activity consistent with customer profile.
+Mr. Collin Bowman,Online Transfer,23.03,2025-07-26,Payment to friend. Normal activity consistent with customer profile.
+Jill Torres,Direct Debit,198.47,2025-11-25,Utility bill payment. Normal activity consistent with customer profile.
+Leah Bush,Online Transfer,117.1,2025-12-08,Transfer to savings. Normal activity consistent with customer profile.
+Laura Dean,Direct Debit,396.16,2025-06-10,Insurance premium. Normal activity consistent with customer profile.
+Veronica Daniel,Online Transfer,62.67,2025-09-09,Gift to family. Normal activity consistent with customer profile.
+Sarah Smith,Salary Credit,7962.46,2025-05-01,Monthly salary credit. Normal activity consistent with customer profile.
+Tracy Moran,ATM Withdrawal,100.0,2025-10-15,Petty cash withdrawal. Normal activity consistent with customer profile.
+Tina Mcmillan,Bill Payment,324.07,2025-01-20,Credit card bill. Normal activity consistent with customer profile.
+John Tucker,Online Transfer,122.62,2025-09-29,Gift to family. Normal activity consistent with customer profile.
+Stacie Lee,Dividend Credit,56.59,2025-11-19,Quarterly dividend payment. Normal activity consistent with customer profile.
+Gregory Wright,Dividend Credit,19.54,2025-11-12,Quarterly dividend payment. Normal activity consistent with customer profile.
+John Martin,Dividend Credit,72.08,2025-11-04,Quarterly dividend payment. Normal activity consistent with customer profile.
+Breanna Pham,Dividend Credit,49.52,2025-05-13,Quarterly dividend payment. Normal activity consistent with customer profile.
+Chad Alexander,Bill Payment,489.76,2025-05-12,Credit card bill. Normal activity consistent with customer profile.
+Felicia Lewis,POS Purchase,130.07,2025-02-01,Department store. Normal activity consistent with customer profile.
+Christian Scott,Bill Payment,364.63,2025-01-24,Credit card bill. Normal activity consistent with customer profile.
+Kyle White,Bill Payment,422.46,2025-05-26,Internet bill. Normal activity consistent with customer profile.
+Joseph Gonzalez,Dividend Credit,85.12,2025-12-16,Quarterly dividend payment. Normal activity consistent with customer profile.
+Kenneth Young,POS Purchase,105.9,2025-04-11,Grocery store purchase. Normal activity consistent with customer profile.
+Arthur Jones,Direct Debit,295.42,2025-08-30,Mortgage payment. Normal activity consistent with customer profile.
+Daniel Meyers,Dividend Credit,84.52,2025-12-12,Quarterly dividend payment. Normal activity consistent with customer profile.
+Amanda Davis,Direct Debit,457.27,2025-03-03,Utility bill payment. Normal activity consistent with customer profile.
+Robyn Manning,ATM Withdrawal,50.0,2025-12-14,Cash withdrawal. Normal activity consistent with customer profile.
+Randy Payne,Dividend Credit,107.38,2025-12-29,Quarterly dividend payment. Normal activity consistent with customer profile.
+Mario Scott,Direct Debit,239.62,2025-07-04,Gym membership. Normal activity consistent with customer profile.
+Corey Flores,Direct Debit,122.12,2025-04-06,Gym membership. Normal activity consistent with customer profile.
+Norman Davidson,ATM Withdrawal,200.0,2025-03-01,Cash withdrawal. Normal activity consistent with customer profile.
+Hunter Yoder,POS Purchase,64.47,2025-11-16,Department store. Normal activity consistent with customer profile.
+Cheryl Torres,Dividend Credit,23.52,2025-12-31,Quarterly dividend payment. Normal activity consistent with customer profile.
+Victoria Lewis,POS Purchase,102.21,2025-05-07,Grocery store purchase. Normal activity consistent with customer profile.
+John Davis,ATM Withdrawal,200.0,2025-10-28,Petty cash withdrawal. Normal activity consistent with customer profile.
+Brenda Barron,Salary Credit,5527.22,2025-07-29,Bonus payment. Normal activity consistent with customer profile.
+Joseph Adams,Salary Credit,6711.77,2025-08-25,Reimbursement. Normal activity consistent with customer profile.
+Sharon Davis,Direct Debit,372.83,2025-07-19,Utility bill payment. Normal activity consistent with customer profile.
+Gloria Johnson,Bill Payment,224.92,2025-01-06,Credit card bill. Normal activity consistent with customer profile.
+Michael Kelley,Salary Credit,5048.28,2025-02-16,Monthly salary credit. Normal activity consistent with customer profile.
+Ryan Lloyd,Salary Credit,3730.43,2025-02-26,Bonus payment. Normal activity consistent with customer profile.
+Sharon Roberts,Direct Debit,437.83,2025-04-28,Insurance premium. Normal activity consistent with customer profile.
+Jeffrey Vasquez,Bill Payment,311.69,2025-03-22,Internet bill. Normal activity consistent with customer profile.
+Kathryn Harmon,Online Transfer,86.62,2025-02-13,Gift to family. Normal activity consistent with customer profile.
+Dawn Thompson,Salary Credit,4281.6,2025-03-26,Reimbursement. Normal activity consistent with customer profile.
+Tanya Mckee,Salary Credit,5373.1,2025-06-24,Reimbursement. Normal activity consistent with customer profile.
+Stephanie Jones,Salary Credit,4960.69,2025-07-12,Bonus payment. Normal activity consistent with customer profile.
+Julie Henson,Dividend Credit,67.84,2025-12-18,Quarterly dividend payment. Normal activity consistent with customer profile.
+Donna Sanders DVM,Dividend Credit,20.73,2025-06-03,Quarterly dividend payment. Normal activity consistent with customer profile.
+Stephanie Garner,Direct Debit,405.64,2025-04-30,Insurance premium. Normal activity consistent with customer profile.
+Anita Stokes,ATM Withdrawal,100.0,2025-11-20,Cash withdrawal. Normal activity consistent with customer profile.
+Richard Hall,Dividend Credit,31.41,2025-07-29,Quarterly dividend payment. Normal activity consistent with customer profile.
+Carolyn Martinez,ATM Withdrawal,20.0,2025-12-23,Petty cash withdrawal. Normal activity consistent with customer profile.
+Cynthia Valdez,Dividend Credit,84.72,2025-12-11,Quarterly dividend payment. Normal activity consistent with customer profile.
+Emily Gomez,Online Transfer,30.9,2025-05-02,Gift to family. Normal activity consistent with customer profile.
+Fernando Wood,Direct Debit,460.07,2025-05-23,Gym membership. Normal activity consistent with customer profile.
+Leon Nguyen,Dividend Credit,103.28,2025-12-28,Quarterly dividend payment. Normal activity consistent with customer profile.
+Benjamin Richard,Bill Payment,162.89,2025-03-12,Internet bill. Normal activity consistent with customer profile.
+Christian Cabrera,Salary Credit,5097.81,2025-03-22,Monthly salary credit. Normal activity consistent with customer profile.
+Lisa Reyes,Salary Credit,7813.31,2025-04-09,Monthly salary credit. Normal activity consistent with customer profile.
+Monica Hartman,Salary Credit,5722.63,2025-06-05,Reimbursement. Normal activity consistent with customer profile.
+Jessica Hayes,POS Purchase,85.86,2025-08-17,Online subscription. Normal activity consistent with customer profile.
+Angela Sherman,Salary Credit,6386.74,2025-07-28,Monthly salary credit. Normal activity consistent with customer profile.
+Jennifer Ramirez,POS Purchase,119.6,2025-11-06,Department store. Normal activity consistent with customer profile.
+Tracy Higgins,POS Purchase,114.06,2025-01-19,Restaurant payment. Normal activity consistent with customer profile.
+Bobby Mcdonald,Bill Payment,354.32,2025-08-27,Internet bill. Normal activity consistent with customer profile.
+Nancy Pratt,Salary Credit,4633.08,2025-02-14,Monthly salary credit. Normal activity consistent with customer profile.
+Jamie Navarro,ATM Withdrawal,100.0,2025-08-09,Petty cash withdrawal. Normal activity consistent with customer profile.
+Jenny Anderson,Salary Credit,7417.81,2025-10-06,Reimbursement. Normal activity consistent with customer profile.
+Katie Welch,Direct Debit,363.82,2025-09-12,Insurance premium. Normal activity consistent with customer profile.
