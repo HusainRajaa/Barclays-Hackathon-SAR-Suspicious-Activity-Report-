@@ -87,6 +87,28 @@ light_theme_css = common_css + """
         border-bottom: 2px solid #000000 !important;
     }
     
+    /* Info/Warning/Success Boxes (Alerts) */
+    [data-testid="stNotificationContent"] {
+        background-color: #ffffff !important;
+        border: 2px solid #000000 !important;
+        color: #000000 !important;
+    }
+    [data-testid="stNotificationContent"] svg {
+        fill: #000000 !important;
+    }
+    
+    /* File Uploader Decor */
+    [data-testid="stFileUploadDropzone"] {
+        background-color: #ffffff !important;
+        border: 2px dashed #000000 !important;
+        color: #000000 !important;
+    }
+    [data-testid="stFileUploadDropzone"] button {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #000000 !important;
+    }
+    
     /* Widgets */
     .stButton>button {
         background-color: #ffffff !important;
@@ -136,6 +158,28 @@ dark_theme_css = common_css + """
     /* Borders */
     h1, h2, h3, h4, h5, h6 {
         border-bottom: 2px solid #ffffff !important;
+    }
+    
+    /* Info/Warning/Success Boxes (Alerts) */
+    [data-testid="stNotificationContent"] {
+        background-color: #000000 !important;
+        border: 2px solid #ffffff !important;
+        color: #ffffff !important;
+    }
+    [data-testid="stNotificationContent"] svg {
+        fill: #ffffff !important;
+    }
+    
+    /* File Uploader Decor */
+    [data-testid="stFileUploadDropzone"] {
+        background-color: #000000 !important;
+        border: 2px dashed #ffffff !important;
+        color: #ffffff !important;
+    }
+    [data-testid="stFileUploadDropzone"] button {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border: 1px solid #ffffff !important;
     }
     
     /* Widgets */
