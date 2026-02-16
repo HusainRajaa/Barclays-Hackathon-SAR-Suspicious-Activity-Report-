@@ -102,7 +102,7 @@ except Exception as e:
 
 # Navigation State
 if 'page' not in st.session_state:
-    st.session_state.page = 'Generator'
+    st.session_state.page = 'Home'
 
 def set_page(page_name):
     st.session_state.page = page_name
@@ -169,7 +169,10 @@ def normalize_row(row, col_map, all_cols):
     return normalized
 
 # Top Navigation Bar
-col_nav1, col_nav2, col_nav3 = st.columns(3)
+col_nav0, col_nav1, col_nav2, col_nav3 = st.columns(4)
+with col_nav0:
+    if st.button("Home", use_container_width=True):
+        set_page('Home')
 with col_nav1:
     if st.button("SAR Generator", use_container_width=True):
         set_page('Generator')
@@ -182,8 +185,74 @@ with col_nav3:
 
 st.markdown("---")
 
+# --- PAGE 0: HOME (LANDING PAGE) ---
+if st.session_state.page == 'Home':
+    st.title("SAR Narrative Generator")
+    st.markdown("### AI-Powered Suspicious Activity Reporting System")
+    
+    st.markdown("---")
+    
+    # Introduction
+    st.markdown("""
+    **Welcome to the Barclays SAR Narrative Generator**, an advanced AI system designed to automate 
+    the creation of Suspicious Activity Reports (SARs) for financial crime compliance teams.
+    
+    This system leverages cutting-edge technologies including:
+    - **Retrieval-Augmented Generation (RAG)** for regulatory compliance
+    - **Machine Learning Risk Assessment** for intelligent transaction analysis
+    - **Vector Database Search** for contextual regulatory citation
+    """)
+    
+    st.markdown("---")
+    
+    # Key Features
+    col_feat1, col_feat2 = st.columns(2)
+    
+    with col_feat1:
+        st.markdown("#### Key Features")
+        st.markdown("""
+        - **Universal CSV Support**: Upload any transaction CSV format
+        - **AI Risk Detection**: Automatic identification of suspicious patterns
+        - **Regulatory Grounding**: Every narrative backed by specific regulations
+        - **Full-Screen Editor**: Refine and customize generated reports
+        - **Audit Trail**: Complete transparency of AI decision-making
+        """)
+    
+    with col_feat2:
+        st.markdown("#### How It Works")
+        st.markdown("""
+        1. **Upload**: Submit transaction data in any CSV format
+        2. **Analyze**: AI scans for money laundering indicators
+        3. **Generate**: System creates detailed SAR narrative
+        4. **Review**: Edit and finalize in dedicated editor
+        5. **Export**: Download completed report for submission
+        """)
+    
+    st.markdown("---")
+    
+    # Use Application Button
+    st.markdown("### Ready to Begin?")
+    if st.button("USE APPLICATION", type="primary", use_container_width=True):
+        set_page('Generator')
+        st.rerun()
+    
+    st.markdown("---")
+    
+    # Technical Details
+    st.markdown("#### Technical Architecture")
+    st.markdown("""
+    This system combines multiple AI technologies:
+    - **FAISS Vector Database** for efficient regulatory document retrieval
+    - **HuggingFace Embeddings** for semantic search
+    - **Rules-Based ML Engine** for risk classification
+    - **Template-Based Generation** for structured SAR narratives
+    
+    The system is designed to meet regulatory requirements for transparency and auditability 
+    in automated compliance systems.
+    """)
+
 # --- PAGE 1: SAR GENERATOR ---
-if st.session_state.page == 'Generator':
+elif st.session_state.page == 'Generator':
     st.title("Barclays SAR Narrative Generator")
     st.markdown("Automated generation of Suspicious Activity Reports using Llama 3 and Vector Search.")
 
