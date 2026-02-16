@@ -107,6 +107,67 @@ if 'page' not in st.session_state:
 def set_page(page_name):
     st.session_state.page = page_name
 
+# --- SMART COLUMN MAPPER ---
+def map_columns(df):
+    """
+    Intelligently maps arbitrary CSV columns to expected schema.
+    """
+    col_map = {}
+    cols_lower = {col.lower(): col for col in df.columns}
+    
+    # Customer Name variants
+    for variant in ['customer name', 'name', 'customer', 'client', 'account holder', 'user']:
+        if variant in cols_lower:
+            col_map['Customer Name'] = cols_lower[variant]
+            break
+    
+    # Description variants
+    for variant in ['description', 'narrative', 'details', 'memo', 'notes', 'comment']:
+        if variant in cols_lower:
+            col_map['Description'] = cols_lower[variant]
+            break
+    
+    # Amount variants
+    for variant in ['amount', 'value', 'transaction amount', 'sum', 'total']:
+        if variant in cols_lower:
+            col_map['Amount'] = cols_lower[variant]
+            break
+    
+    # Date variants
+    for variant in ['date', 'transaction date', 'timestamp', 'time']:
+        if variant in cols_lower:
+            col_map['Date'] = cols_lower[variant]
+            break
+    
+    # Transaction Type variants
+    for variant in ['transaction type', 'type', 'category', 'method']:
+        if variant in cols_lower:
+            col_map['Transaction Type'] = cols_lower[variant]
+            break
+    
+    return col_map
+
+def normalize_row(row, col_map, all_cols):
+    """
+    Converts a row to standard schema using column mapping.
+    """
+    normalized = {}
+    
+    # Map known fields
+    normalized['Customer Name'] = row.get(col_map.get('Customer Name', ''), 'Unknown Customer')
+    normalized['Description'] = row.get(col_map.get('Description', ''), 'No description provided')
+    normalized['Amount'] = row.get(col_map.get('Amount', ''), 0)
+    normalized['Date'] = row.get(col_map.get('Date', ''), 'N/A')
+    normalized['Transaction Type'] = row.get(col_map.get('Transaction Type', ''), 'Unclassified')
+    
+    # If Description is still empty, concatenate all text fields
+    if normalized['Description'] == 'No description provided':
+        text_fields = [str(row[col]) for col in all_cols if isinstance(row.get(col), str) and len(str(row[col])) > 3]
+        if text_fields:
+            normalized['Description'] = ' | '.join(text_fields[:3])  # Max 3 fields
+    
+    return normalized
+
 # Top Navigation Bar
 col_nav1, col_nav2, col_nav3 = st.columns(3)
 with col_nav1:
@@ -144,24 +205,20 @@ if st.session_state.page == 'Generator':
             alerts = pd.read_csv(uploaded_file)
             st.sidebar.success(f"Loaded {len(alerts)} records")
             
-            # Validation
-            required_cols = ["Customer Name", "Description", "Amount"]
-            missing_cols = [col for col in required_cols if col not in alerts.columns]
+            # Smart Column Mapping (NO VALIDATION)
+            col_map = map_columns(alerts)
+            all_cols = list(alerts.columns)
             
-            if missing_cols:
-                st.error(f"Error: Missing columns {', '.join(missing_cols)}")
-            else:
-                # Select Specific Transaction
-                options = [f"Ref-{i+1001}: {row['Customer Name']} (${row['Amount']})" for i, row in alerts.iterrows()]
-                selected_option = st.sidebar.selectbox("Select Record", options)
-                
-                # Get Data
-                selected_idx = options.index(selected_option)
-                alert_data = alerts.iloc[selected_idx].to_dict()
-                
-                # Fill missing optional fields
-                if "Date" not in alert_data: alert_data["Date"] = "N/A"
-                if "Transaction Type" not in alert_data: alert_data["Transaction Type"] = "Unclassified"
+            # Normalize all rows
+            normalized_alerts = [normalize_row(row, col_map, all_cols) for _, row in alerts.iterrows()]
+            
+            # Select Specific Transaction
+            options = [f"Ref-{i+1001}: {row['Customer Name']} (${row.get('Amount', 0)})" for i, row in enumerate(normalized_alerts)]
+            selected_option = st.sidebar.selectbox("Select Record", options)
+            
+            # Get Data
+            selected_idx = options.index(selected_option)
+            alert_data = normalized_alerts[selected_idx]
         
         except Exception as e:
             st.sidebar.error(f"System Error: {e}")
