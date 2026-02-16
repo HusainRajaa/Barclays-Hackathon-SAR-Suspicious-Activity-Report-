@@ -1,0 +1,51 @@
+AlertID,Customer Name,Transaction Type,Amount,Date,Risk Score,Description
+ALT-68777,Stephanie Marsh,Crypto Purchase,35269.77,2025-06-24,High,Multiple transactions to unregistered crypto exchange 'Binance_Unverified'. Source of funds unclear.
+ALT-94727,Kimberly Smith,Cash Deposit,44454.96,2025-08-03,High,"Customer made 3 cash deposits of $14735.63, $14848.64, and $14818.32 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-58374,Maria Cook,Cash Deposit,10063.33,2025-10-28,High,"Customer made 3 cash deposits of $3305.3, $3408.32, and $3354.44 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-24299,Susan Simpson,Wire Transfer,24770.84,2025-08-29,Critical,Large wire transfer of $24770.84 to 'Oceanic Imports' in Cayman Islands (High Risk Jurisdiction) immediately after deposit cleared.
+ALT-60933,Micheal Carroll,Crypto Purchase,31826.66,2025-03-05,High,Multiple transactions to unregistered crypto exchange 'Binance_Unverified'. Source of funds unclear.
+ALT-52127,Justin Harris,Cash Deposit,24809.86,2025-08-20,High,"Customer made 3 cash deposits of $8214.37, $8281.49, and $8269.95 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-39444,Susan Smith,Cash Deposit,21726.33,2025-05-21,High,"Customer made 3 cash deposits of $7148.68, $7328.98, and $7242.11 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-70871,Vicki Baker,Mixed Activity,39203.36,2025-08-16,High,Account shows rapid movement of funds. $39203.36 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-19756,Amanda Cobb,Mixed Activity,38648.3,2025-06-23,High,Account shows rapid movement of funds. $38648.3 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-96602,Robert Page,Crypto Purchase,19964.97,2025-02-15,High,Multiple transactions to unregistered crypto exchange 'Binance_Unverified'. Source of funds unclear.
+ALT-68809,Andrew Mcdonald,Wire Transfer,29710.95,2025-01-15,Critical,Large wire transfer of $29710.95 to 'Apex Consulting' in North Korea (High Risk Jurisdiction) immediately after deposit cleared.
+ALT-87612,Nicole Olsen,Wire Transfer,35434.83,2025-01-20,Critical,Large wire transfer of $35434.83 to 'Quantum Trade' in Seychelles (High Risk Jurisdiction) immediately after deposit cleared.
+ALT-42547,David Davis,Cash Deposit,12721.55,2025-12-19,High,"Customer made 3 cash deposits of $4225.45, $4338.93, and $4240.52 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-50833,Jonathan Reyes,Wire Transfer,13575.55,2025-05-07,Critical,Large wire transfer of $13575.55 to 'Global Holdings Ltd' in Seychelles (High Risk Jurisdiction) immediately after deposit cleared.
+ALT-15373,Mark Mcdaniel,Wire Transfer,20334.27,2025-09-09,Critical,Large wire transfer of $20334.27 to 'Oceanic Imports' in Panama (High Risk Jurisdiction) immediately after deposit cleared.
+ALT-93958,Jeffrey Berry,Cash Deposit,14311.24,2025-12-27,High,"Customer made 3 cash deposits of $4737.24, $4828.43, and $4770.41 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-24771,Justin Cole,Cash Deposit,18766.57,2025-09-17,High,"Customer made 3 cash deposits of $6236.2, $6284.95, and $6255.52 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-88467,Sherri Anthony,Cash Deposit,36434.28,2025-05-20,High,"Customer made 3 cash deposits of $12073.91, $12220.67, and $12144.76 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-41439,Kevin Bennett DVM,Mixed Activity,34721.26,2025-12-23,High,Account shows rapid movement of funds. $34721.26 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-31056,Rebecca English,Mixed Activity,26818.69,2025-08-03,High,Account shows rapid movement of funds. $26818.69 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-48298,Austin Dawson,Mixed Activity,11121.22,2025-03-26,High,Account shows rapid movement of funds. $11121.22 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-58756,Misty Brown,Mixed Activity,12403.74,2025-01-14,High,Account shows rapid movement of funds. $12403.74 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-10219,Lori Black,Crypto Purchase,21930.73,2025-09-25,High,Multiple transactions to unregistered crypto exchange 'Binance_Unverified'. Source of funds unclear.
+ALT-18751,Donna Estes,Crypto Purchase,19524.42,2025-07-20,High,Multiple transactions to unregistered crypto exchange 'Binance_Unverified'. Source of funds unclear.
+ALT-90692,Lori Rice,Wire Transfer,11584.42,2025-03-04,Critical,Large wire transfer of $11584.42 to 'Global Holdings Ltd' in Panama (High Risk Jurisdiction) immediately after deposit cleared.
+ALT-85504,David Cannon,Mixed Activity,33137.16,2025-05-03,High,Account shows rapid movement of funds. $33137.16 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-80436,Andrea Whitehead,Cash Deposit,46246.61,2025-01-24,High,"Customer made 3 cash deposits of $15364.15, $15515.26, and $15415.54 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-14645,Gabriel Campbell,Cash Deposit,16073.67,2025-10-25,High,"Customer made 3 cash deposits of $5298.1, $5407.3, and $5357.89 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-29278,Matthew Turner,Cash Deposit,11065.6,2025-09-06,High,"Customer made 3 cash deposits of $3640.97, $3732.44, and $3688.53 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-44666,Mary Avila,Cash Deposit,43702.48,2025-08-13,High,"Customer made 3 cash deposits of $14542.08, $14600.91, and $14567.49 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-82554,Justin Miller PhD,Cash Deposit,30886.55,2025-12-19,High,"Customer made 3 cash deposits of $10245.19, $10310.97, and $10295.52 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-11917,Dustin Thompson,Mixed Activity,35771.53,2025-02-19,High,Account shows rapid movement of funds. $35771.53 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-13737,Abigail Pham,Mixed Activity,11709.66,2025-08-31,High,Account shows rapid movement of funds. $11709.66 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-50523,Amber Willis,Crypto Purchase,40047.06,2025-11-20,High,Multiple transactions to unregistered crypto exchange 'Binance_Unverified'. Source of funds unclear.
+ALT-79838,Alisha Benson,Mixed Activity,38534.96,2025-01-07,High,Account shows rapid movement of funds. $38534.96 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-18001,Stephen Lee,Cash Deposit,20530.85,2025-04-15,High,"Customer made 3 cash deposits of $6759.03, $6898.9, and $6843.62 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-63618,Susan Miller,Mixed Activity,14908.8,2025-08-18,High,Account shows rapid movement of funds. $14908.8 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-19870,Maria Miller,Wire Transfer,44972.57,2025-04-13,Critical,Large wire transfer of $44972.57 to 'Global Holdings Ltd' in Panama (High Risk Jurisdiction) immediately after deposit cleared.
+ALT-22960,Paul Hernandez,Crypto Purchase,33455.23,2025-03-24,High,Multiple transactions to unregistered crypto exchange 'Binance_Unverified'. Source of funds unclear.
+ALT-99902,Caitlin Ross,Cash Deposit,22450.86,2025-06-17,High,"Customer made 3 cash deposits of $7433.0, $7560.12, and $7483.62 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-48181,Corey Stanley,Wire Transfer,14742.18,2025-07-29,Critical,Large wire transfer of $14742.18 to 'Global Holdings Ltd' in Panama (High Risk Jurisdiction) immediately after deposit cleared.
+ALT-55727,Lisa Kennedy,Mixed Activity,17239.15,2025-10-23,High,Account shows rapid movement of funds. $17239.15 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-93015,Benjamin Sellers,Cash Deposit,25883.85,2025-10-27,High,"Customer made 3 cash deposits of $8589.53, $8717.39, and $8627.95 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-94852,Paul Obrien,Mixed Activity,32790.93,2025-11-19,High,Account shows rapid movement of funds. $32790.93 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-97465,Tammy Snow,Mixed Activity,26342.58,2025-08-30,High,Account shows rapid movement of funds. $26342.58 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-56150,Erika Robertson,Cash Deposit,18818.6,2025-08-01,High,"Customer made 3 cash deposits of $6184.49, $6358.48, and $6272.87 at different branches. Total exceeds reporting threshold but individual amounts do not."
+ALT-73862,Michelle Gonzalez,Crypto Purchase,32849.29,2025-11-12,High,Multiple transactions to unregistered crypto exchange 'Binance_Unverified'. Source of funds unclear.
+ALT-75750,Justin Sandoval,Wire Transfer,15326.2,2025-08-23,Critical,Large wire transfer of $15326.2 to 'Quantum Trade' in North Korea (High Risk Jurisdiction) immediately after deposit cleared.
+ALT-19072,Jacob Molina,Mixed Activity,41517.11,2025-10-06,High,Account shows rapid movement of funds. $41517.11 deposited via check and immediately withdrawn via ATM in small increments.
+ALT-89153,Eric Reed,Mixed Activity,34226.73,2025-07-04,High,Account shows rapid movement of funds. $34226.73 deposited via check and immediately withdrawn via ATM in small increments.
