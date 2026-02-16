@@ -21,7 +21,7 @@ if "theme" not in st.session_state:
 
 with st.sidebar:
     st.markdown("### Settings")
-    theme_toggle = st.toggle("Classic Dark Mode", value=(st.session_state.theme == "Dark"))
+    theme_toggle = st.toggle("Dark mode", value=(st.session_state.theme == "Dark"))
     if theme_toggle:
         st.session_state.theme = "Dark"
     else:
