@@ -8,42 +8,80 @@ from mock_data_loader import generate_regulatory_docs, generate_mock_alerts
 st.set_page_config(page_title="Barclays SAR Generator", layout="wide")
 
 # Custom CSS for Professional Look (Black & White)
+# Custom CSS for Strict "Sober" Monochrome Design
 st.markdown("""
     <style>
+    /* Global Reset */
     .main {
         background-color: #ffffff;
+        color: #000000;
+        font-family: 'Courier New', monospace; 
     }
+    
+    /* Strict Box Model */
+    div.block-container {
+        padding-top: 2rem;
+    }
+    
+    /* Borders for Everything */
     .stApp > header {
         background-color: #ffffff;
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 2px solid #000000;
     }
     .stSidebar {
-        background-color: #f0f2f6;
-        border-right: 1px solid #e0e0e0;
+        background-color: #ffffff;
+        border-right: 2px solid #000000;
     }
-    h1, h2, h3 {
-        color: #000000;
-        font-family: 'Helvetica', sans-serif;
-    }
+    
+    /* Widget Styling */
     .stButton>button {
-        background-color: #000000;
-        color: white;
-        border-radius: 4px;
-        border: none;
-        padding: 10px 20px;
+        background-color: #ffffff;
+        color: #000000;
+        border: 2px solid #000000;
+        border-radius: 0px; /* Square corners */
+        text-transform: uppercase;
         font-weight: bold;
+        box-shadow: none;
+        transition: all 0.2s;
     }
     .stButton>button:hover {
-        background-color: #333333;
-        color: white;
+        background-color: #000000;
+        color: #ffffff;
+        border: 2px solid #000000;
+    }
+    
+    /* Input Fields */
+    .stTextInput>div>div>input, .stSelectbox>div>div>div {
+        border: 2px solid #000000;
+        border-radius: 0px;
+        color: #000000;
+        background-color: #ffffff;
+    }
+    
+    /* Headers */
+    h1, h2, h3, h4, h5, h6 {
+        color: #000000;
+        font-family: 'Courier New', monospace;
+        border-bottom: 1px solid #000000;
+        padding-bottom: 0.5rem;
+    }
+    
+    /* Info/Warning/Success Boxes Override */
+    .stAlert {
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        color: #000000;
+        border-radius: 0px;
+    }
+    
+    /* Expanders */
+    div[data-testid="stExpander"] {
+        border: 2px solid #000000;
+        border-radius: 0px;
+        box-shadow: none;
     }
     div[data-testid="stExpander"] div[role="button"] p {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #000000;
-    }
-    .nav-btn {
-        margin: 5px;
+        font-family: 'Courier New', monospace;
     }
     </style>
     """, unsafe_allow_html=True)
