@@ -7,10 +7,46 @@ from mock_data_loader import generate_regulatory_docs, generate_mock_alerts
 st.set_page_config(page_title="SAR Narrative AI", layout="wide")
 
 # Title & Header
-st.title("🛡️ AI-Powered SAR Narrative Generator")
 st.markdown("""
-**Automating Suspicious Activity Reports with Active Learning & RAG**
-*Retrieves regulatory context -> Generates Audit-Ready Narratives*
+    <style>
+    .main {
+        background-color: #f5f5f5;
+    }
+    .stApp > header {
+        background-color: #00AEEF;
+    }
+    .stSidebar {
+        background-color: #00395D; /* Barclays Blue */
+        color: white;
+    }
+    h1 {
+        color: #00395D;
+        font-family: 'Helvetica', sans-serif;
+    }
+    h3 {
+        color: #00AEEF;
+    }
+    .stButton>button {
+        background-color: #00395D;
+        color: white;
+        border-radius: 5px;
+    }
+    div.stButton > button:first-child {
+        background-color: #00395D;
+        color: white;
+    }
+    div[data-testid="stExpander"] div[role="button"] p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #00395D;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.title("🦅 Barclays SAR Generator")
+st.markdown("""
+**Investigator Dashboard | Financial Crime Operations**
+*automated narrative generation powered by Llama 3 & Vector Search using ChromaDB(FAISS)*
 """)
 
 # Initialize Engine (Cached)
