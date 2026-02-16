@@ -59,11 +59,16 @@ for _ in range(NUM_TRANSACTIONS):
     base_desc = random.choice(DESCRIPTIONS[t_type])
     desc = f"{base_desc}. Normal activity consistent with customer profile."
     
+    # Generate AlertID
+    alert_id = f"ALT-{random.randint(10000, 99999)}"
+    
     data.append({
+        "AlertID": alert_id,
         "Customer Name": customer,
         "Transaction Type": t_type,
         "Amount": amount,
         "Date": date,
+        "Risk Score": "Low",
         "Description": desc
     })
 
