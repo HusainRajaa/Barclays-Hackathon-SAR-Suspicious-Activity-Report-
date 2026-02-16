@@ -258,10 +258,12 @@ elif st.session_state.page == 'RAG Architecture':
     # Graphviz Diagram for RAG
     rag_graph = graphviz.Digraph()
     rag_graph.attr(rankdir='LR')
+    rag_graph.attr('node', shape='rect', style='solid', color='black', fontname='Courier')
+    rag_graph.attr('edge', color='black')
     
     rag_graph.node('A', 'Transaction Data')
     rag_graph.node('B', 'Query Encoder')
-    rag_graph.node('C', 'Vector Database\n(Regulatory Rules)')
+    rag_graph.node('C', 'Vector Database\n(Regulatory Rules)', shape='cylinder')
     rag_graph.node('D', 'Relevant Context')
     rag_graph.node('E', 'Llama 3 Model')
     rag_graph.node('F', 'Final SAR Narrative')
@@ -292,18 +294,18 @@ elif st.session_state.page == 'ML Model':
     # Graphviz Diagram for ML
     ml_graph = graphviz.Digraph()
     ml_graph.attr(rankdir='TB')
+    ml_graph.attr('node', shape='rect', style='solid', color='black', fontname='Courier')
+    ml_graph.attr('edge', color='black')
     
     with ml_graph.subgraph(name='cluster_0') as c:
-        c.attr(style='filled', color='lightgrey')
-        c.node_attr.update(style='filled', color='white')
+        c.attr(style='dashed', color='black', label='The Detection Core')
         c.node('XGB', 'XGBoost\n(Supervised)')
         c.node('ISO', 'Isolation Forest\n(Anomaly)')
-        c.attr(label='The Detection Core')
     
     ml_graph.node('Input', 'Raw Transaction Data')
     ml_graph.node('Feat', 'Feature Engineering')
     ml_graph.node('Ens', 'Ensemble Decision')
-    ml_graph.node('Alert', 'Generate Alert')
+    ml_graph.node('Alert', 'Generate Alert', shape='doublecircle')
     ml_graph.node('Active', 'Active Learning Loop')
     
     ml_graph.edge('Input', 'Feat')
