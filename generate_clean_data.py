@@ -68,7 +68,6 @@ for _ in range(NUM_TRANSACTIONS):
         "Transaction Type": t_type,
         "Amount": amount,
         "Date": date,
-        "Risk Score": "Low",
         "Description": desc
     })
 

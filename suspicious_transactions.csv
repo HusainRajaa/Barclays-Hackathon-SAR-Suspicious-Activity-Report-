@@ -1,51 +1,51 @@
-AlertID,Customer Name,Transaction Type,Amount,Date,Risk Score,Description
-ALT-39506,Alicia Harris,Cash Deposit,13723.42,2025-05-11,High,Multiple cash deposits (3) at various branches. Total: $13723.42.
-ALT-28591,Adam Perkins,Mixed Activity,34765.28,2026-01-01,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-80450,Jennifer Burton,Crypto Purchase,24551.34,2025-04-22,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-26728,Brandi Melendez,Wire Transfer,38527.05,2025-10-22,Critical,Outgoing Wire to Oceanic Imports (Panama). Immediate pass-through.
-ALT-22518,Allison Martin,Cash Deposit,48793.97,2025-04-20,High,Multiple cash deposits (3) at various branches. Total: $48793.97.
-ALT-37873,Justin Walker,Crypto Purchase,34522.2,2025-08-05,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-92245,Jennifer Stevenson,Mixed Activity,28888.2,2025-05-16,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-42471,Maria Reed,Cash Deposit,48746.84,2025-11-24,High,Multiple cash deposits (3) at various branches. Total: $48746.84.
-ALT-37378,Garrett Washington,Crypto Purchase,35644.51,2025-09-18,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-16915,Jessica Arnold DDS,Cash Deposit,36826.55,2025-07-17,High,Multiple cash deposits (3) at various branches. Total: $36826.55.
-ALT-68375,Kimberly Shaw,Mixed Activity,23202.14,2025-12-15,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-62109,Charles Smith,Mixed Activity,11196.95,2025-09-06,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-13009,Stacy Higgins,Wire Transfer,36942.25,2025-06-17,Critical,Outgoing Wire to Apex Consulting (Cayman Islands). Immediate pass-through.
-ALT-19966,Amy Jones,Crypto Purchase,13532.22,2025-06-11,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-49584,Gail Jones,Mixed Activity,17387.75,2025-08-05,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-76622,John Neal,Cash Deposit,34709.19,2025-08-13,High,Multiple cash deposits (3) at various branches. Total: $34709.19.
-ALT-82685,Donald Collins,Wire Transfer,30445.1,2025-09-09,Critical,Outgoing Wire to Global Holdings Ltd (North Korea). Immediate pass-through.
-ALT-71952,Evan Torres,Cash Deposit,38379.66,2025-10-02,High,Multiple cash deposits (3) at various branches. Total: $38379.66.
-ALT-76195,Jeanne Rivera MD,Wire Transfer,46720.44,2025-04-02,Critical,Outgoing Wire to Oceanic Imports (Seychelles). Immediate pass-through.
-ALT-80505,Renee Jones,Mixed Activity,49151.28,2025-11-14,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-66732,Noah Ramirez,Crypto Purchase,49753.85,2025-02-18,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-42134,Aaron Cortez,Mixed Activity,39595.91,2025-03-05,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-58994,Kendra May,Wire Transfer,35835.11,2025-06-25,Critical,Outgoing Wire to Oceanic Imports (Panama). Immediate pass-through.
-ALT-38232,Bryan Rivera,Mixed Activity,16213.91,2025-09-28,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-66186,Brett Wells,Wire Transfer,15747.06,2025-09-20,Critical,Outgoing Wire to Quantum Trade (Cayman Islands). Immediate pass-through.
-ALT-38265,Jason Rogers,Cash Deposit,43954.73,2025-12-03,High,Multiple cash deposits (3) at various branches. Total: $43954.73.
-ALT-52062,Lindsay Hart,Crypto Purchase,44257.36,2025-10-11,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-32644,Bryan Williams,Mixed Activity,31202.34,2025-03-18,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-76856,Rhonda Wong,Mixed Activity,16599.86,2025-12-15,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-51529,Kaitlyn Harrington,Crypto Purchase,21042.42,2025-06-05,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-48864,Matthew Smith,Wire Transfer,42303.4,2025-12-02,Critical,Outgoing Wire to Oceanic Imports (Seychelles). Immediate pass-through.
-ALT-93861,Adam Patterson,Crypto Purchase,37428.66,2025-10-06,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-67913,Mary Castaneda,Wire Transfer,12511.68,2025-12-20,Critical,Outgoing Wire to Quantum Trade (Cayman Islands). Immediate pass-through.
-ALT-72976,Jose Rios,Cash Deposit,20164.8,2025-03-01,High,Multiple cash deposits (3) at various branches. Total: $20164.8.
-ALT-18560,Stanley Rodgers,Cash Deposit,29348.09,2025-08-11,High,Multiple cash deposits (3) at various branches. Total: $29348.09.
-ALT-54802,Jennifer Washington,Crypto Purchase,40012.22,2025-09-07,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-62592,Douglas Williams,Mixed Activity,27068.27,2025-08-04,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-30290,Travis Adams,Crypto Purchase,46312.53,2025-11-29,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-28257,Dakota Nicholson,Cash Deposit,16299.79,2025-01-19,High,Multiple cash deposits (3) at various branches. Total: $16299.79.
-ALT-59791,Alicia Manning,Wire Transfer,41979.34,2025-06-22,Critical,Outgoing Wire to Global Holdings Ltd (North Korea). Immediate pass-through.
-ALT-37341,Morgan Barajas,Wire Transfer,27945.51,2025-12-27,Critical,Outgoing Wire to Apex Consulting (Cayman Islands). Immediate pass-through.
-ALT-23650,Tamara Green,Mixed Activity,10928.85,2025-01-18,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-19519,Kimberly Brown,Cash Deposit,34441.24,2025-04-23,High,Multiple cash deposits (3) at various branches. Total: $34441.24.
-ALT-57453,Derek Smith,Wire Transfer,44728.33,2025-09-20,Critical,Outgoing Wire to Quantum Trade (Panama). Immediate pass-through.
-ALT-49507,Gregory Mason,Mixed Activity,46981.25,2025-01-27,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
-ALT-50532,Timothy Andrews,Crypto Purchase,45900.77,2025-07-09,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-70814,Joshua Salinas,Crypto Purchase,17376.61,2025-10-01,High,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
-ALT-82533,Jonathan Coleman,Wire Transfer,18600.94,2025-03-22,Critical,Outgoing Wire to Quantum Trade (North Korea). Immediate pass-through.
-ALT-64250,Teresa Levine,Cash Deposit,46242.16,2025-11-23,High,Multiple cash deposits (3) at various branches. Total: $46242.16.
-ALT-96737,Austin Garcia,Mixed Activity,45817.96,2025-10-12,High,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
+AlertID,Customer Name,Transaction Type,Amount,Date,Description
+ALT-46220,Gabrielle Rice,Crypto Purchase,18963.09,2025-06-29,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-78204,Kathy Anderson,Cash Deposit,32055.75,2025-06-28,Multiple cash deposits (3) at various branches. Total: $32055.75.
+ALT-33011,Dana Campbell,Wire Transfer,29332.76,2025-02-19,Outgoing Wire to Apex Consulting (North Korea). Immediate pass-through.
+ALT-16018,Bryan Mccall,Wire Transfer,22568.84,2025-01-29,Outgoing Wire to Apex Consulting (Seychelles). Immediate pass-through.
+ALT-87565,Mary Hayes,Crypto Purchase,31596.84,2025-01-20,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-67340,Tina Gonzalez,Wire Transfer,12109.94,2025-02-02,Outgoing Wire to Quantum Trade (Panama). Immediate pass-through.
+ALT-43612,Judy Johnson,Cash Deposit,49641.43,2025-12-03,Multiple cash deposits (3) at various branches. Total: $49641.43.
+ALT-60660,Joel Moore,Wire Transfer,18673.37,2025-08-06,Outgoing Wire to Quantum Trade (North Korea). Immediate pass-through.
+ALT-51293,Amy Munoz,Wire Transfer,20825.67,2025-12-06,Outgoing Wire to Global Holdings Ltd (Seychelles). Immediate pass-through.
+ALT-91946,Betty Mills,Mixed Activity,23044.84,2025-01-24,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
+ALT-66124,Jade Wallace,Crypto Purchase,47558.44,2025-08-16,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-29767,Miss Stacey Gonzalez,Crypto Purchase,20922.04,2025-07-29,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-39274,Mr. Hector Wallace,Wire Transfer,24274.22,2025-02-23,Outgoing Wire to Oceanic Imports (Panama). Immediate pass-through.
+ALT-20210,Bradley Meza,Cash Deposit,29816.39,2025-03-13,Multiple cash deposits (3) at various branches. Total: $29816.39.
+ALT-37138,Mrs. Alexis Harper,Crypto Purchase,30530.46,2025-08-02,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-31858,Debra Ramos,Mixed Activity,31716.87,2025-07-06,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
+ALT-40883,Michael Shepherd,Cash Deposit,43763.47,2025-08-20,Multiple cash deposits (3) at various branches. Total: $43763.47.
+ALT-76332,Dana Ross,Crypto Purchase,17790.6,2025-03-10,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-80705,Sarah Hernandez,Crypto Purchase,29035.46,2025-01-03,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-81568,Linda Richardson,Mixed Activity,45563.32,2025-07-26,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
+ALT-84944,Jesse Spencer,Cash Deposit,49363.26,2025-05-25,Multiple cash deposits (3) at various branches. Total: $49363.26.
+ALT-47776,James Jones,Wire Transfer,15899.32,2025-02-28,Outgoing Wire to Global Holdings Ltd (Panama). Immediate pass-through.
+ALT-36778,Laurie Gilbert,Mixed Activity,26261.31,2025-02-09,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
+ALT-81392,John Davis,Cash Deposit,12165.77,2025-04-18,Multiple cash deposits (3) at various branches. Total: $12165.77.
+ALT-25753,April Smith,Crypto Purchase,38511.55,2025-03-15,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-90826,Joseph Walsh,Crypto Purchase,25950.72,2025-04-15,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-78382,Steven Moore,Cash Deposit,42601.3,2025-12-16,Multiple cash deposits (3) at various branches. Total: $42601.3.
+ALT-74659,Tamara Collins,Cash Deposit,32066.68,2025-03-28,Multiple cash deposits (3) at various branches. Total: $32066.68.
+ALT-56181,Danielle Ross,Cash Deposit,35165.0,2025-09-17,Multiple cash deposits (3) at various branches. Total: $35165.0.
+ALT-46409,Tina Washington,Cash Deposit,41952.22,2025-10-04,Multiple cash deposits (3) at various branches. Total: $41952.22.
+ALT-58714,Melanie Gilbert,Crypto Purchase,25580.92,2025-05-13,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-20690,Kristine Williams,Crypto Purchase,37514.44,2025-08-03,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-73749,Mary Adams,Cash Deposit,31715.15,2025-07-24,Multiple cash deposits (3) at various branches. Total: $31715.15.
+ALT-61067,Paul Mcdonald,Cash Deposit,24233.69,2025-12-25,Multiple cash deposits (3) at various branches. Total: $24233.69.
+ALT-58028,Joseph Dillon,Crypto Purchase,14961.42,2025-08-08,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-61484,Kristin Kramer MD,Cash Deposit,15998.09,2025-05-21,Multiple cash deposits (3) at various branches. Total: $15998.09.
+ALT-48386,Dr. Anna Curtis,Cash Deposit,36454.28,2025-01-05,Multiple cash deposits (3) at various branches. Total: $36454.28.
+ALT-89091,Angela Crawford,Cash Deposit,26419.06,2025-08-23,Multiple cash deposits (3) at various branches. Total: $26419.06.
+ALT-96411,Samuel Hines,Crypto Purchase,24843.14,2025-06-08,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-98418,Daniel Rogers,Wire Transfer,19491.53,2025-09-16,Outgoing Wire to Global Holdings Ltd (Cayman Islands). Immediate pass-through.
+ALT-19587,John Nichols,Crypto Purchase,33316.32,2025-03-06,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-69881,Michelle Alvarez,Mixed Activity,36406.21,2025-12-14,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
+ALT-68735,Richard Blevins DDS,Wire Transfer,9247.76,2025-10-30,Outgoing Wire to Quantum Trade (Cayman Islands). Immediate pass-through.
+ALT-18574,Shirley Clark,Mixed Activity,11516.23,2025-04-27,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
+ALT-45398,Jessica Lane,Cash Deposit,10707.66,2025-05-20,Multiple cash deposits (3) at various branches. Total: $10707.66.
+ALT-70516,Michael Sanders,Wire Transfer,38118.44,2025-12-26,Outgoing Wire to Global Holdings Ltd (Seychelles). Immediate pass-through.
+ALT-36306,Suzanne Torres,Crypto Purchase,37988.6,2025-03-08,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-61875,Sandra Johnson,Crypto Purchase,39745.88,2025-12-27,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-73996,Gloria Roberts,Mixed Activity,19596.84,2025-06-12,Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal.
+ALT-10715,Melinda Johnson,Wire Transfer,23826.09,2025-06-25,Outgoing Wire to Global Holdings Ltd (Seychelles). Immediate pass-through.

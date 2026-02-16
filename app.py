@@ -187,12 +187,42 @@ if st.session_state.page == 'Generator':
         st.markdown("**NARRATIVE**")
         st.write(alert_data.get('Description', ''))
 
+# --- RISK ENGINE (Mock ML) ---
+def assess_risk(alert_row):
+    """
+    Simulates the ML Model's decision logic based on description keywords.
+    """
+    desc = alert_row.get("Description", "").lower()
+    amount = alert_row.get("Amount", 0)
+    
+    # Critical Risk Patterns
+    if "wire" in desc and ("cayman" in desc or "panama" in desc):
+        return "Critical"
+    if "terrorist" in desc or "sanction" in desc:
+        return "Critical"
+        
+    # High Risk Patterns
+    if "structuring" in desc or "cash deposit" in desc:
+        if amount > 8000: # Simple threshold
+            return "High"
+    if "crypto" in desc or "unregulated" in desc:
+        return "High"
+    if "layering" in desc or "rapid movement" in desc:
+        return "High"
+        
+    # Default
+    return "Low"
+
+# --- PAGE 1: SAR GENERATOR ---
+if st.session_state.page == 'Generator':
+    # ... (Rest of UI code) ...
+
         st.markdown("---")
         st.markdown("---")
         if st.button("GENERATE REPORT", type="secondary"):
             with st.spinner("PROCESSING..."):
-                # 1. Check Risk Score
-                risk_score = alert_data.get("Risk Score", "High") # Default to High if missing for safety
+                # 1. AI Risk Assessment
+                risk_score = assess_risk(alert_data)
                 
                 if risk_score == "Low":
                     st.success("CASE CLOSED: No Suspicious Activity Detected.")
@@ -201,6 +231,8 @@ if st.session_state.page == 'Generator':
                     # 2. Genuine Suspicion -> Generate
                     query = alert_data.get("Description")
                     context = engine.retrieve_context(query)
+                    # Pass calculated risk to generator
+                    alert_data["Risk Score"] = risk_score 
                     sar_narrative = engine.generate_sar_narrative(alert_data, context)
                     
                     # 3. Store in Session & Redirect

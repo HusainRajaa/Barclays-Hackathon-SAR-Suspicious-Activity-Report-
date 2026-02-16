@@ -79,7 +79,6 @@ for _ in range(NUM_TRANSACTIONS):
         "Transaction Type": pattern["Type"],
         "Amount": amount,
         "Date": date,
-        "Risk Score": pattern["Risk"],
         "Description": desc
     })
 
