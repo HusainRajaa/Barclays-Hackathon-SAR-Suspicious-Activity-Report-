@@ -97,6 +97,9 @@ def load_engine():
 try:
     engine = load_engine()
 except Exception as e:
+    st.error(f"Failed to load engine: {e}")
+    st.stop()
+
 # --- RISK ENGINE (Mock ML) ---
 def assess_risk(alert_row):
     """
