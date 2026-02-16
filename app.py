@@ -262,17 +262,42 @@ def create_pdf(sar_text, audit_data, alert_data):
 
 # --- INITIALIZATION ---
 @st.cache_resource
-def load_engine():
+def load_engine_v2():
     engine = RAGEngine()
     docs = generate_regulatory_docs()
     engine.ingest_data(docs)
     return engine
 
 try:
-    engine = load_engine()
+    engine = load_engine_v2()
 except Exception as e:
     st.error(f"Failed to load engine: {e}")
     st.stop()
+
+def sanitize_sar_text(text: str) -> str:
+    """
+    Strips ALL markdown-like symbols for a clean professional text look.
+    """
+    import re
+    if not text:
+        return ""
+    
+    # 1. Remove bold/italic symbols (**, *, __)
+    text = text.replace("***", "").replace("**", "").replace("__", "").replace("*", "")
+    
+    # 2. Remove horizontal rules (---)
+    text = re.sub(r'---', '', text)
+    
+    # 3. Remove Header markers (###, ##, #)
+    text = re.sub(r'#+\s', '', text)
+    
+    # 4. Remove Bullet points (- at start of lines)
+    text = re.sub(r'^\s*[-•]\s*', '', text, flags=re.MULTILINE)
+    
+    # 5. Clean up excessive newlines
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    
+    return text.strip()
 
 # --- RISK ENGINE (Mock ML) ---
 def assess_risk(alert_row):
@@ -531,7 +556,10 @@ elif st.session_state.page == 'Generator':
                     alert_data["Risk Score"] = risk_score 
                     sar_narrative = engine.generate_sar_narrative(alert_data, context)
                     
-                    # 3. Store in Session & Redirect
+                    # 3. SANITIZE TEXT (Override cached engine behavior)
+                    sar_narrative = sanitize_sar_text(sar_narrative)
+                    
+                    # 4. Store in Session & Redirect
                     st.session_state["sar"] = sar_narrative
                     st.session_state["context"] = context
                     set_page('SAR Editor')
