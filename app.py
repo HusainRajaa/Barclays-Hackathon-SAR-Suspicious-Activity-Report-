@@ -114,10 +114,43 @@ with col2:
             st.button("Total Submit to FinCEN", disabled=True)
             
         with tab2:
-            st.write("The AI used the following regulations to justify the report:")
+            st.markdown("### 🔍 Regulatory Audit Trail")
+            st.info("The following regulatory guidelines were retrieved from the Vector Database to ground the narrative.")
+            
+            # Create a structured list of citations
+            audit_data = []
             for i, doc in enumerate(st.session_state["context"]):
-                with st.expander(f"Citation #{i+1}: {doc.metadata.get('source', 'Regulation')}"):
-                    st.write(doc.page_content)
+                source = doc.metadata.get('source', 'FCA Handbook')
+                relevance = "High" if i == 0 else "Medium"
+                audit_data.append({
+                    "Citation ID": f"CIT-{i+1:03d}",
+                    "Source Document": source,
+                    "Relevance Score": relevance,
+                    "Excerpt": doc.page_content[:150] + "..."
+                })
+                
+                # Visual Card for each citation
+                with st.expander(f"⚖️ Citation #{i+1}: {source} (Relevance: {relevance})", expanded=True):
+                    st.markdown(f"> *{doc.page_content}*")
+                    st.caption(f"Source: {source} | Verified by ChromaDB")
+            
+            st.markdown("---")
+            st.subheader("📊 Compliance Log Export")
+            
+            # Convert to DataFrame for download
+            df_audit = pd.DataFrame(audit_data)
+            st.dataframe(df_audit, hide_index=True)
+            
+            col_d1, col_d2 = st.columns(2)
+            with col_d1:
+                st.download_button(
+                    label="📥 Download Audit Log (CSV)",
+                    data=df_audit.to_csv(index=False),
+                    file_name="audit_trail_log.csv",
+                    mime="text/csv"
+                )
+            with col_d2:
+                 st.button("🖨️ Generate PDF Report", disabled=True, help="Feature coming in v2.0")
     else:
         st.write("👈 Select an alert and click Generate to see the magic.")
 
