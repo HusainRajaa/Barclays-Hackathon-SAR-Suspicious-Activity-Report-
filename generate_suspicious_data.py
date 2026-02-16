@@ -10,27 +10,26 @@ fake = faker.Faker()
 NUM_TRANSACTIONS = 50
 START_DATE = datetime(2025, 1, 1)
 
-# Suspicious Patterns
 PATTERNS = [
     {
         "Type": "Cash Deposit",
         "Risk": "High",
-        "Desc_Template": "Customer made {count} cash deposits of ${amt1}, ${amt2}, and ${amt3} at different branches. Total exceeds reporting threshold but individual amounts do not."
+        "Desc_Template": "Multiple cash deposits ({count}) at various branches. Total: ${total}."
     },
     {
         "Type": "Wire Transfer",
         "Risk": "Critical",
-        "Desc_Template": "Large wire transfer of ${amount} to '{company}' in {country} (High Risk Jurisdiction) immediately after deposit cleared."
+        "Desc_Template": "Outgoing Wire to {company} ({country}). Immediate pass-through."
     },
     {
         "Type": "Mixed Activity",
         "Risk": "High",
-        "Desc_Template": "Account shows rapid movement of funds. ${amount} deposited via check and immediately withdrawn via ATM in small increments."
+        "Desc_Template": "Rapid fund movement: Deposit via Check -> Immediate ATM Withdrawal."
     },
     {
         "Type": "Crypto Purchase",
         "Risk": "High",
-        "Desc_Template": "Multiple transactions to unregistered crypto exchange '{exchange}'. Source of funds unclear."
+        "Desc_Template": "High-value transfer to unregulated crypto exchange '{exchange}'."
     }
 ]
 
@@ -55,16 +54,12 @@ for _ in range(NUM_TRANSACTIONS):
     
     # Build Description
     if pattern["Type"] == "Cash Deposit":
-        d_amount = amount / 3
         desc = pattern["Desc_Template"].format(
             count=3,
-            amt1=round(d_amount - random.uniform(10, 100), 2),
-            amt2=round(d_amount + random.uniform(10, 100), 2),
-            amt3=round(d_amount, 2)
+            total=round(amount, 2)
         )
     elif pattern["Type"] == "Wire Transfer":
         desc = pattern["Desc_Template"].format(
-            amount=amount,
             company=random.choice(SHELL_COMPANIES),
             country=random.choice(HIGH_RISK_COUNTRIES)
         )
@@ -73,7 +68,7 @@ for _ in range(NUM_TRANSACTIONS):
             exchange="Binance_Unverified"
         )
     else:
-        desc = pattern["Desc_Template"].format(amount=amount)
+        desc = pattern["Desc_Template"]
     
     # Generate AlertID
     alert_id = f"ALT-{random.randint(10000, 99999)}"
