@@ -7,6 +7,8 @@ try:
     # Modern imports for LangChain 0.2+
     from langchain_text_splitters import CharacterTextSplitter
     from langchain_core.documents import Document
+    from langchain_community.chat_models import ChatOllama
+    from langchain_core.prompts import PromptTemplate
 except ImportError as e:
     # Fallback/Debug
     print(f"Import Error: {e}")
@@ -16,6 +18,8 @@ except ImportError as e:
         from langchain.embeddings import HuggingFaceEmbeddings
         from langchain.text_splitter import CharacterTextSplitter
         from langchain.docstore.document import Document
+        from langchain.chat_models import ChatOllama
+        from langchain.prompts import PromptTemplate
     except ImportError as e2:
         print(f"Legacy Import Error: {e2}")
         print("Please ensure requirements are installed: pip install langchain langchain-community langchain-huggingface faiss-cpu sentence-transformers")
@@ -38,6 +42,17 @@ class RAGEngine:
              self.embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
              
         self.vector_db = None
+        
+        # Initialize LLM (Ollama - Llama 3)
+        self.llm = None
+        try:
+            # Check if Ollama is reachable (optional, but good practice)
+            # For now, we just try to instantiate
+            self.llm = ChatOllama(model="llama3") 
+            print("LLM Initialized: Llama 3 (via Ollama)")
+        except Exception as e:
+            print(f"LLM Initialization Failed: {e}. Falling back to Template Mode.")
+
         print("RAG Engine Initialized.")
 
     def ingest_data(self, documents: list[str]):
@@ -92,8 +107,54 @@ class RAGEngine:
         """
         context_text = "\n".join([f"- {d.page_content}" for d in context_docs])
         
+        # Try to use LLM if available
+        if self.llm:
+            try:
+                print("Generating narrative using Llama 3...")
+                prompt_template = """
+                You are an expert Financial Crime Compliance Officer. Your task is to write a suspicious activity report (SAR) narrative.
+                
+                Context (Regulatory Rules):
+                {context}
+                
+                Transaction Details:
+                - Customer: {customer_name}
+                - Transaction Type: {transaction_type}
+                - Amount: ${amount}
+                - Date: {date}
+                - Description: {description}
+                
+                Instructions:
+                1. Write a formal, professional SAR narrative.
+                2. Explicitly cite the regulatory rules provided in the context where relevant.
+                3. Structure the report with clear sections: Introduction, Transaction Details, and Conclusion.
+                4. Do not invent facts not present in the transaction details.
+                
+                Narrative:
+                """
+                
+                prompt = PromptTemplate(
+                    input_variables=["context", "customer_name", "transaction_type", "amount", "date", "description"],
+                    template=prompt_template
+                )
+                
+                chain = prompt | self.llm
+                response = chain.invoke({
+                    "context": context_text,
+                    "customer_name": alert_data.get('Customer Name'),
+                    "transaction_type": alert_data.get('Transaction Type'),
+                    "amount": alert_data.get('Amount'),
+                    "date": alert_data.get('Date'),
+                    "description": alert_data.get('Description')
+                })
+                return response.content
+            except Exception as e:
+                print(f"LLM Generation Failed: {e}. Falling back to template.")
+        
+        # Fallback Template
         sar_draft = f"""
-*** GENERATED SAR NARRATIVE ***
+*** GENERATED SAR NARRATIVE (TEMPLATE MODE) ***
+Note: Llama 3 was not available or failed. This is a structured template.
 
 [INTRODUCTION]
 Based on the review of account activity for customer {alert_data.get('Customer Name')}, a series of transactions executed on {alert_data.get('Date')} were flagged as potential suspicious activity.

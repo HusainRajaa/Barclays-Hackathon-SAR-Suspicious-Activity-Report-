@@ -1,54 +1,119 @@
 import streamlit as st
 import pandas as pd
 import graphviz
+from fpdf import FPDF
 from rag_engine import RAGEngine
 from mock_data_loader import generate_regulatory_docs, generate_mock_alerts
 
-# Page Config
-st.set_page_config(page_title="Barclays SAR Generator", layout="wide")
+# --- CONFIGURATION & STYLES ---
+st.set_page_config(
+    page_title="Barclays SAR Generator",
+    page_icon="🦅",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-# Custom CSS for Professional Look (Black & White)
+# Custom CSS for "Barclays" Aesthetic
 st.markdown("""
     <style>
-    .main {
-        background-color: #ffffff;
+    /* Global Font & Background */
+    body {
+        font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+        background-color: #f4f5f7;
     }
-    .stApp > header {
-        background-color: #ffffff;
-        border-bottom: 1px solid #e0e0e0;
-    }
-    .stSidebar {
-        background-color: #f0f2f6;
-        border-right: 1px solid #e0e0e0;
-    }
+    
+    /* Headers */
     h1, h2, h3 {
-        color: #000000;
-        font-family: 'Helvetica', sans-serif;
+        color: #00395D; /* Dark Blue */
+        font-weight: 600;
     }
+    
+    /* Barclays Blue Accents */
     .stButton>button {
-        background-color: #000000;
+        background-color: #00AEEF; /* Barclays Cyan/Blue */
         color: white;
-        border-radius: 4px;
         border: none;
-        padding: 10px 20px;
+        border-radius: 4px;
         font-weight: bold;
+        transition: all 0.3s;
     }
     .stButton>button:hover {
-        background-color: #333333;
+        background-color: #008AC5;
+        color: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    /* Sidebar styling */
+    section[data-testid="stSidebar"] {
+        background-color: #00395D; /* Dark Corporate Blue */
         color: white;
     }
-    div[data-testid="stExpander"] div[role="button"] p {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #000000;
+    section[data-testid="stSidebar"] .css-17lntkn {
+        color: white;
     }
-    .nav-btn {
-        margin: 5px;
+    
+    /* Alerts/Dataframes */
+    .stDataFrame {
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+    }
+    
+    /* Cards (Expander/Metric) */
+    div[data-testid="stMetricValue"] {
+        color: #00AEEF;
+    }
+    
+    /* Custom Card Class */
+    .card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin-bottom: 20px;
     }
     </style>
     """, unsafe_allow_html=True)
 
-# Initialize Engine (Cached)
+# --- UTILS: PDF GENERATOR ---
+def create_pdf(sar_text, audit_data, alert_data):
+    pdf = FPDF()
+    pdf.add_page()
+    
+    # Header
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "Suspicious Activity Report (SAR)", ln=True, align='C')
+    pdf.ln(10)
+    
+    # Metadata
+    pdf.set_font("Arial", '', 10)
+    pdf.cell(0, 8, f"Customer Name: {alert_data.get('Customer Name')}", ln=True)
+    pdf.cell(0, 8, f"Transaction Date: {alert_data.get('Date')}", ln=True)
+    pdf.cell(0, 8, f"Amount: ${alert_data.get('Amount', 0):,.2f}", ln=True)
+    pdf.cell(0, 8, f"Alert ID: {alert_data.get('AlertID', 'N/A')}", ln=True)
+    pdf.ln(10)
+    
+    # Narrative Body
+    pdf.set_font("Arial", 'B', 12)
+    pdf.cell(0, 10, "Narrative", ln=True)
+    pdf.set_font("Arial", '', 11)
+    pdf.multi_cell(0, 6, sar_text)
+    pdf.ln(10)
+    
+    # Audit Trail
+    pdf.set_font("Arial", 'B', 12)
+    pdf.cell(0, 10, "Audit Trail / Regulatory Citations", ln=True)
+    
+    pdf.set_font("Arial", '', 9)
+    for item in audit_data:
+        pdf.set_text_color(100, 100, 100)
+        source = item.get("Source", "Unknown")
+        excerpt = item.get("Excerpt", "").replace("\n", " ")
+        pdf.multi_cell(0, 5, f"[{source}] {excerpt}")
+        pdf.ln(2)
+        
+    return pdf.output(dest='S').encode('latin-1')
+
+# --- INITIALIZATION ---
 @st.cache_resource
 def load_engine():
     engine = RAGEngine()
@@ -62,232 +127,162 @@ except Exception as e:
     st.error(f"Failed to load engine: {e}")
     st.stop()
 
-# Navigation State
 if 'page' not in st.session_state:
-    st.session_state.page = 'Generator'
+    st.session_state.page = 'Dashboard'
 
-def set_page(page_name):
-    st.session_state.page = page_name
-
-# Top Navigation Bar
-col_nav1, col_nav2, col_nav3 = st.columns(3)
-with col_nav1:
-    if st.button("SAR Generator", use_container_width=True):
-        set_page('Generator')
-with col_nav2:
-    if st.button("RAG Architecture Details", use_container_width=True):
-        set_page('RAG Architecture')
-with col_nav3:
-    if st.button("ML Model Logic", use_container_width=True):
-        set_page('ML Model')
-
-st.markdown("---")
-
-# --- PAGE 1: SAR GENERATOR ---
-if st.session_state.page == 'Generator':
-    st.title("Barclays SAR Narrative Generator")
-    st.markdown("Automated generation of Suspicious Activity Reports using Llama 3 and Vector Search.")
-
-    # Sidebar for Input Method
-    st.sidebar.header("Input Controls")
-    input_method = st.sidebar.radio("Select Input Method:", ("Upload Transaction File", "Manual Entry"))
-
-    alert_data = {}
-
-    if input_method == "Upload Transaction File":
-        uploaded_file = st.sidebar.file_uploader("Upload CSV File", type=["csv"])
+# --- SIDEBAR NAVIGATION ---
+with st.sidebar:
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Barclays_Logo.svg/1200px-Barclays_Logo.svg.png", width=150)
+    st.markdown("### Financial Crime Operations")
+    st.markdown("---")
+    
+    if st.button("📊 Dashboard", use_container_width=True):
+        st.session_state.page = 'Dashboard'
+    if st.button("📝 SAR Generator", use_container_width=True):
+        st.session_state.page = 'Generator'
+    if st.button("⚙️ System Architecture", use_container_width=True):
+        st.session_state.page = 'Architecture'
         
-        # Download Sample Template
-        sample_data = pd.DataFrame([{
-            "Customer Name": "John Smith",
-            "Transaction Type": "Cash Deposit", 
-            "Amount": 9500,
-            "Date": "2023-10-25",
-            "Description": "Customer made 3 separate cash deposits of $9,500, $9,000, and $8,500 in consecutive days."
-        }])
-        csv = sample_data.to_csv(index=False)
-        st.sidebar.download_button("⬇️ Download Sample CSV", csv, "sample_sar_data.csv", "text/csv")
+    st.markdown("---")
+    st.caption("v2.0.0 | Connected to RAG Engine")
 
-        if uploaded_file is not None:
-            try:
-                alerts = pd.read_csv(uploaded_file)
-                st.sidebar.success(f"✅ Loaded {len(alerts)} records")
-                
-                # Validation
-                required_cols = ["Customer Name", "Description", "Amount"]
-                missing_cols = [col for col in required_cols if col not in alerts.columns]
-                
-                if missing_cols:
-                    st.error(f"CSV missing columns: {', '.join(missing_cols)}")
-                else:
-                    # Select Specific Transaction
-                    # Create a standard list for dropdown
-                    options = [f"Row {i+1}: {row['Customer Name']} (${row['Amount']})" for i, row in alerts.iterrows()]
-                    selected_option = st.sidebar.selectbox("Select Transaction to Analyze", options)
-                    
-                    # Get Data
-                    selected_idx = options.index(selected_option)
-                    alert_data = alerts.iloc[selected_idx].to_dict()
-                    
-                    # Fill missing optional fields
-                    if "Date" not in alert_data: alert_data["Date"] = "N/A"
-                    if "Transaction Type" not in alert_data: alert_data["Transaction Type"] = "General Transaction"
-            
-            except Exception as e:
-                st.sidebar.error(f"Error reading CSV: {e}")
+# --- PAGE: DASHBOARD ---
+if st.session_state.page == 'Dashboard':
+    st.title("Operations Dashboard")
+    
+    # Key Metrics
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Pending Alerts", "12", "+2")
+    col2.metric("SARs Drafted", "45", "+5")
+    col3.metric("Regulatory Updates", "2", "New FCA Rules")
+    col4.metric("Avg. Processing Time", "1.2h", "-15%")
+    
+    st.markdown("### Recent Alerts")
+    mock_alerts = generate_mock_alerts()
+    st.dataframe(mock_alerts, use_container_width=True)
+
+# --- PAGE: SAR GENERATOR ---
+elif st.session_state.page == 'Generator':
+    st.title("SAR Narrative Generator")
+    
+    # Workflow Steps
+    step = st.selectbox("Current Step", ["1. Select Alert", "2. Review Context", "3. Generate & Export"])
+    
+    # Load Alerts
+    alerts = generate_mock_alerts()
+    
+    if step == "1. Select Alert":
+        st.subheader("Select a Transaction to Investigate")
+        
+        # Bug Fix: Use index to allow duplicate selection
+        selected_index = st.selectbox(
+            "Choose Alert",
+            range(len(alerts)),
+            format_func=lambda x: f"{alerts.iloc[x]['AlertID']} | {alerts.iloc[x]['Customer Name']} | ${alerts.iloc[x]['Amount']:,.2f}"
+        )
+        
+        selected_alert = alerts.iloc[selected_index].to_dict()
+        st.session_state['selected_alert'] = selected_alert
+        
+        st.info("Alert Select. Proceed to Step 2.")
+        
+        # Preview
+        st.json(selected_alert)
+
+    elif step == "2. Review Context":
+        if 'selected_alert' not in st.session_state:
+            st.warning("Please select an alert first.")
         else:
-            st.info("👈 Upload a CSV file to begin.")
-            # Stop execution here if no file to avoid errors in main layout
-            if input_method == "Upload Transaction File":
-                st.warning("Please upload a CSV file or switch to Manual Entry.")
-    else:
-        st.sidebar.subheader("Manual Transaction Details")
-        cust_name = st.sidebar.text_input("Customer Name", "Jane Doe")
-        trans_type = st.sidebar.selectbox("Transaction Type", ["Cash Deposit", "Wire Transfer", "Crypto Purchase"])
-        amount = st.sidebar.number_input("Amount ($)", min_value=0.0, value=9500.0)
-        date = st.sidebar.date_input("Transaction Date")
-        desc = st.sidebar.text_area("Description of Activity", "Customer made multiple cash deposits just under the reporting threshold.")
-        
-        alert_data = {
-            "Customer Name": cust_name,
-            "Transaction Type": trans_type,
-            "Amount": amount,
-            "Date": str(date),
-            "Description": desc,
-            "Risk Flag": "Manual Entry"
-        }
-
-    # Main Layout
-    col1, col2 = st.columns([1, 1])
-
-    with col1:
-        st.subheader("Transaction Context")
-        st.info(f"Customer: {alert_data.get('Customer Name')}")
-        st.write(f"Type: {alert_data.get('Transaction Type')}")
-        st.write(f"Amount: ${alert_data.get('Amount', 0):,.2f}")
-        st.write(f"Date: {alert_data.get('Date')}")
-        st.warning(f" Activity: {alert_data.get('Description')}")
-
-        st.markdown("---")
-        if st.button("Generate Narrative", type="primary"):
-            with st.spinner("Analyzing regulations and drafting narrative..."):
-                query = alert_data.get("Description")
+            alert = st.session_state['selected_alert']
+            st.subheader(f"Analyzing Alert: {alert.get('AlertID')}")
+            
+            with st.spinner("Retrieving Regulatory Context..."):
+                query = alert.get("Description")
                 context = engine.retrieve_context(query)
-                sar_narrative = engine.generate_sar_narrative(alert_data, context)
-                st.session_state["sar"] = sar_narrative
-                st.session_state["context"] = context
-
-    with col2:
-        st.subheader("Generated Output")
-        
-        if "sar" in st.session_state:
-            tab1, tab2 = st.tabs(["Narrative Draft", "Audit Trail"])
+                st.session_state['context'] = context
+                
+            st.success("✅ Relevant Regulations Found")
             
-            with tab1:
-                st.text_area("Final SAR Narrative", st.session_state["sar"], height=350)
-                
-            with tab2:
-                st.markdown("#### Regulatory Citations")
-                audit_data = []
-                for i, doc in enumerate(st.session_state["context"]):
-                    source = doc.metadata.get('source', 'FCA Handbook')
-                    audit_data.append({
-                        "Citation ID": f"CIT-{i+1:03d}",
-                        "Source": source,
-                        "Excerpt": doc.page_content[:100] + "..."
-                    })
-                    with st.expander(f"Citation {i+1}: {source}"):
-                        st.write(doc.page_content)
-                
-                # Export
-                st.markdown("---")
-                df_audit = pd.DataFrame(audit_data)
-                st.download_button(
-                    label="Download Audit Log (CSV)",
-                    data=df_audit.to_csv(index=False),
-                    file_name="audit_log.csv",
-                    mime="text/csv"
-                )
+            for doc in context:
+                with st.expander(f"📖 {doc.metadata.get('source', 'Regulation')}"):
+                    st.write(doc.page_content)
+                    
+            st.info("Review complete. Proceed to Step 3 to generate the narrative.")
+
+    elif step == "3. Generate & Export":
+        if 'selected_alert' not in st.session_state or 'context' not in st.session_state:
+            st.warning("Please complete previous steps.")
         else:
-            st.write("Select an alert and generate the narrative to view results.")
+            st.subheader("Drafting Narrative")
+            
+            if st.button("✨ Draft SAR Narrative"):
+                with st.spinner("Drafting with AI..."):
+                    sar = engine.generate_sar_narrative(
+                        st.session_state['selected_alert'],
+                        st.session_state['context']
+                    )
+                    st.session_state['sar_draft'] = sar
+            
+            if 'sar_draft' in st.session_state:
+                st.text_area("Final Narrative", st.session_state['sar_draft'], height=300)
+                
+                # Prepare Audit Data for PDF
+                audit_list = []
+                for doc in st.session_state['context']:
+                    audit_list.append({
+                        "Source": doc.metadata.get('source', 'FCA'),
+                        "Excerpt": doc.page_content
+                    })
+                
+                # Generate PDF
+                pdf_bytes = create_pdf(
+                    st.session_state['sar_draft'],
+                    audit_list,
+                    st.session_state['selected_alert']
+                )
+                
+                st.download_button(
+                    label="📥 Download Official SAR (PDF)",
+                    data=pdf_bytes,
+                    file_name=f"SAR_{st.session_state['selected_alert'].get('AlertID')}.pdf",
+                    mime="application/pdf"
+                )
 
-# --- PAGE 2: RAG ARCHITECTURE ---
-elif st.session_state.page == 'RAG Architecture':
-    st.title("Retrieval-Augmented Generation (RAG) Architecture")
-    st.markdown("### How the System Grounds AI in Law")
-    st.write("Our system uses RAG to ensure that every word generated by the AI is backed by a specific regulation. This solves the 'hallucination' problem common in Large Language Models.")
+# --- PAGE: ARCHITECTURE ---
+elif st.session_state.page == 'Architecture':
+    st.title("System Architecture")
     
-    # Graphviz Diagram for RAG
-    rag_graph = graphviz.Digraph()
-    rag_graph.attr(rankdir='LR')
-    rag_graph.attr('node', shape='box', style='rounded', color='black', fontname='Helvetica')
-    rag_graph.attr('edge', color='black')
-    
-    rag_graph.node('A', 'Transaction Data')
-    rag_graph.node('B', 'Query Encoder')
-    rag_graph.node('C', 'Vector Database\n(Regulatory Rules)', shape='cylinder')
-    rag_graph.node('D', 'Relevant Context')
-    rag_graph.node('E', 'Llama 3 Model')
-    rag_graph.node('F', 'Final SAR Narrative')
-    
-    rag_graph.edge('A', 'B')
-    rag_graph.edge('B', 'C', label=' Similarity Search')
-    rag_graph.edge('C', 'D', label=' Top-k Matches')
-    rag_graph.edge('A', 'E')
-    rag_graph.edge('D', 'E')
-    rag_graph.edge('E', 'F', label=' Generation')
-    
-    st.graphviz_chart(rag_graph)
-    
-    st.markdown("#### Process Flow")
-    st.markdown("""
-    1. **Ingestion**: Transaction details are converted into a query vector.
-    2. **Retrieval**: The system searches the Vector Database (ChromaDB/FAISS) for the most relevant regulatory guidelines.
-    3. **Augmentation**: The original transaction data is combined with the retrieved regulations.
-    4. **Generation**: The Augmented Prompt is sent to Llama 3, which writes the narrative using the provided laws as citations.
-    """)
+    st.markdown("### RAG Pipeline Visualization")
+    try:
+        rag_graph = graphviz.Digraph()
+        rag_graph.attr(rankdir='LR')
+        rag_graph.node('A', 'Transaction Data')
+        rag_graph.node('B', 'Query Encoder')
+        rag_graph.node('C', 'Vector DB\n(FCA Rules)')
+        rag_graph.node('D', 'Context')
+        rag_graph.node('E', 'Llama 3')
+        rag_graph.node('F', 'SAR Report')
+        
+        rag_graph.edge('A', 'B')
+        rag_graph.edge('B', 'C')
+        rag_graph.edge('C', 'D')
+        rag_graph.edge('A', 'E')
+        rag_graph.edge('D', 'E')
+        rag_graph.edge('E', 'F')
+        
+        st.graphviz_chart(rag_graph)
+    except Exception as e:
+        st.error("Graphviz visualization not available (tool missing). Displaying text flow instead.")
+        st.code("""
+        [Transaction Data] -> [Query Encoder] -> [Vector DB]
+                                      |
+                                      v
+        [Llama 3] <---------------- [Context]
+           |
+           v
+        [SAR Report]
+        """)
 
-# --- PAGE 3: ML MODEL ARCHITECTURE ---
-elif st.session_state.page == 'ML Model':
-    st.title("Machine Learning Architecture")
-    st.markdown("### The Dual-Engine Approach")
-    st.write("We utilize a hybrid approach combining supervised learning for known patterns and unsupervised learning for anomalies.")
-    
-    # Graphviz Diagram for ML
-    ml_graph = graphviz.Digraph()
-    ml_graph.attr(rankdir='TB')
-    ml_graph.attr('node', shape='box', style='filled', color='black', fillcolor='white', fontname='Helvetica')
-    ml_graph.attr('edge', color='black')
-    
-    with ml_graph.subgraph(name='cluster_0') as c:
-        c.attr(style='dashed', color='black', label='The Detection Core')
-        c.node('XGB', 'XGBoost\n(Supervised)')
-        c.node('ISO', 'Isolation Forest\n(Anomaly)')
-    
-    ml_graph.node('Input', 'Raw Transaction Data')
-    ml_graph.node('Feat', 'Feature Engineering')
-    ml_graph.node('Ens', 'Ensemble Decision')
-    ml_graph.node('Alert', 'Generate Alert', shape='doublecircle')
-    ml_graph.node('Active', 'Active Learning Loop')
-    
-    ml_graph.edge('Input', 'Feat')
-    ml_graph.edge('Feat', 'XGB')
-    ml_graph.edge('Feat', 'ISO')
-    ml_graph.edge('XGB', 'Ens')
-    ml_graph.edge('ISO', 'Ens')
-    ml_graph.edge('Ens', 'Alert')
-    ml_graph.edge('Alert', 'Active', label=' Human Feedback')
-    ml_graph.edge('Active', 'XGB', label=' Retraining')
-    
-    st.graphviz_chart(ml_graph)
-    
-    st.markdown("#### Key Components")
-    st.markdown("""
-    - **XGBoost**: Detects known money laundering typologies based on historical labeled data.
-    - **Isolation Forest**: Identifies statistical anomalies (outliers).
-    - **Active Learning**: Feeds analyst decisions back into the model to improve accuracy.
-    """)
-
-# Footer
+# --- FOOTER ---
 st.markdown("---")
-st.caption("Barclays Financial Crime Operations | Hackathon 2026")
+st.caption("© 2026 Barclays PLC | Financial Crime Global Operations | Confidential")
