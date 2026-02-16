@@ -195,7 +195,7 @@ if st.session_state.page == 'Generator':
                 risk_score = alert_data.get("Risk Score", "High") # Default to High if missing for safety
                 
                 if risk_score == "Low":
-                    st.success("✅ CASE CLOSED: No Suspicious Activity Detected.")
+                    st.success("CASE CLOSED: No Suspicious Activity Detected.")
                     st.info("Transaction matches customer profile. No regulatory reporting required.")
                 else:
                     # 2. Genuine Suspicion -> Generate
@@ -215,7 +215,7 @@ if st.session_state.page == 'Generator':
         
 # --- PAGE 4: SAR EDITOR (Full Screen) ---
 elif st.session_state.page == 'SAR Editor':
-    st.title("📝 Investigation Report Editor")
+    st.title("Investigation Report Editor")
     st.markdown("Review and refine the generated Suspicious Activity Report before final submission.")
     
     col_edit, col_view = st.columns([2, 1])
@@ -229,10 +229,10 @@ elif st.session_state.page == 'SAR Editor':
         st.markdown("---")
         c1, c2 = st.columns(2)
         with c1:
-            if st.button("💾 SAVE DRAFT"):
+            if st.button("SAVE DRAFT"):
                 st.success("Draft Saved locally.")
         with c2:
-            st.download_button("📤 EXPORT TO PDF", st.session_state["sar"], "sar_report.txt")
+            st.download_button("EXPORT TO PDF", st.session_state["sar"], "sar_report.txt")
             
     with col_view:
         st.markdown("### Audit Trail")
@@ -244,7 +244,7 @@ elif st.session_state.page == 'SAR Editor':
                 with st.expander(f"Ref {i+1}: {source}"):
                     st.caption(doc.page_content)
         
-        if st.button("🔙 Back to Dashboard"):
+        if st.button("Back to Dashboard"):
             set_page('Generator')
             st.rerun()
 
