@@ -27,148 +27,146 @@ with st.sidebar:
     else:
         st.session_state.theme = "Light"
 
-# Custom CSS for Professional Look (Black & White) - Light Mode
-light_theme_css = """
+# --- TOTAL UI OVERHAUL CSS ---
+# This ensures a "Proper" monochrome look by targeting ROOT containers
+common_css = """
     <style>
-    /* Global Reset */
-    .stApp, .main, [data-testid="stAppViewContainer"], [data-testid="stHeader"], [data-testid="stSidebar"] {
-        background-color: #ffffff !important;
-        color: #000000 !important;
-        font-family: 'Courier New', monospace !important; 
+    /* Font and General Scale */
+    html, body, [data-testid="stAppViewContainer"] {
+        font-family: 'Courier New', monospace !important;
     }
     
-    /* Strict Box Model */
-    div.block-container {
-        padding-top: 2rem;
-    }
-    
-    /* Borders for Everything */
+    /* Remove default Streamlit padding/decorations */
     [data-testid="stHeader"] {
-        border-bottom: 2px solid #000000 !important;
-    }
-    [data-testid="stSidebar"] {
-        border-right: 2px solid #000000 !important;
+        background: transparent !important;
     }
     
-    /* Widget Styling */
+    /* Strict Box Bordering */
     .stButton>button {
-        background-color: #ffffff !important;
-        color: #000000 !important;
-        border: 2px solid #000000 !important;
         border-radius: 0px !important;
         text-transform: uppercase !important;
         font-weight: bold !important;
-    }
-    .stButton>button:hover {
-        background-color: #000000 !important;
-        color: #ffffff !important;
+        padding: 0.5rem 1rem !important;
+        width: 100% !important;
     }
     
-    /* Input Fields */
+    /* Selectbox and Inputs */
     input, textarea, select, .stSelectbox>div>div>div {
-        border: 2px solid #000000 !important;
         border-radius: 0px !important;
-        color: #000000 !important;
-        background-color: #ffffff !important;
     }
     
-    /* Headers */
-    h1, h2, h3, h4, h5, h6 {
-        color: #000000 !important;
-        font-family: 'Courier New', monospace !important;
-        border-bottom: 2px solid #000000 !important;
-    }
-    
-    /* Text elements */
-    p, span, label, .stMarkdown, .stText, .stCaption {
-        color: #000000 !important;
-    }
-    
-    /* Alert Boxes */
-    .stAlert {
-        background-color: #ffffff !important;
-        border: 2px solid #000000 !important;
-        color: #000000 !important;
-        border-radius: 0px !important;
+    /* Navigation Bar Borders */
+    [data-testid="stHorizontalBlock"] {
+        border-bottom: 2px solid;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     </style>
 """
 
-# Custom CSS for Dark Mode (True Monochrome Dark)
-dark_theme_css = """
+light_theme_css = common_css + """
     <style>
-    /* Global Reset */
-    .stApp, .main, [data-testid="stAppViewContainer"], [data-testid="stHeader"], [data-testid="stSidebar"] {
+    /* Light Mode Overrides */
+    .stApp, [data-testid="stAppViewContainer"], [data-testid="stMainViewContainer"] {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    [data-testid="stSidebar"] {
+        background-color: #ffffff !important;
+        border-right: 2px solid #000000 !important;
+    }
+    
+    /* Text Colors */
+    h1, h2, h3, h4, h5, h6, p, span, label, .stMarkdown {
+        color: #000000 !important;
+    }
+    
+    /* Borders */
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: 2px solid #000000 !important;
+    }
+    
+    /* Widgets */
+    .stButton>button {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 2px solid #000000 !important;
+    }
+    .stButton>button:hover {
         background-color: #000000 !important;
         color: #ffffff !important;
-        font-family: 'Courier New', monospace !important; 
     }
     
-    /* Strict Box Model */
-    div.block-container {
-        padding-top: 2rem;
+    input, textarea, select, .stSelectbox>div>div>div {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 2px solid #000000 !important;
     }
     
-    /* Borders for Everything */
-    [data-testid="stHeader"] {
-        border-bottom: 2px solid #ffffff !important;
+    [data-testid="stHorizontalBlock"] {
+        border-color: #000000 !important;
     }
+    </style>
+"""
+
+dark_theme_css = common_css + """
+    <style>
+    /* Proper Dark Mode Overrides (True Monochrome) */
+    .stApp, [data-testid="stAppViewContainer"], [data-testid="stMainViewContainer"] {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
     [data-testid="stSidebar"] {
+        background-color: #000000 !important;
         border-right: 2px solid #ffffff !important;
     }
     
-    /* Widget Styling */
+    /* Target the sidebar content wrapper specifically */
+    [data-testid="stSidebarContent"] {
+        background-color: #000000 !important;
+    }
+    
+    /* Text Colors */
+    h1, h2, h3, h4, h5, h6, p, span, label, .stMarkdown {
+        color: #ffffff !important;
+    }
+    
+    /* Borders */
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: 2px solid #ffffff !important;
+    }
+    
+    /* Widgets */
     .stButton>button {
         background-color: #000000 !important;
         color: #ffffff !important;
         border: 2px solid #ffffff !important;
-        border-radius: 0px !important;
-        text-transform: uppercase !important;
-        font-weight: bold !important;
     }
     .stButton>button:hover {
         background-color: #ffffff !important;
         color: #000000 !important;
     }
     
-    /* Input Fields */
     input, textarea, select, .stSelectbox>div>div>div {
-        border: 2px solid #ffffff !important;
-        border-radius: 0px !important;
-        color: #ffffff !important;
         background-color: #000000 !important;
-    }
-    
-    /* Headers */
-    h1, h2, h3, h4, h5, h6 {
         color: #ffffff !important;
-        font-family: 'Courier New', monospace !important;
-        border-bottom: 2px solid #ffffff !important;
-    }
-    
-    /* Text elements */
-    p, span, label, .stMarkdown, .stText, .stCaption {
-        color: #ffffff !important;
-    }
-    
-    /* Alert Boxes */
-    .stAlert {
-        background-color: #000000 !important;
         border: 2px solid #ffffff !important;
-        color: #ffffff !important;
-        border-radius: 0px !important;
     }
     
-    /* Tab Styling */
+    [data-testid="stHorizontalBlock"] {
+        border-color: #ffffff !important;
+    }
+    
+    /* Fix for Tabs */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 2px;
+        background-color: #000000 !important;
     }
     .stTabs [data-baseweb="tab"] {
-        border: 1px solid #ffffff !important;
-        border-radius: 0px !important;
-        padding: 10px 20px !important;
-        background-color: #000000 !important;
         color: #ffffff !important;
+        background-color: #000000 !important;
+        border: 1px solid #ffffff !important;
     }
     </style>
 """
