@@ -153,22 +153,59 @@ class RAGEngine:
         
         # Fallback Template
         sar_draft = f"""
-*** GENERATED SAR NARRATIVE (TEMPLATE MODE) ***
-Note: Llama 3 was not available or failed. This is a structured template.
+*** CONFIDENTIAL SUSPICIOUS ACTIVITY REPORT (SAR) ***
+**REPORT STATUS**: DRAFT
+**LEGAL DISCLAIMER**: This document contains sensitive financial intelligence.
 
-[INTRODUCTION]
-Based on the review of account activity for customer {alert_data.get('Customer Name')}, a series of transactions executed on {alert_data.get('Date')} were flagged as potential suspicious activity.
+---
 
-[TRANSACTION DETAILS]
-The customer initiated a {alert_data.get('Transaction Type')} of ${alert_data.get('Amount')}. 
-Specific details: {alert_data.get('Description')}
+### 1. EXECUTIVE SUMMARY
+**Subject**: {alert_data.get('Customer Name')}
+**Alert Date**: {alert_data.get('Date')}
+**Total Suspicious Amount**: ${alert_data.get('Amount', 0):,.2f}
 
-[REGULATORY CONTEXT & REASONING]
-This activity has been flagged in accordance with the following regulatory indicators:
+** Synopsis**:
+[Generate a high-level summary of why this behaviour is anomalous. clearly state the primary suspicion (e.g., Structuring, Layering).]
+
+---
+
+### 2. SUBJECT PROFILE & ACCOUNT ACTIVITY
+**Customer Name**: {alert_data.get('Customer Name')}
+**Transaction Type**: {alert_data.get('Transaction Type')}
+**Risk Rating**: {alert_data.get('Risk Score', 'High')}
+
+**Activity Overview**:
+The customer executed the following specific transaction(s):
+- **Date**: {alert_data.get('Date')}
+- **Amount**: ${alert_data.get('Amount', 0):,.2f}
+- **Description**: {alert_data.get('Description')}
+
+**Behavioral Analysis**:
+[Analyze how this specific transaction deviates from expected behavior for this customer profile. Mention if the volume or frequency is unusual.]
+
+---
+
+### 3. INVESTIGATION FINDINGS & RED FLAGS
+The investigation identified the following specific red flags indicative of potential illicit activity:
+
+**Regulatory Indicators Identified**:
 {context_text}
 
-[CONCLUSION]
-Due to the alignment with the above indicators, this activity is deemed suspicious and is being reported for further investigation.
+**Detailed Analysis of Suspicion**:
+[Elaborate on how the transaction details align with the regulatory indicators above. For example, explain *why* the specific amount or pattern constitutes 'Structuring' or 'Layering' under the law. Be verbose and specific.]
+
+---
+
+### 4. LAW ENFORCEMENT SECTION
+**Suspected Violation**: Money Laundering / Terrorist Financing
+**Recommended Action**: File SAR with Financial Intelligence Unit (FIU).
+
+**Conclusion**:
+Based on the convergence of the red flags identified above and the lack of apparent economic rationale, this activity is deemed highly suspicious. We recommend immediate filing and enhanced monitoring of the customer relationship.
+
+---
+**Analyst signature**: ______________________
+**Date**: {pd.Timestamp.now().strftime('%Y-%m-%d')}
 """
         return sar_draft
 

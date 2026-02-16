@@ -1,0 +1,3 @@
+AlertID,Customer Name,Transaction Type,Amount,Date,Risk Score,Description
+ALT-001,John Doe,Cash Deposit,9500.0,2023-10-25,High,"Customer made 3 separate cash deposits of $9,500, $9,000, and $8,500 in consecutive days."
+ALT-002,Acme Shell Corp,Wire Transfer,250000.0,2023-10-26,Critical,Large wire transfer to 'Offshore Holdings Ltd' in Cayman Islands immediately after receipt of funds.
