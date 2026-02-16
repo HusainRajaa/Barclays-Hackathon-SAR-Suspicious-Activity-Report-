@@ -1,12 +1,13 @@
 import streamlit as st
 import pandas as pd
+import graphviz
 from rag_engine import RAGEngine
 from mock_data_loader import generate_regulatory_docs, generate_mock_alerts
 
 # Page Config
-st.set_page_config(page_title="SAR Narrative AI", layout="wide")
+st.set_page_config(page_title="Barclays SAR Generator", layout="wide")
 
-# Title & Header
+# Custom CSS for Professional Look (No Emojis)
 st.markdown("""
     <style>
     .main {
@@ -16,144 +17,229 @@ st.markdown("""
         background-color: #00AEEF;
     }
     .stSidebar {
-        background-color: #00395D; /* Barclays Blue */
+        background-color: #00395D;
         color: white;
     }
-    h1 {
+    h1, h2, h3 {
         color: #00395D;
         font-family: 'Helvetica', sans-serif;
-    }
-    h3 {
-        color: #00AEEF;
     }
     .stButton>button {
         background-color: #00395D;
         color: white;
-        border-radius: 5px;
+        border-radius: 4px;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
     }
-    div.stButton > button:first-child {
-        background-color: #00395D;
+    .stButton>button:hover {
+        background-color: #00AEEF;
         color: white;
     }
-    div[data-testid="stExpander"] div[role="button"] p {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #00395D;
+    .nav-btn {
+        margin: 5px;
     }
     </style>
     """, unsafe_allow_html=True)
-
-st.title("🦅 Barclays SAR Generator")
-st.markdown("""
-**Investigator Dashboard | Financial Crime Operations**
-*automated narrative generation powered by Llama 3 & Vector Search using ChromaDB(FAISS)*
-""")
 
 # Initialize Engine (Cached)
 @st.cache_resource
 def load_engine():
     engine = RAGEngine()
-    # Pre-ingest data for demo purposes
     docs = generate_regulatory_docs()
     engine.ingest_data(docs)
     return engine
 
 try:
     engine = load_engine()
-    st.success("✅ RAG Engine & Vector DB Ready")
 except Exception as e:
     st.error(f"Failed to load engine: {e}")
     st.stop()
 
-# Sidebar: Select Alert
-st.sidebar.header("🔍 Alert Dashboard")
-alerts = generate_mock_alerts()
+# Navigation State
+if 'page' not in st.session_state:
+    st.session_state.page = 'Generator'
 
-# Select box for alert
-alert_options = alerts["AlertID"] + " - " + alerts["Customer Name"]
-selected_option = st.sidebar.selectbox("Select Pending Alert", alert_options)
+def set_page(page_name):
+    st.session_state.page = page_name
 
-# Get selected alert data
-selected_alert_idx = alert_options.tolist().index(selected_option)
-current_alert = alerts.iloc[selected_alert_idx].to_dict()
+# Top Navigation Bar
+col_nav1, col_nav2, col_nav3 = st.columns(3)
+with col_nav1:
+    if st.button("SAR Generator", use_container_width=True):
+        set_page('Generator')
+with col_nav2:
+    if st.button("RAG Architecture Details", use_container_width=True):
+        set_page('RAG Architecture')
+with col_nav3:
+    if st.button("ML Model Logic", use_container_width=True):
+        set_page('ML Model')
 
-# Main Layout
-col1, col2 = st.columns([1, 1])
+st.markdown("---")
 
-with col1:
-    st.subheader("📋 Transaction Details")
-    st.info(f"**Customer**: {current_alert['Customer Name']}")
-    st.write(f"**Type**: {current_alert['Transaction Type']}")
-    st.write(f"**Amount**: ${current_alert['Amount']:,.2f}")
-    st.write(f"**Date**: {current_alert['Date']}")
-    st.warning(f"**Risk Flag**: {current_alert['Description']}")
+# --- PAGE 1: SAR GENERATOR ---
+if st.session_state.page == 'Generator':
+    st.title("Barclays SAR Narrative Generator")
+    st.markdown("Automated generation of Suspicious Activity Reports using Llama 3 and Vector Search.")
 
-    st.markdown("---")
-    if st.button("🚀 Generate SAR Narrative", type="primary"):
-        with st.spinner("Consulting Vector DB & Generating Narrative..."):
-            # 1. Retrieve Context
-            query = current_alert["Description"]
-            context = engine.retrieve_context(query)
-            
-            # 2. Generate SAR
-            sar_narrative = engine.generate_sar_narrative(current_alert, context)
-            
-            # Store in session state to persist
-            st.session_state["sar"] = sar_narrative
-            st.session_state["context"] = context
+    # Sidebar for Input Method
+    st.sidebar.header("Input Controls")
+    input_method = st.sidebar.radio("Select Input Method:", ("Choose Pending Alert", "Manual Entry"))
 
-with col2:
-    st.subheader("📝 Generated Output")
-    
-    if "sar" in st.session_state:
-        # Tabs for Narrative and Audit Trail
-        tab1, tab2 = st.tabs(["📄 Narrative", "🔍 Audit Trail (Context)"])
+    alert_data = {}
+
+    if input_method == "Choose Pending Alert":
+        alerts = generate_mock_alerts()
+        alert_options = alerts["AlertID"] + " - " + alerts["Customer Name"]
+        selected_option = st.sidebar.selectbox("Select Alert", alert_options)
+        selected_alert_idx = alert_options.tolist().index(selected_option)
+        alert_data = alerts.iloc[selected_alert_idx].to_dict()
+    else:
+        st.sidebar.subheader("Manual Transaction Details")
+        cust_name = st.sidebar.text_input("Customer Name", "Jane Doe")
+        trans_type = st.sidebar.selectbox("Transaction Type", ["Cash Deposit", "Wire Transfer", "Crypto Purchase"])
+        amount = st.sidebar.number_input("Amount ($)", min_value=0.0, value=9500.0)
+        date = st.sidebar.date_input("Transaction Date")
+        desc = st.sidebar.text_area("Description of Activity", "Customer made multiple cash deposits just under the reporting threshold.")
         
-        with tab1:
-            st.text_area("Final SAR Draft", st.session_state["sar"], height=300)
-            st.button("Total Submit to FinCEN", disabled=True)
+        alert_data = {
+            "Customer Name": cust_name,
+            "Transaction Type": trans_type,
+            "Amount": amount,
+            "Date": str(date),
+            "Description": desc,
+            "Risk Flag": "Manual Entry"
+        }
+
+    # Main Layout
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        st.subheader("Transaction Context")
+        st.info(f"Customer: {alert_data.get('Customer Name')}")
+        st.write(f"Type: {alert_data.get('Transaction Type')}")
+        st.write(f"Amount: ${alert_data.get('Amount', 0):,.2f}")
+        st.write(f"Date: {alert_data.get('Date')}")
+        st.warning(f" Activity: {alert_data.get('Description')}")
+
+        st.markdown("---")
+        if st.button("Generate Narrative", type="primary"):
+            with st.spinner("Analyzing regulations and drafting narrative..."):
+                query = alert_data.get("Description")
+                context = engine.retrieve_context(query)
+                sar_narrative = engine.generate_sar_narrative(alert_data, context)
+                st.session_state["sar"] = sar_narrative
+                st.session_state["context"] = context
+
+    with col2:
+        st.subheader("Generated Output")
+        
+        if "sar" in st.session_state:
+            tab1, tab2 = st.tabs(["Narrative Draft", "Audit Trail"])
             
-        with tab2:
-            st.markdown("### 🔍 Regulatory Audit Trail")
-            st.info("The following regulatory guidelines were retrieved from the Vector Database to ground the narrative.")
-            
-            # Create a structured list of citations
-            audit_data = []
-            for i, doc in enumerate(st.session_state["context"]):
-                source = doc.metadata.get('source', 'FCA Handbook')
-                relevance = "High" if i == 0 else "Medium"
-                audit_data.append({
-                    "Citation ID": f"CIT-{i+1:03d}",
-                    "Source Document": source,
-                    "Relevance Score": relevance,
-                    "Excerpt": doc.page_content[:150] + "..."
-                })
+            with tab1:
+                st.text_area("Final SAR Narrative", st.session_state["sar"], height=350)
                 
-                # Visual Card for each citation
-                with st.expander(f"⚖️ Citation #{i+1}: {source} (Relevance: {relevance})", expanded=True):
-                    st.markdown(f"> *{doc.page_content}*")
-                    st.caption(f"Source: {source} | Verified by ChromaDB")
-            
-            st.markdown("---")
-            st.subheader("📊 Compliance Log Export")
-            
-            # Convert to DataFrame for download
-            df_audit = pd.DataFrame(audit_data)
-            st.dataframe(df_audit, hide_index=True)
-            
-            col_d1, col_d2 = st.columns(2)
-            with col_d1:
+            with tab2:
+                st.markdown("#### Regulatory Citations")
+                audit_data = []
+                for i, doc in enumerate(st.session_state["context"]):
+                    source = doc.metadata.get('source', 'FCA Handbook')
+                    audit_data.append({
+                        "Citation ID": f"CIT-{i+1:03d}",
+                        "Source": source,
+                        "Excerpt": doc.page_content[:100] + "..."
+                    })
+                    with st.expander(f"Citation {i+1}: {source}"):
+                        st.write(doc.page_content)
+                
+                # Export
+                st.markdown("---")
+                df_audit = pd.DataFrame(audit_data)
                 st.download_button(
-                    label="📥 Download Audit Log (CSV)",
+                    label="Download Audit Log (CSV)",
                     data=df_audit.to_csv(index=False),
-                    file_name="audit_trail_log.csv",
+                    file_name="audit_log.csv",
                     mime="text/csv"
                 )
-            with col_d2:
-                 st.button("🖨️ Generate PDF Report", disabled=True, help="Feature coming in v2.0")
-    else:
-        st.write("👈 Select an alert and click Generate to see the magic.")
+        else:
+            st.write("Select an alert and generate the narrative to view results.")
+
+# --- PAGE 2: RAG ARCHITECTURE ---
+elif st.session_state.page == 'RAG Architecture':
+    st.title("Retrieval-Augmented Generation (RAG) Architecture")
+    st.markdown("### How the System Grounds AI in Law")
+    st.write("Our system uses RAG to ensure that every word generated by the AI is backed by a specific regulation. This solves the 'hallucination' problem common in Large Language Models.")
+    
+    # Graphviz Diagram for RAG
+    rag_graph = graphviz.Digraph()
+    rag_graph.attr(rankdir='LR')
+    
+    rag_graph.node('A', 'Transaction Data')
+    rag_graph.node('B', 'Query Encoder')
+    rag_graph.node('C', 'Vector Database\n(Regulatory Rules)')
+    rag_graph.node('D', 'Relevant Context')
+    rag_graph.node('E', 'Llama 3 Model')
+    rag_graph.node('F', 'Final SAR Narrative')
+    
+    rag_graph.edge('A', 'B')
+    rag_graph.edge('B', 'C', label=' Similarity Search')
+    rag_graph.edge('C', 'D', label=' Top-k Matches')
+    rag_graph.edge('A', 'E')
+    rag_graph.edge('D', 'E')
+    rag_graph.edge('E', 'F', label=' Generation')
+    
+    st.graphviz_chart(rag_graph)
+    
+    st.markdown("#### Process Flow")
+    st.markdown("""
+    1. **Ingestion**: Transaction details are converted into a query vector.
+    2. **Retrieval**: The system searches the Vector Database (ChromaDB/FAISS) for the most relevant regulatory guidelines.
+    3. **Augmentation**: The original transaction data is combined with the retrieved regulations.
+    4. **Generation**: The Augmented Prompt is sent to Llama 3, which writes the narrative using the provided laws as citations.
+    """)
+
+# --- PAGE 3: ML MODEL ARCHITECTURE ---
+elif st.session_state.page == 'ML Model':
+    st.title("Machine Learning Architecture")
+    st.markdown("### The Dual-Engine Approach")
+    st.write("We utilize a hybrid approach combining supervised learning for known patterns and unsupervised learning for anomalies.")
+    
+    # Graphviz Diagram for ML
+    ml_graph = graphviz.Digraph()
+    ml_graph.attr(rankdir='TB')
+    
+    with ml_graph.subgraph(name='cluster_0') as c:
+        c.attr(style='filled', color='lightgrey')
+        c.node_attr.update(style='filled', color='white')
+        c.node('XGB', 'XGBoost\n(Supervised)')
+        c.node('ISO', 'Isolation Forest\n(Anomaly)')
+        c.attr(label='The Detection Core')
+    
+    ml_graph.node('Input', 'Raw Transaction Data')
+    ml_graph.node('Feat', 'Feature Engineering')
+    ml_graph.node('Ens', 'Ensemble Decision')
+    ml_graph.node('Alert', 'Generate Alert')
+    ml_graph.node('Active', 'Active Learning Loop')
+    
+    ml_graph.edge('Input', 'Feat')
+    ml_graph.edge('Feat', 'XGB')
+    ml_graph.edge('Feat', 'ISO')
+    ml_graph.edge('XGB', 'Ens')
+    ml_graph.edge('ISO', 'Ens')
+    ml_graph.edge('Ens', 'Alert')
+    ml_graph.edge('Alert', 'Active', label=' Human Feedback')
+    ml_graph.edge('Active', 'XGB', label=' Retraining')
+    
+    st.graphviz_chart(ml_graph)
+    
+    st.markdown("#### Key Components")
+    st.markdown("""
+    - **XGBoost**: Detects known money laundering typologies based on historical labeled data.
+    - **Isolation Forest**: Identifies statistical anomalies (outliers) that do not match normal customer behavior.
+    - **Active Learning**: Feeds analyst decisions (True/False Positives) back into the model to improve accuracy over time.
+    """)
 
 # Footer
 st.markdown("---")
-st.caption("Powered by Llama 3 • ChromaDB (FAISS) • LangChain")
+st.caption("Barclays Financial Crime Operations | Hackathon 2026")
