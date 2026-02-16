@@ -7,25 +7,26 @@ from mock_data_loader import generate_regulatory_docs, generate_mock_alerts
 # Page Config
 st.set_page_config(page_title="Barclays SAR Generator", layout="wide")
 
-# Custom CSS for Professional Look (No Emojis)
+# Custom CSS for Professional Look (Black & White)
 st.markdown("""
     <style>
     .main {
-        background-color: #f5f5f5;
+        background-color: #ffffff;
     }
     .stApp > header {
-        background-color: #00AEEF;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e0e0e0;
     }
     .stSidebar {
-        background-color: #00395D;
-        color: white;
+        background-color: #f0f2f6;
+        border-right: 1px solid #e0e0e0;
     }
     h1, h2, h3 {
-        color: #00395D;
+        color: #000000;
         font-family: 'Helvetica', sans-serif;
     }
     .stButton>button {
-        background-color: #00395D;
+        background-color: #000000;
         color: white;
         border-radius: 4px;
         border: none;
@@ -33,8 +34,13 @@ st.markdown("""
         font-weight: bold;
     }
     .stButton>button:hover {
-        background-color: #00AEEF;
+        background-color: #333333;
         color: white;
+    }
+    div[data-testid="stExpander"] div[role="button"] p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #000000;
     }
     .nav-btn {
         margin: 5px;
