@@ -188,47 +188,65 @@ if st.session_state.page == 'Generator':
         st.write(alert_data.get('Description', ''))
 
         st.markdown("---")
-        if st.button("GENERATE REPORT", type="secondary"): # Secondary is usually white/outline in Streamlit for that 'classic' look if customized, but default primary is fine too.
+        st.markdown("---")
+        if st.button("GENERATE REPORT", type="secondary"):
             with st.spinner("PROCESSING..."):
-                query = alert_data.get("Description")
-                context = engine.retrieve_context(query)
-                sar_narrative = engine.generate_sar_narrative(alert_data, context)
-                st.session_state["sar"] = sar_narrative
-                st.session_state["context"] = context
+                # 1. Check Risk Score
+                risk_score = alert_data.get("Risk Score", "High") # Default to High if missing for safety
+                
+                if risk_score == "Low":
+                    st.success("✅ CASE CLOSED: No Suspicious Activity Detected.")
+                    st.info("Transaction matches customer profile. No regulatory reporting required.")
+                else:
+                    # 2. Genuine Suspicion -> Generate
+                    query = alert_data.get("Description")
+                    context = engine.retrieve_context(query)
+                    sar_narrative = engine.generate_sar_narrative(alert_data, context)
+                    
+                    # 3. Store in Session & Redirect
+                    st.session_state["sar"] = sar_narrative
+                    st.session_state["context"] = context
+                    set_page('SAR Editor')
+                    st.rerun()
 
     with col2:
-        st.subheader("Generated Output")
+        st.subheader("System Output")
+        st.write("Results will appear here or open in the Editor.")
         
-        if "sar" in st.session_state:
-            tab1, tab2 = st.tabs(["Narrative Draft", "Audit Trail"])
+# --- PAGE 4: SAR EDITOR (Full Screen) ---
+elif st.session_state.page == 'SAR Editor':
+    st.title("📝 Investigation Report Editor")
+    st.markdown("Review and refine the generated Suspicious Activity Report before final submission.")
+    
+    col_edit, col_view = st.columns([2, 1])
+    
+    with col_edit:
+        st.markdown("### Narrative Draft")
+        # specific height for "very big" report
+        edited_sar = st.text_area("Edit Narrative", st.session_state.get("sar", ""), height=800)
+        st.session_state["sar"] = edited_sar
+        
+        st.markdown("---")
+        c1, c2 = st.columns(2)
+        with c1:
+            if st.button("💾 SAVE DRAFT"):
+                st.success("Draft Saved locally.")
+        with c2:
+            st.download_button("📤 EXPORT TO PDF", st.session_state["sar"], "sar_report.txt")
             
-            with tab1:
-                st.text_area("Final SAR Narrative", st.session_state["sar"], height=350)
-                
-            with tab2:
-                st.markdown("#### Regulatory Citations")
-                audit_data = []
-                for i, doc in enumerate(st.session_state["context"]):
-                    source = doc.metadata.get('source', 'FCA Handbook')
-                    audit_data.append({
-                        "Citation ID": f"CIT-{i+1:03d}",
-                        "Source": source,
-                        "Excerpt": doc.page_content[:100] + "..."
-                    })
-                    with st.expander(f"Citation {i+1}: {source}"):
-                        st.write(doc.page_content)
-                
-                # Export
-                st.markdown("---")
-                df_audit = pd.DataFrame(audit_data)
-                st.download_button(
-                    label="Download Audit Log (CSV)",
-                    data=df_audit.to_csv(index=False),
-                    file_name="audit_log.csv",
-                    mime="text/csv"
-                )
-        else:
-            st.write("Select an alert and generate the narrative to view results.")
+    with col_view:
+        st.markdown("### Audit Trail")
+        st.info("Regulatory context used for this generation.")
+        
+        if "context" in st.session_state:
+            for i, doc in enumerate(st.session_state["context"]):
+                source = doc.metadata.get('source', 'FCA Handbook')
+                with st.expander(f"Ref {i+1}: {source}"):
+                    st.caption(doc.page_content)
+        
+        if st.button("🔙 Back to Dashboard"):
+            set_page('Generator')
+            st.rerun()
 
 # --- PAGE 2: RAG ARCHITECTURE ---
 elif st.session_state.page == 'RAG Architecture':
