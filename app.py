@@ -97,8 +97,31 @@ def load_engine():
 try:
     engine = load_engine()
 except Exception as e:
-    st.error(f"Failed to load engine: {e}")
-    st.stop()
+# --- RISK ENGINE (Mock ML) ---
+def assess_risk(alert_row):
+    """
+    Simulates the ML Model's decision logic based on description keywords.
+    """
+    desc = alert_row.get("Description", "").lower()
+    amount = alert_row.get("Amount", 0)
+    
+    # Critical Risk Patterns
+    if "wire" in desc and ("cayman" in desc or "panama" in desc):
+        return "Critical"
+    if "terrorist" in desc or "sanction" in desc:
+        return "Critical"
+        
+    # High Risk Patterns
+    if "structuring" in desc or "cash deposit" in desc:
+        if amount > 8000: # Simple threshold
+            return "High"
+    if "crypto" in desc or "unregulated" in desc:
+        return "High"
+    if "layering" in desc or "rapid movement" in desc:
+        return "High"
+        
+    # Default
+    return "Low"
 
 # Navigation State
 if 'page' not in st.session_state:
@@ -312,37 +335,6 @@ elif st.session_state.page == 'Generator':
         st.markdown("---")
         st.markdown("**NARRATIVE**")
         st.write(alert_data.get('Description', ''))
-
-# --- RISK ENGINE (Mock ML) ---
-def assess_risk(alert_row):
-    """
-    Simulates the ML Model's decision logic based on description keywords.
-    """
-    desc = alert_row.get("Description", "").lower()
-    amount = alert_row.get("Amount", 0)
-    
-    # Critical Risk Patterns
-    if "wire" in desc and ("cayman" in desc or "panama" in desc):
-        return "Critical"
-    if "terrorist" in desc or "sanction" in desc:
-        return "Critical"
-        
-    # High Risk Patterns
-    if "structuring" in desc or "cash deposit" in desc:
-        if amount > 8000: # Simple threshold
-            return "High"
-    if "crypto" in desc or "unregulated" in desc:
-        return "High"
-    if "layering" in desc or "rapid movement" in desc:
-        return "High"
-        
-    # Default
-    return "Low"
-
-# --- PAGE 1: SAR GENERATOR ---
-if st.session_state.page == 'Generator':
-    # ... (Rest of UI code) ...
-
         st.markdown("---")
         st.markdown("---")
         if st.button("GENERATE REPORT", type="secondary"):
