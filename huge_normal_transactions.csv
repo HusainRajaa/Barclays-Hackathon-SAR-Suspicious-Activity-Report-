@@ -1,501 +1,516 @@
 AlertID,Customer Name,Transaction Type,Amount,Date,Description
-ALT-15263,Jennifer Oneill,Bill Payment,264.58,2025-04-01,Credit card bill. Normal activity consistent with customer profile.
-ALT-68043,John Webb,POS Purchase,59.71,2025-10-18,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-77572,Jill Pearson,Bill Payment,109.3,2025-05-26,Internet bill. Normal activity consistent with customer profile.
-ALT-11288,Denise Perez,POS Purchase,132.61,2025-07-25,Online subscription. Normal activity consistent with customer profile.
-ALT-80385,Beverly Potter,ATM Withdrawal,50.0,2025-05-29,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-33193,Brian Allen,Bill Payment,103.55,2025-06-26,Credit card bill. Normal activity consistent with customer profile.
-ALT-32653,Savannah Berg,POS Purchase,59.53,2025-06-26,Department store. Normal activity consistent with customer profile.
-ALT-49459,Amy Coleman,ATM Withdrawal,100.0,2025-07-08,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-17683,Jeffrey Schwartz,Salary Credit,4129.94,2025-04-30,Bonus payment. Normal activity consistent with customer profile.
-ALT-59920,Natasha Swanson,Salary Credit,5663.17,2025-03-17,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-13429,Brett Henry,Online Transfer,126.92,2025-12-02,Payment to friend. Normal activity consistent with customer profile.
-ALT-93762,Mark Oneal,Bill Payment,230.04,2025-09-02,Credit card bill. Normal activity consistent with customer profile.
-ALT-80662,Carl Leonard,Online Transfer,92.98,2025-03-28,Payment to friend. Normal activity consistent with customer profile.
-ALT-74006,Shannon Nichols,Dividend Credit,55.86,2025-09-21,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-39056,Clifford Ramirez,Direct Debit,55.26,2025-03-18,Mortgage payment. Normal activity consistent with customer profile.
-ALT-34553,Alexandria Mack,Online Transfer,86.2,2025-10-27,Gift to family. Normal activity consistent with customer profile.
-ALT-51054,Julia Ryan,POS Purchase,137.11,2025-06-27,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-73669,Brandy Bailey,POS Purchase,142.41,2025-11-10,Department store. Normal activity consistent with customer profile.
-ALT-40489,Paul Williams,Online Transfer,82.37,2025-07-25,Gift to family. Normal activity consistent with customer profile.
-ALT-97813,Anthony Monroe,Online Transfer,61.66,2025-11-13,Payment to friend. Normal activity consistent with customer profile.
-ALT-68939,Joel Fields,ATM Withdrawal,50.0,2025-04-24,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-52623,Jacqueline Simmons,ATM Withdrawal,50.0,2025-08-21,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-11233,Wendy Jones,POS Purchase,126.41,2025-06-03,Department store. Normal activity consistent with customer profile.
-ALT-34108,Holly Shelton,Bill Payment,148.1,2025-11-09,Internet bill. Normal activity consistent with customer profile.
-ALT-66920,Karen Stein,POS Purchase,126.08,2025-11-04,Gas station. Normal activity consistent with customer profile.
-ALT-30043,Antonio Carey,Bill Payment,155.75,2025-06-20,Internet bill. Normal activity consistent with customer profile.
-ALT-23361,Tina Hill,Bill Payment,235.01,2025-07-15,Internet bill. Normal activity consistent with customer profile.
-ALT-33994,Sandra Howard,Bill Payment,397.58,2025-04-12,Internet bill. Normal activity consistent with customer profile.
-ALT-71626,Susan Smith,Bill Payment,484.93,2025-01-28,Internet bill. Normal activity consistent with customer profile.
-ALT-80660,Eric Perez,Direct Debit,451.51,2025-07-13,Utility bill payment. Normal activity consistent with customer profile.
-ALT-49212,Sabrina Davenport,ATM Withdrawal,20.0,2025-09-11,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-12020,Krista Lewis,Dividend Credit,40.57,2025-01-13,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-39267,Paul Carter,Direct Debit,194.33,2025-07-23,Insurance premium. Normal activity consistent with customer profile.
-ALT-20726,Nicole Wilson,ATM Withdrawal,50.0,2025-04-01,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-30027,Michelle Prince,Direct Debit,67.65,2025-07-09,Utility bill payment. Normal activity consistent with customer profile.
-ALT-43892,Lisa Hampton,Direct Debit,350.55,2025-01-28,Insurance premium. Normal activity consistent with customer profile.
-ALT-75063,Rose Meza,Bill Payment,339.53,2025-02-08,Internet bill. Normal activity consistent with customer profile.
-ALT-12935,Mr. Stephen Neal,ATM Withdrawal,20.0,2025-10-26,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-99979,Brenda Morales,Salary Credit,7823.6,2025-09-22,Reimbursement. Normal activity consistent with customer profile.
-ALT-52405,Ronald Snyder,Bill Payment,155.27,2025-01-02,Credit card bill. Normal activity consistent with customer profile.
-ALT-28037,Edward Washington,Bill Payment,225.8,2025-10-23,Credit card bill. Normal activity consistent with customer profile.
-ALT-38413,Rhonda Morris,Bill Payment,370.72,2025-06-16,Credit card bill. Normal activity consistent with customer profile.
-ALT-95059,Stuart Eaton,POS Purchase,26.81,2025-11-09,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-19646,Robert Morris,Direct Debit,66.6,2025-02-11,Insurance premium. Normal activity consistent with customer profile.
-ALT-30583,Jose Walton,Salary Credit,6883.97,2025-04-18,Reimbursement. Normal activity consistent with customer profile.
-ALT-89134,Angela Arnold,Bill Payment,328.51,2025-03-20,Credit card bill. Normal activity consistent with customer profile.
-ALT-36561,Joshua Guerrero,POS Purchase,83.77,2025-08-25,Online subscription. Normal activity consistent with customer profile.
-ALT-99027,Daniel Thomas,Online Transfer,133.53,2025-08-04,Payment to friend. Normal activity consistent with customer profile.
-ALT-82811,Jerome Cline,Salary Credit,5275.89,2025-06-14,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-83372,Brianna English,ATM Withdrawal,50.0,2025-08-08,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-88746,Stephanie Green,Bill Payment,436.68,2025-03-31,Internet bill. Normal activity consistent with customer profile.
-ALT-68641,Tina Nelson,ATM Withdrawal,50.0,2025-01-24,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-29214,Samantha Hunt,ATM Withdrawal,200.0,2025-04-07,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-28962,Michelle Petersen,Bill Payment,421.14,2025-03-05,Credit card bill. Normal activity consistent with customer profile.
-ALT-32994,Joseph Heath,Online Transfer,65.64,2025-01-06,Gift to family. Normal activity consistent with customer profile.
-ALT-60950,Anthony Watson,Direct Debit,212.21,2025-12-05,Utility bill payment. Normal activity consistent with customer profile.
-ALT-39234,Steven Munoz,POS Purchase,102.77,2025-06-09,Department store. Normal activity consistent with customer profile.
-ALT-13120,Cathy Freeman,Salary Credit,3227.88,2025-06-12,Reimbursement. Normal activity consistent with customer profile.
-ALT-36985,Carol Hood,Salary Credit,3651.27,2025-08-17,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-53841,Chelsea Howard,Salary Credit,5761.41,2025-05-20,Bonus payment. Normal activity consistent with customer profile.
-ALT-28403,Sandra Taylor,POS Purchase,71.92,2025-02-04,Gas station. Normal activity consistent with customer profile.
-ALT-71068,Stephen Wilson,Dividend Credit,126.67,2025-04-20,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-30240,Jessica Chan,Dividend Credit,107.59,2025-04-21,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-53597,Neil Edwards,ATM Withdrawal,100.0,2025-05-25,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-11886,Marissa Watson,Bill Payment,118.76,2025-01-23,Credit card bill. Normal activity consistent with customer profile.
-ALT-98670,Jacob Ruiz,Bill Payment,131.24,2025-11-27,Credit card bill. Normal activity consistent with customer profile.
-ALT-80786,Joseph Hodge,ATM Withdrawal,20.0,2025-09-22,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-30549,Phillip Pittman,ATM Withdrawal,20.0,2025-10-26,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-70357,Margaret Thomas,Bill Payment,357.76,2025-09-17,Internet bill. Normal activity consistent with customer profile.
-ALT-99406,Erica Macdonald,Dividend Credit,54.55,2025-05-17,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-32225,Robert Warren,Bill Payment,363.47,2025-06-23,Credit card bill. Normal activity consistent with customer profile.
-ALT-38771,George Edwards,Direct Debit,477.17,2025-06-30,Utility bill payment. Normal activity consistent with customer profile.
-ALT-52898,Karen Knapp,Direct Debit,316.91,2025-10-28,Utility bill payment. Normal activity consistent with customer profile.
-ALT-25985,Joseph Herrera,ATM Withdrawal,100.0,2025-06-09,Cash withdrawal. Normal activity consistent with customer profile.
 ALT-22811,Jessica Moyer,ATM Withdrawal,200.0,2025-12-27,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-19483,Paul Patel,Online Transfer,77.42,2025-11-26,Transfer to savings. Normal activity consistent with customer profile.
-ALT-25118,Eric Dudley,Salary Credit,3647.66,2025-12-29,Reimbursement. Normal activity consistent with customer profile.
-ALT-70665,Ryan Gonzalez,Online Transfer,41.3,2025-03-16,Transfer to savings. Normal activity consistent with customer profile.
-ALT-42217,Gregory Hernandez,ATM Withdrawal,200.0,2025-11-09,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-65883,Rachel Rodriguez,Dividend Credit,21.26,2025-11-23,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-40997,Taylor Davis,POS Purchase,93.82,2025-03-18,Department store. Normal activity consistent with customer profile.
-ALT-40873,Alexander Wagner,Dividend Credit,47.69,2025-04-12,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-69462,Sherry Murphy,Online Transfer,15.81,2025-11-05,Transfer to savings. Normal activity consistent with customer profile.
-ALT-46433,Anna Burnett,Salary Credit,6121.42,2025-12-03,Bonus payment. Normal activity consistent with customer profile.
-ALT-70162,Tracy Cox,Online Transfer,128.45,2025-08-26,Payment to friend. Normal activity consistent with customer profile.
-ALT-92800,Gabriel Tyler,ATM Withdrawal,100.0,2025-06-13,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-71113,Andrew Wells,ATM Withdrawal,50.0,2025-10-27,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-76722,Richard Harris,Salary Credit,7898.81,2025-02-02,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-81790,Jessica Martinez,Bill Payment,218.21,2025-08-23,Internet bill. Normal activity consistent with customer profile.
-ALT-69035,Miranda Rosales,Online Transfer,24.62,2025-07-03,Gift to family. Normal activity consistent with customer profile.
-ALT-45099,Betty Kirk,Bill Payment,314.54,2025-12-10,Internet bill. Normal activity consistent with customer profile.
-ALT-28166,Laura Ball,POS Purchase,20.01,2025-09-16,Online subscription. Normal activity consistent with customer profile.
-ALT-28219,Monica Shannon,Salary Credit,3950.2,2025-01-07,Bonus payment. Normal activity consistent with customer profile.
-ALT-20160,Crystal Moody,POS Purchase,149.06,2025-02-15,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-40649,Jenna Chapman,Dividend Credit,142.2,2025-07-25,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-34239,Donald Rhodes,Salary Credit,7959.42,2025-03-20,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-18200,Jack Watson,Salary Credit,4506.55,2025-09-28,Reimbursement. Normal activity consistent with customer profile.
-ALT-10154,Luis Johnson,Online Transfer,115.26,2025-08-09,Gift to family. Normal activity consistent with customer profile.
-ALT-68172,Dr. Allison Garcia,POS Purchase,75.46,2025-10-24,Restaurant payment. Normal activity consistent with customer profile.
-ALT-59487,Joseph Mclean,POS Purchase,42.51,2025-05-07,Gas station. Normal activity consistent with customer profile.
-ALT-49973,Sharon Carlson,POS Purchase,99.39,2025-04-13,Restaurant payment. Normal activity consistent with customer profile.
-ALT-90081,Alyssa Wheeler,Dividend Credit,93.98,2025-01-06,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-83079,Julie Johnson,Online Transfer,92.16,2025-01-30,Payment to friend. Normal activity consistent with customer profile.
-ALT-85905,Tammy Fry,Direct Debit,124.76,2025-02-06,Utility bill payment. Normal activity consistent with customer profile.
-ALT-86837,Emily Thompson,Salary Credit,5722.97,2025-05-27,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-89955,Jeremiah Wilson,Online Transfer,107.96,2025-03-26,Payment to friend. Normal activity consistent with customer profile.
-ALT-39992,Michael Poole,POS Purchase,91.06,2025-03-31,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-87141,Julie Chandler,Salary Credit,6236.04,2025-12-14,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-41656,Travis Morton,Online Transfer,48.49,2025-05-25,Transfer to savings. Normal activity consistent with customer profile.
-ALT-43284,Michael Martinez,ATM Withdrawal,50.0,2025-02-14,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-16156,Brandi Andersen,Salary Credit,5299.24,2025-05-24,Bonus payment. Normal activity consistent with customer profile.
-ALT-31642,Shawn Davis,Bill Payment,246.87,2025-06-16,Credit card bill. Normal activity consistent with customer profile.
-ALT-83264,Mrs. Brandy Bennett,Direct Debit,102.98,2025-06-13,Insurance premium. Normal activity consistent with customer profile.
-ALT-12527,Marilyn Sanders,Salary Credit,5474.3,2025-02-20,Bonus payment. Normal activity consistent with customer profile.
-ALT-54740,Michelle Brown,Dividend Credit,143.82,2025-11-07,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-94774,Kimberly Wong,Direct Debit,227.52,2025-01-17,Mortgage payment. Normal activity consistent with customer profile.
-ALT-37890,Debra Thomas,Dividend Credit,99.98,2025-11-06,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-10991,Tanner Johnson,ATM Withdrawal,20.0,2025-09-02,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-57922,Kevin Crawford,ATM Withdrawal,100.0,2025-10-06,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-56827,Erin Smith,Online Transfer,118.46,2025-09-21,Transfer to savings. Normal activity consistent with customer profile.
-ALT-23795,Christine Wilson,Dividend Credit,45.67,2025-11-08,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-62631,Vanessa Nguyen,Bill Payment,462.84,2025-12-08,Internet bill. Normal activity consistent with customer profile.
-ALT-74584,Mary Harris,Dividend Credit,46.21,2025-06-08,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-94453,Regina Ortiz,Dividend Credit,138.53,2025-08-24,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-24585,Kelly Vega,Dividend Credit,46.1,2025-05-05,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-65924,Bethany Moore,Direct Debit,358.61,2025-08-16,Gym membership. Normal activity consistent with customer profile.
-ALT-68833,Rachel Garcia,Salary Credit,4061.61,2025-07-22,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-59035,Sean Mora,ATM Withdrawal,100.0,2025-02-12,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-37566,Jeremiah Knapp,Bill Payment,321.92,2025-06-11,Internet bill. Normal activity consistent with customer profile.
-ALT-25338,Allen Lee,Online Transfer,140.77,2025-12-30,Transfer to savings. Normal activity consistent with customer profile.
-ALT-36344,Lindsay Woods,Bill Payment,51.43,2025-01-05,Internet bill. Normal activity consistent with customer profile.
-ALT-51871,Bradley Keller Jr.,Direct Debit,184.27,2025-07-23,Mortgage payment. Normal activity consistent with customer profile.
-ALT-47607,Paul Aguilar,Bill Payment,422.78,2025-08-30,Credit card bill. Normal activity consistent with customer profile.
-ALT-65953,Nicole Jackson,Bill Payment,145.71,2025-06-20,Credit card bill. Normal activity consistent with customer profile.
-ALT-80177,Lydia Good,Salary Credit,5377.59,2025-09-23,Reimbursement. Normal activity consistent with customer profile.
-ALT-78743,Adrienne Brown,Online Transfer,25.23,2025-07-10,Gift to family. Normal activity consistent with customer profile.
-ALT-49830,Heather Baker,Salary Credit,3153.21,2025-03-01,Bonus payment. Normal activity consistent with customer profile.
-ALT-54658,Ricky Campos,Direct Debit,389.42,2025-09-13,Gym membership. Normal activity consistent with customer profile.
-ALT-79278,Rebecca Campbell,ATM Withdrawal,100.0,2025-07-24,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-58902,Alexander Ramos,Dividend Credit,148.61,2025-08-31,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-36962,Wanda Wilson,POS Purchase,42.22,2025-01-05,Department store. Normal activity consistent with customer profile.
-ALT-92428,Patricia Pennington,ATM Withdrawal,50.0,2025-10-15,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-43011,Stephanie Myers,Dividend Credit,148.31,2025-07-23,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-79913,Vanessa Henson,ATM Withdrawal,50.0,2025-04-11,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-73702,Matthew Hill,POS Purchase,130.35,2025-03-22,Department store. Normal activity consistent with customer profile.
-ALT-45904,Zachary Martinez,ATM Withdrawal,50.0,2025-10-05,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-43281,Anthony Thompson,ATM Withdrawal,50.0,2025-01-21,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-52955,Patrick Scott,POS Purchase,103.87,2025-07-07,Department store. Normal activity consistent with customer profile.
-ALT-22179,Craig Jones,ATM Withdrawal,20.0,2025-05-21,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-90140,Nancy Lee,Bill Payment,244.79,2025-11-26,Credit card bill. Normal activity consistent with customer profile.
-ALT-32397,Andrew Rogers,Direct Debit,135.88,2025-04-06,Mortgage payment. Normal activity consistent with customer profile.
-ALT-74001,Anna Everett,Bill Payment,289.54,2025-06-13,Credit card bill. Normal activity consistent with customer profile.
-ALT-90716,Patricia Brown,ATM Withdrawal,100.0,2025-10-29,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-54436,Brian Jensen,Direct Debit,217.55,2025-08-16,Utility bill payment. Normal activity consistent with customer profile.
-ALT-56179,Chad Fernandez,Online Transfer,96.93,2025-09-08,Transfer to savings. Normal activity consistent with customer profile.
-ALT-34220,Mr. Richard Gill,ATM Withdrawal,20.0,2025-04-21,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-60573,Eric Meyer,Online Transfer,29.17,2025-02-15,Gift to family. Normal activity consistent with customer profile.
-ALT-28643,Marvin Carey,Salary Credit,4473.31,2025-06-06,Reimbursement. Normal activity consistent with customer profile.
-ALT-79594,Jacob Smith,Dividend Credit,46.44,2025-07-16,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-13991,Gwendolyn Oconnor,Online Transfer,67.71,2025-06-09,Transfer to savings. Normal activity consistent with customer profile.
-ALT-57781,Jordan Mahoney,Online Transfer,78.73,2025-02-26,Transfer to savings. Normal activity consistent with customer profile.
-ALT-34847,Sara Davila,Salary Credit,7554.42,2025-01-05,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-23891,Katherine Anderson,ATM Withdrawal,200.0,2025-02-22,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-42903,Bryce Campbell,Direct Debit,428.34,2025-05-26,Utility bill payment. Normal activity consistent with customer profile.
-ALT-61090,Kathy Benson,Online Transfer,84.26,2025-01-13,Transfer to savings. Normal activity consistent with customer profile.
-ALT-26925,Jennifer Clark,Dividend Credit,48.0,2025-11-07,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-19352,Yolanda Gray,Direct Debit,154.99,2025-04-07,Utility bill payment. Normal activity consistent with customer profile.
-ALT-87715,Darren Donaldson,ATM Withdrawal,200.0,2025-06-17,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-57874,Andrew Turner,Online Transfer,106.09,2025-03-22,Payment to friend. Normal activity consistent with customer profile.
-ALT-26930,Thomas Huff,POS Purchase,89.84,2025-01-27,Department store. Normal activity consistent with customer profile.
-ALT-73856,Alan Reese,Bill Payment,268.85,2025-08-26,Internet bill. Normal activity consistent with customer profile.
-ALT-68742,Carrie Wells,Direct Debit,480.55,2025-05-19,Mortgage payment. Normal activity consistent with customer profile.
-ALT-51780,Melissa Hensley,ATM Withdrawal,200.0,2025-05-07,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-87411,Miss Victoria Contreras DDS,Bill Payment,490.02,2025-09-03,Internet bill. Normal activity consistent with customer profile.
-ALT-95722,Suzanne Thompson,Dividend Credit,78.17,2025-11-25,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-27432,Chad Edwards,ATM Withdrawal,200.0,2025-12-10,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-92519,Michelle Trevino,Bill Payment,80.37,2025-10-22,Credit card bill. Normal activity consistent with customer profile.
-ALT-46317,Thomas Taylor,Bill Payment,332.94,2025-08-04,Internet bill. Normal activity consistent with customer profile.
-ALT-19593,Larry Reid,Bill Payment,100.94,2025-09-20,Internet bill. Normal activity consistent with customer profile.
-ALT-69567,Erica Zimmerman,Online Transfer,32.85,2025-12-06,Gift to family. Normal activity consistent with customer profile.
-ALT-46289,James Taylor,Online Transfer,88.2,2025-06-27,Transfer to savings. Normal activity consistent with customer profile.
-ALT-91349,Brooke Maxwell,ATM Withdrawal,100.0,2025-01-15,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-50817,Julie Skinner,ATM Withdrawal,50.0,2025-12-28,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-93716,Michael Braun,Direct Debit,57.25,2025-08-10,Utility bill payment. Normal activity consistent with customer profile.
-ALT-15170,Annette Monroe,ATM Withdrawal,100.0,2025-05-17,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-46480,Sean Hardy,Dividend Credit,109.61,2025-05-13,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-84567,Claudia Cortez,ATM Withdrawal,50.0,2025-05-11,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-38794,Tommy Cameron,Dividend Credit,118.24,2025-11-20,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-30717,Andrew James,Dividend Credit,99.3,2025-12-18,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-85804,Jenny Richmond,Dividend Credit,38.48,2025-06-25,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-64746,Robert Clark,Bill Payment,387.0,2025-07-20,Credit card bill. Normal activity consistent with customer profile.
-ALT-55963,Noah Schroeder,Online Transfer,145.85,2025-12-14,Gift to family. Normal activity consistent with customer profile.
-ALT-23571,Thomas Cantu,ATM Withdrawal,200.0,2025-03-06,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-15451,Edward Peterson,Online Transfer,102.74,2025-01-23,Payment to friend. Normal activity consistent with customer profile.
-ALT-36597,Karen Gonzalez,Direct Debit,222.46,2025-05-05,Gym membership. Normal activity consistent with customer profile.
-ALT-14030,Darlene Huff,POS Purchase,148.24,2025-08-09,Restaurant payment. Normal activity consistent with customer profile.
-ALT-91027,Stephen Hall,ATM Withdrawal,100.0,2025-12-05,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-34982,Robert Rice,Online Transfer,128.92,2025-09-25,Gift to family. Normal activity consistent with customer profile.
-ALT-85207,Jeff Jackson,Direct Debit,115.23,2025-08-05,Gym membership. Normal activity consistent with customer profile.
-ALT-62165,Danielle Smith,ATM Withdrawal,100.0,2025-10-06,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-66385,Christine Ferguson,Dividend Credit,10.36,2025-12-08,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-49018,Paul Martinez,Online Transfer,69.32,2025-05-23,Payment to friend. Normal activity consistent with customer profile.
-ALT-25802,Richard Nelson,Dividend Credit,100.0,2025-04-15,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-62603,Jesse Williams,Online Transfer,38.52,2025-08-10,Transfer to savings. Normal activity consistent with customer profile.
-ALT-69713,Marcus Richardson,Dividend Credit,106.48,2025-03-29,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-17294,Timothy Melendez,Bill Payment,235.68,2025-02-26,Credit card bill. Normal activity consistent with customer profile.
-ALT-73977,Christina Roberts,POS Purchase,62.51,2025-01-27,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-23463,Melissa Morrow,ATM Withdrawal,200.0,2025-01-30,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-43592,Blake Melton,Salary Credit,5309.89,2025-11-24,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-65041,Juan Perez,Direct Debit,489.56,2025-03-18,Gym membership. Normal activity consistent with customer profile.
-ALT-34483,Emily Barnes,Direct Debit,452.32,2025-06-04,Gym membership. Normal activity consistent with customer profile.
-ALT-90572,Kristin Monroe,Direct Debit,402.56,2025-01-10,Insurance premium. Normal activity consistent with customer profile.
-ALT-44648,Travis Smith,Dividend Credit,93.13,2025-09-22,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-42315,Matthew Moody,Salary Credit,5613.07,2025-04-09,Reimbursement. Normal activity consistent with customer profile.
-ALT-75988,Melissa Boone,Direct Debit,248.56,2025-07-18,Insurance premium. Normal activity consistent with customer profile.
-ALT-12739,Brandy Gillespie,Dividend Credit,48.88,2025-02-27,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-11135,John Howard,Online Transfer,29.19,2025-10-17,Transfer to savings. Normal activity consistent with customer profile.
-ALT-18504,Kyle Sparks,Online Transfer,88.75,2025-06-09,Transfer to savings. Normal activity consistent with customer profile.
-ALT-23182,Alexandria Beck,Direct Debit,333.79,2025-07-26,Insurance premium. Normal activity consistent with customer profile.
-ALT-66538,John Velasquez,Direct Debit,324.03,2025-09-12,Insurance premium. Normal activity consistent with customer profile.
-ALT-30732,Melissa Ramirez,Dividend Credit,10.75,2025-12-05,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-58094,Christopher Butler,Direct Debit,350.15,2025-10-03,Utility bill payment. Normal activity consistent with customer profile.
-ALT-91839,Amber Mueller,Salary Credit,7158.43,2026-01-01,Bonus payment. Normal activity consistent with customer profile.
-ALT-19952,Michael Wu,ATM Withdrawal,200.0,2025-09-11,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-68024,Robert Hull,Online Transfer,24.34,2025-06-17,Gift to family. Normal activity consistent with customer profile.
-ALT-59939,Patricia Thomas,Dividend Credit,82.02,2025-08-12,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-21416,Steven Chen,ATM Withdrawal,100.0,2025-07-31,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-95930,Amy Dominguez,Direct Debit,81.23,2025-06-07,Insurance premium. Normal activity consistent with customer profile.
-ALT-82435,Crystal Moore,Direct Debit,192.0,2025-06-22,Utility bill payment. Normal activity consistent with customer profile.
-ALT-71370,William Mason,POS Purchase,108.46,2025-10-20,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-94290,Catherine Lewis,Online Transfer,48.87,2025-10-02,Transfer to savings. Normal activity consistent with customer profile.
-ALT-86812,Mr. Michael White,Direct Debit,236.26,2025-02-16,Mortgage payment. Normal activity consistent with customer profile.
-ALT-92854,Jacob Johnson,Dividend Credit,31.72,2025-02-18,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-19239,Cheryl Dickson,Dividend Credit,107.99,2025-03-24,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-11729,Robert Rodriguez,POS Purchase,29.37,2025-04-04,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-40444,Patricia Zimmerman,POS Purchase,47.95,2025-09-22,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-31861,Anna Thompson,Direct Debit,178.8,2025-07-19,Gym membership. Normal activity consistent with customer profile.
-ALT-26045,Jeremy Scott,ATM Withdrawal,200.0,2025-07-13,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-75342,Jasmin Lopez,ATM Withdrawal,50.0,2025-07-03,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-35467,Timothy Watson,ATM Withdrawal,50.0,2025-05-04,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-54595,Kevin Rhodes,Online Transfer,78.22,2025-01-19,Transfer to savings. Normal activity consistent with customer profile.
-ALT-74134,Deborah Mills,ATM Withdrawal,50.0,2025-11-01,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-95392,Andrew Washington,Direct Debit,463.34,2025-10-23,Utility bill payment. Normal activity consistent with customer profile.
-ALT-64123,Jennifer Andrade,Dividend Credit,80.85,2025-02-27,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-99004,Ashley Diaz,ATM Withdrawal,200.0,2025-12-10,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-10710,Cody Collins,ATM Withdrawal,200.0,2025-04-18,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-51624,John Ramirez,Bill Payment,150.89,2025-11-07,Credit card bill. Normal activity consistent with customer profile.
-ALT-39173,Joseph White,POS Purchase,110.84,2025-07-30,Department store. Normal activity consistent with customer profile.
-ALT-78145,Kendra Nelson,Direct Debit,440.01,2025-01-11,Utility bill payment. Normal activity consistent with customer profile.
-ALT-72672,Christopher Douglas,Online Transfer,104.38,2025-01-26,Gift to family. Normal activity consistent with customer profile.
-ALT-80934,Gregory Reeves,Dividend Credit,140.77,2025-03-31,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-25621,Tammy Lozano,Salary Credit,7591.09,2025-08-09,Reimbursement. Normal activity consistent with customer profile.
-ALT-23023,Karla Cardenas,Direct Debit,282.34,2025-06-04,Insurance premium. Normal activity consistent with customer profile.
-ALT-33294,Steven Velazquez,Salary Credit,3110.99,2025-11-05,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-64852,Sally Pierce,Dividend Credit,124.14,2025-11-30,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-39238,Bruce Strong,Salary Credit,6289.72,2025-05-14,Reimbursement. Normal activity consistent with customer profile.
-ALT-13586,Megan Strong,Salary Credit,7880.38,2025-12-21,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-72514,Tiffany Tucker,Salary Credit,7169.69,2025-07-25,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-80215,Benjamin Carlson,Online Transfer,42.95,2025-06-15,Payment to friend. Normal activity consistent with customer profile.
-ALT-69335,Michael Travis,ATM Withdrawal,50.0,2025-08-11,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-41626,John Koch,Dividend Credit,142.12,2025-08-11,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-40069,Melissa Reid,Direct Debit,432.93,2025-04-05,Utility bill payment. Normal activity consistent with customer profile.
-ALT-47888,Cindy Brock PhD,Bill Payment,409.3,2025-07-19,Internet bill. Normal activity consistent with customer profile.
-ALT-21650,Walter Brown,Bill Payment,384.39,2025-07-17,Internet bill. Normal activity consistent with customer profile.
-ALT-67589,Jordan Hurst,Salary Credit,3129.72,2025-03-24,Bonus payment. Normal activity consistent with customer profile.
-ALT-22898,Kristopher Howard,Dividend Credit,138.79,2025-03-11,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-78480,Rhonda Johnson,ATM Withdrawal,200.0,2025-05-11,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-48835,Tara Flores,Direct Debit,276.02,2025-05-09,Mortgage payment. Normal activity consistent with customer profile.
-ALT-99947,Joseph Nelson,POS Purchase,14.83,2025-12-23,Department store. Normal activity consistent with customer profile.
-ALT-29225,Matthew Sanchez,ATM Withdrawal,200.0,2025-09-11,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-57626,Timothy Cox,Bill Payment,476.75,2025-01-19,Credit card bill. Normal activity consistent with customer profile.
-ALT-16177,Shirley Gardner,POS Purchase,89.3,2025-07-31,Online subscription. Normal activity consistent with customer profile.
-ALT-90929,Emily Jones,POS Purchase,81.68,2025-03-08,Gas station. Normal activity consistent with customer profile.
-ALT-89650,Donald Smith,Online Transfer,30.82,2025-08-09,Gift to family. Normal activity consistent with customer profile.
-ALT-23490,Allison Mclean,Salary Credit,6835.22,2025-11-10,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-34350,Brian Gonzalez,ATM Withdrawal,20.0,2025-12-02,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-21507,Mary Foster,Direct Debit,480.5,2025-01-17,Insurance premium. Normal activity consistent with customer profile.
-ALT-26383,Richard Coleman,Online Transfer,76.08,2025-10-07,Gift to family. Normal activity consistent with customer profile.
-ALT-35977,Ricky Holmes,Online Transfer,121.2,2025-04-25,Transfer to savings. Normal activity consistent with customer profile.
-ALT-57548,John Nguyen,Bill Payment,251.39,2025-07-23,Credit card bill. Normal activity consistent with customer profile.
-ALT-95617,Charlene Cain,Salary Credit,3444.14,2025-08-03,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-64763,Antonio Weber,Bill Payment,490.3,2025-07-11,Internet bill. Normal activity consistent with customer profile.
-ALT-25709,David Thomas,Dividend Credit,65.87,2025-01-11,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-59861,Carl Santiago,Dividend Credit,11.95,2025-01-23,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-93179,David Miller,Direct Debit,434.99,2025-01-02,Gym membership. Normal activity consistent with customer profile.
-ALT-23410,Tamara Vaughn,Bill Payment,225.59,2025-10-16,Internet bill. Normal activity consistent with customer profile.
-ALT-44261,Jamie White,Dividend Credit,112.92,2025-05-10,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-39851,Amber Sullivan,Bill Payment,73.88,2025-01-09,Internet bill. Normal activity consistent with customer profile.
-ALT-91520,Anthony Thompson,POS Purchase,127.07,2025-08-02,Online subscription. Normal activity consistent with customer profile.
-ALT-40151,Matthew Morales,Direct Debit,424.94,2025-05-12,Gym membership. Normal activity consistent with customer profile.
-ALT-54697,Danielle Oconnor,Direct Debit,254.38,2025-07-01,Insurance premium. Normal activity consistent with customer profile.
-ALT-63700,Jessica Mack,Salary Credit,3683.23,2025-07-23,Reimbursement. Normal activity consistent with customer profile.
-ALT-40205,Katrina Hendrix,Bill Payment,257.18,2025-05-16,Internet bill. Normal activity consistent with customer profile.
-ALT-44248,Steve Gomez,Dividend Credit,124.17,2025-11-21,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-50102,Anthony Robinson,Direct Debit,108.53,2025-08-02,Mortgage payment. Normal activity consistent with customer profile.
-ALT-21009,Stephanie Morgan,Salary Credit,4886.23,2025-11-01,Bonus payment. Normal activity consistent with customer profile.
-ALT-11069,Douglas Jenkins,Salary Credit,4313.06,2025-04-20,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-98974,Heather Joseph,Salary Credit,3446.31,2025-11-13,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-87711,Ashley Gaines,Online Transfer,121.49,2025-04-21,Transfer to savings. Normal activity consistent with customer profile.
-ALT-18694,Paul Peterson,Dividend Credit,42.31,2025-07-16,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-84752,Yolanda Hernandez,ATM Withdrawal,50.0,2025-09-21,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-40546,Marc Cook,Salary Credit,5368.21,2025-05-23,Bonus payment. Normal activity consistent with customer profile.
-ALT-32594,Michelle Gonzales,ATM Withdrawal,50.0,2025-07-19,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-71065,Richard Perez,Online Transfer,29.12,2025-09-21,Gift to family. Normal activity consistent with customer profile.
-ALT-41067,Joel Logan,ATM Withdrawal,100.0,2025-01-10,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-27826,William Conway,Online Transfer,128.44,2025-03-01,Transfer to savings. Normal activity consistent with customer profile.
-ALT-61002,Jill Curtis,Dividend Credit,71.91,2025-04-30,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-77733,Ebony Garcia,Online Transfer,110.5,2025-01-10,Payment to friend. Normal activity consistent with customer profile.
-ALT-66562,Kimberly Schmitt,POS Purchase,71.03,2025-08-10,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-53133,Charles Morrison,Online Transfer,15.13,2025-10-02,Transfer to savings. Normal activity consistent with customer profile.
-ALT-82045,James Rose,Direct Debit,323.38,2025-04-13,Insurance premium. Normal activity consistent with customer profile.
-ALT-77098,Kristen Bentley,POS Purchase,133.97,2025-05-28,Online subscription. Normal activity consistent with customer profile.
-ALT-65322,Mike Chan,POS Purchase,21.19,2025-10-24,Gas station. Normal activity consistent with customer profile.
-ALT-99754,Jeremy Williams,Direct Debit,396.36,2025-08-29,Gym membership. Normal activity consistent with customer profile.
-ALT-93066,Rachel Griffith,Online Transfer,86.32,2025-08-20,Gift to family. Normal activity consistent with customer profile.
-ALT-51868,Aaron Ellis,Online Transfer,83.25,2025-05-27,Gift to family. Normal activity consistent with customer profile.
-ALT-65915,Lynn Garcia,Salary Credit,7997.58,2025-06-05,Reimbursement. Normal activity consistent with customer profile.
-ALT-40989,Timothy Cunningham,Dividend Credit,135.04,2025-09-22,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-47551,James Rios,ATM Withdrawal,200.0,2025-05-23,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-15333,Kimberly Moore,ATM Withdrawal,100.0,2025-05-27,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-83952,Steven Freeman,Salary Credit,3932.6,2025-07-23,Reimbursement. Normal activity consistent with customer profile.
-ALT-16329,Diana Martinez PhD,ATM Withdrawal,200.0,2025-08-06,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-57763,Michael Williams,Direct Debit,218.61,2025-08-15,Insurance premium. Normal activity consistent with customer profile.
-ALT-99002,Wendy Davis,Online Transfer,102.6,2025-12-10,Gift to family. Normal activity consistent with customer profile.
-ALT-89024,Michael Schmitt,Bill Payment,259.97,2025-11-21,Internet bill. Normal activity consistent with customer profile.
-ALT-94392,William Aguirre,Online Transfer,21.5,2025-09-18,Transfer to savings. Normal activity consistent with customer profile.
-ALT-12431,Jon Cole,Dividend Credit,79.78,2025-11-26,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-77145,Andrew Ali,Salary Credit,5929.55,2025-04-02,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-79175,Gary Wise,Bill Payment,399.76,2025-01-25,Credit card bill. Normal activity consistent with customer profile.
-ALT-72018,Melissa Riley,Bill Payment,372.17,2025-09-24,Credit card bill. Normal activity consistent with customer profile.
-ALT-65638,James Duncan,Bill Payment,406.63,2025-11-19,Internet bill. Normal activity consistent with customer profile.
-ALT-75913,Judy Baker,POS Purchase,112.99,2025-12-10,Gas station. Normal activity consistent with customer profile.
-ALT-36247,Debra Young,POS Purchase,88.37,2025-07-16,Gas station. Normal activity consistent with customer profile.
-ALT-56994,Victor Garrison,Online Transfer,88.83,2025-10-02,Transfer to savings. Normal activity consistent with customer profile.
-ALT-64742,David Wood,Online Transfer,104.26,2025-02-17,Payment to friend. Normal activity consistent with customer profile.
-ALT-14179,Elizabeth Barrett,Bill Payment,405.56,2025-08-29,Internet bill. Normal activity consistent with customer profile.
-ALT-11350,Linda Li,ATM Withdrawal,100.0,2025-03-27,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-45617,Melinda Burton,Salary Credit,6200.98,2025-10-26,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-26012,Aimee Moore,POS Purchase,111.53,2025-08-04,Restaurant payment. Normal activity consistent with customer profile.
-ALT-15333,James Young,POS Purchase,69.91,2025-10-27,Gas station. Normal activity consistent with customer profile.
-ALT-31544,Ricky Rios,Salary Credit,5881.15,2025-07-07,Bonus payment. Normal activity consistent with customer profile.
-ALT-71913,Andrew Castillo,Direct Debit,166.46,2025-07-04,Utility bill payment. Normal activity consistent with customer profile.
-ALT-25732,Keith Maddox,Bill Payment,470.86,2025-08-14,Credit card bill. Normal activity consistent with customer profile.
-ALT-42241,Stacy Meadows,Bill Payment,305.53,2025-08-01,Internet bill. Normal activity consistent with customer profile.
 ALT-90863,Tina Clark,Bill Payment,185.26,2025-07-02,Credit card bill. Normal activity consistent with customer profile.
-ALT-26162,Devon Mann,Online Transfer,10.85,2025-03-02,Gift to family. Normal activity consistent with customer profile.
-ALT-52616,Nicholas Hernandez,Direct Debit,409.09,2025-04-03,Insurance premium. Normal activity consistent with customer profile.
-ALT-34193,Jesse Johnson,ATM Withdrawal,50.0,2025-01-14,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-49880,Amber Lawrence,Online Transfer,41.86,2025-03-20,Transfer to savings. Normal activity consistent with customer profile.
-ALT-67711,Melissa Thompson,Bill Payment,429.02,2025-02-21,Internet bill. Normal activity consistent with customer profile.
-ALT-59576,Samantha Hayes,POS Purchase,94.5,2025-06-15,Online subscription. Normal activity consistent with customer profile.
-ALT-47265,David Shannon,Bill Payment,462.41,2025-09-27,Credit card bill. Normal activity consistent with customer profile.
-ALT-94678,Steven Wallace,Direct Debit,136.14,2025-09-12,Mortgage payment. Normal activity consistent with customer profile.
-ALT-32905,Lori Campos,Online Transfer,148.98,2025-03-19,Transfer to savings. Normal activity consistent with customer profile.
-ALT-10342,Laura Becker,POS Purchase,95.42,2025-07-02,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-47311,Brian Rose,Direct Debit,385.28,2025-03-28,Insurance premium. Normal activity consistent with customer profile.
-ALT-13692,Heather Wong,Dividend Credit,43.76,2025-07-30,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-94587,Steven Morris,POS Purchase,63.56,2025-05-24,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-95671,Edwin Ramsey,Bill Payment,356.4,2025-06-14,Credit card bill. Normal activity consistent with customer profile.
-ALT-57740,Steven Sanchez,Bill Payment,115.63,2025-02-20,Credit card bill. Normal activity consistent with customer profile.
-ALT-51121,Michael Rodriguez MD,Dividend Credit,102.56,2025-08-29,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-67921,Erica Harris,Dividend Credit,80.64,2025-11-25,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-81252,Tina Todd,POS Purchase,51.23,2025-09-10,Department store. Normal activity consistent with customer profile.
-ALT-80701,Brittney Torres,Direct Debit,274.41,2025-04-16,Mortgage payment. Normal activity consistent with customer profile.
-ALT-52956,Nicholas White,Salary Credit,3871.03,2025-06-04,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-73702,Michelle Williams,Salary Credit,7929.33,2025-12-26,Bonus payment. Normal activity consistent with customer profile.
-ALT-45507,Tiffany Cohen,POS Purchase,102.77,2025-10-20,Gas station. Normal activity consistent with customer profile.
-ALT-94656,Michelle Hamilton,Dividend Credit,133.76,2025-09-20,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-61761,Dave Ortega,POS Purchase,133.24,2025-02-09,Department store. Normal activity consistent with customer profile.
-ALT-23146,Jessica Irwin,Bill Payment,300.19,2025-05-27,Internet bill. Normal activity consistent with customer profile.
-ALT-72224,Lori Wilcox,Online Transfer,39.35,2025-07-12,Payment to friend. Normal activity consistent with customer profile.
-ALT-73953,Erin Combs,POS Purchase,41.48,2025-07-19,Gas station. Normal activity consistent with customer profile.
-ALT-62379,Nicholas Nielsen,Bill Payment,350.23,2025-12-11,Internet bill. Normal activity consistent with customer profile.
-ALT-25847,Samuel Mata,POS Purchase,11.16,2025-08-23,Online subscription. Normal activity consistent with customer profile.
-ALT-14666,Michelle Fleming,Direct Debit,202.28,2025-11-06,Insurance premium. Normal activity consistent with customer profile.
-ALT-95774,Anthony Duke,Bill Payment,171.17,2025-07-03,Internet bill. Normal activity consistent with customer profile.
-ALT-16046,Teresa Jenkins,Direct Debit,383.48,2025-04-14,Mortgage payment. Normal activity consistent with customer profile.
-ALT-56485,Joshua Bond,ATM Withdrawal,200.0,2025-10-10,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-21796,Tyler Smith,POS Purchase,135.65,2025-06-01,Online subscription. Normal activity consistent with customer profile.
-ALT-94949,Ricky Andrews,Bill Payment,97.09,2025-03-20,Credit card bill. Normal activity consistent with customer profile.
+ALT-12935,Mr. Stephen Neal,ATM Withdrawal,20.0,2025-10-26,Cash withdrawal. Normal activity consistent with customer profile.
 ALT-71057,Edward Bradley,Online Transfer,46.24,2025-02-16,Payment to friend. Normal activity consistent with customer profile.
-ALT-62014,Jennifer Anderson,Online Transfer,134.71,2025-09-02,Transfer to savings. Normal activity consistent with customer profile.
-ALT-22187,Donna Smith,POS Purchase,134.7,2025-01-04,Restaurant payment. Normal activity consistent with customer profile.
-ALT-26409,Christopher Jacobs,Dividend Credit,13.91,2025-05-31,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-72405,Kristen Russell,Bill Payment,258.23,2025-07-19,Credit card bill. Normal activity consistent with customer profile.
-ALT-40470,Michael Campbell,Bill Payment,292.51,2025-03-18,Internet bill. Normal activity consistent with customer profile.
-ALT-53886,Michelle Horn,Dividend Credit,91.28,2025-06-09,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-34610,Jason Watkins,Dividend Credit,50.86,2025-10-03,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-53507,Yolanda Hendricks,Bill Payment,380.7,2025-02-09,Credit card bill. Normal activity consistent with customer profile.
-ALT-98020,Robin Thompson,Dividend Credit,104.66,2025-01-04,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-47246,Natasha Lutz,Dividend Credit,100.14,2025-08-30,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-56312,Emily Gutierrez,Online Transfer,10.16,2025-06-07,Payment to friend. Normal activity consistent with customer profile.
-ALT-22633,Tony Clark,POS Purchase,90.11,2025-05-24,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-83248,Ariel Fleming,Bill Payment,282.46,2025-02-01,Credit card bill. Normal activity consistent with customer profile.
-ALT-82230,Sherry Burke,Bill Payment,346.44,2025-04-12,Credit card bill. Normal activity consistent with customer profile.
-ALT-93479,David Simmons,Dividend Credit,131.21,2025-06-04,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-41616,Brian Strong,POS Purchase,18.28,2025-04-30,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-60928,Antonio Johns,Direct Debit,370.09,2025-09-24,Mortgage payment. Normal activity consistent with customer profile.
-ALT-97685,Julie Hopkins,POS Purchase,61.1,2025-07-29,Grocery store purchase. Normal activity consistent with customer profile.
-ALT-79741,Carmen Cooper,ATM Withdrawal,200.0,2026-01-01,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-34659,Eric Williams,ATM Withdrawal,200.0,2025-06-05,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-24680,James Curtis,Salary Credit,4822.83,2025-09-11,Reimbursement. Normal activity consistent with customer profile.
-ALT-94277,Diana Peterson,POS Purchase,13.42,2025-04-01,Gas station. Normal activity consistent with customer profile.
-ALT-91693,Valerie Parker,Online Transfer,103.54,2025-03-25,Gift to family. Normal activity consistent with customer profile.
-ALT-61368,David Ward,Direct Debit,415.92,2025-10-05,Mortgage payment. Normal activity consistent with customer profile.
-ALT-64970,Darren Arnold,POS Purchase,56.28,2025-12-17,Department store. Normal activity consistent with customer profile.
-ALT-43422,Jennifer Trujillo,POS Purchase,36.57,2025-01-20,Department store. Normal activity consistent with customer profile.
-ALT-41126,Tina Ferguson,Salary Credit,5838.49,2025-10-24,Bonus payment. Normal activity consistent with customer profile.
-ALT-92057,Kristin Barnett,Online Transfer,119.09,2025-12-24,Transfer to savings. Normal activity consistent with customer profile.
-ALT-82164,Matthew Murray,POS Purchase,28.66,2025-06-21,Department store. Normal activity consistent with customer profile.
-ALT-57547,Emily Torres,Bill Payment,235.28,2025-12-17,Internet bill. Normal activity consistent with customer profile.
-ALT-56019,Jeffrey Bell,ATM Withdrawal,50.0,2025-11-28,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-67275,Megan Herring,Online Transfer,45.44,2025-04-14,Gift to family. Normal activity consistent with customer profile.
-ALT-77585,Melanie Jones,Direct Debit,98.65,2025-01-30,Utility bill payment. Normal activity consistent with customer profile.
-ALT-47226,Deanna Riggs,Salary Credit,7542.57,2025-09-13,Reimbursement. Normal activity consistent with customer profile.
-ALT-72775,Daniel Roberts,POS Purchase,92.11,2025-10-03,Gas station. Normal activity consistent with customer profile.
-ALT-18722,Sarah Holt,Online Transfer,144.13,2025-07-20,Payment to friend. Normal activity consistent with customer profile.
-ALT-12862,Tracy Lee,Dividend Credit,44.33,2025-02-05,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-84772,Angela Poole,Salary Credit,3014.71,2025-08-12,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-57711,Jacqueline Ortiz,Online Transfer,127.19,2025-09-25,Transfer to savings. Normal activity consistent with customer profile.
-ALT-34180,Joe Hernandez,Dividend Credit,123.13,2025-10-21,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-42393,Bruce Farley,POS Purchase,101.39,2025-06-22,Gas station. Normal activity consistent with customer profile.
-ALT-71475,Tara Mcintyre,ATM Withdrawal,20.0,2025-05-29,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-56771,Cody Gray,Dividend Credit,49.99,2025-08-09,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-84395,Kimberly Burns,Bill Payment,382.37,2025-05-22,Credit card bill. Normal activity consistent with customer profile.
-ALT-73665,Angela Sloan,Dividend Credit,57.31,2025-06-17,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-71200,Jeremy Kim,Online Transfer,12.36,2025-01-16,Transfer to savings. Normal activity consistent with customer profile.
-ALT-39340,Kristopher Becker,Direct Debit,252.12,2025-12-18,Mortgage payment. Normal activity consistent with customer profile.
-ALT-98745,Lauren Smith,ATM Withdrawal,200.0,2025-02-13,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-91798,Amanda Brown,Dividend Credit,25.29,2025-04-22,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-90611,Brian Fleming,Salary Credit,6548.66,2025-01-27,Reimbursement. Normal activity consistent with customer profile.
-ALT-48112,Jose Knight,Online Transfer,43.85,2025-02-18,Payment to friend. Normal activity consistent with customer profile.
-ALT-94994,Michele Whitaker,Online Transfer,83.7,2025-08-29,Payment to friend. Normal activity consistent with customer profile.
-ALT-49326,Michael Hayes,Salary Credit,3883.41,2025-09-23,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-46548,Stephen Murphy,Dividend Credit,91.45,2025-02-10,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-30688,Paul Elliott,Direct Debit,95.98,2025-12-21,Mortgage payment. Normal activity consistent with customer profile.
-ALT-72873,Patricia Heath,Dividend Credit,71.56,2025-03-20,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-36248,Andrew White,POS Purchase,35.02,2025-07-09,Restaurant payment. Normal activity consistent with customer profile.
-ALT-39438,Kimberly Mcmahon,Dividend Credit,123.05,2025-06-22,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-61057,Andrew Price,Dividend Credit,56.06,2025-01-02,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-67492,Earl Brown,Direct Debit,188.93,2025-04-09,Gym membership. Normal activity consistent with customer profile.
-ALT-59144,Dwayne Porter,Bill Payment,410.68,2025-11-18,Credit card bill. Normal activity consistent with customer profile.
-ALT-78095,Arthur Fernandez,Dividend Credit,62.04,2025-11-25,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-24189,Lee Martinez,Salary Credit,3254.2,2025-12-21,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-20263,Brandon Wagner,Salary Credit,3183.51,2025-02-12,Reimbursement. Normal activity consistent with customer profile.
-ALT-82530,Michelle James,Salary Credit,3002.29,2025-04-30,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-90178,Linda Hess,POS Purchase,145.63,2025-10-09,Department store. Normal activity consistent with customer profile.
-ALT-83790,Thomas Compton,Bill Payment,255.47,2025-09-11,Credit card bill. Normal activity consistent with customer profile.
-ALT-37462,Jennifer Jones,Dividend Credit,78.33,2025-01-31,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-63073,Mrs. Taylor Guerra,Direct Debit,134.27,2025-11-01,Mortgage payment. Normal activity consistent with customer profile.
-ALT-72945,Rachael Gross,POS Purchase,50.64,2025-03-01,Department store. Normal activity consistent with customer profile.
-ALT-51526,Mark Rodriguez,Salary Credit,5355.61,2025-07-05,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-92932,Nicholas Jordan,Bill Payment,72.42,2025-05-08,Internet bill. Normal activity consistent with customer profile.
-ALT-79068,Calvin Murphy,Salary Credit,5445.6,2025-12-22,Bonus payment. Normal activity consistent with customer profile.
-ALT-95806,Jonathan Sandoval,Direct Debit,480.72,2025-01-01,Insurance premium. Normal activity consistent with customer profile.
-ALT-63204,Ann Long,Salary Credit,4051.7,2025-01-29,Reimbursement. Normal activity consistent with customer profile.
-ALT-42679,Lisa Kane MD,Direct Debit,396.67,2025-05-15,Gym membership. Normal activity consistent with customer profile.
-ALT-24896,Samuel Ellis,Salary Credit,5318.32,2025-02-16,Bonus payment. Normal activity consistent with customer profile.
-ALT-83786,Meghan Coleman,Bill Payment,148.84,2025-01-20,Internet bill. Normal activity consistent with customer profile.
-ALT-29332,Stephanie Rivera,Bill Payment,352.11,2025-12-21,Internet bill. Normal activity consistent with customer profile.
-ALT-29890,Natalie Weber,Salary Credit,6988.61,2025-12-17,Reimbursement. Normal activity consistent with customer profile.
-ALT-30186,Paul Smith,Dividend Credit,15.97,2025-10-18,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-51912,Aaron Martinez,Dividend Credit,37.03,2025-02-25,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-52051,Bobby Davis,Salary Credit,5951.64,2025-09-23,Reimbursement. Normal activity consistent with customer profile.
-ALT-48998,Paul Harris,Salary Credit,5199.25,2025-03-09,Bonus payment. Normal activity consistent with customer profile.
-ALT-75361,David Wilson,Bill Payment,308.95,2025-09-24,Internet bill. Normal activity consistent with customer profile.
-ALT-98580,Kimberly Ortiz,POS Purchase,36.29,2025-03-18,Department store. Normal activity consistent with customer profile.
-ALT-82338,Angela Williams,Salary Credit,3859.07,2025-05-16,Bonus payment. Normal activity consistent with customer profile.
-ALT-97302,Karen Mack,Salary Credit,3353.79,2025-11-18,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-54709,Travis Smith,POS Purchase,79.47,2025-06-22,Department store. Normal activity consistent with customer profile.
-ALT-53641,Beth Baker,Direct Debit,462.92,2025-10-03,Utility bill payment. Normal activity consistent with customer profile.
-ALT-98595,Ashley Grimes,ATM Withdrawal,200.0,2025-09-10,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-44199,Dennis Ramirez,POS Purchase,30.12,2025-10-01,Restaurant payment. Normal activity consistent with customer profile.
-ALT-97069,Michelle Serrano,Direct Debit,132.72,2025-06-18,Mortgage payment. Normal activity consistent with customer profile.
-ALT-21604,Luis Martin,ATM Withdrawal,50.0,2025-05-20,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-78572,Christina Delgado,Salary Credit,7559.03,2025-05-30,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-69421,Gregory Colon,Online Transfer,132.6,2025-08-29,Transfer to savings. Normal activity consistent with customer profile.
-ALT-62098,Albert White,ATM Withdrawal,50.0,2025-09-19,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-29115,Karina Woods,Salary Credit,5032.35,2025-12-06,Bonus payment. Normal activity consistent with customer profile.
-ALT-74531,Caitlin Baker,Dividend Credit,142.22,2025-06-30,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-68762,Stacy Howell,Online Transfer,63.73,2025-05-27,Transfer to savings. Normal activity consistent with customer profile.
-ALT-11574,Katelyn Nash,Online Transfer,37.23,2025-01-27,Transfer to savings. Normal activity consistent with customer profile.
-ALT-36209,Virginia Cunningham,POS Purchase,110.89,2025-10-26,Department store. Normal activity consistent with customer profile.
-ALT-24438,Jay Contreras,ATM Withdrawal,100.0,2025-04-01,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-66838,Gabriel Gay,ATM Withdrawal,200.0,2025-06-12,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-94359,Janice Jacobson,Salary Credit,7151.94,2025-09-14,Monthly salary credit. Normal activity consistent with customer profile.
-ALT-62818,David Myers,ATM Withdrawal,200.0,2025-09-24,Cash withdrawal. Normal activity consistent with customer profile.
-ALT-71393,Ruth Hughes,Salary Credit,5672.06,2025-05-06,Bonus payment. Normal activity consistent with customer profile.
-ALT-78165,Kelly Tate,Online Transfer,38.69,2025-09-23,Gift to family. Normal activity consistent with customer profile.
-ALT-41480,Matthew Lucas,ATM Withdrawal,50.0,2025-09-24,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-28220,Craig Lynch,Dividend Credit,142.67,2025-09-10,Quarterly dividend payment. Normal activity consistent with customer profile.
-ALT-31538,Julia Davis,Direct Debit,305.73,2025-08-09,Utility bill payment. Normal activity consistent with customer profile.
+ALT-23023,Karla Cardenas,Direct Debit,282.34,2025-06-04,Insurance premium. Normal activity consistent with customer profile.
+ALT-42217,Gregory Hernandez,ATM Withdrawal,200.0,2025-11-09,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-28403,Sandra Taylor,POS Purchase,71.92,2025-02-04,Gas station. Normal activity consistent with customer profile.
+ALT-21507,Mary Foster,Direct Debit,480.5,2025-01-17,Insurance premium. Normal activity consistent with customer profile.
+ALT-30549,Phillip Pittman,ATM Withdrawal,20.0,2025-10-26,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-84752,Yolanda Hernandez,ATM Withdrawal,50.0,2025-09-21,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-61761,Dave Ortega,POS Purchase,133.24,2025-02-09,Department store. Normal activity consistent with customer profile.
+ALT-13692,Heather Wong,Dividend Credit,43.76,2025-07-30,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-75063,Rose Meza,Bill Payment,339.53,2025-02-08,Internet bill. Normal activity consistent with customer profile.
+ALT-55963,Noah Schroeder,Online Transfer,145.85,2025-12-14,Gift to family. Normal activity consistent with customer profile.
+ALT-39234,Steven Munoz,POS Purchase,102.77,2025-06-09,Department store. Normal activity consistent with customer profile.
 ALT-45918,Kathleen Arnold,Online Transfer,135.34,2025-05-03,Transfer to savings. Normal activity consistent with customer profile.
-ALT-32118,Jim Fowler,ATM Withdrawal,50.0,2025-05-15,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-78004,Gregory Yang,POS Purchase,60.76,2025-01-01,Gas station. Normal activity consistent with customer profile.
-ALT-72781,Brian Ward,ATM Withdrawal,200.0,2025-12-02,Petty cash withdrawal. Normal activity consistent with customer profile.
-ALT-96420,Mark Collins,ATM Withdrawal,100.0,2025-04-14,Petty cash withdrawal. Normal activity consistent with customer profile.
 ALT-49278,Mrs. Brittany Saunders,Salary Credit,5279.25,2025-05-06,Bonus payment. Normal activity consistent with customer profile.
+ALT-78004,Gregory Yang,POS Purchase,60.76,2025-01-01,Gas station. Normal activity consistent with customer profile.
+ALT-49830,Heather Baker,Salary Credit,3153.21,2025-03-01,Bonus payment. Normal activity consistent with customer profile.
+ALT-31544,Ricky Rios,Salary Credit,5881.15,2025-07-07,Bonus payment. Normal activity consistent with customer profile.
+ALT-87711,Ashley Gaines,Online Transfer,121.49,2025-04-21,Transfer to savings. Normal activity consistent with customer profile.
+ALT-36985,Carol Hood,Salary Credit,3651.27,2025-08-17,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-53507,Yolanda Hendricks,Bill Payment,380.7,2025-02-09,Credit card bill. Normal activity consistent with customer profile.
+ALT-71370,William Mason,POS Purchase,108.46,2025-10-20,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-21009,Stephanie Morgan,Salary Credit,4886.23,2025-11-01,Bonus payment. Normal activity consistent with customer profile.
+ALT-28962,Michelle Petersen,Bill Payment,421.14,2025-03-05,Credit card bill. Normal activity consistent with customer profile.
+ALT-22179,Craig Jones,ATM Withdrawal,20.0,2025-05-21,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-10154,Luis Johnson,Online Transfer,115.26,2025-08-09,Gift to family. Normal activity consistent with customer profile.
+ALT-27826,William Conway,Online Transfer,128.44,2025-03-01,Transfer to savings. Normal activity consistent with customer profile.
+ALT-42903,Bryce Campbell,Direct Debit,428.34,2025-05-26,Utility bill payment. Normal activity consistent with customer profile.
+ALT-67921,Erica Harris,Dividend Credit,80.64,2025-11-25,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-94656,Michelle Hamilton,Dividend Credit,133.76,2025-09-20,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-20726,Nicole Wilson,ATM Withdrawal,50.0,2025-04-01,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-83372,Brianna English,ATM Withdrawal,50.0,2025-08-08,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-60573,Eric Meyer,Online Transfer,29.17,2025-02-15,Gift to family. Normal activity consistent with customer profile.
+ALT-86812,Mr. Michael White,Direct Debit,236.26,2025-02-16,Mortgage payment. Normal activity consistent with customer profile.
+ALT-25732,Keith Maddox,Bill Payment,470.86,2025-08-14,Credit card bill. Normal activity consistent with customer profile.
+ALT-80215,Benjamin Carlson,Online Transfer,42.95,2025-06-15,Payment to friend. Normal activity consistent with customer profile.
+ALT-71200,Jeremy Kim,Online Transfer,12.36,2025-01-16,Transfer to savings. Normal activity consistent with customer profile.
+ALT-95392,Andrew Washington,Direct Debit,463.34,2025-10-23,Utility bill payment. Normal activity consistent with customer profile.
+ALT-94994,Michele Whitaker,Online Transfer,83.7,2025-08-29,Payment to friend. Normal activity consistent with customer profile.
+ALT-26930,Thomas Huff,POS Purchase,89.84,2025-01-27,Department store. Normal activity consistent with customer profile.
+ALT-65638,James Duncan,Bill Payment,406.63,2025-11-19,Internet bill. Normal activity consistent with customer profile.
+ALT-72672,Christopher Douglas,Online Transfer,104.38,2025-01-26,Gift to family. Normal activity consistent with customer profile.
+ALT-22633,Tony Clark,POS Purchase,90.11,2025-05-24,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-47607,Paul Aguilar,Bill Payment,422.78,2025-08-30,Credit card bill. Normal activity consistent with customer profile.
+ALT-21650,Walter Brown,Bill Payment,384.39,2025-07-17,Internet bill. Normal activity consistent with customer profile.
+ALT-33294,Steven Velazquez,Salary Credit,3110.99,2025-11-05,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-18694,Paul Peterson,Dividend Credit,42.31,2025-07-16,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-12020,Krista Lewis,Dividend Credit,40.57,2025-01-13,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-89024,Michael Schmitt,Bill Payment,259.97,2025-11-21,Internet bill. Normal activity consistent with customer profile.
+ALT-29214,Samantha Hunt,ATM Withdrawal,200.0,2025-04-07,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-82530,Michelle James,Salary Credit,3002.29,2025-04-30,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-95059,Stuart Eaton,POS Purchase,26.81,2025-11-09,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-36962,Wanda Wilson,POS Purchase,42.22,2025-01-05,Department store. Normal activity consistent with customer profile.
+ALT-62818,David Myers,ATM Withdrawal,200.0,2025-09-24,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-56485,Joshua Bond,ATM Withdrawal,200.0,2025-10-10,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-48998,Paul Harris,Salary Credit,5199.25,2025-03-09,Bonus payment. Normal activity consistent with customer profile.
+ALT-40151,Matthew Morales,Direct Debit,424.94,2025-05-12,Gym membership. Normal activity consistent with customer profile.
+ALT-54709,Travis Smith,POS Purchase,79.47,2025-06-22,Department store. Normal activity consistent with customer profile.
+ALT-75913,Judy Baker,POS Purchase,112.99,2025-12-10,Gas station. Normal activity consistent with customer profile.
+ALT-32994,Joseph Heath,Online Transfer,65.64,2025-01-06,Gift to family. Normal activity consistent with customer profile.
+ALT-25847,Samuel Mata,POS Purchase,11.16,2025-08-23,Online subscription. Normal activity consistent with customer profile.
+ALT-72405,Kristen Russell,Bill Payment,258.23,2025-07-19,Credit card bill. Normal activity consistent with customer profile.
+ALT-97069,Michelle Serrano,Direct Debit,132.72,2025-06-18,Mortgage payment. Normal activity consistent with customer profile.
+ALT-52623,Jacqueline Simmons,ATM Withdrawal,50.0,2025-08-21,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-26012,Aimee Moore,POS Purchase,111.53,2025-08-04,Restaurant payment. Normal activity consistent with customer profile.
+ALT-89650,Donald Smith,Online Transfer,30.82,2025-08-09,Gift to family. Normal activity consistent with customer profile.
+ALT-98974,Heather Joseph,Salary Credit,3446.31,2025-11-13,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-11135,John Howard,Online Transfer,29.19,2025-10-17,Transfer to savings. Normal activity consistent with customer profile.
+ALT-87411,Miss Victoria Contreras DDS,Bill Payment,490.02,2025-09-03,Internet bill. Normal activity consistent with customer profile.
+ALT-43682,Mr. Danny Jimenez,Cash Deposit,9013.81,2025-07-07,Structuring: Multiple cash deposits (3) under reporting threshold. Total: $9013.81.
+ALT-67589,Jordan Hurst,Salary Credit,3129.72,2025-03-24,Bonus payment. Normal activity consistent with customer profile.
+ALT-28220,Craig Lynch,Dividend Credit,142.67,2025-09-10,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-11574,Katelyn Nash,Online Transfer,37.23,2025-01-27,Transfer to savings. Normal activity consistent with customer profile.
+ALT-79741,Carmen Cooper,ATM Withdrawal,200.0,2026-01-01,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-23891,Katherine Anderson,ATM Withdrawal,200.0,2025-02-22,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-94587,Steven Morris,POS Purchase,63.56,2025-05-24,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-62014,Jennifer Anderson,Online Transfer,134.71,2025-09-02,Transfer to savings. Normal activity consistent with customer profile.
+ALT-56019,Jeffrey Bell,ATM Withdrawal,50.0,2025-11-28,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-56827,Erin Smith,Online Transfer,118.46,2025-09-21,Transfer to savings. Normal activity consistent with customer profile.
+ALT-91027,Stephen Hall,ATM Withdrawal,100.0,2025-12-05,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-39267,Paul Carter,Direct Debit,194.33,2025-07-23,Insurance premium. Normal activity consistent with customer profile.
+ALT-43281,Anthony Thompson,ATM Withdrawal,50.0,2025-01-21,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-85207,Jeff Jackson,Direct Debit,115.23,2025-08-05,Gym membership. Normal activity consistent with customer profile.
+ALT-36248,Andrew White,POS Purchase,35.02,2025-07-09,Restaurant payment. Normal activity consistent with customer profile.
+ALT-59035,Sean Mora,ATM Withdrawal,100.0,2025-02-12,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-18504,Kyle Sparks,Online Transfer,88.75,2025-06-09,Transfer to savings. Normal activity consistent with customer profile.
 ALT-54919,Karen Bennett,Bill Payment,63.13,2025-02-18,Internet bill. Normal activity consistent with customer profile.
+ALT-93716,Michael Braun,Direct Debit,57.25,2025-08-10,Utility bill payment. Normal activity consistent with customer profile.
+ALT-93066,Rachel Griffith,Online Transfer,86.32,2025-08-20,Gift to family. Normal activity consistent with customer profile.
+ALT-40649,Jenna Chapman,Dividend Credit,142.2,2025-07-25,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-23490,Allison Mclean,Salary Credit,6835.22,2025-11-10,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-68744,Ashley Taylor MD,Wire Transfer,142247.2,2025-07-19,Layering: Outgoing Wire to Quantum Trade (Cayman Islands) with no economic rationale.
+ALT-43892,Lisa Hampton,Direct Debit,350.55,2025-01-28,Insurance premium. Normal activity consistent with customer profile.
+ALT-36209,Virginia Cunningham,POS Purchase,110.89,2025-10-26,Department store. Normal activity consistent with customer profile.
+ALT-16177,Shirley Gardner,POS Purchase,89.3,2025-07-31,Online subscription. Normal activity consistent with customer profile.
+ALT-64123,Jennifer Andrade,Dividend Credit,80.85,2025-02-27,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-15451,Edward Peterson,Online Transfer,102.74,2025-01-23,Payment to friend. Normal activity consistent with customer profile.
+ALT-26383,Richard Coleman,Online Transfer,76.08,2025-10-07,Gift to family. Normal activity consistent with customer profile.
+ALT-84772,Angela Poole,Salary Credit,3014.71,2025-08-12,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-62098,Albert White,ATM Withdrawal,50.0,2025-09-19,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-78095,Arthur Fernandez,Dividend Credit,62.04,2025-11-25,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-74134,Deborah Mills,ATM Withdrawal,50.0,2025-11-01,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-49018,Paul Martinez,Online Transfer,69.32,2025-05-23,Payment to friend. Normal activity consistent with customer profile.
+ALT-14666,Michelle Fleming,Direct Debit,202.28,2025-11-06,Insurance premium. Normal activity consistent with customer profile.
+ALT-44648,Travis Smith,Dividend Credit,93.13,2025-09-22,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-64852,Sally Pierce,Dividend Credit,124.14,2025-11-30,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-75988,Melissa Boone,Direct Debit,248.56,2025-07-18,Insurance premium. Normal activity consistent with customer profile.
+ALT-15333,Kimberly Moore,ATM Withdrawal,100.0,2025-05-27,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-65322,Mike Chan,POS Purchase,21.19,2025-10-24,Gas station. Normal activity consistent with customer profile.
+ALT-97813,Anthony Monroe,Online Transfer,61.66,2025-11-13,Payment to friend. Normal activity consistent with customer profile.
+ALT-80662,Carl Leonard,Online Transfer,92.98,2025-03-28,Payment to friend. Normal activity consistent with customer profile.
+ALT-65041,Juan Perez,Direct Debit,489.56,2025-03-18,Gym membership. Normal activity consistent with customer profile.
+ALT-39992,Michael Poole,POS Purchase,91.06,2025-03-31,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-12527,Marilyn Sanders,Salary Credit,5474.3,2025-02-20,Bonus payment. Normal activity consistent with customer profile.
+ALT-40470,Michael Campbell,Bill Payment,292.51,2025-03-18,Internet bill. Normal activity consistent with customer profile.
+ALT-24438,Jay Contreras,ATM Withdrawal,100.0,2025-04-01,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-77098,Kristen Bentley,POS Purchase,133.97,2025-05-28,Online subscription. Normal activity consistent with customer profile.
+ALT-59920,Natasha Swanson,Salary Credit,5663.17,2025-03-17,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-31861,Anna Thompson,Direct Debit,178.8,2025-07-19,Gym membership. Normal activity consistent with customer profile.
+ALT-41656,Travis Morton,Online Transfer,48.49,2025-05-25,Transfer to savings. Normal activity consistent with customer profile.
+ALT-25709,David Thomas,Dividend Credit,65.87,2025-01-11,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-23182,Alexandria Beck,Direct Debit,333.79,2025-07-26,Insurance premium. Normal activity consistent with customer profile.
+ALT-40205,Katrina Hendrix,Bill Payment,257.18,2025-05-16,Internet bill. Normal activity consistent with customer profile.
+ALT-49326,Michael Hayes,Salary Credit,3883.41,2025-09-23,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-49973,Sharon Carlson,POS Purchase,99.39,2025-04-13,Restaurant payment. Normal activity consistent with customer profile.
+ALT-51912,Aaron Martinez,Dividend Credit,37.03,2025-02-25,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-13429,Brett Henry,Online Transfer,126.92,2025-12-02,Payment to friend. Normal activity consistent with customer profile.
+ALT-37566,Jeremiah Knapp,Bill Payment,321.92,2025-06-11,Internet bill. Normal activity consistent with customer profile.
+ALT-68172,Dr. Allison Garcia,POS Purchase,75.46,2025-10-24,Restaurant payment. Normal activity consistent with customer profile.
+ALT-74584,Mary Harris,Dividend Credit,46.21,2025-06-08,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-75342,Jasmin Lopez,ATM Withdrawal,50.0,2025-07-03,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-57547,Emily Torres,Bill Payment,235.28,2025-12-17,Internet bill. Normal activity consistent with customer profile.
+ALT-76846,Kyle Reed,Wire Transfer,148490.13,2025-12-14,Layering: Outgoing Wire to Apex Consulting (Cayman Islands) with no economic rationale.
+ALT-81252,Tina Todd,POS Purchase,51.23,2025-09-10,Department store. Normal activity consistent with customer profile.
+ALT-28219,Monica Shannon,Salary Credit,3950.2,2025-01-07,Bonus payment. Normal activity consistent with customer profile.
+ALT-68024,Robert Hull,Online Transfer,24.34,2025-06-17,Gift to family. Normal activity consistent with customer profile.
+ALT-34553,Alexandria Mack,Online Transfer,86.2,2025-10-27,Gift to family. Normal activity consistent with customer profile.
+ALT-80613,Angela Cohen,Crypto Purchase,39360.05,2025-05-24,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-34982,Robert Rice,Online Transfer,128.92,2025-09-25,Gift to family. Normal activity consistent with customer profile.
+ALT-16329,Diana Martinez PhD,ATM Withdrawal,200.0,2025-08-06,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-31538,Julia Davis,Direct Debit,305.73,2025-08-09,Utility bill payment. Normal activity consistent with customer profile.
+ALT-40546,Marc Cook,Salary Credit,5368.21,2025-05-23,Bonus payment. Normal activity consistent with customer profile.
+ALT-50817,Julie Skinner,ATM Withdrawal,50.0,2025-12-28,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-88746,Stephanie Green,Bill Payment,436.68,2025-03-31,Internet bill. Normal activity consistent with customer profile.
+ALT-68742,Carrie Wells,Direct Debit,480.55,2025-05-19,Mortgage payment. Normal activity consistent with customer profile.
+ALT-43011,Stephanie Myers,Dividend Credit,148.31,2025-07-23,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-19952,Michael Wu,ATM Withdrawal,200.0,2025-09-11,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-91520,Anthony Thompson,POS Purchase,127.07,2025-08-02,Online subscription. Normal activity consistent with customer profile.
+ALT-77572,Jill Pearson,Bill Payment,109.3,2025-05-26,Internet bill. Normal activity consistent with customer profile.
+ALT-51526,Mark Rodriguez,Salary Credit,5355.61,2025-07-05,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-80660,Eric Perez,Direct Debit,451.51,2025-07-13,Utility bill payment. Normal activity consistent with customer profile.
+ALT-90716,Patricia Brown,ATM Withdrawal,100.0,2025-10-29,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-57740,Steven Sanchez,Bill Payment,115.63,2025-02-20,Credit card bill. Normal activity consistent with customer profile.
+ALT-99754,Jeremy Williams,Direct Debit,396.36,2025-08-29,Gym membership. Normal activity consistent with customer profile.
+ALT-22187,Donna Smith,POS Purchase,134.7,2025-01-04,Restaurant payment. Normal activity consistent with customer profile.
+ALT-78743,Adrienne Brown,Online Transfer,25.23,2025-07-10,Gift to family. Normal activity consistent with customer profile.
+ALT-95930,Amy Dominguez,Direct Debit,81.23,2025-06-07,Insurance premium. Normal activity consistent with customer profile.
+ALT-89955,Jeremiah Wilson,Online Transfer,107.96,2025-03-26,Payment to friend. Normal activity consistent with customer profile.
+ALT-11350,Linda Li,ATM Withdrawal,100.0,2025-03-27,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-30027,Michelle Prince,Direct Debit,67.65,2025-07-09,Utility bill payment. Normal activity consistent with customer profile.
+ALT-59576,Samantha Hayes,POS Purchase,94.5,2025-06-15,Online subscription. Normal activity consistent with customer profile.
+ALT-57781,Jordan Mahoney,Online Transfer,78.73,2025-02-26,Transfer to savings. Normal activity consistent with customer profile.
+ALT-19352,Yolanda Gray,Direct Debit,154.99,2025-04-07,Utility bill payment. Normal activity consistent with customer profile.
+ALT-80786,Joseph Hodge,ATM Withdrawal,20.0,2025-09-22,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-26409,Christopher Jacobs,Dividend Credit,13.91,2025-05-31,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-47246,Natasha Lutz,Dividend Credit,100.14,2025-08-30,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-97685,Julie Hopkins,POS Purchase,61.1,2025-07-29,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-90572,Kristin Monroe,Direct Debit,402.56,2025-01-10,Insurance premium. Normal activity consistent with customer profile.
+ALT-24896,Samuel Ellis,Salary Credit,5318.32,2025-02-16,Bonus payment. Normal activity consistent with customer profile.
+ALT-66385,Christine Ferguson,Dividend Credit,10.36,2025-12-08,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-61057,Andrew Price,Dividend Credit,56.06,2025-01-02,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-23571,Thomas Cantu,ATM Withdrawal,200.0,2025-03-06,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-63073,Mrs. Taylor Guerra,Direct Debit,134.27,2025-11-01,Mortgage payment. Normal activity consistent with customer profile.
+ALT-40997,Taylor Davis,POS Purchase,93.82,2025-03-18,Department store. Normal activity consistent with customer profile.
+ALT-92800,Gabriel Tyler,ATM Withdrawal,100.0,2025-06-13,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-30732,Melissa Ramirez,Dividend Credit,10.75,2025-12-05,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-77145,Andrew Ali,Salary Credit,5929.55,2025-04-02,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-66538,John Velasquez,Direct Debit,324.03,2025-09-12,Insurance premium. Normal activity consistent with customer profile.
+ALT-90929,Emily Jones,POS Purchase,81.68,2025-03-08,Gas station. Normal activity consistent with customer profile.
+ALT-45507,Tiffany Cohen,POS Purchase,102.77,2025-10-20,Gas station. Normal activity consistent with customer profile.
+ALT-87141,Julie Chandler,Salary Credit,6236.04,2025-12-14,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-91693,Valerie Parker,Online Transfer,103.54,2025-03-25,Gift to family. Normal activity consistent with customer profile.
+ALT-78480,Rhonda Johnson,ATM Withdrawal,200.0,2025-05-11,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-40069,Melissa Reid,Direct Debit,432.93,2025-04-05,Utility bill payment. Normal activity consistent with customer profile.
+ALT-72775,Daniel Roberts,POS Purchase,92.11,2025-10-03,Gas station. Normal activity consistent with customer profile.
+ALT-80934,Gregory Reeves,Dividend Credit,140.77,2025-03-31,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-51624,John Ramirez,Bill Payment,150.89,2025-11-07,Credit card bill. Normal activity consistent with customer profile.
+ALT-45904,Zachary Martinez,ATM Withdrawal,50.0,2025-10-05,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-29225,Matthew Sanchez,ATM Withdrawal,200.0,2025-09-11,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-94949,Ricky Andrews,Bill Payment,97.09,2025-03-20,Credit card bill. Normal activity consistent with customer profile.
+ALT-57711,Jacqueline Ortiz,Online Transfer,127.19,2025-09-25,Transfer to savings. Normal activity consistent with customer profile.
+ALT-62603,Jesse Williams,Online Transfer,38.52,2025-08-10,Transfer to savings. Normal activity consistent with customer profile.
+ALT-80701,Brittney Torres,Direct Debit,274.41,2025-04-16,Mortgage payment. Normal activity consistent with customer profile.
+ALT-77733,Ebony Garcia,Online Transfer,110.5,2025-01-10,Payment to friend. Normal activity consistent with customer profile.
+ALT-56312,Emily Gutierrez,Online Transfer,10.16,2025-06-07,Payment to friend. Normal activity consistent with customer profile.
+ALT-40444,Patricia Zimmerman,POS Purchase,47.95,2025-09-22,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-28643,Marvin Carey,Salary Credit,4473.31,2025-06-06,Reimbursement. Normal activity consistent with customer profile.
+ALT-61002,Jill Curtis,Dividend Credit,71.91,2025-04-30,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-34220,Mr. Richard Gill,ATM Withdrawal,20.0,2025-04-21,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-41126,Tina Ferguson,Salary Credit,5838.49,2025-10-24,Bonus payment. Normal activity consistent with customer profile.
+ALT-32594,Michelle Gonzales,ATM Withdrawal,50.0,2025-07-19,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-92428,Patricia Pennington,ATM Withdrawal,50.0,2025-10-15,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-59861,Carl Santiago,Dividend Credit,11.95,2025-01-23,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-39340,Kristopher Becker,Direct Debit,252.12,2025-12-18,Mortgage payment. Normal activity consistent with customer profile.
+ALT-90611,Brian Fleming,Salary Credit,6548.66,2025-01-27,Reimbursement. Normal activity consistent with customer profile.
+ALT-30717,Andrew James,Dividend Credit,99.3,2025-12-18,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-69035,Miranda Rosales,Online Transfer,24.62,2025-07-03,Gift to family. Normal activity consistent with customer profile.
+ALT-94453,Regina Ortiz,Dividend Credit,138.53,2025-08-24,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-98745,Lauren Smith,ATM Withdrawal,200.0,2025-02-13,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-54697,Danielle Oconnor,Direct Debit,254.38,2025-07-01,Insurance premium. Normal activity consistent with customer profile.
+ALT-53841,Chelsea Howard,Salary Credit,5761.41,2025-05-20,Bonus payment. Normal activity consistent with customer profile.
+ALT-74001,Anna Everett,Bill Payment,289.54,2025-06-13,Credit card bill. Normal activity consistent with customer profile.
+ALT-95617,Charlene Cain,Salary Credit,3444.14,2025-08-03,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-22898,Kristopher Howard,Dividend Credit,138.79,2025-03-11,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-39056,Clifford Ramirez,Direct Debit,55.26,2025-03-18,Mortgage payment. Normal activity consistent with customer profile.
+ALT-94392,William Aguirre,Online Transfer,21.5,2025-09-18,Transfer to savings. Normal activity consistent with customer profile.
+ALT-25118,Eric Dudley,Salary Credit,3647.66,2025-12-29,Reimbursement. Normal activity consistent with customer profile.
+ALT-91798,Amanda Brown,Dividend Credit,25.29,2025-04-22,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-72018,Melissa Riley,Bill Payment,372.17,2025-09-24,Credit card bill. Normal activity consistent with customer profile.
+ALT-39851,Amber Sullivan,Bill Payment,73.88,2025-01-09,Internet bill. Normal activity consistent with customer profile.
+ALT-11886,Marissa Watson,Bill Payment,118.76,2025-01-23,Credit card bill. Normal activity consistent with customer profile.
+ALT-17294,Timothy Melendez,Bill Payment,235.68,2025-02-26,Credit card bill. Normal activity consistent with customer profile.
+ALT-57922,Kevin Crawford,ATM Withdrawal,100.0,2025-10-06,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-18200,Jack Watson,Salary Credit,4506.55,2025-09-28,Reimbursement. Normal activity consistent with customer profile.
+ALT-25621,Tammy Lozano,Salary Credit,7591.09,2025-08-09,Reimbursement. Normal activity consistent with customer profile.
+ALT-98580,Kimberly Ortiz,POS Purchase,36.29,2025-03-18,Department store. Normal activity consistent with customer profile.
+ALT-52051,Bobby Davis,Salary Credit,5951.64,2025-09-23,Reimbursement. Normal activity consistent with customer profile.
+ALT-59144,Dwayne Porter,Bill Payment,410.68,2025-11-18,Credit card bill. Normal activity consistent with customer profile.
+ALT-39438,Kimberly Mcmahon,Dividend Credit,123.05,2025-06-22,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-54436,Brian Jensen,Direct Debit,217.55,2025-08-16,Utility bill payment. Normal activity consistent with customer profile.
+ALT-51054,Julia Ryan,POS Purchase,137.11,2025-06-27,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-52616,Nicholas Hernandez,Direct Debit,409.09,2025-04-03,Insurance premium. Normal activity consistent with customer profile.
+ALT-31642,Shawn Davis,Bill Payment,246.87,2025-06-16,Credit card bill. Normal activity consistent with customer profile.
+ALT-26925,Jennifer Clark,Dividend Credit,48.0,2025-11-07,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-67275,Megan Herring,Online Transfer,45.44,2025-04-14,Gift to family. Normal activity consistent with customer profile.
+ALT-14179,Elizabeth Barrett,Bill Payment,405.56,2025-08-29,Internet bill. Normal activity consistent with customer profile.
+ALT-96420,Mark Collins,ATM Withdrawal,100.0,2025-04-14,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-46289,James Taylor,Online Transfer,88.2,2025-06-27,Transfer to savings. Normal activity consistent with customer profile.
+ALT-89134,Angela Arnold,Bill Payment,328.51,2025-03-20,Credit card bill. Normal activity consistent with customer profile.
+ALT-73856,Alan Reese,Bill Payment,268.85,2025-08-26,Internet bill. Normal activity consistent with customer profile.
+ALT-68833,Rachel Garcia,Salary Credit,4061.61,2025-07-22,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-25802,Richard Nelson,Dividend Credit,100.0,2025-04-15,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-36597,Karen Gonzalez,Direct Debit,222.46,2025-05-05,Gym membership. Normal activity consistent with customer profile.
+ALT-13120,Cathy Freeman,Salary Credit,3227.88,2025-06-12,Reimbursement. Normal activity consistent with customer profile.
+ALT-26162,Devon Mann,Online Transfer,10.85,2025-03-02,Gift to family. Normal activity consistent with customer profile.
+ALT-73669,Brandy Bailey,POS Purchase,142.41,2025-11-10,Department store. Normal activity consistent with customer profile.
+ALT-11288,Denise Perez,POS Purchase,132.61,2025-07-25,Online subscription. Normal activity consistent with customer profile.
+ALT-30043,Antonio Carey,Bill Payment,155.75,2025-06-20,Internet bill. Normal activity consistent with customer profile.
+ALT-33994,Sandra Howard,Bill Payment,397.58,2025-04-12,Internet bill. Normal activity consistent with customer profile.
+ALT-82045,James Rose,Direct Debit,323.38,2025-04-13,Insurance premium. Normal activity consistent with customer profile.
+ALT-64742,David Wood,Online Transfer,104.26,2025-02-17,Payment to friend. Normal activity consistent with customer profile.
+ALT-38771,George Edwards,Direct Debit,477.17,2025-06-30,Utility bill payment. Normal activity consistent with customer profile.
+ALT-16046,Teresa Jenkins,Direct Debit,383.48,2025-04-14,Mortgage payment. Normal activity consistent with customer profile.
+ALT-40873,Alexander Wagner,Dividend Credit,47.69,2025-04-12,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-63700,Jessica Mack,Salary Credit,3683.23,2025-07-23,Reimbursement. Normal activity consistent with customer profile.
+ALT-69335,Michael Travis,ATM Withdrawal,50.0,2025-08-11,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-81790,Jessica Martinez,Bill Payment,218.21,2025-08-23,Internet bill. Normal activity consistent with customer profile.
+ALT-46433,Anna Burnett,Salary Credit,6121.42,2025-12-03,Bonus payment. Normal activity consistent with customer profile.
+ALT-42315,Matthew Moody,Salary Credit,5613.07,2025-04-09,Reimbursement. Normal activity consistent with customer profile.
+ALT-72747,Mary Grimes,Wire Transfer,463071.34,2025-09-28,Layering: Outgoing Wire to Apex Consulting (Cayman Islands) with no economic rationale.
+ALT-56179,Chad Fernandez,Online Transfer,96.93,2025-09-08,Transfer to savings. Normal activity consistent with customer profile.
+ALT-36247,Debra Young,POS Purchase,88.37,2025-07-16,Gas station. Normal activity consistent with customer profile.
+ALT-53133,Charles Morrison,Online Transfer,15.13,2025-10-02,Transfer to savings. Normal activity consistent with customer profile.
+ALT-44248,Steve Gomez,Dividend Credit,124.17,2025-11-21,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-78145,Kendra Nelson,Direct Debit,440.01,2025-01-11,Utility bill payment. Normal activity consistent with customer profile.
+ALT-82435,Crystal Moore,Direct Debit,192.0,2025-06-22,Utility bill payment. Normal activity consistent with customer profile.
+ALT-57548,John Nguyen,Bill Payment,251.39,2025-07-23,Credit card bill. Normal activity consistent with customer profile.
+ALT-54740,Michelle Brown,Dividend Credit,143.82,2025-11-07,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-10342,Laura Becker,POS Purchase,95.42,2025-07-02,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-11069,Douglas Jenkins,Salary Credit,4313.06,2025-04-20,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-34180,Joe Hernandez,Dividend Credit,123.13,2025-10-21,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-20263,Brandon Wagner,Salary Credit,3183.51,2025-02-12,Reimbursement. Normal activity consistent with customer profile.
+ALT-12739,Brandy Gillespie,Dividend Credit,48.88,2025-02-27,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-52898,Karen Knapp,Direct Debit,316.91,2025-10-28,Utility bill payment. Normal activity consistent with customer profile.
+ALT-73953,Erin Combs,POS Purchase,41.48,2025-07-19,Gas station. Normal activity consistent with customer profile.
+ALT-11233,Wendy Jones,POS Purchase,126.41,2025-06-03,Department store. Normal activity consistent with customer profile.
+ALT-79734,Timothy Smith,Round Dollar,1000000.0,2025-01-20,Large round dollar transfer: $1000000.0. Potential integration.
+ALT-42241,Stacy Meadows,Bill Payment,305.53,2025-08-01,Internet bill. Normal activity consistent with customer profile.
+ALT-10991,Tanner Johnson,ATM Withdrawal,20.0,2025-09-02,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-15333,James Young,POS Purchase,69.91,2025-10-27,Gas station. Normal activity consistent with customer profile.
+ALT-70162,Tracy Cox,Online Transfer,128.45,2025-08-26,Payment to friend. Normal activity consistent with customer profile.
+ALT-41616,Brian Strong,POS Purchase,18.28,2025-04-30,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-60728,Brian Alexander,Wire Transfer,435727.69,2025-11-19,Layering: Outgoing Wire to Apex Consulting (Seychelles) with no economic rationale.
+ALT-34239,Donald Rhodes,Salary Credit,7959.42,2025-03-20,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-49880,Amber Lawrence,Online Transfer,41.86,2025-03-20,Transfer to savings. Normal activity consistent with customer profile.
+ALT-64746,Robert Clark,Bill Payment,387.0,2025-07-20,Credit card bill. Normal activity consistent with customer profile.
+ALT-90140,Nancy Lee,Bill Payment,244.79,2025-11-26,Credit card bill. Normal activity consistent with customer profile.
+ALT-83248,Ariel Fleming,Bill Payment,282.46,2025-02-01,Credit card bill. Normal activity consistent with customer profile.
+ALT-45099,Betty Kirk,Bill Payment,314.54,2025-12-10,Internet bill. Normal activity consistent with customer profile.
+ALT-50102,Anthony Robinson,Direct Debit,108.53,2025-08-02,Mortgage payment. Normal activity consistent with customer profile.
+ALT-32653,Savannah Berg,POS Purchase,59.53,2025-06-26,Department store. Normal activity consistent with customer profile.
+ALT-59487,Joseph Mclean,POS Purchase,42.51,2025-05-07,Gas station. Normal activity consistent with customer profile.
+ALT-79594,Jacob Smith,Dividend Credit,46.44,2025-07-16,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-24189,Lee Martinez,Salary Credit,3254.2,2025-12-21,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-71113,Andrew Wells,ATM Withdrawal,50.0,2025-10-27,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-74531,Caitlin Baker,Dividend Credit,142.22,2025-06-30,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-85905,Tammy Fry,Direct Debit,124.76,2025-02-06,Utility bill payment. Normal activity consistent with customer profile.
+ALT-98020,Robin Thompson,Dividend Credit,104.66,2025-01-04,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-34483,Emily Barnes,Direct Debit,452.32,2025-06-04,Gym membership. Normal activity consistent with customer profile.
+ALT-64273,Martha Jackson,Wire Transfer,227697.06,2025-10-30,Layering: Outgoing Wire to DarkWeb LLC (Russia) with no economic rationale.
+ALT-48112,Jose Knight,Online Transfer,43.85,2025-02-18,Payment to friend. Normal activity consistent with customer profile.
+ALT-99947,Joseph Nelson,POS Purchase,14.83,2025-12-23,Department store. Normal activity consistent with customer profile.
+ALT-72514,Tiffany Tucker,Salary Credit,7169.69,2025-07-25,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-71068,Stephen Wilson,Dividend Credit,126.67,2025-04-20,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-10710,Cody Collins,ATM Withdrawal,200.0,2025-04-18,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-23410,Tamara Vaughn,Bill Payment,225.59,2025-10-16,Internet bill. Normal activity consistent with customer profile.
+ALT-39238,Bruce Strong,Salary Credit,6289.72,2025-05-14,Reimbursement. Normal activity consistent with customer profile.
+ALT-49212,Sabrina Davenport,ATM Withdrawal,20.0,2025-09-11,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-80177,Lydia Good,Salary Credit,5377.59,2025-09-23,Reimbursement. Normal activity consistent with customer profile.
+ALT-11729,Robert Rodriguez,POS Purchase,29.37,2025-04-04,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-99004,Ashley Diaz,ATM Withdrawal,200.0,2025-12-10,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-30240,Jessica Chan,Dividend Credit,107.59,2025-04-21,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-52405,Ronald Snyder,Bill Payment,155.27,2025-01-02,Credit card bill. Normal activity consistent with customer profile.
+ALT-14030,Darlene Huff,POS Purchase,148.24,2025-08-09,Restaurant payment. Normal activity consistent with customer profile.
+ALT-17683,Jeffrey Schwartz,Salary Credit,4129.94,2025-04-30,Bonus payment. Normal activity consistent with customer profile.
+ALT-79278,Rebecca Campbell,ATM Withdrawal,100.0,2025-07-24,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-94277,Diana Peterson,POS Purchase,13.42,2025-04-01,Gas station. Normal activity consistent with customer profile.
+ALT-94678,Steven Wallace,Direct Debit,136.14,2025-09-12,Mortgage payment. Normal activity consistent with customer profile.
+ALT-78165,Kelly Tate,Online Transfer,38.69,2025-09-23,Gift to family. Normal activity consistent with customer profile.
+ALT-32905,Lori Campos,Online Transfer,148.98,2025-03-19,Transfer to savings. Normal activity consistent with customer profile.
+ALT-64970,Darren Arnold,POS Purchase,56.28,2025-12-17,Department store. Normal activity consistent with customer profile.
+ALT-44199,Dennis Ramirez,POS Purchase,30.12,2025-10-01,Restaurant payment. Normal activity consistent with customer profile.
+ALT-67492,Earl Brown,Direct Debit,188.93,2025-04-09,Gym membership. Normal activity consistent with customer profile.
+ALT-65953,Nicole Jackson,Bill Payment,145.71,2025-06-20,Credit card bill. Normal activity consistent with customer profile.
+ALT-66562,Kimberly Schmitt,POS Purchase,71.03,2025-08-10,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-58094,Christopher Butler,Direct Debit,350.15,2025-10-03,Utility bill payment. Normal activity consistent with customer profile.
+ALT-99027,Daniel Thomas,Online Transfer,133.53,2025-08-04,Payment to friend. Normal activity consistent with customer profile.
+ALT-51871,Bradley Keller Jr.,Direct Debit,184.27,2025-07-23,Mortgage payment. Normal activity consistent with customer profile.
+ALT-73702,Michelle Williams,Salary Credit,7929.33,2025-12-26,Bonus payment. Normal activity consistent with customer profile.
+ALT-29890,Natalie Weber,Salary Credit,6988.61,2025-12-17,Reimbursement. Normal activity consistent with customer profile.
+ALT-23361,Tina Hill,Bill Payment,235.01,2025-07-15,Internet bill. Normal activity consistent with customer profile.
+ALT-45617,Melinda Burton,Salary Credit,6200.98,2025-10-26,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-68939,Joel Fields,ATM Withdrawal,50.0,2025-04-24,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-98595,Ashley Grimes,ATM Withdrawal,200.0,2025-09-10,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-39173,Joseph White,POS Purchase,110.84,2025-07-30,Department store. Normal activity consistent with customer profile.
+ALT-82531,Laurie Ruiz,Wire Transfer,245708.88,2025-12-24,Layering: Outgoing Wire to Global Holdings Ltd (Seychelles) with no economic rationale.
+ALT-46548,Stephen Murphy,Dividend Credit,91.45,2025-02-10,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-79175,Gary Wise,Bill Payment,399.76,2025-01-25,Credit card bill. Normal activity consistent with customer profile.
+ALT-90178,Linda Hess,POS Purchase,145.63,2025-10-09,Department store. Normal activity consistent with customer profile.
+ALT-91349,Brooke Maxwell,ATM Withdrawal,100.0,2025-01-15,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-24680,James Curtis,Salary Credit,4822.83,2025-09-11,Reimbursement. Normal activity consistent with customer profile.
+ALT-46317,Thomas Taylor,Bill Payment,332.94,2025-08-04,Internet bill. Normal activity consistent with customer profile.
+ALT-25338,Allen Lee,Online Transfer,140.77,2025-12-30,Transfer to savings. Normal activity consistent with customer profile.
+ALT-49459,Amy Coleman,ATM Withdrawal,100.0,2025-07-08,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-16741,Brian Norton,Crypto Purchase,91174.55,2025-09-09,High-value transfer to unregulated crypto exchange 'Binance_Unverified'.
+ALT-51780,Melissa Hensley,ATM Withdrawal,200.0,2025-05-07,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-58902,Alexander Ramos,Dividend Credit,148.61,2025-08-31,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-71626,Susan Smith,Bill Payment,484.93,2025-01-28,Internet bill. Normal activity consistent with customer profile.
+ALT-91839,Amber Mueller,Salary Credit,7158.43,2026-01-01,Bonus payment. Normal activity consistent with customer profile.
+ALT-29115,Karina Woods,Salary Credit,5032.35,2025-12-06,Bonus payment. Normal activity consistent with customer profile.
+ALT-57626,Timothy Cox,Bill Payment,476.75,2025-01-19,Credit card bill. Normal activity consistent with customer profile.
+ALT-30186,Paul Smith,Dividend Credit,15.97,2025-10-18,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-63204,Ann Long,Salary Credit,4051.7,2025-01-29,Reimbursement. Normal activity consistent with customer profile.
+ALT-93479,David Simmons,Dividend Credit,131.21,2025-06-04,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-62631,Vanessa Nguyen,Bill Payment,462.84,2025-12-08,Internet bill. Normal activity consistent with customer profile.
+ALT-99979,Brenda Morales,Salary Credit,7823.6,2025-09-22,Reimbursement. Normal activity consistent with customer profile.
+ALT-95671,Edwin Ramsey,Bill Payment,356.4,2025-06-14,Credit card bill. Normal activity consistent with customer profile.
+ALT-99406,Erica Macdonald,Dividend Credit,54.55,2025-05-17,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-51868,Aaron Ellis,Online Transfer,83.25,2025-05-27,Gift to family. Normal activity consistent with customer profile.
+ALT-72945,Rachael Gross,POS Purchase,50.64,2025-03-01,Department store. Normal activity consistent with customer profile.
+ALT-23146,Jessica Irwin,Bill Payment,300.19,2025-05-27,Internet bill. Normal activity consistent with customer profile.
+ALT-65883,Rachel Rodriguez,Dividend Credit,21.26,2025-11-23,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-32225,Robert Warren,Bill Payment,363.47,2025-06-23,Credit card bill. Normal activity consistent with customer profile.
+ALT-95806,Jonathan Sandoval,Direct Debit,480.72,2025-01-01,Insurance premium. Normal activity consistent with customer profile.
+ALT-71065,Richard Perez,Online Transfer,29.12,2025-09-21,Gift to family. Normal activity consistent with customer profile.
+ALT-94359,Janice Jacobson,Salary Credit,7151.94,2025-09-14,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-47311,Brian Rose,Direct Debit,385.28,2025-03-28,Insurance premium. Normal activity consistent with customer profile.
+ALT-43284,Michael Martinez,ATM Withdrawal,50.0,2025-02-14,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-62165,Danielle Smith,ATM Withdrawal,100.0,2025-10-06,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-30688,Paul Elliott,Direct Debit,95.98,2025-12-21,Mortgage payment. Normal activity consistent with customer profile.
+ALT-70665,Ryan Gonzalez,Online Transfer,41.3,2025-03-16,Transfer to savings. Normal activity consistent with customer profile.
+ALT-15263,Jennifer Oneill,Bill Payment,264.58,2025-04-01,Credit card bill. Normal activity consistent with customer profile.
+ALT-56771,Cody Gray,Dividend Credit,49.99,2025-08-09,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-66838,Gabriel Gay,ATM Withdrawal,200.0,2025-06-12,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-23463,Melissa Morrow,ATM Withdrawal,200.0,2025-01-30,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-35977,Ricky Holmes,Online Transfer,121.2,2025-04-25,Transfer to savings. Normal activity consistent with customer profile.
+ALT-76722,Richard Harris,Salary Credit,7898.81,2025-02-02,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-27432,Chad Edwards,ATM Withdrawal,200.0,2025-12-10,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-72873,Patricia Heath,Dividend Credit,71.56,2025-03-20,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-47551,James Rios,ATM Withdrawal,200.0,2025-05-23,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-56994,Victor Garrison,Online Transfer,88.83,2025-10-02,Transfer to savings. Normal activity consistent with customer profile.
+ALT-21604,Luis Martin,ATM Withdrawal,50.0,2025-05-20,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-28166,Laura Ball,POS Purchase,20.01,2025-09-16,Online subscription. Normal activity consistent with customer profile.
+ALT-99002,Wendy Davis,Online Transfer,102.6,2025-12-10,Gift to family. Normal activity consistent with customer profile.
+ALT-34193,Jesse Johnson,ATM Withdrawal,50.0,2025-01-14,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-41480,Matthew Lucas,ATM Withdrawal,50.0,2025-09-24,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-51121,Michael Rodriguez MD,Dividend Credit,102.56,2025-08-29,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-54658,Ricky Campos,Direct Debit,389.42,2025-09-13,Gym membership. Normal activity consistent with customer profile.
+ALT-59939,Patricia Thomas,Dividend Credit,82.02,2025-08-12,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-61368,David Ward,Direct Debit,415.92,2025-10-05,Mortgage payment. Normal activity consistent with customer profile.
+ALT-82230,Sherry Burke,Bill Payment,346.44,2025-04-12,Credit card bill. Normal activity consistent with customer profile.
+ALT-40489,Paul Williams,Online Transfer,82.37,2025-07-25,Gift to family. Normal activity consistent with customer profile.
+ALT-42393,Bruce Farley,POS Purchase,101.39,2025-06-22,Gas station. Normal activity consistent with customer profile.
+ALT-60928,Antonio Johns,Direct Debit,370.09,2025-09-24,Mortgage payment. Normal activity consistent with customer profile.
+ALT-19646,Robert Morris,Direct Debit,66.6,2025-02-11,Insurance premium. Normal activity consistent with customer profile.
+ALT-69421,Gregory Colon,Online Transfer,132.6,2025-08-29,Transfer to savings. Normal activity consistent with customer profile.
+ALT-94774,Kimberly Wong,Direct Debit,227.52,2025-01-17,Mortgage payment. Normal activity consistent with customer profile.
+ALT-23795,Christine Wilson,Dividend Credit,45.67,2025-11-08,Quarterly dividend payment. Normal activity consistent with customer profile.
 ALT-93769,Kevin Mccall,Bill Payment,491.6,2025-12-25,Internet bill. Normal activity consistent with customer profile.
+ALT-41067,Joel Logan,ATM Withdrawal,100.0,2025-01-10,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-53597,Neil Edwards,ATM Withdrawal,100.0,2025-05-25,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-32118,Jim Fowler,ATM Withdrawal,50.0,2025-05-15,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-83952,Steven Freeman,Salary Credit,3932.6,2025-07-23,Reimbursement. Normal activity consistent with customer profile.
+ALT-47226,Deanna Riggs,Salary Credit,7542.57,2025-09-13,Reimbursement. Normal activity consistent with customer profile.
+ALT-84567,Claudia Cortez,ATM Withdrawal,50.0,2025-05-11,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-61090,Kathy Benson,Online Transfer,84.26,2025-01-13,Transfer to savings. Normal activity consistent with customer profile.
+ALT-18722,Sarah Holt,Online Transfer,144.13,2025-07-20,Payment to friend. Normal activity consistent with customer profile.
+ALT-46480,Sean Hardy,Dividend Credit,109.61,2025-05-13,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-94290,Catherine Lewis,Online Transfer,48.87,2025-10-02,Transfer to savings. Normal activity consistent with customer profile.
+ALT-13586,Megan Strong,Salary Credit,7880.38,2025-12-21,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-82164,Matthew Murray,POS Purchase,28.66,2025-06-21,Department store. Normal activity consistent with customer profile.
+ALT-65915,Lynn Garcia,Salary Credit,7997.58,2025-06-05,Reimbursement. Normal activity consistent with customer profile.
+ALT-52956,Nicholas White,Salary Credit,3871.03,2025-06-04,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-44261,Jamie White,Dividend Credit,112.92,2025-05-10,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-72224,Lori Wilcox,Online Transfer,39.35,2025-07-12,Payment to friend. Normal activity consistent with customer profile.
+ALT-60950,Anthony Watson,Direct Debit,212.21,2025-12-05,Utility bill payment. Normal activity consistent with customer profile.
+ALT-54595,Kevin Rhodes,Online Transfer,78.22,2025-01-19,Transfer to savings. Normal activity consistent with customer profile.
+ALT-30583,Jose Walton,Salary Credit,6883.97,2025-04-18,Reimbursement. Normal activity consistent with customer profile.
+ALT-32397,Andrew Rogers,Direct Debit,135.88,2025-04-06,Mortgage payment. Normal activity consistent with customer profile.
+ALT-73702,Matthew Hill,POS Purchase,130.35,2025-03-22,Department store. Normal activity consistent with customer profile.
+ALT-85804,Jenny Richmond,Dividend Credit,38.48,2025-06-25,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-98670,Jacob Ruiz,Bill Payment,131.24,2025-11-27,Credit card bill. Normal activity consistent with customer profile.
+ALT-83790,Thomas Compton,Bill Payment,255.47,2025-09-11,Credit card bill. Normal activity consistent with customer profile.
+ALT-67711,Melissa Thompson,Bill Payment,429.02,2025-02-21,Internet bill. Normal activity consistent with customer profile.
+ALT-53641,Beth Baker,Direct Debit,462.92,2025-10-03,Utility bill payment. Normal activity consistent with customer profile.
+ALT-68641,Tina Nelson,ATM Withdrawal,50.0,2025-01-24,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-37462,Jennifer Jones,Dividend Credit,78.33,2025-01-31,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-13991,Gwendolyn Oconnor,Online Transfer,67.71,2025-06-09,Transfer to savings. Normal activity consistent with customer profile.
+ALT-40989,Timothy Cunningham,Dividend Credit,135.04,2025-09-22,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-34659,Eric Williams,ATM Withdrawal,200.0,2025-06-05,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-46432,Karl Carrillo,Wire Transfer,112936.32,2025-02-11,Layering: Outgoing Wire to Oceanic Imports (Panama) with no economic rationale.
+ALT-79913,Vanessa Henson,ATM Withdrawal,50.0,2025-04-11,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-41626,John Koch,Dividend Credit,142.12,2025-08-11,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-65924,Bethany Moore,Direct Debit,358.61,2025-08-16,Gym membership. Normal activity consistent with customer profile.
+ALT-78572,Christina Delgado,Salary Credit,7559.03,2025-05-30,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-82811,Jerome Cline,Salary Credit,5275.89,2025-06-14,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-28037,Edward Washington,Bill Payment,225.8,2025-10-23,Credit card bill. Normal activity consistent with customer profile.
+ALT-71393,Ruth Hughes,Salary Credit,5672.06,2025-05-06,Bonus payment. Normal activity consistent with customer profile.
+ALT-47265,David Shannon,Bill Payment,462.41,2025-09-27,Credit card bill. Normal activity consistent with customer profile.
+ALT-48835,Tara Flores,Direct Debit,276.02,2025-05-09,Mortgage payment. Normal activity consistent with customer profile.
+ALT-34350,Brian Gonzalez,ATM Withdrawal,20.0,2025-12-02,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-69567,Erica Zimmerman,Online Transfer,32.85,2025-12-06,Gift to family. Normal activity consistent with customer profile.
+ALT-21416,Steven Chen,ATM Withdrawal,100.0,2025-07-31,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-38413,Rhonda Morris,Bill Payment,370.72,2025-06-16,Credit card bill. Normal activity consistent with customer profile.
+ALT-82338,Angela Williams,Salary Credit,3859.07,2025-05-16,Bonus payment. Normal activity consistent with customer profile.
+ALT-53886,Michelle Horn,Dividend Credit,91.28,2025-06-09,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-69462,Sherry Murphy,Online Transfer,15.81,2025-11-05,Transfer to savings. Normal activity consistent with customer profile.
+ALT-90081,Alyssa Wheeler,Dividend Credit,93.98,2025-01-06,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-35467,Timothy Watson,ATM Withdrawal,50.0,2025-05-04,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-43422,Jennifer Trujillo,POS Purchase,36.57,2025-01-20,Department store. Normal activity consistent with customer profile.
+ALT-87715,Darren Donaldson,ATM Withdrawal,200.0,2025-06-17,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-15170,Annette Monroe,ATM Withdrawal,100.0,2025-05-17,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-26655,Whitney Howell,Wire Transfer,231856.46,2025-10-13,Layering: Outgoing Wire to Oceanic Imports (North Korea) with no economic rationale.
+ALT-33193,Brian Allen,Bill Payment,103.55,2025-06-26,Credit card bill. Normal activity consistent with customer profile.
+ALT-79068,Calvin Murphy,Salary Credit,5445.6,2025-12-22,Bonus payment. Normal activity consistent with customer profile.
+ALT-36344,Lindsay Woods,Bill Payment,51.43,2025-01-05,Internet bill. Normal activity consistent with customer profile.
+ALT-73977,Christina Roberts,POS Purchase,62.51,2025-01-27,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-75361,David Wilson,Bill Payment,308.95,2025-09-24,Internet bill. Normal activity consistent with customer profile.
+ALT-34610,Jason Watkins,Dividend Credit,50.86,2025-10-03,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-20160,Crystal Moody,POS Purchase,149.06,2025-02-15,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-19483,Paul Patel,Online Transfer,77.42,2025-11-26,Transfer to savings. Normal activity consistent with customer profile.
+ALT-21796,Tyler Smith,POS Purchase,135.65,2025-06-01,Online subscription. Normal activity consistent with customer profile.
+ALT-68762,Stacy Howell,Online Transfer,63.73,2025-05-27,Transfer to savings. Normal activity consistent with customer profile.
+ALT-80385,Beverly Potter,ATM Withdrawal,50.0,2025-05-29,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-74006,Shannon Nichols,Dividend Credit,55.86,2025-09-21,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-24585,Kelly Vega,Dividend Credit,46.1,2025-05-05,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-73665,Angela Sloan,Dividend Credit,57.31,2025-06-17,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-12862,Tracy Lee,Dividend Credit,44.33,2025-02-05,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-68043,John Webb,POS Purchase,59.71,2025-10-18,Grocery store purchase. Normal activity consistent with customer profile.
+ALT-42679,Lisa Kane MD,Direct Debit,396.67,2025-05-15,Gym membership. Normal activity consistent with customer profile.
+ALT-25985,Joseph Herrera,ATM Withdrawal,100.0,2025-06-09,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-95774,Anthony Duke,Bill Payment,171.17,2025-07-03,Internet bill. Normal activity consistent with customer profile.
+ALT-38794,Tommy Cameron,Dividend Credit,118.24,2025-11-20,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-71475,Tara Mcintyre,ATM Withdrawal,20.0,2025-05-29,Cash withdrawal. Normal activity consistent with customer profile.
+ALT-92932,Nicholas Jordan,Bill Payment,72.42,2025-05-08,Internet bill. Normal activity consistent with customer profile.
+ALT-92854,Jacob Johnson,Dividend Credit,31.72,2025-02-18,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-69713,Marcus Richardson,Dividend Credit,106.48,2025-03-29,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-34108,Holly Shelton,Bill Payment,148.1,2025-11-09,Internet bill. Normal activity consistent with customer profile.
+ALT-19261,Christopher Reed,Cash Deposit,9880.01,2025-06-01,Structuring: Multiple cash deposits (5) under reporting threshold. Total: $9880.01.
+ALT-26771,Corey Crawford,Round Dollar,100000.0,2025-10-18,Large round dollar transfer: $100000.0. Potential integration.
+ALT-34847,Sara Davila,Salary Credit,7554.42,2025-01-05,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-81088,Veronica Coffey,Cash Deposit,9025.81,2025-10-24,Structuring: Multiple cash deposits (5) under reporting threshold. Total: $9025.81.
+ALT-92057,Kristin Barnett,Online Transfer,119.09,2025-12-24,Transfer to savings. Normal activity consistent with customer profile.
+ALT-47888,Cindy Brock PhD,Bill Payment,409.3,2025-07-19,Internet bill. Normal activity consistent with customer profile.
+ALT-57763,Michael Williams,Direct Debit,218.61,2025-08-15,Insurance premium. Normal activity consistent with customer profile.
+ALT-84395,Kimberly Burns,Bill Payment,382.37,2025-05-22,Credit card bill. Normal activity consistent with customer profile.
+ALT-83786,Meghan Coleman,Bill Payment,148.84,2025-01-20,Internet bill. Normal activity consistent with customer profile.
+ALT-37890,Debra Thomas,Dividend Credit,99.98,2025-11-06,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-26045,Jeremy Scott,ATM Withdrawal,200.0,2025-07-13,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-52955,Patrick Scott,POS Purchase,103.87,2025-07-07,Department store. Normal activity consistent with customer profile.
+ALT-92519,Michelle Trevino,Bill Payment,80.37,2025-10-22,Credit card bill. Normal activity consistent with customer profile.
+ALT-93762,Mark Oneal,Bill Payment,230.04,2025-09-02,Credit card bill. Normal activity consistent with customer profile.
+ALT-19593,Larry Reid,Bill Payment,100.94,2025-09-20,Internet bill. Normal activity consistent with customer profile.
+ALT-64763,Antonio Weber,Bill Payment,490.3,2025-07-11,Internet bill. Normal activity consistent with customer profile.
+ALT-93179,David Miller,Direct Debit,434.99,2025-01-02,Gym membership. Normal activity consistent with customer profile.
+ALT-57874,Andrew Turner,Online Transfer,106.09,2025-03-22,Payment to friend. Normal activity consistent with customer profile.
+ALT-43592,Blake Melton,Salary Credit,5309.89,2025-11-24,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-16156,Brandi Andersen,Salary Credit,5299.24,2025-05-24,Bonus payment. Normal activity consistent with customer profile.
+ALT-66920,Karen Stein,POS Purchase,126.08,2025-11-04,Gas station. Normal activity consistent with customer profile.
+ALT-95722,Suzanne Thompson,Dividend Credit,78.17,2025-11-25,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-19239,Cheryl Dickson,Dividend Credit,107.99,2025-03-24,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-83264,Mrs. Brandy Bennett,Direct Debit,102.98,2025-06-13,Insurance premium. Normal activity consistent with customer profile.
+ALT-72781,Brian Ward,ATM Withdrawal,200.0,2025-12-02,Petty cash withdrawal. Normal activity consistent with customer profile.
+ALT-12431,Jon Cole,Dividend Credit,79.78,2025-11-26,Quarterly dividend payment. Normal activity consistent with customer profile.
+ALT-70357,Margaret Thomas,Bill Payment,357.76,2025-09-17,Internet bill. Normal activity consistent with customer profile.
+ALT-86837,Emily Thompson,Salary Credit,5722.97,2025-05-27,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-83079,Julie Johnson,Online Transfer,92.16,2025-01-30,Payment to friend. Normal activity consistent with customer profile.
+ALT-77585,Melanie Jones,Direct Debit,98.65,2025-01-30,Utility bill payment. Normal activity consistent with customer profile.
+ALT-29332,Stephanie Rivera,Bill Payment,352.11,2025-12-21,Internet bill. Normal activity consistent with customer profile.
+ALT-97302,Karen Mack,Salary Credit,3353.79,2025-11-18,Monthly salary credit. Normal activity consistent with customer profile.
+ALT-71913,Andrew Castillo,Direct Debit,166.46,2025-07-04,Utility bill payment. Normal activity consistent with customer profile.
+ALT-62379,Nicholas Nielsen,Bill Payment,350.23,2025-12-11,Internet bill. Normal activity consistent with customer profile.
+ALT-36561,Joshua Guerrero,POS Purchase,83.77,2025-08-25,Online subscription. Normal activity consistent with customer profile.
