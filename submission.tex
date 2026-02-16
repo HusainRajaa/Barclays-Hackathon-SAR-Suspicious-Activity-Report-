@@ -11,7 +11,7 @@
 \tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
-\title{SAR Narrative Generator with Audit Trail}
+\title{Suspicious Activity Report Generator with Audit Trail}
 \author{}
 \date{}
 
@@ -20,7 +20,7 @@
 \maketitle
 
 \section{Abstract}
-Financial institutions are mandated to file Suspicious Activity Reports (SARs) for potential financial crimes, a process that is currently manual, labor-intensive (taking 5–6 hours per report), and prone to inconsistency. This project proposes an AI-driven SAR Narrative Generator with an integrated Audit Trail and Active Learning loop. By leveraging Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG), the system automates the drafting of regulator-ready narratives using transaction alerts and customer KYC data. Crucially, it addresses the "black box" problem of AI by providing a transparent audit trail and employs a feedback mechanism where analyst corrections retrain the underlying risk models, creating a self-improving system. This solution aims to drastically reduce compliance backlogs, ensure standardized reporting, and free up analysts to focus on complex investigations.
+Financial institutions are mandated to file Suspicious Activity Reports (SARs) for potential financial crimes, a process that is currently manual, labor-intensive (taking 5–6 hours per report), and prone to inconsistency. This project proposes a Suspicious Activity Report Generator with an integrated Audit Trail and Active Learning loop. By leveraging Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG), the system automates the drafting of regulator-ready narratives using transaction alerts and customer KYC data. Crucially, it addresses the "black box" problem of AI by providing a transparent audit trail and employs a feedback mechanism where analyst corrections retrain the underlying risk models, creating a self-improving system. This solution aims to drastically reduce compliance backlogs, ensure standardized reporting, and free up analysts to focus on complex investigations.
 
 \section{System Architecture}
 The system is architected as a set of loosely coupled microservices, ensuring modularity and flexibility.
@@ -150,6 +150,6 @@ Since the entire application is containerized with Docker, migrating from On-Pre
 \end{itemize}
 
 \section{Conclusion}
-This AI-driven SAR Narrative Generator represents a paradigm shift in financial compliance. By combining the generative power of LLMs with the precision of RAG and a rigorous audit trail, it delivers a solution that is not only efficient and scalable but also trustable and compliant.
+This Suspicious Activity Report Generator represents a paradigm shift in financial compliance. By combining the generative power of LLMs with the precision of RAG and a rigorous audit trail, it delivers a solution that is not only efficient and scalable but also trustable and compliant.
 
 \end{document}
