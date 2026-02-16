@@ -134,17 +134,6 @@ if st.session_state.page == 'Generator':
     # Simple File Uploader (No Radio Buttons)
     uploaded_file = st.sidebar.file_uploader("Upload Transaction Batch (CSV)", type=["csv"])
     
-    # Sample Template access
-    sample_data = pd.DataFrame([{
-        "Customer Name": "John Smith",
-        "Transaction Type": "Cash Deposit", 
-        "Amount": 9500,
-        "Date": "2023-10-25",
-        "Description": "Customer made 3 separate cash deposits of $9,500, $9,000, and $8,500 in consecutive days."
-    }])
-    csv = sample_data.to_csv(index=False)
-    st.sidebar.download_button("Download Batch Template", csv, "batch_template.csv", "text/csv")
-    
     st.sidebar.markdown("---")
     st.sidebar.caption("Authorized Personnel Only")
 
