@@ -177,14 +177,9 @@ dark_theme_css = common_css + """
         color: #ffffff !important;
     }
     [data-testid="stFileUploadDropzone"] button {
-        background-color: #333333 !important;
+        background-color: #000000 !important;
         color: #ffffff !important;
         border: 1px solid #ffffff !important;
-    }
-    /* Extra specificity for the button */
-    [data-testid="stFileUploadDropzone"] [data-testid="baseButton-secondary"] {
-        background-color: #333333 !important;
-        color: #ffffff !important;
     }
     
     /* Widgets */
@@ -225,6 +220,45 @@ if st.session_state.theme == "Dark":
     st.markdown(dark_theme_css, unsafe_allow_html=True)
 else:
     st.markdown(light_theme_css, unsafe_allow_html=True)
+
+# --- UTILS: PDF GENERATOR ---
+def create_pdf(sar_text, audit_data, alert_data):
+    pdf = FPDF()
+    pdf.add_page()
+    
+    # Header
+    pdf.set_font("Arial", 'B', 16)
+    pdf.cell(0, 10, "Suspicious Activity Report (SAR)", ln=True, align='C')
+    pdf.ln(10)
+    
+    # Metadata
+    pdf.set_font("Arial", '', 10)
+    pdf.cell(0, 8, f"Customer Name: {alert_data.get('Customer Name')}", ln=True)
+    pdf.cell(0, 8, f"Transaction Date: {alert_data.get('Date')}", ln=True)
+    pdf.cell(0, 8, f"Amount: ${alert_data.get('Amount', 0):,.2f}", ln=True)
+    pdf.cell(0, 8, f"Alert ID: {alert_data.get('AlertID', 'N/A')}", ln=True)
+    pdf.ln(10)
+    
+    # Narrative Body
+    pdf.set_font("Arial", 'B', 12)
+    pdf.cell(0, 10, "Narrative", ln=True)
+    pdf.set_font("Arial", '', 11)
+    pdf.multi_cell(0, 6, sar_text)
+    pdf.ln(10)
+    
+    # Audit Trail
+    pdf.set_font("Arial", 'B', 12)
+    pdf.cell(0, 10, "Audit Trail / Regulatory Citations", ln=True)
+    
+    pdf.set_font("Arial", '', 9)
+    for item in audit_data:
+        pdf.set_text_color(100, 100, 100)
+        source = item.get("Source", "Unknown")
+        excerpt = item.get("Excerpt", "").replace("\n", " ")
+        pdf.multi_cell(0, 5, f"[{source}] {excerpt}")
+        pdf.ln(2)
+        
+    return pdf.output(dest='S').encode('latin-1')
 
 # Initialize Engine (Cached)
 @st.cache_resource
@@ -508,33 +542,19 @@ elif st.session_state.page == 'SAR Editor':
             else:
                 st.button("EXPORT TO PDF", disabled=True)
             
-            with tab1:
-                st.text_area("Final SAR Narrative", st.session_state["sar"], height=350)
-                
-            with tab2:
-                st.markdown("#### Regulatory Citations")
-                audit_data = []
-                for i, doc in enumerate(st.session_state["context"]):
-                    source = doc.metadata.get('source', 'FCA Handbook')
-                    audit_data.append({
-                        "Citation ID": f"CIT-{i+1:03d}",
-                        "Source": source,
-                        "Excerpt": doc.page_content[:100] + "..."
-                    })
-                    with st.expander(f"Citation {i+1}: {source}"):
-                        st.write(doc.page_content)
-                
-                # Export
-                st.markdown("---")
-                df_audit = pd.DataFrame(audit_data)
-                st.download_button(
-                    label="Download Audit Log (CSV)",
-                    data=df_audit.to_csv(index=False),
-                    file_name="audit_log.csv",
-                    mime="text/csv"
-                )
-        else:
-            st.write("Select an alert and generate the narrative to view results.")
+    with col_view:
+        st.markdown("### Audit Trail")
+        st.info("Regulatory context used for this generation.")
+        
+        if "context" in st.session_state:
+            for i, doc in enumerate(st.session_state["context"]):
+                source = doc.metadata.get('source', 'FCA Handbook')
+                with st.expander(f"Ref {i+1}: {source}"):
+                    st.caption(doc.page_content)
+        
+        if st.button("Back to Dashboard"):
+            set_page('Generator')
+            st.rerun()
 
 # --- PAGE 2: RAG ARCHITECTURE ---
 elif st.session_state.page == 'RAG Architecture':
