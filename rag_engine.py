@@ -101,6 +101,23 @@ class RAGEngine:
             return results
         return []
 
+    def clean_text(self, text: str) -> str:
+        """
+        Removes markdown symbols (*, -, #) and excess whitespace for a clean editor experience.
+        """
+        import re
+        # Remove bold/italic markers
+        text = text.replace("**", "").replace("__", "").replace("*", "")
+        # Remove header markers
+        text = re.sub(r'#+\s', '', text)
+        # Remove horizontal rules
+        text = re.sub(r'---', '', text)
+        # Remove bullet points at start of lines, but keep indentation if needed
+        text = re.sub(r'^\s*[-•]\s*', '', text, flags=re.MULTILINE)
+        # Clean up excess newlines
+        text = re.sub(r'\n{3,}', '\n\n', text)
+        return text.strip()
+
     def generate_sar_narrative(self, alert_data: dict, context_docs: list):
         """
         Generates the SAR narrative template.
@@ -147,67 +164,58 @@ class RAGEngine:
                     "date": alert_data.get('Date'),
                     "description": alert_data.get('Description')
                 })
-                return response.content
+                return self.clean_text(response.content)
             except Exception as e:
                 print(f"LLM Generation Failed: {e}. Falling back to template.")
         
-        # Fallback Template
+        # Fallback Template (Plain Text)
         sar_draft = f"""
-*** CONFIDENTIAL SUSPICIOUS ACTIVITY REPORT (SAR) ***
-**REPORT STATUS**: DRAFT
-**LEGAL DISCLAIMER**: This document contains sensitive financial intelligence.
+CONFIDENTIAL SUSPICIOUS ACTIVITY REPORT (SAR)
+REPORT STATUS: DRAFT
+LEGAL DISCLAIMER: This document contains sensitive financial intelligence.
 
----
+1. EXECUTIVE SUMMARY
+Subject: {alert_data.get('Customer Name')}
+Alert Date: {alert_data.get('Date')}
+Total Suspicious Amount: ${alert_data.get('Amount', 0):,.2f}
 
-### 1. EXECUTIVE SUMMARY
-**Subject**: {alert_data.get('Customer Name')}
-**Alert Date**: {alert_data.get('Date')}
-**Total Suspicious Amount**: ${alert_data.get('Amount', 0):,.2f}
-
-** Synopsis**:
+Synopsis:
 [Generate a high-level summary of why this behaviour is anomalous. clearly state the primary suspicion (e.g., Structuring, Layering).]
 
----
+2. SUBJECT PROFILE & ACCOUNT ACTIVITY
+Customer Name: {alert_data.get('Customer Name')}
+Transaction Type: {alert_data.get('Transaction Type')}
+Risk Rating: {alert_data.get('Risk Score', 'High')}
 
-### 2. SUBJECT PROFILE & ACCOUNT ACTIVITY
-**Customer Name**: {alert_data.get('Customer Name')}
-**Transaction Type**: {alert_data.get('Transaction Type')}
-**Risk Rating**: {alert_data.get('Risk Score', 'High')}
-
-**Activity Overview**:
+Activity Overview:
 The customer executed the following specific transaction(s):
-- **Date**: {alert_data.get('Date')}
-- **Amount**: ${alert_data.get('Amount', 0):,.2f}
-- **Description**: {alert_data.get('Description')}
+Date: {alert_data.get('Date')}
+Amount: ${alert_data.get('Amount', 0):,.2f}
+Description: {alert_data.get('Description')}
 
-**Behavioral Analysis**:
+Behavioral Analysis:
 [Analyze how this specific transaction deviates from expected behavior for this customer profile. Mention if the volume or frequency is unusual.]
 
----
-
-### 3. INVESTIGATION FINDINGS & RED FLAGS
+3. INVESTIGATION FINDINGS & RED FLAGS
 The investigation identified the following specific red flags indicative of potential illicit activity:
 
-**Regulatory Indicators Identified**:
+Regulatory Indicators Identified:
 {context_text}
 
-**Detailed Analysis of Suspicion**:
-[Elaborate on how the transaction details align with the regulatory indicators above. For example, explain *why* the specific amount or pattern constitutes 'Structuring' or 'Layering' under the law. Be verbose and specific.]
+Detailed Analysis of Suspicion:
+[Elaborate on how the transaction details align with the regulatory indicators above. For example, explain why the specific amount or pattern constitutes 'Structuring' or 'Layering' under the law. Be verbose and specific.]
 
----
+4. LAW ENFORCEMENT SECTION
+Suspected Violation: Money Laundering / Terrorist Financing
+Recommended Action: File SAR with Financial Intelligence Unit (FIU).
 
-### 4. LAW ENFORCEMENT SECTION
-**Suspected Violation**: Money Laundering / Terrorist Financing
-**Recommended Action**: File SAR with Financial Intelligence Unit (FIU).
-
-**Conclusion**:
+Conclusion:
 Based on the convergence of the red flags identified above and the lack of apparent economic rationale, this activity is deemed highly suspicious. We recommend immediate filing and enhanced monitoring of the customer relationship.
 
----
-**Analyst signature**: ______________________
-**Date**: {pd.Timestamp.now().strftime('%Y-%m-%d')}
+Analyst signature: ______________________
+Date: {pd.Timestamp.now().strftime('%Y-%m-%d')}
 """
-        return sar_draft
+        return self.clean_text(sar_draft)
 
 if __name__ == "__main__":
     # Test Run

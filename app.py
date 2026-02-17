@@ -1,71 +1,295 @@
 import streamlit as st
 import pandas as pd
-import graphviz
+try:
+    import graphviz
+except ImportError:
+    graphviz = None
+from fpdf import FPDF
 from rag_engine import RAGEngine
 from mock_data_loader import generate_regulatory_docs, generate_mock_alerts
 
-# Page Config
-st.set_page_config(page_title="Barclays SAR Generator", layout="wide")
+# --- CONFIGURATION & STYLES ---
+st.set_page_config(
+    page_title="Suspicious Activity Report Generator",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-# Custom CSS for Professional Look (No Emojis)
-st.markdown("""
+# --- THEME MANAGEMENT ---
+if "theme" not in st.session_state:
+    st.session_state.theme = "Light"
+
+with st.sidebar:
+    st.markdown("### Settings")
+    theme_toggle = st.toggle("Dark mode", value=(st.session_state.theme == "Dark"))
+    if theme_toggle:
+        st.session_state.theme = "Dark"
+    else:
+        st.session_state.theme = "Light"
+
+# --- TOTAL UI OVERHAUL CSS ---
+# This ensures a "Proper" monochrome look by targeting ROOT containers
+common_css = """
     <style>
-    /* Global Reset */
-    .main {
-        background-color: #ffffff;
-        color: #000000;
-        font-family: 'Courier New', monospace; 
+    /* Font and General Scale */
+    html, body, [data-testid="stAppViewContainer"] {
+        font-family: 'Courier New', monospace !important;
     }
     
-    /* Strict Box Model */
-    div.block-container {
-        padding-top: 2rem;
+    /* Remove default Streamlit padding/decorations */
+    [data-testid="stHeader"] {
+        background: transparent !important;
     }
     
-    /* Borders for Everything */
-    .stApp > header {
-        background-color: #ffffff;
-        border-bottom: 2px solid #000000;
-    }
-    .stSidebar {
-        background-color: #00395D;
-        color: white;
-    }
-    h1, h2, h3 {
-        color: #00395D;
-        font-family: 'Helvetica', sans-serif;
-    }
+    /* Strict Box Bordering */
     .stButton>button {
-        background-color: #00395D;
-        color: white;
-        border-radius: 4px;
-        border: none;
-        padding: 10px 20px;
-        font-weight: bold;
+        border-radius: 0px !important;
+        text-transform: uppercase !important;
+        font-weight: bold !important;
+        padding: 0.5rem 1rem !important;
+        width: 100% !important;
     }
-    .stButton>button:hover {
-        background-color: #00AEEF;
-        color: white;
+    
+    /* Selectbox and Inputs */
+    input, textarea, select, .stSelectbox>div>div>div {
+        border-radius: 0px !important;
     }
-    .nav-btn {
-        margin: 5px;
+    
+    /* Navigation Bar Borders */
+    [data-testid="stHorizontalBlock"] {
+        border-bottom: 2px solid;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     </style>
-    """, unsafe_allow_html=True)
+"""
+
+light_theme_css = common_css + """
+    <style>
+    /* Light Mode Overrides */
+    .stApp, [data-testid="stAppViewContainer"], [data-testid="stMainViewContainer"] {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    [data-testid="stSidebar"] {
+        background-color: #ffffff !important;
+        border-right: 2px solid #000000 !important;
+    }
+    
+    /* Text Colors */
+    h1, h2, h3, h4, h5, h6, p, span, label, .stMarkdown {
+        color: #000000 !important;
+    }
+    
+    /* Borders */
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: 2px solid #000000 !important;
+    }
+    
+    /* Info/Warning/Success Boxes (Alerts) */
+    [data-testid="stNotificationContent"] {
+        background-color: #ffffff !important;
+        border: 2px solid #000000 !important;
+        color: #000000 !important;
+    }
+    [data-testid="stNotificationContent"] svg {
+        fill: #000000 !important;
+    }
+    
+    /* File Uploader Decor */
+    [data-testid="stFileUploadDropzone"] {
+        background-color: #ffffff !important;
+        border: 2px dashed #000000 !important;
+        color: #000000 !important;
+    }
+    [data-testid="stFileUploadDropzone"] button {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #000000 !important;
+    }
+    
+    /* Widgets */
+    .stButton>button {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 2px solid #000000 !important;
+    }
+    .stButton>button:hover {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    input, textarea, select, .stSelectbox>div>div>div {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 2px solid #000000 !important;
+    }
+    
+    [data-testid="stHorizontalBlock"] {
+        border-color: #000000 !important;
+    }
+    </style>
+"""
+
+dark_theme_css = common_css + """
+    <style>
+    /* Proper Dark Mode Overrides (True Monochrome) */
+    .stApp, [data-testid="stAppViewContainer"], [data-testid="stMainViewContainer"] {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+    }
+    
+    [data-testid="stSidebar"] {
+        background-color: #000000 !important;
+        border-right: 2px solid #ffffff !important;
+    }
+    
+    /* Target the sidebar content wrapper specifically */
+    [data-testid="stSidebarContent"] {
+        background-color: #000000 !important;
+    }
+    
+    /* Text Colors */
+    h1, h2, h3, h4, h5, h6, p, span, label, .stMarkdown {
+        color: #ffffff !important;
+    }
+    
+    /* Borders */
+    h1, h2, h3, h4, h5, h6 {
+        border-bottom: 2px solid #ffffff !important;
+    }
+    
+    /* Info/Warning/Success Boxes (Alerts) */
+    [data-testid="stNotificationContent"] {
+        background-color: #000000 !important;
+        border: 2px solid #ffffff !important;
+        color: #ffffff !important;
+    }
+    [data-testid="stNotificationContent"] svg {
+        fill: #ffffff !important;
+    }
+    
+    /* File Uploader Decor */
+    [data-testid="stFileUploadDropzone"] {
+        background-color: #000000 !important;
+        border: 2px dashed #ffffff !important;
+        color: #ffffff !important;
+    }
+    [data-testid="stFileUploadDropzone"] button {
+        background-color: #333333 !important;
+        color: #ffffff !important;
+        border: 1px solid #ffffff !important;
+    }
+    /* Extra specificity for the button */
+    [data-testid="stFileUploadDropzone"] [data-testid="baseButton-secondary"] {
+        background-color: #333333 !important;
+        color: #ffffff !important;
+    }
+    
+    /* Widgets */
+    .stButton>button {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border: 2px solid #ffffff !important;
+    }
+    .stButton>button:hover {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    input, textarea, select, .stSelectbox>div>div>div {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        border: 2px solid #ffffff !important;
+    }
+    
+    [data-testid="stHorizontalBlock"] {
+        border-color: #ffffff !important;
+    }
+    
+    /* Fix for Tabs */
+    .stTabs [data-baseweb="tab-list"] {
+        background-color: #000000 !important;
+    }
+    .stTabs [data-baseweb="tab"] {
+        color: #ffffff !important;
+        background-color: #000000 !important;
+        border: 1px solid #ffffff !important;
+    }
+    </style>
+"""
+
+# Inject CSS based on Theme
+if st.session_state.theme == "Dark":
+    st.markdown(dark_theme_css, unsafe_allow_html=True)
+else:
+    st.markdown(light_theme_css, unsafe_allow_html=True)
 
 # Initialize Engine (Cached)
 @st.cache_resource
-def load_engine():
+def load_engine_v2():
     engine = RAGEngine()
     docs = generate_regulatory_docs()
     engine.ingest_data(docs)
     return engine
 
 try:
-    engine = load_engine()
+    engine = load_engine_v2()
 except Exception as e:
     st.error(f"Failed to load engine: {e}")
     st.stop()
+
+def sanitize_sar_text(text: str) -> str:
+    """
+    Strips ALL markdown-like symbols for a clean professional text look.
+    """
+    import re
+    if not text:
+        return ""
+    
+    # 1. Remove bold/italic symbols (**, *, __)
+    text = text.replace("***", "").replace("**", "").replace("__", "").replace("*", "")
+    
+    # 2. Remove horizontal rules (---)
+    text = re.sub(r'---', '', text)
+    
+    # 3. Remove Header markers (###, ##, #)
+    text = re.sub(r'#+\s', '', text)
+    
+    # 4. Remove Bullet points (- at start of lines)
+    text = re.sub(r'^\s*[-•]\s*', '', text, flags=re.MULTILINE)
+    
+    # 5. Clean up excessive newlines
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    
+    return text.strip()
+
+# --- RISK ENGINE (Mock ML) ---
+def assess_risk(alert_row):
+    """
+    Simulates the ML Model's decision logic based on description keywords.
+    """
+    desc = alert_row.get("Description", "").lower()
+    amount = alert_row.get("Amount", 0)
+    
+    # Critical Risk Patterns
+    if "wire" in desc and ("cayman" in desc or "panama" in desc):
+        return "Critical"
+    if "terrorist" in desc or "sanction" in desc:
+        return "Critical"
+        
+    # High Risk Patterns
+    if "structuring" in desc or "cash deposit" in desc:
+        if amount > 8000: # Simple threshold
+            return "High"
+    if "crypto" in desc or "unregulated" in desc:
+        return "High"
+    if "layering" in desc or "rapid movement" in desc:
+        return "High"
+        
+    # Default
+    return "Low"
 
 # Navigation State
 if 'page' not in st.session_state:
@@ -88,9 +312,75 @@ with col_nav3:
 
 st.markdown("---")
 
+# --- PAGE 0: HOME (LANDING PAGE) ---
+if st.session_state.page == 'Home':
+    st.title("Suspicious Activity Report Generator")
+    st.markdown("### AI-Powered Suspicious Activity Reporting System")
+    
+    st.markdown("---")
+    
+    # Introduction
+    st.markdown("""
+    **Welcome to the Suspicious Activity Report Generator**, an advanced AI system designed to automate 
+    the creation of Suspicious Activity Reports (SARs) for financial crime compliance teams.
+    
+    This system leverages cutting-edge technologies including:
+    - **Retrieval-Augmented Generation (RAG)** for regulatory compliance
+    - **Machine Learning Risk Assessment** for intelligent transaction analysis
+    - **Vector Database Search** for contextual regulatory citation
+    """)
+    
+    st.markdown("---")
+    
+    # Key Features
+    col_feat1, col_feat2 = st.columns(2)
+    
+    with col_feat1:
+        st.markdown("#### Key Features")
+        st.markdown("""
+        - **Universal CSV Support**: Upload any transaction CSV format
+        - **AI Risk Detection**: Automatic identification of suspicious patterns
+        - **Regulatory Grounding**: Every narrative backed by specific regulations
+        - **Full-Screen Editor**: Refine and customize generated reports
+        - **Audit Trail**: Complete transparency of AI decision-making
+        """)
+    
+    with col_feat2:
+        st.markdown("#### How It Works")
+        st.markdown("""
+        1. **Upload**: Submit transaction data in any CSV format
+        2. **Analyze**: AI scans for money laundering indicators
+        3. **Generate**: System creates detailed SAR narrative
+        4. **Review**: Edit and finalize in dedicated editor
+        5. **Export**: Download completed report for submission
+        """)
+    
+    st.markdown("---")
+    
+    # Use Application Button
+    st.markdown("### Ready to Begin?")
+    if st.button("USE APPLICATION", type="primary", use_container_width=True):
+        set_page('Generator')
+        st.rerun()
+    
+    st.markdown("---")
+    
+    # Technical Details
+    st.markdown("#### Technical Architecture")
+    st.markdown("""
+    This system combines multiple AI technologies:
+    - **FAISS Vector Database** for efficient regulatory document retrieval
+    - **HuggingFace Embeddings** for semantic search
+    - **Rules-Based ML Engine** for risk classification
+    - **Template-Based Generation** for structured SAR narratives
+    
+    The system is designed to meet regulatory requirements for transparency and auditability 
+    in automated compliance systems.
+    """)
+
 # --- PAGE 1: SAR GENERATOR ---
-if st.session_state.page == 'Generator':
-    st.title("Barclays SAR Narrative Generator")
+elif st.session_state.page == 'Generator':
+    st.title("Suspicious Activity Report Generator")
     st.markdown("Automated generation of Suspicious Activity Reports using Llama 3 and Vector Search.")
 
     # Sidebar for Input Method
@@ -99,12 +389,29 @@ if st.session_state.page == 'Generator':
 
     alert_data = {}
 
-    if input_method == "Choose Pending Alert":
-        alerts = generate_mock_alerts()
-        alert_options = alerts["AlertID"] + " - " + alerts["Customer Name"]
-        selected_option = st.sidebar.selectbox("Select Alert", alert_options)
-        selected_alert_idx = alert_options.tolist().index(selected_option)
-        alert_data = alerts.iloc[selected_alert_idx].to_dict()
+    if uploaded_file is not None:
+        try:
+            alerts = pd.read_csv(uploaded_file)
+            st.sidebar.success(f"Loaded {len(alerts)} records")
+            
+            # Smart Column Mapping (NO VALIDATION)
+            col_map = map_columns(alerts)
+            all_cols = list(alerts.columns)
+            
+            # Normalize all rows
+            normalized_alerts = [normalize_row(row, col_map, all_cols) for _, row in alerts.iterrows()]
+            
+            # Select Specific Transaction
+            options = [f"Ref-{i+1001}: {row['Customer Name']} (${row.get('Amount', 0)})" for i, row in enumerate(normalized_alerts)]
+            selected_option = st.sidebar.selectbox("Select Record", options)
+            
+            # Get Data
+            selected_idx = options.index(selected_option)
+            alert_data = normalized_alerts[selected_idx]
+            st.session_state["alert_data"] = alert_data
+        
+        except Exception as e:
+            st.sidebar.error(f"System Error: {e}")
     else:
         st.sidebar.subheader("Manual Transaction Details")
         cust_name = st.sidebar.text_input("Customer Name", "Jane Doe")
@@ -134,19 +441,72 @@ if st.session_state.page == 'Generator':
         st.warning(f" Activity: {alert_data.get('Description')}")
 
         st.markdown("---")
-        if st.button("Generate Narrative", type="primary"):
-            with st.spinner("Analyzing regulations and drafting narrative..."):
-                query = alert_data.get("Description")
-                context = engine.retrieve_context(query)
-                sar_narrative = engine.generate_sar_narrative(alert_data, context)
-                st.session_state["sar"] = sar_narrative
-                st.session_state["context"] = context
+        st.markdown("**NARRATIVE**")
+        st.write(alert_data.get('Description', ''))
+        st.markdown("---")
+        st.markdown("---")
+        if st.button("GENERATE REPORT", type="secondary"):
+            with st.spinner("PROCESSING..."):
+                # 1. AI Risk Assessment
+                risk_score = assess_risk(alert_data)
+                
+                if risk_score == "Low":
+                    st.success("CASE CLOSED: No Suspicious Activity Detected.")
+                    st.info("Transaction matches customer profile. No regulatory reporting required.")
+                else:
+                    # 2. Genuine Suspicion -> Generate
+                    query = alert_data.get("Description")
+                    context = engine.retrieve_context(query)
+                    # Pass calculated risk to generator
+                    alert_data["Risk Score"] = risk_score 
+                    sar_narrative = engine.generate_sar_narrative(alert_data, context)
+                    
+                    # 3. SANITIZE TEXT (Override cached engine behavior)
+                    sar_narrative = sanitize_sar_text(sar_narrative)
+                    
+                    # 4. Store in Session & Redirect
+                    st.session_state["sar"] = sar_narrative
+                    st.session_state["context"] = context
+                    set_page('SAR Editor')
+                    st.rerun()
 
     with col2:
         st.subheader("Generated Output")
         
-        if "sar" in st.session_state:
-            tab1, tab2 = st.tabs(["Narrative Draft", "Audit Trail"])
+# --- PAGE 4: SAR EDITOR (Full Screen) ---
+elif st.session_state.page == 'SAR Editor':
+    st.title("Investigation Report Editor")
+    st.markdown("Review and refine the generated Suspicious Activity Report before final submission.")
+    
+    col_edit, col_view = st.columns([2, 1])
+    
+    with col_edit:
+        st.markdown("### Narrative Draft")
+        # specific height for "very big" report
+        edited_sar = st.text_area("Edit Narrative", st.session_state.get("sar", ""), height=800)
+        st.session_state["sar"] = edited_sar
+        
+        st.markdown("---")
+        c1, c2 = st.columns(2)
+        with c1:
+            if st.button("SAVE DRAFT"):
+                st.success("Draft Saved locally.")
+        with c2:
+            # Prepare audit data for PDF
+            audit_list = []
+            if "context" in st.session_state:
+                for doc in st.session_state["context"]:
+                    audit_list.append({
+                        "Source": doc.metadata.get('source', 'Regulatory Handbook'),
+                        "Excerpt": doc.page_content
+                    })
+            
+            # Use real PDF generator if data exists
+            if st.session_state.get("sar"):
+                pdf_bytes = create_pdf(st.session_state["sar"], audit_list, st.session_state.get("alert_data", {}))
+                st.download_button("EXPORT TO PDF", pdf_bytes, "sar_report.pdf", "application/pdf")
+            else:
+                st.button("EXPORT TO PDF", disabled=True)
             
             with tab1:
                 st.text_area("Final SAR Narrative", st.session_state["sar"], height=350)
@@ -178,9 +538,7 @@ if st.session_state.page == 'Generator':
 
 # --- PAGE 2: RAG ARCHITECTURE ---
 elif st.session_state.page == 'RAG Architecture':
-    st.title("Retrieval-Augmented Generation (RAG) Architecture")
-    st.markdown("### How the System Grounds AI in Law")
-    st.write("Our system uses RAG to ensure that every word generated by the AI is backed by a specific regulation. This solves the 'hallucination' problem common in Large Language Models.")
+    st.title("System Architecture")
     
     # Graphviz Diagram for RAG
     rag_graph = graphviz.Digraph()

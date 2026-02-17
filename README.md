@@ -1,4 +1,4 @@
-# 🦅 Barclays SAR Narrative Generator
+# 🦅 Suspicious Activity Report Generator
 
 **AI-Powered Financial Crime Compliance | Hackathon 2026**
 
